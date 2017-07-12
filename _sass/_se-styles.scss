@@ -1,0 +1,74 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    padding-top: 50px !important;
+    padding-bottom: 20px !important;
+}
+#main {
+    padding-top: 50px !important;
+}
+
+nav.navbar {
+  border-bottom: 1px solid #ebebeb;
+  background: white;
+}
+
+.navbar .navbar-nav li {
+  padding-top: 0;
+}
+
+.navbar .navbar-nav li>a {
+  padding: 15px;
+  line-height: 46px;
+  text-decoration: none;
+}
+
+
+.navbar-toggle .icon-bar {
+    background-color: #888;
+}
+
+
+.navbar-toggle {
+    border-color: #ddd;
+}
+
+
+input[type=password] {
+    margin-top: 7px;
+    font-size: 16px;
+    height: 42px;
+    border: 1px solid #727272;
+}
+
+.button {
+ line-height: 70px;
+}
+
+.button.secondary {
+ line-height: 56px;;
+}
+
+
+@media (max-width: 768px) {
+  .navbar-brand {
+  padding: 0.5em;
+}
+
+.navbar-brand>img {
+    display: block;
+    height: 100%;
+    width: auto;
+}
+}
+
+
+
+
+
+
+

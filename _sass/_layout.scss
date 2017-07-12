@@ -1,0 +1,13 @@
+//variables we will move to variables.scss
+$nav-height: 50px;
+$main-font: 'Roboto', sans-serif;
+
+
+html, body {
+    height: 100% - calc($nav-height);
+}
+
+body {
+    font-family: $main-font;
+    margin-top: $nav-height;
+}
