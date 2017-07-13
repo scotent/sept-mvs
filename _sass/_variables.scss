@@ -1,9 +1,11 @@
-@import 'variables.scss';
 
 /* ==========================================================================
-   SE Custom styles for layout 
+   Variables 
    ========================================================================== */
 
-.grey-bg {
-    background-color: $grey-bg;
-}
+//variables we will move to variables.scss
+$main-font: 'Roboto', sans-serif;
+
+
+// Colours 
+$grey-bg:#F2F2F2;

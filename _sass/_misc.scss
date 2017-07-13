@@ -1,9 +1,14 @@
-@import 'variables.scss';
 
 /* ==========================================================================
-   SE Custom styles for layout 
+   SE Custom styles for images 
    ========================================================================== */
 
-.grey-bg {
-    background-color: $grey-bg;
+
+.margin-1-t-b {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.block {
+  display: block;
 }

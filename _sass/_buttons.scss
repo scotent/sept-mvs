@@ -1,3 +1,14 @@
+
+/* ==========================================================================
+   SE Custom styles for buttons and links 
+   ========================================================================== */
+
+
 .button {
+    line-height: 70px;
     width: auto !important;
+}
+
+.button.secondary {
+ line-height: 56px;;
 }
