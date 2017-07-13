@@ -7,9 +7,11 @@
 // Import partials from `sass_dir` (defaults to `_sass`)
 // Add here new .scss files from _sass folder that were used to style elements ie. forms, typography etc 
 @import
-    "gs-style",
+    "variables",
     "layout",
-    "new-file",
+    "buttons",
+    "images",
+    "misc",
     "se-styles",
-    "buttons"
+    "gs-style",
 ;
