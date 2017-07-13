@@ -5,8 +5,24 @@
    ========================================================================== */
 
 
-#main {
-    padding-top: 50px !important;
+.margin-1-t-b {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.block {
+  display: block;
+}
+
+.banner {
+  background: #333;
+  color: white;
+  padding: 0.25em;
+  font-size: 0.8em;
+}
+
+.banner a {
+  color: white;
 }
 
 nav.navbar {
@@ -14,6 +30,9 @@ nav.navbar {
   background: white;
 }
 
+.navbar-brand {
+  height: auto;
+}
 .navbar .navbar-nav li {
   padding-top: 0;
 }
@@ -48,6 +67,10 @@ input[type=password] {
 
 .button.secondary {
  line-height: 56px;;
+}
+
+footer {
+  background-color: #f8f8f8;
 }
 
 

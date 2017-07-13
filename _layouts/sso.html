@@ -3,20 +3,30 @@
  
   {% include head.html %}
 
-  <body class="container">
+  <body class="sso">
+    
+    <div class="banner">
+      <div class="container">
+      This site is in Alpha. <a href="">Find out more about what this means</a>. <a id="close-banner"><i class="fa fa-times" aria-hidden="true"></i></a>
+      </div>
+    </div>
+
+    
+   {% include sso-navigation.html %} 
    
     <header>
-      {% include navigation.html %} 
-      
-       <div class="row">
-         <h1 class="post-title">{{ page.title }}</h1>             
-       </div> 
-
+      <div class="container">
+        <h1 class="post-title">{{ page.title }}</h1>             
+      </div>
     </header>
-
-    {{ content }}
     
-    {% include footer.html %}
+    <div id="main" class="container">
+      <div class="row">
+      {{ content }}
+    </div>
+    </div>
+    
+    {% include main-footer.html %}
      
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>    
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
