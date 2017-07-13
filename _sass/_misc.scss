@@ -18,3 +18,12 @@
 .block {
   display: block;
 }
+
+
+
+
+@media (max-width: 768px) {
+    .banner .pull-right {
+        float: none !important;
+    }
+}

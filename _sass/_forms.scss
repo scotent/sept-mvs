@@ -11,3 +11,7 @@ input[type=email] {
     border: 1px solid #727272;
     border-radius:0px; 
 }
+
+label.fancy-checkbox, label.fancy-radio {
+  white-space: normal;
+}
