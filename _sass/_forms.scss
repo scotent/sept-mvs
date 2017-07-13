@@ -9,5 +9,9 @@ input[type=email] {
     font-size: 16px;
     height: 42px;
     border: 1px solid #727272;
-    border-radius:0; 
+    border-radius:0px; 
+}
+
+label.fancy-checkbox, label.fancy-radio {
+  white-space: normal;
 }
