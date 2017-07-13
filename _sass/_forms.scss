@@ -1,0 +1,13 @@
+
+/* ==========================================================================
+   SE Custom styles for forms 
+   ========================================================================== */
+
+input[type=password],
+input[type=email] {
+    margin-top: 7px;
+    font-size: 16px;
+    height: 42px;
+    border: 1px solid #727272;
+    border-radius:0; 
+}

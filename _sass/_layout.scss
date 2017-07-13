@@ -4,6 +4,19 @@
    SE Custom styles for layout 
    ========================================================================== */
 
+
+/* Alpha / Beta banner */
+.banner {
+  background: #333;
+  color: white;
+  padding: 0.25em;
+  font-size: 0.8em;
+}
+
+.banner a {
+  color: white;
+}
+
 .grey-bg {
     background-color: $grey-bg;
 }

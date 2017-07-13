@@ -1,0 +1,47 @@
+
+/* ==========================================================================
+   SE Custom styles for navbar 
+   ========================================================================== */
+
+.navbar {
+  border-bottom: 1px solid #ebebeb;
+  background: white;
+
+  .navbar-brand {
+    height: auto;
+  }
+  
+  .navbar-nav li {
+    padding-top: 0;
+    & > a {
+      padding: 15px;
+      line-height: 46px;
+      text-decoration: none;
+    }
+  }
+
+  .navbar-toggle {
+    border-color: #ddd;
+      
+    .icon-bar {
+        background-color: #888;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .navbar {
+    .navbar-brand {
+      padding: 0.5em;
+      & > img {
+        display: block;
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+
+}
+
