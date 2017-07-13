@@ -1,14 +1,11 @@
 
 /* ==========================================================================
-   SE Custom styles for misceleaneous elements 
+   SE Custom styles for forms 
    ========================================================================== */
 
-
-.margin-1tb {
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-
-.block {
-  display: block;
+input[type=password] {
+    margin-top: 7px;
+    font-size: 16px;
+    height: 42px;
+    border: 1px solid #727272;
 }

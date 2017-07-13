@@ -4,69 +4,10 @@
    ========================================================================== */
 
 
-.banner {
-  background: #333;
-  color: white;
-  padding: 0.25em;
-  font-size: 0.8em;
-}
-
-.banner a {
-  color: white;
-}
-
-nav.navbar {
-  border-bottom: 1px solid #ebebeb;
-  background: white;
-}
-
-.navbar-brand {
-  height: auto;
-}
-.navbar .navbar-nav li {
-  padding-top: 0;
-}
-
-.navbar .navbar-nav li>a {
-  padding: 15px;
-  line-height: 46px;
-  text-decoration: none;
-}
-
-
-.navbar-toggle .icon-bar {
-    background-color: #888;
-}
-
-
-.navbar-toggle {
-    border-color: #ddd;
-}
-
-
-input[type=password] {
-    margin-top: 7px;
-    font-size: 16px;
-    height: 42px;
-    border: 1px solid #727272;
-}
-
 footer {
   background-color: #f8f8f8;
 }
 
-
-@media (max-width: 768px) {
-  .navbar-brand {
-  padding: 0.5em;
-}
-
-.navbar-brand>img {
-    display: block;
-    height: 100%;
-    width: auto;
-}
-}
 
 
 
