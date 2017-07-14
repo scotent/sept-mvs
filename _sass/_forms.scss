@@ -12,6 +12,10 @@ input[type=email] {
     border-radius:0px; 
 }
 
+div.relative input.fancy-checkbox, div.relative input.fancy-radio {
+  position: absolute;
+}
+
 label.fancy-checkbox, label.fancy-radio {
   white-space: normal;
 }

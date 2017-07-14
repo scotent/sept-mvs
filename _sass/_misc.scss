@@ -38,7 +38,9 @@
 }
 
 
+
 //list styling
+
 .clean-list{
     list-style: none;
     margin-left:1em;
@@ -63,4 +65,9 @@
 
 .text-bold{
     font-weight: 500;
+}
+
+
+.info-note.note:before {
+  background-image: url(../images/icons/note_@2x.png);
 }
