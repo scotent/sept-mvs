@@ -38,7 +38,7 @@
 }
 
 
-
+//list styling
 .clean-list{
     list-style: none;
     margin-left:1em;
@@ -48,6 +48,7 @@
     font-size: 14px;
 }
 
+//hide text from AT
 .sr-only {
   position: absolute;
   width: 1px;
@@ -58,6 +59,7 @@
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
 
 .text-bold{
     font-weight: 500;
