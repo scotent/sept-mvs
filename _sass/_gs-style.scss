@@ -14,6 +14,19 @@ body.globalscot {
     
     footer{
         margin-top:50px;
+        
+        ul {
+          margin-left: 0;
+        }
     }
     
 }
+
+
+#steps-block {
+  margin: 2em 0;
+  .step {
+    span {font-weight: bold; font-size: 1.5em; vertical-align: baseline; padding-right: 0.25em; margin-left: -15px;}
+  }  
+}
+ 
