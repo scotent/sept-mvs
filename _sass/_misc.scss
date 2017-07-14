@@ -34,9 +34,27 @@
 }
 
 
-.se-card-container{
-    
-    .col-sm-4{
 
-    }
+.clean-list{
+    list-style: none;
+    margin-left:1em;
+}
+
+.disclaimer{
+    font-size: 14px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.text-bold{
+    font-weight: 500;
 }
