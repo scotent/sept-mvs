@@ -8,10 +8,13 @@
     {% include global-scot-navigation.html %}
     
     <header class="container">
+
+        {% if page.title != "home" %}
+            <div class="breadcrumbs">breadcrumbs</div>
+            <h1 class="article-header__title">{{ page.title }}</h1> 
         
-        <div class="breadcrumbs">breadcrumbs</div>
-        
-        <h1 class="article-header__title">{{ page.title }}</h1> 
+        {% endif %}
+            
                             
     </header>
 
@@ -21,9 +24,7 @@
     </div>
 
 
-    {% include gs-footer.html %}        
- 
-   
+    {% include gs-footer.html %}         
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
