@@ -20,3 +20,12 @@ div.relative input.fancy-checkbox, div.relative input.fancy-radio {
 label.fancy-checkbox, label.fancy-radio {
   white-space: normal;
 }
+
+
+label.inline {
+  margin-right: 0;
+}
+
+.form-group:first-of-type {
+  margin-top: 28px;
+}
