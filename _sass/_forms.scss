@@ -1,3 +1,4 @@
+@import 'variables.scss';
 
 /* ==========================================================================
    SE Custom styles for forms 
@@ -26,6 +27,29 @@ label.inline {
   margin-right: 0;
 }
 
+.form-group {
+  padding: 0 20px 0 20px;;
+}
+
 .form-group:first-of-type {
   margin-top: 28px;
+}
+
+.form-group-error {
+  border-left: $error-red 5px solid;
+  padding-left: 15px;
+  label {
+    color: $error-red;
+  }
+}
+
+.error-summary {
+    border: 5px solid $error-red;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 15px 15px 10px;  
+    h2, a {
+    color: $error-red;
+    margin: 0;
+  }
 }
