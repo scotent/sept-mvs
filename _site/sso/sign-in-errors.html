@@ -14,10 +14,10 @@
     <![endif]-->
 
 
-    <title>Reset your password</title>
+    <title>Sign in to your account</title>
     <meta name="description" content="">
 
-    <link rel="canonical" href="http://localhost:4000/sept-mvs/sso/reset-password.html">
+    <link rel="canonical" href="http://localhost:4000/sept-mvs/sso/sign-in-errors.html">
     <link rel="alternate" type="application/rss+xml" title="Scottish Enterprise September MVS" href="http://localhost:4000/sept-mvs/feed.xml">
 
     <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900' rel='stylesheet' type='text/css'>
@@ -84,39 +84,55 @@
    
     <header>
       <div class="container">
-        <h1 class="post-title">Reset your password</h1>             
+        <h1 class="post-title">Sign in to your account</h1>             
       </div>
     </header>
     
     <div id="main" class="container">
       <div class="row">
       <div class="col-md-7">
-<p>Enter a password of your choice for your account.</p>
-<p><strong>Give any feedback using the link below. So we can continually improve our site, we welcome any comments you have.</strong></p>
+<p>Sign in to your account.</p>
+
+<div class="error-summary" role="group" aria-labelledby="error-summary-heading-example-2" tabindex="-1">
+
+  <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-2">
+    The email and password combination you entered did not match.
+  </h2>
+
+  <p>Optional description of the errors and how to correct them</p>
+
+  <ul class="error-summary-list">
+    <li><a href="#example-full-name">Reset your password</a></li>
+  </ul>
+
+</div>
+
 
 <div class="form-box">
   <form>
     <div class="form-group relative">
+        <label for="email">
+          Email address
+        </label>
+        <input aria-required="true" required="" id="email" class="form-control input--large" type="email">
+        <ul class="current-errors">You have entered an invalid email address</ul>
+    </div>
+    <div class="form-group relative">
         <label for="password">
-          <span>*</span> Password
+          Password
         </label>
         <input aria-required="true" required="" id="password" class="form-control input--large" type="password">
         <ul class="current-errors"></ul>
+        <a href="forgotten-password.html">Forgotten your password?</a>
     </div>
-    <div class="form-group relative">
-        <label for="confirm-password">
-          <span>*</span> Confirm password
-        </label>
-        <input aria-required="true" required="" id="confirm-password" class="form-control input--large" type="password">
-        <ul class="current-errors"></ul>
-    </div>
-
     <div class="form-group">
-        <input type="submit" data-gtm="form-submit" id="form-submit" class="button button--primary" value="Reset password">
+        <input type="submit" data-gtm="form-submit" id="form-submit" class="button button--primary dirty" value="Sign in">
     </div>                                          
   </form>
 </div>
 </div>
+
+
 
 
     </div>
