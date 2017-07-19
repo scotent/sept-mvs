@@ -64,6 +64,17 @@
     font-size: 14px;
 }
 
+
+//breadcrumbs
+ol.breadcrumb{
+    margin-left: 0;
+    padding: 8px 0;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: transparent;
+}
+
+
 //hide text from AT
 .sr-only {
   position: absolute;
