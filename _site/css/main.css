@@ -1,0 +1,272 @@
+/* ==========================================================================
+   Variables 
+   ========================================================================== */
+/* ==========================================================================
+   Variables 
+   ========================================================================== */
+/* ==========================================================================
+   SE Custom styles for layout 
+   ========================================================================== */
+/* Alpha / Beta banner */
+.banner {
+  background: #333;
+  color: white;
+  padding: 0.25em;
+  font-size: 0.8em; }
+
+.banner a {
+  color: white; }
+
+.grey-bg {
+  background-color: #F2F2F2; }
+
+/* ==========================================================================
+   SE Custom styles for navbar 
+   ========================================================================== */
+.navbar {
+  border-bottom: 1px solid #ebebeb;
+  background: white; }
+  .navbar .navbar-brand {
+    height: auto; }
+  .navbar .navbar-nav li {
+    padding-top: 0; }
+    .navbar .navbar-nav li > a {
+      padding: 15px;
+      line-height: 46px;
+      text-decoration: none; }
+  .navbar .navbar-toggle {
+    border-color: #ddd; }
+    .navbar .navbar-toggle .icon-bar {
+      background-color: #888; }
+
+@media (max-width: 768px) {
+  .navbar .navbar-brand {
+    padding: 0.5em;
+    max-width: 230px; }
+    .navbar .navbar-brand > img {
+      display: block;
+      height: 100%;
+      width: auto; }
+  .navbar .navbar-nav li > a {
+    padding: 5px 10px;
+    line-height: auto; } }
+/* ==========================================================================
+   SE Custom styles for buttons and links 
+   ========================================================================== */
+.button {
+  line-height: 1.5;
+  height: auto;
+  padding-top: 1em;
+  padding-bottom: 1em; }
+
+.button.secondary {
+  line-height: 56px; }
+
+a.button {
+  width: auto !important; }
+
+input.button {
+  line-height: 70px; }
+
+/* ==========================================================================
+   SE Custom styles for forms 
+   ========================================================================== */
+input[type=text],
+input[type=password],
+input[type=email] {
+  margin-top: 7px;
+  font-size: 16px;
+  height: 42px;
+  border: 1px solid #727272;
+  border-radius: 0px; }
+
+div.relative input.fancy-checkbox, div.relative input.fancy-radio {
+  position: absolute; }
+
+label.fancy-checkbox, label.fancy-radio {
+  white-space: normal; }
+
+label.inline {
+  margin-right: 0; }
+
+.form-group:first-of-type {
+  margin-top: 28px; }
+
+/* ==========================================================================
+   SE Custom styles for images 
+   ========================================================================== */
+.img-fit {
+  width: 100%; }
+
+/* ==========================================================================
+   SE Custom styles for card layouts 
+   ========================================================================== */
+.card {
+  padding: 1em 1em 3em 1em;
+  margin-bottom: 1em;
+  background-color: #F2F2F2;
+  position: relative; }
+  .card a {
+    display: block;
+    position: absolute;
+    bottom: 1em; }
+
+/* ==========================================================================
+   Variables 
+   ========================================================================== */
+/* ==========================================================================
+   SE Custom styles for misceleaneous elements 
+   ========================================================================== */
+.margin-1tb {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+.margin-1t {
+  margin-top: 1em; }
+
+.margin-1b {
+  margin-bottom: 1em; }
+
+.margin-2tb {
+  margin-top: 2em;
+  margin-bottom: 2em; }
+
+.margin-2t {
+  margin-top: 2em; }
+
+.margin-2b {
+  margin-bottom: 2em; }
+
+.block {
+  display: block; }
+
+.margin-1 {
+  margin: 1em 1em 1em 1em; }
+
+.margin-1r {
+  margin-right: 1em; }
+
+@media (max-width: 768px) {
+  .banner .pull-right {
+    float: none !important; } }
+.clean-list {
+  list-style: none;
+  margin-left: 1em; }
+
+.disclaimer {
+  font-size: 14px; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
+.text-bold {
+  font-weight: 500; }
+
+.info-note.note:before {
+  background-image: url(../images/icons/note_@2x.png); }
+
+/* ==========================================================================
+   Variables 
+   ========================================================================== */
+/* ==========================================================================
+   SE dot com Custom styles 
+   ========================================================================== */
+body {
+  margin-bottom: 0; }
+
+#main {
+  padding-bottom: 50px; }
+
+footer {
+  padding-top: 3em;
+  border-top: #ebebeb 1px solid; }
+  footer .navbar {
+    margin: 2em 0;
+    border-bottom: none; }
+    footer .navbar ul {
+      margin: 0px;
+      padding: 0; }
+      footer .navbar ul li {
+        display: inline-block;
+        margin-right: 1em; }
+
+#logo-block {
+  margin-left: -1em; }
+
+@media (max-width: 992px) {
+  footer {
+    text-align: center; }
+    footer #logo-block {
+      text-align: center;
+      margin-left: 0; }
+      footer #logo-block img {
+        max-width: 25%; } }
+@media (max-width: 786px) {
+  footer #logo-block img {
+    max-width: 45%; } }
+/* ==========================================================================
+   Variables 
+   ========================================================================== */
+/* ==========================================================================
+   Global Scot Custom styles
+   ========================================================================== */
+body.globalscot {
+  padding-top: 100px !important;
+  padding-bottom: 20px !important; }
+  body.globalscot .navbar-brand img {
+    max-width: 100%;
+    height: auto;
+    max-height: 46px; }
+  body.globalscot footer ul {
+    margin-left: 0; }
+  body.globalscot footer #logo-block {
+    text-align: center;
+    padding: 2em 0; }
+    body.globalscot footer #logo-block p {
+      margin: 1em 0; }
+
+#steps-block {
+  margin: 2em 0; }
+  #steps-block .step span {
+    font-weight: bold;
+    font-size: 1.5em;
+    vertical-align: baseline;
+    padding-right: 0.25em;
+    margin-left: -15px; }
+
+.adjust-height-service {
+  min-height: 220px; }
+
+.adjust-heith-case-study {
+  min-height: 610px; }
+
+#gs-main-banner-top {
+  height: 50px;
+  background-color: grey;
+  padding: 10px 0 0 30px; }
+  #gs-main-banner-top p {
+    color: white;
+    font-size: 2em; }
+
+#gs-main-banner-bottom {
+  height: 400px;
+  padding: 40px 0 0 30px;
+  background: #135ca0;
+  background: -moz-radial-gradient(center, ellipse cover, #135ca0 0%, #00294d 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #135ca0), color-stop(100%, #00294d));
+  background: -webkit-radial-gradient(center, ellipse cover, #135ca0 0%, #00294d 100%);
+  background: -o-radial-gradient(center, ellipse cover, #135ca0 0%, #00294d 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #135ca0 0%, #00294d 100%);
+  background: radial-gradient(ellipse at center, #135ca0 0%, #00294d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#135ca0', endColorstr='#00294d', GradientType=1 ); }
+  #gs-main-banner-bottom p {
+    color: white;
+    font-size: 3.5em;
+    font-weight: 700; }
