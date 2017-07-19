@@ -14,10 +14,10 @@
     <![endif]-->
 
 
-    <title>SSO pages</title>
+    <title>Create your account</title>
     <meta name="description" content="">
 
-    <link rel="canonical" href="http://localhost:4000/sept-mvs/sso/">
+    <link rel="canonical" href="http://localhost:4000/sept-mvs/sso/errors.html">
     <link rel="alternate" type="application/rss+xml" title="Scottish Enterprise September MVS" href="http://localhost:4000/sept-mvs/feed.xml">
 
     <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900' rel='stylesheet' type='text/css'>
@@ -84,25 +84,64 @@
    
     <header>
       <div class="container">
-        <h1 class="post-title">SSO pages</h1>             
+        <h1 class="post-title">Create your account</h1>             
       </div>
     </header>
     
     <div id="main" class="container">
       <div class="row">
-      <ul>
-  <li><a href="register.html">Register</a></li>
-  <li><a href="register-email-sent.html">Registration email sent</a></li>
-  <li><a href="../emails/confirm-email.html">Confirm email email</a></li>
-  <li><a href="set-password.html">Set password</a></li>
-  <li><a href="sign-in.html">Sign in</a></li>
-  <li><a href="forgotten-password.html">Forgotten password</a></li>
-  <li><a href="forgotten-password-errors.html">Forgotten password (with errors)</a></li>
-  <li><a href="password-reset-sent.html">Password reset sent</a></li>
-  <li><a href="reset-password.html">Reset password</a></li>
-  <li><a href="signed-out.html">Signed out</a></li>
-  <li><a href="errors.html">Form with errors</a></li>
-</ul>
+      <div class="col-md-7">
+<p>Complete the fields below. We'll send you an email with a link to activate your account.</p>
+<p>Already have an account? <a href="sign-in.html">Sign in here</a>.</p>
+
+<div class="error-summary" role="group" aria-labelledby="error-summary-heading-example-2" tabindex="-1">
+
+  <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-2">
+    Message to alert the user to a problem goes here
+  </h2>
+
+  <p>Optional description of the errors and how to correct them</p>
+
+  <ul class="error-summary-list">
+    <li><a href="#example-full-name">Descriptive link to the question with an error</a></li>
+    <li><a href="#example-ni-number">Descriptive link to the question with an error</a></li>
+  </ul>
+
+</div>
+    
+<div class="form-box">
+  <form>
+    <div class="form-group relative">
+        <label for="fname">
+          First name
+        </label>
+        <input aria-required="true" required="" id="fname" class="form-control input--large" type="text">
+        <ul class="current-errors"></ul>
+    </div>
+    <div class="form-group relative">
+        <label for="lname">
+          Last name
+        </label>
+        <input aria-required="true" required="" id="lname" class="form-control input--large" type="text">
+        <ul class="current-errors"></ul>
+    </div>
+    <div class="form-group form-group-error relative">
+        <label for="email">
+          Email address
+        </label>
+        <input aria-required="true" required="" id="email" class="form-control input--large" type="email">
+        <ul class="current-errors">This is not a valid email address.</ul>
+    </div>
+    <div class="form-group">
+        <input type="submit" data-gtm="form-submit" id="form-submit" class="button button--primary" value="Create account">
+    </div>                                          
+  </form>
+</div>
+</div>
+
+
+
+
     </div>
     </div>
     

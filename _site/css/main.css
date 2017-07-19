@@ -69,6 +69,9 @@ input.button {
   line-height: 70px; }
 
 /* ==========================================================================
+   Variables 
+   ========================================================================== */
+/* ==========================================================================
    SE Custom styles for forms 
    ========================================================================== */
 input[type=text],
@@ -89,8 +92,26 @@ label.fancy-checkbox, label.fancy-radio {
 label.inline {
   margin-right: 0; }
 
+.form-group {
+  padding: 0 20px 0 20px; }
+
 .form-group:first-of-type {
   margin-top: 28px; }
+
+.form-group-error {
+  border-left: #d32205 5px solid;
+  padding-left: 15px; }
+  .form-group-error label {
+    color: #d32205; }
+
+.error-summary {
+  border: 5px solid #d32205;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 15px 15px 10px; }
+  .error-summary h2, .error-summary a {
+    color: #d32205;
+    margin: 0; }
 
 /* ==========================================================================
    SE Custom styles for images 
