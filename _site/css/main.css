@@ -111,7 +111,11 @@ label.inline {
   padding: 15px 15px 10px; }
   .error-summary h2, .error-summary a {
     color: #d32205;
+    margin-top: 0; }
+  .error-summary ul {
     margin: 0; }
+    .error-summary ul li {
+      list-style: none; }
 
 /* ==========================================================================
    SE Custom styles for images 
