@@ -117,6 +117,14 @@ label.inline {
     .error-summary ul li {
       list-style: none; }
 
+tr:first-child td:first-child {
+  padding: 8px; }
+
+td, thead + tbody tr:first-child td {
+  border-bottom: 1px solid #ebebeb;
+  padding: 8px;
+  vertical-align: top; }
+
 /* ==========================================================================
    SE Custom styles for images 
    ========================================================================== */
@@ -243,6 +251,10 @@ footer {
 @media (max-width: 786px) {
   footer #logo-block img {
     max-width: 45%; } }
+h2 {
+  display: inline-block;
+  position: relative; }
+
 /* ==========================================================================
    Variables 
    ========================================================================== */
@@ -302,3 +314,16 @@ body.globalscot {
     color: white;
     font-size: 3.5em;
     font-weight: 700; }
+
+/* ==========================================================================
+   SE Custom mixins
+   ========================================================================== */
+h2.topline::before {
+  background: #0065bd;
+  border-radius: 4px;
+  content: '';
+  height: 8px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: -20px; }
