@@ -319,7 +319,7 @@ body.globalscot {
    SE Custom mixins
    ========================================================================== */
 h2.topline::before {
-  background: #0065bd;
+  background: #00427F;
   border-radius: 4px;
   content: '';
   height: 8px;
