@@ -3,14 +3,3 @@
    SE Custom mixins
    ========================================================================== */
 
-
-h2.topline::before {
-  background: #0065bd;
-  border-radius: 4px;
-  content: '';
-  height: 8px;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: -20px;
-}
