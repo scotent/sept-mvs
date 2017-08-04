@@ -7,6 +7,7 @@
 // Import partials from `sass_dir` (defaults to `_sass`)
 // Add here new .scss files from _sass folder
 @import
+    "mixins",
     "variables",
     "layout",
     "navbar",
@@ -16,6 +17,5 @@
     "cards",
     "misc",
     "se-styles",
-    "gs-style",
-    "mixins"
+    "gs-style"
 ;

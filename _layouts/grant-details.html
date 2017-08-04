@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body class="grant-details">
+
+<div class="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                This site is in Alpha. <a href="">Find out what this means</a>. <a id="close-banner"></a>
+            </div>
+            <div class="col-sm-4">
+                <span class="pull-right">Need help? Call 0300 013 3385</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% include sso-navigation.html %}
+
+<header>
+    <div class="container">
+        <h1 class="post-title">{{ page.title }}</h1>
+    </div>
+</header>
+
+<div id="main" class="container">
+    <div class="row">
+        <h2>CONTENT HAPPENING HERE</h2>
+        {{ content }}
+    </div>
+</div>
+
+{% include main-footer.html %}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
