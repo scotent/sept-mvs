@@ -21,6 +21,24 @@
 
 {% include sso-navigation.html %}
 
+{% assign crumbs = page.url | split: '/' %}
+
+<section class="breadcrumbs">
+<ul class="lv-breadcrumbs">
+    <li><a href="/">Home</a></li>
+    {% for crumb in crumbs offset: 1 %}
+    {% if forloop.last %}
+    <li class="active">{{ crumb | replace:'-',' ' }}</li>
+    {% else %}
+    <li><a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' }}</a></li>
+    {% endif %}
+    {% endfor %}
+</ul>
+</section>
+
+
+
+
 <header>
     <div class="container">
         <h1 class="post-title">{{ page.title }}</h1>
