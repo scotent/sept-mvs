@@ -29,6 +29,9 @@ a {
 .emphasis:before {
   background-color: #00427F; }
 
+.breadcrumbs ~ header div h1 {
+  margin-top: 0; }
+
 /* ==========================================================================
    SE Custom styles for navbar
    ========================================================================== */
