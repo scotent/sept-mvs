@@ -29,9 +29,6 @@ a {
 .emphasis:before {
   background-color: #00427F; }
 
-.breadcrumbs ~ header div h1 {
-  margin-top: 0; }
-
 /* ==========================================================================
    SE Custom styles for navbar
    ========================================================================== */
@@ -270,19 +267,6 @@ footer {
 @media (max-width: 786px) {
   footer #logo-block img {
     max-width: 45%; } }
-h2 {
-  display: inline-block;
-  position: relative; }
-  h2.topline:before {
-    background: #00427F;
-    border-radius: 4px;
-    content: '';
-    height: 8px;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: -20px; }
-
 /* ==========================================================================
    Variables 
    ========================================================================== */
