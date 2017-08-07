@@ -27,7 +27,12 @@ footer {
   }  
 }
 
-
+.inline {
+  display: inline;
+  &:not(:last-of-type) {
+    margin-right: 30px;
+  }
+}
 
 #logo-block {
   margin-left: -1em;

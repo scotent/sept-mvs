@@ -107,6 +107,8 @@ label.fancy-checkbox, label.fancy-radio {
 
 label.inline {
   margin-right: 0; }
+  label.inline:not(:last-of-type) {
+    margin-right: 30px; }
 
 .form-group {
   padding: 0 20px 0 20px; }
@@ -255,6 +257,11 @@ footer {
       footer .navbar ul li {
         display: inline-block;
         margin-right: 1em; }
+
+.inline {
+  display: inline; }
+  .inline:not(:last-of-type) {
+    margin-right: 30px; }
 
 #logo-block {
   margin-left: -1em; }

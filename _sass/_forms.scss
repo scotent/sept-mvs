@@ -22,9 +22,14 @@ label.fancy-checkbox, label.fancy-radio {
   white-space: normal;
 }
 
-
+// This doesn't work when we have multiple on one line..
+// So - added rule //
+// May need responsive update //
 label.inline {
   margin-right: 0;
+  &:not(:last-of-type) {
+    margin-right: 30px;
+  }
 }
 
 .form-group {
