@@ -13,6 +13,15 @@ body {
   padding-bottom: 50px;
 }
 
+a {
+  color: $se-blue;
+  @include transition(color 0.5s);
+  &:hover {
+    color: $se-light-blue;
+    @include transition(color 0.5s);
+  }
+}
+
 footer {
   padding-top: 3em;
   border-top: $grey-borders 1px solid;

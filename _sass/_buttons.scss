@@ -1,29 +1,53 @@
-
 /* ==========================================================================
-   SE Custom styles for buttons and links 
+   SE Custom styles for buttons and links
    ========================================================================== */
-
 
 .button {
     line-height: 1.5;
     height: auto;
     padding-top: 1em;
     padding-bottom: 1em;
-}
-
-.button.secondary {
-    line-height: 56px;
-}
-
-a.button {
-  width: auto!important;
-}
-
-input.button {
-  line-height: 70px;
-}
-
-.button.trimmed {
-  padding: 12px 20px;
-  display: inline;
+    width: auto!important;
+    text-transform: none;
+    font-weight: 400;
+    @include transition(background-color 0.5s, color 0.5s);
+    &.button--primary {
+        background-color: $se-blue;
+        &.disabled {
+            background-color: $se-dis-primary;
+        }
+        &:not(.disabled):hover {
+            background-color: $se-white;
+            color: $se-blue;
+            -webkit-box-shadow:inset 0 0 0 3px $se-blue;
+            -moz-box-shadow:inset 0 0 0 3px $se-blue;
+            @include transition(background-color 0.5s, color 0.5s);
+        }
+    }
+    &.button--secondary {
+        background-color: $se-light-blue;
+        &.disabled {
+            background-color: $se-dis-secondary;
+        }
+        &:not(.disabled):hover {
+            background-color: $se-white;
+            color: $se-light-blue;
+            -webkit-box-shadow:inset 0 0 0 3px $se-light-blue;
+            -moz-box-shadow:inset 0 0 0 3px $se-light-blue;
+            @include transition(background-color 0.5s, color 0.5s);
+        }
+    }
+    &.disabled {
+        &:hover {
+            cursor: default;
+        }
+    }
+    &.button--tertiary {
+        background-color: transparent;
+        color: $se-blue;
+        padding: 0.5em 0;
+        &:not(.disabled):hover {
+            color: $se-light-blue;
+        }
+    }
 }

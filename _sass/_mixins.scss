@@ -1,5 +1,27 @@
 
 /* ==========================================================================
-   SE Custom mixins
+   Mixins
    ========================================================================== */
 
+@mixin Opacity($value){
+    $IEValue: $value*100;
+    opacity: $value;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
+    filter: alpha(opacity=$IEValue);
+}
+/* Usage ..
+@include Opacity(0);
+ */
+
+
+// This accepts multiple args //
+@mixin transition($transition...) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+/* Usage ..
+@include transition(background-color 0.5s, color 0.5s);
+ */

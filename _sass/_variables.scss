@@ -6,28 +6,34 @@
 //variables we will move to variables.scss
 $main-font: 'Roboto', sans-serif;
 
-
-// Colours 
-$grey-bg:#F2F2F2;
-$grey-borders: #ebebeb;
-$error-red: #d32205;
+// Colours
+$white:             #FFFFFF;
+$grey-bg:           #F2F2F2;
+$grey-borders:      #ebebeb;
+$error-red:         #d32205;
+$se-dis-primary:    #7E9FBE;
+$se-dis-secondary:  #93BFBD;
+$black:             #000000;
 
 // SE Colour Pallette
-$se-bright-green: #00cc00;
-$se-dark-green: #03634D;
-$se-blue: #00427F;
-$se-light-blue: #2980B9;
-$se-mid-grey: #999999;
-$se-light-grey: #ecf0f1;
-$se-black: #2F3E44;
-$se-orange: #D65811;
-$se-red: #d60000;
-$se-body-grey:#666666;
-$se-dark-grey: #333333;
-$se-white: #ffffff;
-$accessible-green: #128512;
-$highlight-blue: #00B4FF;
+$se-red:            #d60000;
+$se-orange:         #D65811;
+$se-dark-green:     #03634D;
+$accessible-green:  #128512;
+$se-bright-green:   #00cc00;
+$highlight-blue:    #00B4FF;
+$se-light-blue:     #2980B9;
+$se-blue:           #00427F;
+
+// SE Greyscale
+$se-white:          #ffffff;
+$se-light-grey:     #ecf0f1;
+$se-mid-grey:       #999999;
+$se-body-grey:      #666666;
+$se-dark-grey:      #333333;
+$se-black:          #2F3E44;
 
 
 $alert-padding: 0 0 0 7px;
 $line-height-computed: 10px 0 0 0;
+
