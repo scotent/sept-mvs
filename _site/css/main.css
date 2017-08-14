@@ -102,7 +102,7 @@ a {
     background-color: #888;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .navbar .navbar-brand {
         padding: 0.5em;
         max-width: 230px;
