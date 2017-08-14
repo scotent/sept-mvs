@@ -117,14 +117,21 @@ a {
     }
 }
 
-@media only screen and (max-width: 992px) and (min-width: 768px) {
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
     .navbar .navbar-brand {
-        max-width: 260px;
+        max-width: 230px;
         height: auto;
+        margin-top: 8px;
     }
     .navbar .navbar-brand>img {
         display: block;
         width: auto;
+    }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+    body{
+        margin-top:60px;
     }
 }
 
