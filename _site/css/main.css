@@ -1,412 +1,593 @@
 /* ==========================================================================
    Mixins
    ========================================================================== */
+
+
 /* Usage ..
 @include Opacity(0);
  */
+
+
 /* Usage ..
 @include transition(background-color 0.5s, color 0.5s);
  */
+
+
 /* ==========================================================================
    Variables 
    ========================================================================== */
+
+
 /* ==========================================================================
    Fonts
    ========================================================================== */
+
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
 body {
-  font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  font-weight: normal; }
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
 
 /* ==========================================================================
    Variables 
    ========================================================================== */
+
+
 /* ==========================================================================
    SE Custom styles for layout 
    ========================================================================== */
+
+
 /* Alpha / Beta banner */
+
 .banner {
-  background: #333;
-  color: white;
-  padding: 0.25em;
-  font-size: 0.8em; }
+    background: #333;
+    color: white;
+    padding: 0.25em;
+    font-size: 0.8em;
+}
 
 .banner a {
-  color: white; }
+    color: white;
+}
 
 .grey-bg {
-  background-color: #F2F2F2; }
+    background-color: #F2F2F2;
+}
 
 a {
-  color: #00427F; }
+    color: #00427F;
+}
 
 .emphasis:before {
-  background-color: #00427F; }
+    background-color: #00427F;
+}
 
-.breadcrumbs ~ header div h1 {
-  margin-top: 0; }
+.breadcrumbs~header div h1 {
+    margin-top: 0;
+}
+
 
 /* ==========================================================================
    SE Custom styles for navbar
    ========================================================================== */
+
 .navbar {
-  border-bottom: 1px solid #ebebeb;
-  background: white; }
-  .navbar .navbar-brand {
-    height: auto; }
-  .navbar .navbar-nav li {
-    padding-top: 0; }
-    .navbar .navbar-nav li > a {
-      padding: 15px;
-      line-height: 46px;
-      text-decoration: none; }
-  .navbar .navbar-toggle {
-    border-color: #ddd; }
-    .navbar .navbar-toggle .icon-bar {
-      background-color: #888; }
+    border-bottom: 1px solid #ebebeb;
+    background: white;
+}
+
+.navbar .navbar-brand {
+    height: auto;
+}
+
+.navbar .navbar-nav li {
+    padding-top: 0;
+}
+
+.navbar .navbar-nav li>a {
+    padding: 15px;
+    line-height: 46px;
+    text-decoration: none;
+}
+
+.navbar .navbar-toggle {
+    border-color: #ddd;
+}
+
+.navbar .navbar-toggle .icon-bar {
+    background-color: #888;
+}
 
 @media (max-width: 768px) {
-  .navbar .navbar-brand {
-    padding: 0.5em;
-    max-width: 230px; }
-    .navbar .navbar-brand > img {
-      display: block;
-      height: 100%; }
-  .navbar .navbar-nav li > a {
-    padding: 5px 10px;
-    line-height: auto; } }
+    .navbar .navbar-brand {
+        padding: 0.5em;
+        max-width: 230px;
+    }
+    .navbar .navbar-brand>img {
+        display: block;
+        height: 100%;
+    }
+    .navbar .navbar-nav li>a {
+        padding: 5px 10px;
+        line-height: auto;
+    }
+}
+
 @media only screen and (max-width: 992px) and (min-width: 768px) {
-  .navbar .navbar-brand {
-    max-width: 260px;
-    height: auto; }
-    .navbar .navbar-brand > img {
-      display: block;
-      width: auto; } }
+    .navbar .navbar-brand {
+        max-width: 260px;
+        height: auto;
+    }
+    .navbar .navbar-brand>img {
+        display: block;
+        width: auto;
+    }
+}
+
+
 /* ==========================================================================
    SE Custom styles for buttons and links
    ========================================================================== */
+
 .button {
-  line-height: 1.5;
-  height: auto;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  width: auto !important;
-  text-transform: none;
-  font-weight: 400;
-  -webkit-transition: background-color 0.5s, color 0.5s;
-  -moz-transition: background-color 0.5s, color 0.5s;
-  -ms-transition: background-color 0.5s, color 0.5s;
-  -o-transition: background-color 0.5s, color 0.5s;
-  transition: background-color 0.5s, color 0.5s; }
-  .button.button--primary {
-    background-color: #00427F; }
-    .button.button--primary.disabled {
-      background-color: #7E9FBE; }
-    .button.button--primary:not(.disabled):hover {
-      background-color: #ffffff;
-      color: #00427F;
-      -webkit-box-shadow: inset 0 0 0 3px #00427F;
-      -moz-box-shadow: inset 0 0 0 3px #00427F;
-      -webkit-transition: background-color 0.5s, color 0.5s;
-      -moz-transition: background-color 0.5s, color 0.5s;
-      -ms-transition: background-color 0.5s, color 0.5s;
-      -o-transition: background-color 0.5s, color 0.5s;
-      transition: background-color 0.5s, color 0.5s; }
-  .button.button--secondary {
-    background-color: #2980B9; }
-    .button.button--secondary.disabled {
-      background-color: #93BFBD; }
-    .button.button--secondary:not(.disabled):hover {
-      background-color: #ffffff;
-      color: #2980B9;
-      -webkit-box-shadow: inset 0 0 0 3px #2980B9;
-      -moz-box-shadow: inset 0 0 0 3px #2980B9;
-      -webkit-transition: background-color 0.5s, color 0.5s;
-      -moz-transition: background-color 0.5s, color 0.5s;
-      -ms-transition: background-color 0.5s, color 0.5s;
-      -o-transition: background-color 0.5s, color 0.5s;
-      transition: background-color 0.5s, color 0.5s; }
-  .button.disabled:hover {
-    cursor: default; }
-  .button.button--tertiary {
+    line-height: 1.5;
+    height: auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: auto !important;
+    text-transform: none;
+    font-weight: 400;
+    -webkit-transition: background-color 0.5s, color 0.5s;
+    -moz-transition: background-color 0.5s, color 0.5s;
+    -ms-transition: background-color 0.5s, color 0.5s;
+    -o-transition: background-color 0.5s, color 0.5s;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.button.button--primary {
+    background-color: #00427F;
+}
+
+.button.button--primary.disabled {
+    background-color: #7E9FBE;
+}
+
+.button.button--primary:not(.disabled):hover {
+    background-color: #ffffff;
+    color: #00427F;
+    -webkit-box-shadow: inset 0 0 0 3px #00427F;
+    -moz-box-shadow: inset 0 0 0 3px #00427F;
+    -webkit-transition: background-color 0.5s, color 0.5s;
+    -moz-transition: background-color 0.5s, color 0.5s;
+    -ms-transition: background-color 0.5s, color 0.5s;
+    -o-transition: background-color 0.5s, color 0.5s;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.button.button--secondary {
+    background-color: #2980B9;
+}
+
+.button.button--secondary.disabled {
+    background-color: #93BFBD;
+}
+
+.button.button--secondary:not(.disabled):hover {
+    background-color: #ffffff;
+    color: #2980B9;
+    -webkit-box-shadow: inset 0 0 0 3px #2980B9;
+    -moz-box-shadow: inset 0 0 0 3px #2980B9;
+    -webkit-transition: background-color 0.5s, color 0.5s;
+    -moz-transition: background-color 0.5s, color 0.5s;
+    -ms-transition: background-color 0.5s, color 0.5s;
+    -o-transition: background-color 0.5s, color 0.5s;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.button.disabled:hover {
+    cursor: default;
+}
+
+.button.button--tertiary {
     background-color: transparent;
     color: #00427F;
-    padding: 0.5em 0; }
-    .button.button--tertiary:not(.disabled):hover {
-      color: #2980B9; }
+    padding: 0.5em 0;
+}
+
+.button.button--tertiary:not(.disabled):hover {
+    color: #2980B9;
+}
+
 
 /* ==========================================================================
    Variables 
    ========================================================================== */
+
+
 /* ==========================================================================
    SE Custom styles for forms 
    ========================================================================== */
+
 input[type=text],
 input[type=password],
 input[type=email] {
-  margin-top: 7px;
-  font-size: 16px;
-  height: 42px;
-  border: 1px solid #727272;
-  border-radius: 0px; }
+    margin-top: 7px;
+    font-size: 16px;
+    height: 42px;
+    border: 1px solid #727272;
+    border-radius: 0px;
+}
 
-div.relative input.fancy-checkbox, div.relative input.fancy-radio {
-  position: absolute; }
+div.relative input.fancy-checkbox,
+div.relative input.fancy-radio {
+    position: absolute;
+}
 
-label.fancy-checkbox, label.fancy-radio {
-  white-space: normal; }
+label.fancy-checkbox,
+label.fancy-radio {
+    white-space: normal;
+}
 
 label.inline {
-  margin-right: 0; }
-  label.inline:not(:last-of-type) {
-    margin-right: 30px; }
+    margin-right: 0;
+}
+
+label.inline:not(:last-of-type) {
+    margin-right: 30px;
+}
 
 .form-group {
-  padding: 0 20px 0 20px; }
+    padding: 0 20px 0 20px;
+}
 
 .form-group:first-of-type {
-  margin-top: 28px; }
+    margin-top: 28px;
+}
 
 .form-group-error {
-  border-left: #d32205 5px solid;
-  padding-left: 15px; }
-  .form-group-error label {
-    color: #d32205; }
+    border-left: #d32205 5px solid;
+    padding-left: 15px;
+}
+
+.form-group-error label {
+    color: #d32205;
+}
 
 .error-summary {
-  border: 5px solid #d32205;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding: 15px 15px 10px; }
-  .error-summary h2, .error-summary a {
+    border: 5px solid #d32205;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 15px 15px 10px;
+}
+
+.error-summary h2,
+.error-summary a {
     color: #d32205;
-    margin-top: 0; }
-  .error-summary ul {
-    margin: 0; }
-    .error-summary ul li {
-      list-style: none; }
+    margin-top: 0;
+}
+
+.error-summary ul {
+    margin: 0;
+}
+
+.error-summary ul li {
+    list-style: none;
+}
 
 tr:first-child td:first-child {
-  padding: 8px; }
+    padding: 8px;
+}
 
-td, thead + tbody tr:first-child td {
-  border-bottom: 1px solid #ebebeb;
-  padding: 8px;
-  vertical-align: top; }
+td,
+thead+tbody tr:first-child td {
+    border-bottom: 1px solid #ebebeb;
+    padding: 8px;
+    vertical-align: top;
+}
+
 
 /* ==========================================================================
    SE Custom styles for images 
    ========================================================================== */
+
 .img-fit {
-  width: 100%; }
+    width: 100%;
+}
+
 
 /* ==========================================================================
    SE Custom styles for card layouts 
    ========================================================================== */
+
 .card {
-  padding: 1em 1em 3em 1em;
-  margin-bottom: 1em;
-  background-color: #F2F2F2;
-  position: relative; }
-  .card a {
+    padding: 1em 1em 3em 1em;
+    margin-bottom: 1em;
+    background-color: #F2F2F2;
+    position: relative;
+}
+
+.card a {
     display: block;
     position: absolute;
-    bottom: 1em; }
+    bottom: 1em;
+}
+
 
 /* ==========================================================================
    Variables 
    ========================================================================== */
+
+
 /* ==========================================================================
    SE Custom styles for misceleaneous elements 
    ========================================================================== */
+
 .margin-1tb {
-  margin-top: 1em;
-  margin-bottom: 1em; }
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
 
 .margin-1t {
-  margin-top: 1em; }
+    margin-top: 1em;
+}
 
 .margin-1b {
-  margin-bottom: 1em; }
+    margin-bottom: 1em;
+}
 
 .margin-2tb {
-  margin-top: 2em;
-  margin-bottom: 2em; }
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
 
 .margin-2t {
-  margin-top: 2em; }
+    margin-top: 2em;
+}
 
 .margin-2b {
-  margin-bottom: 2em; }
+    margin-bottom: 2em;
+}
 
 .block {
-  display: block; }
+    display: block;
+}
 
 .margin-1 {
-  margin: 1em 1em 1em 1em; }
+    margin: 1em 1em 1em 1em;
+}
 
 .margin-1r {
-  margin-right: 1em; }
+    margin-right: 1em;
+}
 
 @media (max-width: 768px) {
-  .banner .pull-right {
-    float: none !important; } }
+    .banner .pull-right {
+        float: none !important;
+    }
+}
+
 .clean-list {
-  list-style: none;
-  margin-left: 1em; }
+    list-style: none;
+    margin-left: 1em;
+}
 
 .disclaimer {
-  font-size: 14px; }
+    font-size: 14px;
+}
 
 ol.breadcrumb {
-  margin-left: 0;
-  padding: 8px 0;
-  margin-bottom: 20px;
-  list-style: none;
-  background-color: transparent; }
+    margin-left: 0;
+    padding: 8px 0;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: transparent;
+}
 
 .sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0; }
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
 
 .text-bold {
-  font-weight: 500; }
+    font-weight: 500;
+}
 
 .info-note.note:before {
-  background-image: url(../images/icons/note_@2x.png); }
+    background-image: url(../images/icons/note_@2x.png);
+}
+
 
 /* ==========================================================================
    Mixins
    ========================================================================== */
+
+
 /* Usage ..
 @include Opacity(0);
  */
+
+
 /* Usage ..
 @include transition(background-color 0.5s, color 0.5s);
  */
+
+
 /* ==========================================================================
    Variables 
    ========================================================================== */
+
+
 /* ==========================================================================
    SE dot com Custom styles 
    ========================================================================== */
+
 body {
-  margin-bottom: 0; }
+    margin-bottom: 0;
+}
 
 #main {
-  padding-bottom: 50px; }
+    padding-bottom: 50px;
+}
 
 a {
-  color: #00427F;
-  -webkit-transition: color 0.5s;
-  -moz-transition: color 0.5s;
-  -ms-transition: color 0.5s;
-  -o-transition: color 0.5s;
-  transition: color 0.5s; }
-  a:hover {
+    color: #00427F;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+a:hover {
     color: #2980B9;
     -webkit-transition: color 0.5s;
     -moz-transition: color 0.5s;
     -ms-transition: color 0.5s;
     -o-transition: color 0.5s;
-    transition: color 0.5s; }
+    transition: color 0.5s;
+}
 
 footer {
-  padding-top: 3em;
-  border-top: #ebebeb 1px solid; }
-  footer .navbar {
+    padding-top: 3em;
+    border-top: #ebebeb 1px solid;
+}
+
+footer .navbar {
     margin: 2em 0;
-    border-bottom: none; }
-    footer .navbar ul {
-      margin: 0px;
-      padding: 0; }
-      footer .navbar ul li {
-        display: inline-block;
-        margin-right: 1em; }
+    border-bottom: none;
+}
+
+footer .navbar ul {
+    margin: 0px;
+    padding: 0;
+}
+
+footer .navbar ul li {
+    display: inline-block;
+    margin-right: 1em;
+}
 
 .inline {
-  display: inline; }
-  .inline:not(:last-of-type) {
-    margin-right: 30px; }
+    display: inline;
+}
+
+.inline:not(:last-of-type) {
+    margin-right: 30px;
+}
 
 #logo-block {
-  margin-left: -1em; }
+    margin-left: -1em;
+}
 
 @media (max-width: 992px) {
-  footer {
-    text-align: center; }
+    footer {
+        text-align: center;
+    }
     footer #logo-block {
-      text-align: center;
-      margin-left: 0; }
-      footer #logo-block img {
-        max-width: 25%; } }
+        text-align: center;
+        margin-left: 0;
+    }
+    footer #logo-block img {
+        max-width: 25%;
+    }
+}
+
 @media (max-width: 786px) {
-  footer #logo-block img {
-    max-width: 45%; } }
+    footer #logo-block img {
+        max-width: 45%;
+    }
+}
+
+
 /* ==========================================================================
    Variables 
    ========================================================================== */
+
+
 /* ==========================================================================
    Global Scot Custom styles
    ========================================================================== */
+
 body.globalscot {
-  padding-top: 100px !important;
-  padding-bottom: 20px !important; }
-  body.globalscot .navbar-brand img {
+    padding-top: 100px !important;
+    padding-bottom: 20px !important;
+}
+
+body.globalscot .navbar-brand img {
     max-width: 100%;
     height: auto;
-    max-height: 46px; }
-  body.globalscot footer ul {
-    margin-left: 0; }
-  body.globalscot footer #logo-block {
+    max-height: 46px;
+}
+
+body.globalscot footer ul {
+    margin-left: 0;
+}
+
+body.globalscot footer #logo-block {
     text-align: center;
-    padding: 2em 0; }
-    body.globalscot footer #logo-block p {
-      margin: 1em 0; }
+    padding: 2em 0;
+}
+
+body.globalscot footer #logo-block p {
+    margin: 1em 0;
+}
 
 #steps-block {
-  margin: 2em 0; }
-  #steps-block .step span {
+    margin: 2em 0;
+}
+
+#steps-block .step span {
     font-weight: bold;
     font-size: 1.5em;
     vertical-align: baseline;
     padding-right: 0.25em;
-    margin-left: -15px; }
+    margin-left: -15px;
+}
 
 .adjust-height-service {
-  min-height: 220px; }
+    min-height: 220px;
+}
 
 .adjust-heith-case-study {
-  min-height: 610px; }
+    min-height: 610px;
+}
 
 #gs-main-banner-top {
-  height: 50px;
-  background-color: grey;
-  padding: 10px 0 0 30px; }
-  #gs-main-banner-top p {
+    height: 50px;
+    background-color: grey;
+    padding: 10px 0 0 30px;
+}
+
+#gs-main-banner-top p {
     color: white;
-    font-size: 2em; }
+    font-size: 2em;
+}
 
 #gs-main-banner-bottom {
-  height: 400px;
-  padding: 40px 0 0 30px;
-  background: #135ca0;
-  background: -moz-radial-gradient(center, ellipse cover, #135ca0 0%, #00294d 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #135ca0), color-stop(100%, #00294d));
-  background: -webkit-radial-gradient(center, ellipse cover, #135ca0 0%, #00294d 100%);
-  background: -o-radial-gradient(center, ellipse cover, #135ca0 0%, #00294d 100%);
-  background: -ms-radial-gradient(center, ellipse cover, #135ca0 0%, #00294d 100%);
-  background: radial-gradient(ellipse at center, #135ca0 0%, #00294d 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#135ca0', endColorstr='#00294d', GradientType=1 ); }
-  #gs-main-banner-bottom p {
+    height: 400px;
+    padding: 40px 0 0 30px;
+    background: #135ca0;
+    background: -moz-radial-gradient(center, ellipse cover, #135ca0 0%, #00294d 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #135ca0), color-stop(100%, #00294d));
+    background: -webkit-radial-gradient(center, ellipse cover, #135ca0 0%, #00294d 100%);
+    background: -o-radial-gradient(center, ellipse cover, #135ca0 0%, #00294d 100%);
+    background: -ms-radial-gradient(center, ellipse cover, #135ca0 0%, #00294d 100%);
+    background: radial-gradient(ellipse at center, #135ca0 0%, #00294d 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#135ca0', endColorstr='#00294d', GradientType=1);
+}
+
+#gs-main-banner-bottom p {
     color: white;
     font-size: 3.5em;
-    font-weight: 700; }
+    font-weight: 700;
+}
