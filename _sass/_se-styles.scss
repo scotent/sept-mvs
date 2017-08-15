@@ -15,10 +15,10 @@ body {
 
 a {
   color: $se-blue;
-  @include transition(color 0.5s);
+  @include transition(color 0.5s, text-decoration 0.5s);
   &:hover {
     color: $se-light-blue;
-    @include transition(color 0.5s);
+    @include transition(color 0.5s, text-decoration 0.5s);
   }
 }
 
