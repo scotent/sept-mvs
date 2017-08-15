@@ -36,7 +36,7 @@
       & > img {
         display: block;
         height: 100%;
-        width: auto;
+        //width: auto;
       }
     }
 
@@ -48,3 +48,19 @@
     }
   }
 }
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+
+  .navbar {
+    .navbar-brand {
+        max-width: 260px;
+        height: auto;
+          & > img {
+            display: block;
+            width: auto;
+          }
+    }
+  }
+}
+
+
