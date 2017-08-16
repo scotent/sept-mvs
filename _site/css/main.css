@@ -48,6 +48,38 @@ a {
 .breadcrumbs ~ header div h1 {
   margin-top: 0; }
 
+.breadcrumbs {
+  font-size: 14px;
+  margin: 14px 0 13px;
+  color: #727272;
+  padding-left: 0; }
+  .breadcrumbs .breadcrumbs__item,
+  .breadcrumbs .breadcrumb-item {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding: 0;
+    position: relative; }
+    .breadcrumbs .breadcrumbs__item:after,
+    .breadcrumbs .breadcrumb-item:after {
+      font-family: FontAwesome;
+      content: "\f105";
+      font-size: 16px;
+      color: #727272;
+      font-weight: 300;
+      padding: 0 3px 0 8px;
+      line-height: 14px;
+      box-sizing: inherit;
+      position: relative;
+      top: 1px; }
+    .breadcrumbs .breadcrumbs__item:before,
+    .breadcrumbs .breadcrumb-item:before {
+      content: "";
+      padding: 0; }
+    .breadcrumbs .breadcrumbs__item:last-of-type:after,
+    .breadcrumbs .breadcrumb-item:last-of-type:after {
+      content: none; }
+
 /* ==========================================================================
    SE Custom styles for navbar
    ========================================================================== */
