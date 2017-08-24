@@ -1,0 +1,32 @@
+
+/* ==========================================================================
+   SE Custom styles for tables
+   ========================================================================== */
+
+
+
+table.table-striped tbody tr {
+    &:first-child td:first-child {
+        //padding: 0;
+    }
+    &:first-child td:last-child {
+        //padding-right: 0;
+    }
+
+    td {
+        //padding: 0;
+        a {
+            display: block;
+            //padding: 8px;
+        }
+    }
+    thead + tbody tr:nth-child(2n-1) td {
+        background: $se-light-grey;
+    }
+}
+
+tr {
+    &:hover td {
+        background: $se-light-mid-grey !important;
+    }
+}
