@@ -134,6 +134,13 @@ textarea {
   .declaration .input-wrapper label {
     margin: 0; }
 
+.confirm-wrapper {
+  background-color: #03634D;
+  text-align: center;
+  padding: 20px;
+  color: #ffffff;
+  margin-bottom: 20px; }
+
 /* ==========================================================================
    SE Custom styles for navbar
    ========================================================================== */
