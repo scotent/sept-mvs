@@ -85,3 +85,15 @@ a {
 textarea {
   margin-bottom: 20px;
 }
+
+.declaration .input-wrapper {
+  border: solid $se-grey;
+  border-width: 1px 0;
+  padding: 10px 0;
+  input {
+    margin: 0;
+  }
+  label {
+    margin: 0;
+  }
+}

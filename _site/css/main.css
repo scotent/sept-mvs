@@ -125,6 +125,15 @@ a {
 textarea {
   margin-bottom: 20px; }
 
+.declaration .input-wrapper {
+  border: solid #727272;
+  border-width: 1px 0;
+  padding: 10px 0; }
+  .declaration .input-wrapper input {
+    margin: 0; }
+  .declaration .input-wrapper label {
+    margin: 0; }
+
 /* ==========================================================================
    SE Custom styles for navbar
    ========================================================================== */
