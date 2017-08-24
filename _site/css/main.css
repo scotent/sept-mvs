@@ -122,6 +122,9 @@ a {
   padding: 20px;
   margin-bottom: 30px; }
 
+textarea {
+  margin-bottom: 20px; }
+
 /* ==========================================================================
    SE Custom styles for navbar
    ========================================================================== */
@@ -327,10 +330,34 @@ tr:hover td {
   .file-upload-list .file-upload-wrapper:last-of-type {
     border-bottom: 1px solid #727272;
     margin-bottom: 20px; }
+  .file-upload-list .file-upload-wrapper .file-status:before {
+    font-family: FontAwesome;
+    content: "\f111";
+    padding: 0 10px 0 0; }
+  .file-upload-list .file-upload-wrapper .file-status.green {
+    color: #00cc00; }
+  .file-upload-list .file-upload-wrapper .file-status.amber {
+    color: #FF9900; }
+  .file-upload-list .file-upload-wrapper .file-status.red {
+    color: #d60000; }
   .file-upload-list .file-upload-wrapper .file-remove {
     float: right; }
   .file-upload-list .file-upload-wrapper.empty {
     color: #999999; }
+
+.key-status .key {
+  display: inline-block;
+  margin-right: 20px; }
+  .key-status .key:before {
+    font-family: FontAwesome;
+    content: "\f111";
+    padding: 0 5px 0 0; }
+  .key-status .key.green:before {
+    color: #00cc00; }
+  .key-status .key.amber:before {
+    color: #FF9900; }
+  .key-status .key.red:before {
+    color: #d60000; }
 
 /* ==========================================================================
    Variables 

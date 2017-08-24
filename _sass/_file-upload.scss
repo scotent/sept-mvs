@@ -12,7 +12,20 @@
             margin-bottom: 20px;
         }
         .file-status {
-
+            &:before {
+                font-family: FontAwesome;
+                content: "\f111";
+                padding: 0 10px 0 0;
+            }
+            &.green {
+                color: $se-bright-green;
+            }
+            &.amber {
+                color: $se-amber;
+            }
+            &.red {
+                color: $se-red;
+            }
         }
         .file-name {
 
@@ -26,6 +39,25 @@
     }
 }
 
-
+.key-status {
+    .key {
+        display: inline-block;
+        margin-right: 20px;
+        &:before {
+            font-family: FontAwesome;
+            content: "\f111";
+            padding: 0 5px 0 0;
+        }
+        &.green:before {
+            color: $se-bright-green;
+        }
+        &.amber:before  {
+            color: $se-amber;
+        }
+        &.red:before  {
+            color: $se-red;
+        }
+    }
+}
 
 
