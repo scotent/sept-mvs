@@ -12,7 +12,7 @@
     font-weight: 400;
     margin-bottom : 15px;
     @include transition(background-color 0.5s, color 0.5s);
-    &.button--primary {
+    &.button-primary {
         background-color: $se-blue;
         &.disabled {
             background-color: $se-dis-primary;
@@ -25,7 +25,7 @@
             @include transition(background-color 0.5s, color 0.5s);
         }
     }
-    &.button--secondary {
+    &.button-secondary {
         background-color: $se-light-blue;
         &.disabled {
             background-color: $se-dis-secondary;
@@ -43,7 +43,7 @@
             cursor: default;
         }
     }
-    &.button--tertiary {
+    &.button-tertiary {
         background-color: transparent;
         color: $se-blue;
         padding: 0.5em 0;

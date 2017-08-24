@@ -1,0 +1,31 @@
+
+/* ==========================================================================
+   File upload styling
+   ========================================================================== */
+
+.file-upload-list {
+    .file-upload-wrapper {
+        padding: 10px 0;
+        border-top: 1px solid $se-grey;
+        &:last-of-type {
+            border-bottom: 1px solid $se-grey;
+            margin-bottom: 20px;
+        }
+        .file-status {
+
+        }
+        .file-name {
+
+        }
+        .file-remove {
+            float: right;
+        }
+        &.empty {
+            color: $se-mid-grey;
+        }
+    }
+}
+
+
+
+

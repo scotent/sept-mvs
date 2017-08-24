@@ -114,6 +114,14 @@ a {
     .breadcrumbs .breadcrumb-item:last-of-type:after {
       content: none; }
 
+.right-align {
+  float: right; }
+
+.panel-grey {
+  background-color: #dddddd;
+  padding: 20px;
+  margin-bottom: 30px; }
+
 /* ==========================================================================
    SE Custom styles for navbar
    ========================================================================== */
@@ -167,11 +175,11 @@ a {
   -ms-transition: background-color 0.5s, color 0.5s;
   -o-transition: background-color 0.5s, color 0.5s;
   transition: background-color 0.5s, color 0.5s; }
-  .button.button--primary {
+  .button.button-primary {
     background-color: #00427F; }
-    .button.button--primary.disabled {
+    .button.button-primary.disabled {
       background-color: #7E9FBE; }
-    .button.button--primary:not(.disabled):hover {
+    .button.button-primary:not(.disabled):hover {
       background-color: #ffffff;
       color: #00427F;
       -webkit-box-shadow: inset 0 0 0 3px #00427F;
@@ -181,11 +189,11 @@ a {
       -ms-transition: background-color 0.5s, color 0.5s;
       -o-transition: background-color 0.5s, color 0.5s;
       transition: background-color 0.5s, color 0.5s; }
-  .button.button--secondary {
+  .button.button-secondary {
     background-color: #2980B9; }
-    .button.button--secondary.disabled {
+    .button.button-secondary.disabled {
       background-color: #93BFBD; }
-    .button.button--secondary:not(.disabled):hover {
+    .button.button-secondary:not(.disabled):hover {
       background-color: #ffffff;
       color: #2980B9;
       -webkit-box-shadow: inset 0 0 0 3px #2980B9;
@@ -197,11 +205,11 @@ a {
       transition: background-color 0.5s, color 0.5s; }
   .button.disabled:hover {
     cursor: default; }
-  .button.button--tertiary {
+  .button.button-tertiary {
     background-color: transparent;
     color: #00427F;
     padding: 0.5em 0; }
-    .button.button--tertiary:not(.disabled):hover {
+    .button.button-tertiary:not(.disabled):hover {
       color: #2980B9; }
 
 article a[href^="//"]:not(.button),
@@ -309,6 +317,20 @@ table.table-striped tbody tr thead + tbody tr:nth-child(2n-1) td {
 
 tr:hover td {
   background: #dddddd !important; }
+
+/* ==========================================================================
+   File upload styling
+   ========================================================================== */
+.file-upload-list .file-upload-wrapper {
+  padding: 10px 0;
+  border-top: 1px solid #727272; }
+  .file-upload-list .file-upload-wrapper:last-of-type {
+    border-bottom: 1px solid #727272;
+    margin-bottom: 20px; }
+  .file-upload-list .file-upload-wrapper .file-remove {
+    float: right; }
+  .file-upload-list .file-upload-wrapper.empty {
+    color: #999999; }
 
 /* ==========================================================================
    Variables 
