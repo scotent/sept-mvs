@@ -80,7 +80,7 @@ a {
   background-color: #00427F; }
 
 .breadcrumbs ~ header div h1 {
-  margin-top: 0; }
+  margin-top: 10px; }
 
 .breadcrumbs {
   font-size: 14px;
@@ -146,7 +146,8 @@ textarea {
    ========================================================================== */
 .navbar {
   border-bottom: 1px solid #ebebeb;
-  background: white; }
+  background: white;
+  margin-bottom: 20px; }
   .navbar .navbar-brand {
     height: auto; }
   .navbar .navbar-nav li {
@@ -423,7 +424,7 @@ tr:hover td {
 ol.breadcrumb {
   margin-left: 0;
   padding: 8px 0;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   list-style: none;
   background-color: transparent; }
 
@@ -442,6 +443,95 @@ ol.breadcrumb {
 
 .info-note.note:before {
   background-image: url(../images/icons/note_@2x.png); }
+
+/* ==========================================================================
+   SE Custom styles for typography 
+   ========================================================================== */
+/*------------------------------------*\
+    $INFORMATIONAL NOTES
+\*------------------------------------*/
+.info-note.note:before {
+  background: url("../img/icons/note.png") no-repeat 0 0 transparent !important; }
+
+@media only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx) {
+  .info-note.note:before {
+    background-image: url("../img/icons/note_@2x.png") !important;
+    background-size: 26px 26px !important; } }
+.info-note.caution:before {
+  background: url("../img/icons/caution.png") no-repeat 0 0 transparent !important; }
+
+@media only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx) {
+  .info-note.caution:before {
+    background-image: url("../img/icons/caution_@2x.png") !important;
+    background-size: 36px 36px !important; } }
+h1 {
+  font-size: 49px;
+  line-height: 56px; }
+
+h2 {
+  font-size: 26px;
+  line-height: 35px; }
+
+h3 {
+  font-size: 19px;
+  line-height: 28px; }
+
+h4 {
+  font-size: 16px;
+  line-height: 25px; }
+
+h5 {
+  font-size: 14px;
+  line-height: 23px; }
+
+h6 {
+  font-size: 12px;
+  line-height: 20px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700; }
+
+.leader {
+  font-size: 25px;
+  line-height: 34px;
+  font-weight: 300;
+  margin: 0 0 35px 0; }
+
+.emphasis:before {
+  background-color: #00427F; }
+
+.breadcrumbs {
+  font-size: 14px;
+  margin: 0 0 13px;
+  color: #727272;
+  padding-left: 0; }
+  .breadcrumbs .breadcrumbs__item,
+  .breadcrumbs .breadcrumb-item {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding: 0;
+    position: relative;
+    text-transform: capitalize; }
+    .breadcrumbs .breadcrumbs__item:after,
+    .breadcrumbs .breadcrumb-item:after {
+      font-family: FontAwesome;
+      content: "\f105";
+      font-size: 16px;
+      color: #727272;
+      font-weight: 300;
+      padding: 0 3px 0 8px;
+      line-height: 14px;
+      box-sizing: inherit;
+      position: relative;
+      top: 1px; }
+    .breadcrumbs .breadcrumbs__item:before,
+    .breadcrumbs .breadcrumb-item:before {
+      content: "";
+      padding: 0; }
+    .breadcrumbs .breadcrumbs__item:last-of-type:after,
+    .breadcrumbs .breadcrumb-item:last-of-type:after {
+      content: none; }
 
 /* ==========================================================================
    Mixins

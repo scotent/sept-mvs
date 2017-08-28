@@ -34,8 +34,12 @@ a {
 
 // Override top margin on h1 if there are breadcrumbs //
 .breadcrumbs ~ header div h1 {
-  margin-top: 0;
+  margin-top: 10px;
 }
+
+//header {
+//  margin-top: 20px;
+//}
 
 // -- Breadcrumbs -- //
 .breadcrumbs {
