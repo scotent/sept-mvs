@@ -76,3 +76,27 @@ td, thead + tbody tr:first-child td {
   padding: 8px;
   vertical-align: top;
 }
+
+.input-small {
+    width: 100%;
+    @media all and (min-width: 480px) {
+        width: 41.6666%;
+    }
+    @media all and (min-width: 768px) {
+        width: 40%;
+    }
+    @media all and (min-width: 992px) {
+        Width: 37.5%;
+    }
+}
+
+.input-medium {
+    width: 100%;
+    @media all and (min-width: 480px) {
+        width: 50%;
+    }
+}
+
+.input-large {
+    width: 100%;
+}

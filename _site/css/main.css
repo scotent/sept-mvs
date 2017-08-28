@@ -139,7 +139,7 @@ textarea {
   text-align: center;
   padding: 20px;
   color: #ffffff;
-  margin-bottom: 20px; }
+  margin: 25px 0 20px; }
 
 /* ==========================================================================
    SE Custom styles for navbar
@@ -231,6 +231,10 @@ textarea {
     padding: 0.5em 0; }
     .button.button-tertiary:not(.disabled):hover {
       color: #2980B9; }
+    .button.button-tertiary.inline {
+      padding: 5px;
+      position: relative;
+      top: -2px; }
 
 article a[href^="//"]:not(.button),
 article a[href^="http://"]:not(.button),
@@ -307,6 +311,27 @@ td, thead + tbody tr:first-child td {
   border-bottom: 1px solid #ebebeb;
   padding: 8px;
   vertical-align: top; }
+
+.input-small {
+  width: 100%; }
+  @media all and (min-width: 480px) {
+    .input-small {
+      width: 41.6666%; } }
+  @media all and (min-width: 768px) {
+    .input-small {
+      width: 40%; } }
+  @media all and (min-width: 992px) {
+    .input-small {
+      Width: 37.5%; } }
+
+.input-medium {
+  width: 100%; }
+  @media all and (min-width: 480px) {
+    .input-medium {
+      width: 50%; } }
+
+.input-large {
+  width: 100%; }
 
 /* ==========================================================================
    SE Custom styles for images 
@@ -496,6 +521,9 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 34px;
   font-weight: 300;
   margin: 0 0 35px 0; }
+
+.container > .row > div > .leader {
+  margin-top: 15px; }
 
 .emphasis:before {
   background-color: #00427F; }
