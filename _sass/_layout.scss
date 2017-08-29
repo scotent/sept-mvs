@@ -78,6 +78,10 @@ a {
 
 .right-align {
   float: right;
+  &.right-link-inline {
+    position: relative;
+    top: 50px;
+  }
 }
 
 .panel-grey {
@@ -108,4 +112,12 @@ textarea {
   padding: 20px;
   color: $se-white;
   margin: 25px 0 20px;
+}
+
+.card-view {
+  background-color: $se-light-grey;
+  padding: 20px 15px;
+  section {
+    margin: 0 0 40px;
+  }
 }

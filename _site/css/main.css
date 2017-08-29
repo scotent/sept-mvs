@@ -116,6 +116,9 @@ a {
 
 .right-align {
   float: right; }
+  .right-align.right-link-inline {
+    position: relative;
+    top: 50px; }
 
 .panel-grey {
   background-color: #dddddd;
@@ -140,6 +143,12 @@ textarea {
   padding: 20px;
   color: #ffffff;
   margin: 25px 0 20px; }
+
+.card-view {
+  background-color: #f2f2f2;
+  padding: 20px 15px; }
+  .card-view section {
+    margin: 0 0 40px; }
 
 /* ==========================================================================
    SE Custom styles for navbar
@@ -358,7 +367,7 @@ td, thead + tbody tr:first-child td {
 table.table-striped tbody tr td a {
   display: block; }
 table.table-striped tbody tr thead + tbody tr:nth-child(2n-1) td {
-  background: #ecf0f1; }
+  background: #f2f2f2; }
 
 tr:hover td {
   background: #dddddd !important; }
@@ -476,19 +485,32 @@ ol.breadcrumb {
     $INFORMATIONAL NOTES
 \*------------------------------------*/
 .info-note.note:before {
-  background: url("../img/icons/note.png") no-repeat 0 0 transparent !important; }
-
-@media only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx) {
-  .info-note.note:before {
-    background-image: url("../img/icons/note_@2x.png") !important;
-    background-size: 26px 26px !important; } }
+  background: none;
+  content: "\f06a";
+  left: 10px;
+  position: absolute;
+  top: 25px;
+  width: 36px;
+  font-family: FontAwesome;
+  padding: 0 5px 0 0;
+  font-size: 30px; }
 .info-note.caution:before {
-  background: url("../img/icons/caution.png") no-repeat 0 0 transparent !important; }
+  background: none;
+  content: "\f071";
+  left: 10px;
+  position: absolute;
+  top: 25px;
+  width: 36px;
+  font-family: FontAwesome;
+  padding: 0 5px 0 0;
+  font-size: 30px; }
+.info-note fieldset {
+  margin-bottom: 0; }
+.info-note input[type="radio"],
+.info-note input[type="checkbox"] {
+  width: 0;
+  margin-left: 0; }
 
-@media only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx) {
-  .info-note.caution:before {
-    background-image: url("../img/icons/caution_@2x.png") !important;
-    background-size: 36px 36px !important; } }
 h1 {
   font-size: 49px;
   line-height: 56px; }
