@@ -145,10 +145,31 @@ textarea {
   margin: 25px 0 20px; }
 
 .card-view {
-  background-color: #f2f2f2;
-  padding: 20px; }
+  background-color: #ecf0f1;
+  padding: 20px;
+  display: inline-block;
+  margin: 0 0 40px;
+  width: 100%; }
   .card-view section {
     margin: 0 0 40px; }
+
+.account-portal-wrapper .card-view {
+  padding: 30px 10px; }
+
+.portal-panel {
+  margin-bottom: 20px; }
+  .portal-panel .panel-inner .panel-header {
+    background-color: #00427F;
+    color: #ffffff;
+    padding: 10px 20px; }
+    .portal-panel .panel-inner .panel-header h3 {
+      margin: 10px 0 0; }
+  .portal-panel .panel-inner .panel-content {
+    background-color: #ffffff;
+    color: #727272;
+    padding: 20px; }
+  .portal-panel .panel-inner a {
+    display: inherit; }
 
 /* ==========================================================================
    SE Custom styles for navbar
@@ -367,7 +388,7 @@ td, thead + tbody tr:first-child td {
 table.table-striped tbody tr td a {
   display: block; }
 table.table-striped tbody tr thead + tbody tr:nth-child(2n-1) td {
-  background: #f2f2f2; }
+  background: #ecf0f1; }
 
 tr:hover td {
   background: #dddddd !important; }

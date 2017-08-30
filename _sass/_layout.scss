@@ -117,7 +117,37 @@ textarea {
 .card-view {
   background-color: $se-light-grey;
   padding: 20px;
+  display: inline-block;
+  margin: 0 0 40px;
+  width: 100%;
   section {
     margin: 0 0 40px;
+  }
+}
+.account-portal-wrapper {
+  .card-view {
+    padding: 30px 10px;
+  }
+}
+
+.portal-panel {
+  margin-bottom: 20px;
+  .panel-inner {
+    .panel-header {
+      background-color: $se-blue;
+      color: $se-white;
+      padding: 10px 20px;
+      h3 {
+        margin: 10px 0 0;
+      }
+    }
+    .panel-content {
+      background-color: $se-white;
+      color: $se-grey;
+      padding: 20px;
+    }
+    a {
+      display: inherit;
+    }
   }
 }

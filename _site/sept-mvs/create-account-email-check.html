@@ -14,10 +14,10 @@
     <![endif]-->
 
 
-    <title>Account portal</title>
+    <title>Create an account on behalf of a customer</title>
     <meta name="description" content="">
 
-    <link rel="canonical" href="http://localhost:4000/sept-mvs/sept-mvs/account-portal/account-portal.html">
+    <link rel="canonical" href="http://localhost:4000/sept-mvs/sept-mvs/create-account-email-check.html">
     <link rel="alternate" type="application/rss+xml" title="Scottish Enterprise September MVS" href="http://localhost:4000/sept-mvs/feed.xml">
 
     <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900' rel='stylesheet' type='text/css'>
@@ -91,7 +91,7 @@
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                     <li class="breadcrumb-item"><a href="#">Breadcrumb-1</a></li>
                     <li class="breadcrumb-item"><a href="#">Breadcrumb-2</a></li>
-                    <li class="breadcrumb-item active">Account portal</li>
+                    <li class="breadcrumb-item active">Create an account on behalf of a customer</li>
                 </ol>
             </div>
         </div>
@@ -103,7 +103,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="post-title">Account portal</h1>
+                <h1 class="post-title">Create an account on behalf of a customer</h1>
             </div>
         </div>
     </div>
@@ -111,64 +111,20 @@
 
 <div id="main" class="container">
     <div class="row">
-        <div class="col-md-12 account-portal-wrapper">
+        <div class="col-lg-9 col-md-12">
+    <p class="leader">Complete the email address field for the customer that you are creating an account for</p>
+
     <div class="card-view">
-        <div class="portal-panel col-md-4 col-sm-6 col-xs-12">
-            <div class="panel-inner">
-                <div class="panel-header">
-                    <h3>Your Actions</h3>
-                </div>
-                <div class="panel-content">
-                    <p class="description">Pending actions:</p>
-                    <a href="funding-and-support/funding-and-support.html">Start your due claim</a>
-                </div>
+        <fieldset class="create-customer">
+            <div class="form-group relative">
+                <label for="email">Email</label>
+                <input aria-required="true" required="" id="email" class="grey form-control input-large" type="text" placeholder="Email address">
+                <ul class="current-errors"></ul>
             </div>
-        </div>
-        <div class="portal-panel col-md-4 col-sm-6 col-xs-12">
-            <div class="panel-inner">
-                <div class="panel-header">
-                    <h3>Your Profile</h3>
-                </div>
-                <div class="panel-content">
-                    <p class="description">Control your account access and reset your password:</p>
-                    <a href="account-preferences.html">Account preferences</a>
-                </div>
+            <div class="form-group relative">
+                <a href="create-account-admin.html" class="button button-primary">Verify email</a>
             </div>
-        </div>
-        <div class="portal-panel col-md-4 col-sm-6 col-xs-12">
-            <div class="panel-inner">
-                <div class="panel-header">
-                    <h3>Your Business</h3>
-                </div>
-                <div class="panel-content">
-                    <p class="description">Manage your business details, metrics and milestones:</p>
-                    <a href="business-details.html">Business details</a>
-                    <a href="action-plan.html">Action plan</a>
-                </div>
-            </div>
-        </div>
-        <div class="portal-panel col-md-4 col-sm-6 col-xs-12">
-            <div class="panel-inner">
-                <div class="panel-header">
-                    <h3>Your SE Team</h3>
-                </div>
-                <div class="panel-content">
-                    <p class="description">Your key Scottish Enterprise contacts all in one place:</p>
-                    <a href="your-se-team.html">Your SE team</a>
-                </div>
-            </div>
-        </div>
-        <div class="portal-panel col-md-4 col-sm-6 col-xs-12">
-            <div class="panel-inner">
-                <div class="panel-header">
-                    <h3>Your Services</h3>
-                </div>
-                <div class="panel-content">
-                    <p class="description">All the services you are currently using with Scottish Enterprise:</p>
-                    <a href="funding-and-support/funding-and-support.html">Funding and support</a>
-                    <a href="other-services.html">Other services</a>
-            </div>
-        </div>
+        </fieldset>
     </div>
 </div>
     </div>
