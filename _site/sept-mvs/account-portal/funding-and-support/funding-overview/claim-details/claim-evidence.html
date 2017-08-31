@@ -123,69 +123,72 @@
         <section class="key">
             <h3>Key</h3>
             <div class="key-status">
-                <div class="key green">
+                <div class="key success">
+                    <i class="fa fa-check fa-1x fa-fw"></i>
                     File added
                 </div>
-                <div class="key amber">
+                <div class="key processing">
+                    <i class="fa fa-refresh fa-1x fa-fw"></i>
                     Processing
                 </div>
-                <div class="key red">
+                <div class="key failed">
+                    <i class="fa fa-exclamation-circle fa-1x fa-fw"></i>
                     Failed
                 </div>
             </div>
         </section>
 
-
         <section class="upload-wrapper">
             <h3>Payslips</h3>
             <div class="file-upload-list">
-                <div class="file-upload-wrapper">
-            <span class="file-status green">
-            </span>
+                <div class="file-upload-wrapper success">
+                    <i class="fa fa-check fa-1x fa-fw"></i>
                     <span class="file-name">
-                019273-0117.pdf
-            </span>
+                        019273-0117.pdf
+                    </span>
                     <span class="file-remove">
-                <a href="#">
-                    Remove
-                </a>
-            </span>
+                        <a href="#">
+                            Remove
+                        </a>
+                    </span>
                 </div>
-                <div class="file-upload-wrapper">
-            <span class="file-status amber">
-            </span>
+                <div class="file-upload-wrapper processing">
+                    <i class="fa fa-refresh fa-spin fa-1x fa-fw"></i>
                     <span class="file-name">
-                019273-0117-with-quite-a-long-title.pdf
-            </span>
+                        019273-0117-with-quite-a-long-title.pdf
+                    </span>
                     <span class="file-remove">
-                <a href="#">
-                    Remove
-                </a>
-            </span>
+                        <a href="#">
+                            Remove
+                        </a>
+                    </span>
                 </div>
-                <div class="file-upload-wrapper">
-            <span class="file-status green">
-            </span>
+
+                <div class="file-upload-wrapper success">
+                    <i class="fa fa-check fa-1x fa-fw"></i>
                     <span class="file-name">
-                019273-0117-with-an-even-longer-and-longer-and-longer-name.pdf
-            </span>
+                        019273-0117-with-an-even-longer-and-longer-and-longer-name.pdf
+                    </span>
                     <span class="file-remove">
-                <a href="#">
-                    Remove
-                </a>
-            </span>
+                        <a href="#">
+                            Remove
+                        </a>
+                    </span>
                 </div>
-                <div class="file-upload-wrapper">
-            <span class="file-status red">
-            </span>
-                    <span class="file-name">
-                019273-0117-failed.pdf
-            </span>
-                    <span class="file-remove">
-                <a href="#">
-                    Remove
-                </a>
-            </span>
+
+                <div class="file-upload-wrapper failed">
+                    <i class="fa fa-exclamation-circle fa-1x fa-fw"></i>
+                    <div class="file-name">
+                        019273-0117-failed.pdf
+                        <div class="failed-text">
+                            We have found a problem with your file [LINK to help]
+                        </div>
+                    </div>
+                    <div class="file-remove">
+                        <a href="#">
+                            Remove
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="button button-primary">Add files</div>
@@ -215,7 +218,6 @@
             <div class="button button-primary">Add files</div>
         </section>
 
-
         <section class="upload-wrapper">
             <h2 class="emphasis">Additional information</h2>
 
@@ -234,7 +236,6 @@
             <div class="button button-primary">Add files</div>
         </section>
 
-
         <section class="upload-wrapper">
             <div class="info-note caution">
                 <p>Have you uploaded all the evidence needed to support this claim?
@@ -249,7 +250,6 @@
                 </fieldset>
             </div>
         </section>
-
 
         <a href="claim-declaration.html" class="button button-primary">Continue claim</a>
         <a href="claim-detail.html" class="button button-primary">Save and exit claim</a>

@@ -398,38 +398,53 @@ tr:hover td {
    ========================================================================== */
 .file-upload-list .file-upload-wrapper {
   padding: 10px 0;
-  border-top: 1px solid #727272; }
+  border-top: 1px solid #727272;
+  position: relative; }
   .file-upload-list .file-upload-wrapper:last-of-type {
     border-bottom: 1px solid #727272;
     margin-bottom: 20px; }
-  .file-upload-list .file-upload-wrapper .file-status:before {
-    font-family: FontAwesome;
-    content: "\f111";
-    padding: 0 10px 0 0; }
-  .file-upload-list .file-upload-wrapper .file-status.green {
-    color: #00cc00; }
-  .file-upload-list .file-upload-wrapper .file-status.amber {
-    color: #FF9900; }
-  .file-upload-list .file-upload-wrapper .file-status.red {
-    color: #d60000; }
+  .file-upload-list .file-upload-wrapper .file-name {
+    display: inline;
+    width: calc(100% - 70px); }
   .file-upload-list .file-upload-wrapper .file-remove {
-    float: right; }
+    position: absolute;
+    right: 0;
+    top: 10px; }
   .file-upload-list .file-upload-wrapper.empty {
     color: #999999; }
+  .file-upload-list .file-upload-wrapper.failed .failed-text {
+    color: #d60000;
+    display: block;
+    padding-left: 35px; }
 
 .key-status .key {
   display: inline-block;
   margin-right: 20px; }
-  .key-status .key:before {
-    font-family: FontAwesome;
-    content: "\f111";
-    padding: 0 5px 0 0; }
-  .key-status .key.green:before {
-    color: #00cc00; }
-  .key-status .key.amber:before {
-    color: #FF9900; }
-  .key-status .key.red:before {
-    color: #d60000; }
+
+.file-status:before {
+  font-family: FontAwesome;
+  padding: 0 10px 0 0; }
+
+.success .fa {
+  margin-right: 10px;
+  color: #00cc00; }
+.success .file-status:before {
+  color: #00cc00;
+  content: "\f00c"; }
+
+.processing .fa {
+  margin-right: 10px;
+  color: #FF9900; }
+.processing .file-status:before {
+  color: #FF9900;
+  content: "\f021"; }
+
+.failed .fa {
+  margin-right: 10px;
+  color: #d60000; }
+.failed .file-status:before {
+  color: #d60000;
+  content: "\f06a"; }
 
 /* ==========================================================================
    Variables 

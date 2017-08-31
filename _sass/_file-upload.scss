@@ -7,34 +7,29 @@
     .file-upload-wrapper {
         padding: 10px 0;
         border-top: 1px solid $se-grey;
+        position: relative;
         &:last-of-type {
             border-bottom: 1px solid $se-grey;
             margin-bottom: 20px;
         }
-        .file-status {
-            &:before {
-                font-family: FontAwesome;
-                content: "\f111";
-                padding: 0 10px 0 0;
-            }
-            &.green {
-                color: $se-bright-green;
-            }
-            &.amber {
-                color: $se-amber;
-            }
-            &.red {
-                color: $se-red;
-            }
-        }
         .file-name {
-
+            display: inline;
+            width: calc(100% - 70px);
         }
         .file-remove {
-            float: right;
+            position: absolute;
+            right: 0;
+            top: 10px;
         }
         &.empty {
             color: $se-mid-grey;
+        }
+        &.failed {
+            .failed-text {
+                color: $se-red;
+                display: block;
+                padding-left: 35px;
+            }
         }
     }
 }
@@ -43,21 +38,51 @@
     .key {
         display: inline-block;
         margin-right: 20px;
+    }
+}
+
+.file-status {
+    &:before {
+        font-family: FontAwesome;
+        padding: 0 10px 0 0;
+    }
+}
+.success {
+    .fa {
+        margin-right: 10px;
+        color: $se-bright-green;
+    }
+    .file-status {
         &:before {
-            font-family: FontAwesome;
-            content: "\f111";
-            padding: 0 5px 0 0;
-        }
-        &.green:before {
             color: $se-bright-green;
-        }
-        &.amber:before  {
-            color: $se-amber;
-        }
-        &.red:before  {
-            color: $se-red;
+            content: "\f00c";
         }
     }
 }
+.processing {
+    .fa {
+        margin-right: 10px;
+        color: $se-amber;
+    }
+    .file-status {
+        &:before {
+            color: $se-amber;
+            content: "\f021";
+        }
+    }
+}
+.failed {
+    .fa {
+        margin-right: 10px;
+        color: $se-red;
+    }
+    .file-status {
+        &:before {
+            color: $se-red;
+            content: "\f06a";
+        }
+    }
+}
+
 
 
