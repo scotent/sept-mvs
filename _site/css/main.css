@@ -157,19 +157,12 @@ textarea {
   padding: 30px 10px; }
 
 .portal-panel {
+  min-height: 200px;
   margin-bottom: 20px; }
-  .portal-panel .panel-inner .panel-header {
-    background-color: #00427F;
-    color: #ffffff;
-    padding: 10px 20px; }
-    .portal-panel .panel-inner .panel-header h3 {
-      margin: 10px 0 0; }
-  .portal-panel .panel-inner .panel-content {
+  .portal-panel .panel-inner {
     background-color: #ffffff;
-    color: #727272;
-    padding: 20px; }
-  .portal-panel .panel-inner a {
-    display: inherit; }
+    min-height: 200px;
+    padding: 12px; }
 
 /* ==========================================================================
    SE Custom styles for navbar

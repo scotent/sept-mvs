@@ -130,24 +130,34 @@ textarea {
   }
 }
 
+//.portal-panel {
+//  margin-bottom: 20px;
+//  .panel-inner {
+//    .panel-header {
+//      background-color: $se-blue;
+//      color: $se-white;
+//      padding: 10px 20px;
+//      h3 {
+//        margin: 10px 0 0;
+//      }
+//    }
+//    .panel-content {
+//      background-color: $se-white;
+//      color: $se-grey;
+//      padding: 20px;
+//    }
+//    a {
+//      display: inherit;
+//    }
+//  }
+//}
+
 .portal-panel {
+  min-height: 200px;
   margin-bottom: 20px;
   .panel-inner {
-    .panel-header {
-      background-color: $se-blue;
-      color: $se-white;
-      padding: 10px 20px;
-      h3 {
-        margin: 10px 0 0;
-      }
-    }
-    .panel-content {
-      background-color: $se-white;
-      color: $se-grey;
-      padding: 20px;
-    }
-    a {
-      display: inherit;
-    }
+    background-color: $se-white;
+    min-height: 200px;
+    padding: 12px;
   }
 }
