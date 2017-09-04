@@ -23,10 +23,39 @@ table.table-striped tbody tr {
     thead + tbody tr:nth-child(2n-1) td {
         background: $se-light-grey;
     }
-}
-
-tr {
     &:hover td {
         background: $se-light-mid-grey !important;
+    }
+}
+
+
+
+table.plain {
+    margin: 0;
+    tr:first-child td:first-child {
+        padding: 8px 15px;
+    }
+    tr:first-child td, th {
+        border-bottom: 1px solid $se-mid-grey;
+        font-weight: 700;
+        padding: 8px 15px;
+        text-align: left;
+        vertical-align: top;
+    }
+    tr:first-child td:not(:first-child) {
+        padding-left: 8px;
+    }
+    tr td {
+        background: none;
+        border-bottom: 1px solid $se-mid-grey;
+        font-weight: 700;
+        &:not(:first-child) {
+            font-weight: 300;
+        }
+    }
+    tr {
+        &:hover {
+            background: none;
+        }
     }
 }

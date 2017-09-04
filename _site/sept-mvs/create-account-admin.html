@@ -17,8 +17,8 @@
     <title>Create an account on behalf of a customer</title>
     <meta name="description" content="">
 
-    <link rel="canonical" href="http://localhost:4000/sept-mvs/sept-mvs/create-account-admin.html">
-    <link rel="alternate" type="application/rss+xml" title="Scottish Enterprise September MVS" href="http://localhost:4000/sept-mvs/feed.xml">
+    <link rel="canonical" href="http://localhost:4001/sept-mvs/sept-mvs/create-account-admin.html">
+    <link rel="alternate" type="application/rss+xml" title="Scottish Enterprise September MVS" href="http://localhost:4001/sept-mvs/feed.xml">
 
     <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900' rel='stylesheet' type='text/css'>
 
@@ -74,7 +74,7 @@
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="./">Menu item <span class="sr-only">(current)</span></a></li>
             <li><a href="../navbar-static-top/">Menu item </a></li>
-            <li><a href="../navbar-fixed-top/">Menu item</a></li>
+            <li><a href="signed-out.html">Sign out</a></li>
           </ul>
           </div><!--/.navbar-collapse -->
         </div>
@@ -112,41 +112,43 @@
 <div id="main" class="container">
     <div class="row">
         <div class="col-lg-9 col-md-12">
-    <p class="leader">Complete the fields below for the customer that you are creating an account for. The customer will be sent an email to complete the registration and set a password to access their business account.</p>
-
-    <p>
-        Already have an account? <a href="sign-in-user.html" class="button button-tertiary inline">Sign in here</a>
+    <p class="leader">The following matches have been made for [EMAIL ADDRESS] on CRM.
+        <br />
+        Please check that it is correct.
     </p>
 
     <div class="card-view">
-        <fieldset class="create-customer">
-            <div class="form-group relative">
-                <label for="firstname">First name</label>
-                <input aria-required="true" required="" id="firstname" class="grey form-control input-small" type="text" placeholder="First name">
-                <ul class="current-errors"></ul>
+        <table class="plain">
+            <tbody>
+                <tr>
+                    <td class="row-label">First name</td>
+                    <td class="row-content">John</td>
+                </tr>
+                <tr>
+                    <td class="row-label">Last name</td>
+                    <td class="row-content">Smith</td>
+                </tr>
+                <tr>
+                    <td class="row-label">Company name</td>
+                    <td class="row-content">Company Name Limited</td>
+                </tr>
+                <tr>
+                    <td class="row-label">Email address</td>
+                    <td class="row-content">grl@company.com</td>
+                </tr>
+            </tbody>
+        </table>
+        <fieldset>
+            <div class="input-wrapper">
+                <div>
+                    <input name="###" id="###id" class="fancy-checkbox" type="checkbox">
+                    <label for="###id" class="inline fancy-checkbox">Confirmed</label>
+                </div>
             </div>
-            <div class="form-group relative">
-                <label for="lastname">Last name</label>
-                <input aria-required="true" required="" id="lastname" class="grey form-control input-small" type="text" placeholder="Last name">
-                <ul class="current-errors"></ul>
-            </div>
-            <div class="form-group relative">
-                <label for="companyname">Company name</label>
-                <input aria-required="true" required="" id="companyname" class="grey form-control input-small" type="text" placeholder="Company name">
-                <ul class="current-errors"></ul>
-            </div>
-            <div class="form-group relative">
-                <label for="email">Email</label>
-                <input aria-required="true" required="" id="email" class="grey form-control input-small" type="text" placeholder="Email address">
-                <ul class="current-errors"></ul>
-            </div>
-
-            <div class="form-group relative">
-                <a href="create-account-admin-activation.html" class="button button-primary">Create account</a>
-                <a href="signed-out.html" class="button button-primary">Sign out</a>
-            </div>
-
         </fieldset>
+        <br />
+        <a href="create-account-admin-activation.html" class="button button-primary">Create account</a>
+
     </div>
 </div>
     </div>

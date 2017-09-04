@@ -389,9 +389,29 @@ table.table-striped tbody tr td a {
   display: block; }
 table.table-striped tbody tr thead + tbody tr:nth-child(2n-1) td {
   background: #ecf0f1; }
-
-tr:hover td {
+table.table-striped tbody tr:hover td {
   background: #dddddd !important; }
+
+table.plain {
+  margin: 0; }
+  table.plain tr:first-child td:first-child {
+    padding: 8px 15px; }
+  table.plain tr:first-child td, table.plain th {
+    border-bottom: 1px solid #999999;
+    font-weight: 700;
+    padding: 8px 15px;
+    text-align: left;
+    vertical-align: top; }
+  table.plain tr:first-child td:not(:first-child) {
+    padding-left: 8px; }
+  table.plain tr td {
+    background: none;
+    border-bottom: 1px solid #999999;
+    font-weight: 700; }
+    table.plain tr td:not(:first-child) {
+      font-weight: 300; }
+  table.plain tr:hover {
+    background: none; }
 
 /* ==========================================================================
    File upload styling
