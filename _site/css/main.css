@@ -259,6 +259,8 @@ textarea {
       -ms-transition: background-color 0.5s, color 0.5s;
       -o-transition: background-color 0.5s, color 0.5s;
       transition: background-color 0.5s, color 0.5s; }
+    .button.button-primary:active {
+      color: #ffffff; }
   .button.button-secondary {
     background-color: #2980B9; }
     .button.button-secondary.disabled {
@@ -273,6 +275,8 @@ textarea {
       -ms-transition: background-color 0.5s, color 0.5s;
       -o-transition: background-color 0.5s, color 0.5s;
       transition: background-color 0.5s, color 0.5s; }
+    .button.button-secondary:active {
+      color: #ffffff; }
   .button.disabled:hover {
     cursor: default; }
   .button.button-tertiary {
