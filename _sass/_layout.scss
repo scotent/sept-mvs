@@ -118,7 +118,7 @@ textarea {
   background-color: $se-light-grey;
   padding: 20px;
   display: inline-block;
-  margin: 0 0 40px;
+  margin: 0 0 30px;
   width: 100%;
   section {
     margin: 0 0 40px;
@@ -159,5 +159,55 @@ textarea {
     background-color: $se-white;
     min-height: 200px;
     padding: 12px;
+  }
+}
+
+.contact-panel {
+  min-height: 200px;
+  margin-bottom: 20px;
+  .contact-panel-inner {
+    background-color: $se-white;
+    min-height: 200px;
+    padding: 12px;
+    &.grey {
+      background-color: $se-light-grey;
+    }
+    .contact-panel-header {
+      font-size: 20px;
+      border-bottom: 1px solid $se-light-grey;
+      padding: 0 0 10px;
+      margin: 0 0 10px;
+    }
+    .contact-name {
+
+    }
+    .contact-position {
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+    .phone {
+
+    }
+    .email {
+
+    }
+    .hours {
+      margin-top: 15px;
+    }
+  }
+}
+
+.contact-panel {
+  .location-title {
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+}
+
+.other-service-wrapper {
+  .service-image {
+    max-width: 300px;
+  }
+  .service-description {
   }
 }

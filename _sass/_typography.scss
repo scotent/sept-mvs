@@ -106,6 +106,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 35px 0;
 }
 
+.text-large {
+    font-size: 20px;
+}
+
 // Create margin on First .leader within a container //
 .container > .row > div > .leader {
     margin-top: 15px;

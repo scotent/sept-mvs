@@ -27,6 +27,9 @@ table.table-striped tbody tr {
         background: $se-light-mid-grey !important;
     }
 }
+h2 ~ table {
+    margin-top: 0;
+}
 
 
 
@@ -57,5 +60,8 @@ table.plain {
         &:hover {
             background: none;
         }
+    }
+    thead + tbody tr:nth-child(2n-1) td {
+        background: none;
     }
 }

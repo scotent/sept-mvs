@@ -148,7 +148,7 @@ textarea {
   background-color: #ecf0f1;
   padding: 20px;
   display: inline-block;
-  margin: 0 0 40px;
+  margin: 0 0 30px;
   width: 100%; }
   .card-view section {
     margin: 0 0 40px; }
@@ -163,6 +163,33 @@ textarea {
     background-color: #ffffff;
     min-height: 200px;
     padding: 12px; }
+
+.contact-panel {
+  min-height: 200px;
+  margin-bottom: 20px; }
+  .contact-panel .contact-panel-inner {
+    background-color: #ffffff;
+    min-height: 200px;
+    padding: 12px; }
+    .contact-panel .contact-panel-inner.grey {
+      background-color: #ecf0f1; }
+    .contact-panel .contact-panel-inner .contact-panel-header {
+      font-size: 20px;
+      border-bottom: 1px solid #ecf0f1;
+      padding: 0 0 10px;
+      margin: 0 0 10px; }
+    .contact-panel .contact-panel-inner .contact-position {
+      font-weight: 700;
+      margin-bottom: 15px; }
+    .contact-panel .contact-panel-inner .hours {
+      margin-top: 15px; }
+
+.contact-panel .location-title {
+  font-weight: 700;
+  margin-bottom: 10px; }
+
+.other-service-wrapper .service-image {
+  max-width: 300px; }
 
 /* ==========================================================================
    SE Custom styles for navbar
@@ -385,6 +412,9 @@ table.table-striped tbody tr thead + tbody tr:nth-child(2n-1) td {
 table.table-striped tbody tr:hover td {
   background: #dddddd !important; }
 
+h2 ~ table {
+  margin-top: 0; }
+
 table.plain {
   margin: 0; }
   table.plain tr:first-child td:first-child {
@@ -404,6 +434,8 @@ table.plain {
     table.plain tr td:not(:first-child) {
       font-weight: 300; }
   table.plain tr:hover {
+    background: none; }
+  table.plain thead + tbody tr:nth-child(2n-1) td {
     background: none; }
 
 /* ==========================================================================
@@ -592,6 +624,9 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 34px;
   font-weight: 300;
   margin: 0 0 35px 0; }
+
+.text-large {
+  font-size: 20px; }
 
 .container > .row > div > .leader {
   margin-top: 15px; }
