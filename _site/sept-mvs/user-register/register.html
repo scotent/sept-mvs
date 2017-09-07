@@ -14,10 +14,10 @@
     <![endif]-->
 
 
-    <title>Sept-mvs-StartPoint</title>
+    <title>Register for your account</title>
     <meta name="description" content="">
 
-    <link rel="canonical" href="http://localhost:4001/sept-mvs/sept-mvs/">
+    <link rel="canonical" href="http://localhost:4001/sept-mvs/sept-mvs/user-register/register.html">
     <link rel="alternate" type="application/rss+xml" title="Scottish Enterprise September MVS" href="http://localhost:4001/sept-mvs/feed.xml">
 
     <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900' rel='stylesheet' type='text/css'>
@@ -89,7 +89,7 @@
             <div class="col-md-12">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Dynamic breadcrumbs</a></li>
-                    <li class="breadcrumb-item active">Sept-mvs-StartPoint</li>
+                    <li class="breadcrumb-item active">Register for your account</li>
                 </ol>
             </div>
         </div>
@@ -101,7 +101,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="post-title">Sept-mvs-StartPoint</h1>
+                <h1 class="post-title">Register for your account</h1>
             </div>
         </div>
     </div>
@@ -109,16 +109,74 @@
 
 <div id="main" class="container">
     <div class="row">
-        <ul>
-    <li><a href="my-account.html">My account</a></li>
-    <br />
-    <li><a href="sign-in-admin.html">Admin - Sign in</a></li>
-    <li><a href="user-activation-email.html">New user - Activation email</a></li>
-    <li><a href="sign-in-user.html">Registered user - Sign in</a></li>
-    <br />
-    <li><a href="site-map.html">Site map</a></li>
-</ul>
+        <div class="col-md-9 col-sm-12">
+    <p>Complete the fields below. We'll send you an email with a link to activate your account.</p>
+    <p>Already have an account? <a href="sign-in.html">Sign in here</a>.</p>
+    <div class="form-box">
+        <form>
+            <div class="form-group relative">
+                <label for="fname">
+                    First name
+                </label>
+                <input aria-required="true" required="" id="fname" class="form-control input--large" type="text">
+                <ul class="current-errors"></ul>
+            </div>
+            <div class="form-group relative">
+                <label for="lname">
+                    Last name
+                </label>
+                <input aria-required="true" required="" id="lname" class="form-control input--large" type="text">
+                <ul class="current-errors"></ul>
+            </div>
+            <div class="form-group relative">
+                <label for="email">
+                    Email address
+                </label>
+                <input aria-required="true" required="" id="email" class="form-control input--large" type="email">
+                <ul class="current-errors"></ul>
+            </div>
+            <div class="form-group relative">
+                <label for="company-name">
+                    Company name
+                </label>
+                <input aria-required="true" required="" id="company-name" class="form-control input--large" type="text">
+                <ul class="current-errors"></ul>
+            </div>
+            <div class="form-group relative">
+                <label for="phone">
+                    Phone number <span class="optional">(optional)</span>
+                </label>
+                <div class="description">
+                    We will use the contact details if there are any problems with your form and we need to contact you.
+                </div>
+                <input aria-required="true" required="" id="phone" class="form-control input--large" type="text">
+                <ul class="current-errors"></ul>
+            </div>
+            <div class="form-group relative">
+                <label for="privacy">
+                    Privacy policy
+                </label>
+                <p>
+                    The email address provided will be used to check and match existing records held by Scottish Enterprise and to send emails during the set up of your business account.
+                    <br /><br />
+                    The email address will be used as the user name for sign-in and to communicate with you about your business account. Your contact preferences for this email address can be set when signed into your business account.
+                </p>
+                <div class="input-wrapper">
+                    <div>
+                        <input name="sector" id="privacy" class="fancy-checkbox" type="checkbox">
+                        <label for="privacy" class="inline fancy-checkbox">
+                            I have read and accept the <a href="#">privacy policy.</a>
+                        </label>
+                    </div>
+                </div>
+            </div>
 
+            <div class="form-group">
+                <input type="submit" data-gtm="form-submit" id="form-submit" class="button button-primary" value="Create account">
+            </div>
+        </form>
+    </div>
+</div>
     </div>
 </div>
 

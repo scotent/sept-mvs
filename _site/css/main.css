@@ -285,10 +285,10 @@ textarea {
     padding: 0.5em 0; }
     .button.button-tertiary:not(.disabled):hover {
       color: #2980B9; }
-    .button.button-tertiary.inline {
-      padding: 5px;
-      position: relative;
-      top: -2px; }
+  .button .inline {
+    padding: 5px;
+    position: relative;
+    top: -2px; }
 
 article a[href^="//"]:not(.button),
 article a[href^="http://"]:not(.button),

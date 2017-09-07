@@ -56,11 +56,11 @@
         &:not(.disabled):hover {
             color: $se-light-blue;
         }
-        &.inline {
-            padding: 5px;
-            position: relative;
-            top: -2px;
-        }
+    }
+    .inline {
+        padding: 5px;
+        position: relative;
+        top: -2px;
     }
 }
 
