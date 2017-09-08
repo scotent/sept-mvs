@@ -57,10 +57,11 @@
             color: $se-light-blue;
         }
     }
-    .inline {
-        padding: 5px;
+    &.inline {
+        padding: 1em;
         position: relative;
         top: -2px;
+        display: inline-block;
     }
 }
 
