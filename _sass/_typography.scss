@@ -167,3 +167,14 @@ a[href^="tel:"] {
     text-decoration: none;
 }
 
+.form-group p.bold-heading {
+    font-size: 19px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-top: 7px;
+    margin-bottom: 0;
+}
+
+.optional {
+    color: $se-mid-grey;
+}

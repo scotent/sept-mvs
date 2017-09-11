@@ -9,38 +9,39 @@ title: Your email address has been confirmed
 </div>
 <div class="col-lg-9 col-md-12">
     <div class="card-view">
-        <fieldset class="create-customer">
-            <div class="form-group relative">
-                <p>
-                    <strong>Passwords must have at least 8 characters with at least 1 capital letter and 1 number.</strong>
-                    <br /><br />
-                </p>
-                <label for="password">Password</label>
-                <p class="description">
-                    Your password is private to you and will be managed through a secure service.
-                </p>
-                <input aria-required="true" required="" id="password" class="grey form-control input-large" type="text" placeholder="">
-                <ul class="current-errors"></ul>
-            </div>
-            <div class="form-group relative">
-                <label for="confirm-password">Confirm password</label>
-                <input aria-required="true" required="" id="confirm-password" class="grey form-control input-large" type="text" placeholder="">
-                <ul class="current-errors"></ul>
-            </div>
-        </fieldset>
-
-        <fieldset>
-            <div class="form-group relative">
-                <div class="input-wrapper">
-                    <div>
-                        <input name="sector" id="privacy" class="fancy-checkbox" type="checkbox">
-                        <label for="privacy" class="inline fancy-checkbox">I have read and accept the <a href="#">privacy policy.</a></label>
-                    </div>
+        <form>
+            <fieldset class="create-customer">
+                <legend class="sr-only">
+                    Set and confirm password
+                </legend>
+                <div class="form-group relative">
+                    <p>
+                        <strong>Passwords must have at least 8 characters with at least 1 capital letter and 1 number.</strong>
+                        <br/><br/>
+                    </p>
+                    <label for="password">Password</label>
+                    <p class="description">
+                        Your password is private to you and will be managed through a secure service.
+                    </p>
+                    <input aria-required="true" required="" id="password" class="grey form-control input-large" type="text" placeholder="">
+                    <ul class="current-errors"></ul>
                 </div>
-                <br /><br />
-                <a href="sign-in-user.html" class="button button-primary">Sign in</a>
-            </div>
-        </fieldset>
-
+                <div class="form-group relative">
+                    <label for="confirm-password">Confirm password</label>
+                    <input aria-required="true" required="" id="confirm-password" class="grey form-control input-large" type="text" placeholder="">
+                    <ul class="current-errors"></ul>
+                </div>
+                <div class="form-group relative">
+                    <div class="input-wrapper">
+                        <div>
+                            <input name="sector" id="privacy" class="fancy-checkbox" type="checkbox">
+                            <label for="privacy" class="inline fancy-checkbox">I have read and accept the <a href="#">privacy policy.</a></label>
+                        </div>
+                    </div>
+                    <br/><br/>
+                    <a href="sign-in-user.html" class="button button-primary">Sign in</a>
+                </div>
+            </fieldset>
+        </form>
     </div>
 </div>
