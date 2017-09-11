@@ -262,14 +262,14 @@ textarea {
     .button.button-primary:active {
       color: #ffffff; }
   .button.button-secondary {
-    background-color: #2980B9; }
+    background-color: #2A7CB2; }
     .button.button-secondary.disabled {
       background-color: #93BFBD; }
     .button.button-secondary:not(.disabled):hover {
       background-color: #ffffff;
-      color: #2980B9;
-      -webkit-box-shadow: inset 0 0 0 3px #2980B9;
-      -moz-box-shadow: inset 0 0 0 3px #2980B9;
+      color: #2A7CB2;
+      -webkit-box-shadow: inset 0 0 0 3px #2A7CB2;
+      -moz-box-shadow: inset 0 0 0 3px #2A7CB2;
       -webkit-transition: background-color 0.5s, color 0.5s;
       -moz-transition: background-color 0.5s, color 0.5s;
       -ms-transition: background-color 0.5s, color 0.5s;
@@ -284,7 +284,7 @@ textarea {
     color: #00427F;
     padding: 0.5em 0; }
     .button.button-tertiary:not(.disabled):hover {
-      color: #2980B9; }
+      color: #2A7CB2; }
   .button.inline {
     padding: 1em;
     position: relative;
@@ -707,7 +707,7 @@ a {
   -o-transition: color 0.5s, text-decoration 0.5s;
   transition: color 0.5s, text-decoration 0.5s; }
   a:hover {
-    color: #2980B9;
+    color: #2A7CB2;
     -webkit-transition: color 0.5s, text-decoration 0.5s;
     -moz-transition: color 0.5s, text-decoration 0.5s;
     -ms-transition: color 0.5s, text-decoration 0.5s;
