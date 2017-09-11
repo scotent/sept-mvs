@@ -159,10 +159,16 @@ textarea {
 .portal-panel {
   min-height: 200px;
   margin-bottom: 20px; }
+  .portal-panel .panel-header h2 {
+    font-weight: 300;
+    border-bottom: 1px solid #727272;
+    margin-top: 15px; }
   .portal-panel .panel-inner {
-    background-color: #ffffff;
+    background-color: #ecf0f1;
     min-height: 200px;
     padding: 12px; }
+  .portal-panel .panel-content {
+    padding-bottom: 2em; }
 
 .contact-panel {
   min-height: 200px;
@@ -259,7 +265,7 @@ textarea {
       -ms-transition: background-color 0.5s, color 0.5s;
       -o-transition: background-color 0.5s, color 0.5s;
       transition: background-color 0.5s, color 0.5s; }
-    .button.button-primary:active {
+    .button.button-primary:active, .button.button-primary:focus {
       color: #ffffff; }
   .button.button-secondary {
     background-color: #2A7CB2; }
@@ -275,7 +281,7 @@ textarea {
       -ms-transition: background-color 0.5s, color 0.5s;
       -o-transition: background-color 0.5s, color 0.5s;
       transition: background-color 0.5s, color 0.5s; }
-    .button.button-secondary:active {
+    .button.button-secondary:active, .button.button-secondary:focus {
       color: #ffffff; }
   .button.disabled:hover {
     cursor: default; }
