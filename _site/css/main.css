@@ -425,7 +425,7 @@ table.plain {
   table.plain tr:first-child td:first-child {
     padding: 8px 15px; }
   table.plain tr:first-child td, table.plain th {
-    border-bottom: 1px solid #999999;
+    border-bottom: 1px solid #6D6D6D;
     font-weight: 700;
     padding: 8px 15px;
     text-align: left;
@@ -434,7 +434,7 @@ table.plain {
     padding-left: 8px; }
   table.plain tr td {
     background: none;
-    border-bottom: 1px solid #999999;
+    border-bottom: 1px solid #6D6D6D;
     font-weight: 700; }
     table.plain tr td:not(:first-child) {
       font-weight: 300; }
@@ -461,7 +461,7 @@ table.plain {
     right: 0;
     top: 10px; }
   .file-upload-list .file-upload-wrapper.empty {
-    color: #999999; }
+    color: #6D6D6D; }
   .file-upload-list .file-upload-wrapper.failed .failed-text {
     color: #d60000;
     display: block;
