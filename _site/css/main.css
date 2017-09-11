@@ -85,7 +85,7 @@ a {
 .breadcrumbs {
   font-size: 14px;
   margin: 14px 0 13px;
-  color: #727272;
+  color: #717070;
   padding-left: 0; }
   .breadcrumbs .breadcrumbs__item,
   .breadcrumbs .breadcrumb-item {
@@ -99,7 +99,7 @@ a {
       font-family: FontAwesome;
       content: "\f105";
       font-size: 16px;
-      color: #727272;
+      color: #717070;
       font-weight: 300;
       padding: 0 3px 0 8px;
       line-height: 14px;
@@ -129,7 +129,7 @@ textarea {
   margin-bottom: 20px; }
 
 .declaration .input-wrapper {
-  border: solid #727272;
+  border: solid #717070;
   border-width: 1px 0;
   padding: 10px 0; }
   .declaration .input-wrapper input {
@@ -448,10 +448,10 @@ table.plain {
    ========================================================================== */
 .file-upload-list .file-upload-wrapper {
   padding: 10px 0;
-  border-top: 1px solid #727272;
+  border-top: 1px solid #717070;
   position: relative; }
   .file-upload-list .file-upload-wrapper:last-of-type {
-    border-bottom: 1px solid #727272;
+    border-bottom: 1px solid #717070;
     margin-bottom: 20px; }
   .file-upload-list .file-upload-wrapper .file-name {
     display: inline;
@@ -642,7 +642,7 @@ h1, h2, h3, h4, h5, h6 {
 .breadcrumbs {
   font-size: 14px;
   margin: 0 0 13px;
-  color: #727272;
+  color: #717070;
   padding-left: 0; }
   .breadcrumbs .breadcrumbs__item,
   .breadcrumbs .breadcrumb-item {
@@ -657,7 +657,7 @@ h1, h2, h3, h4, h5, h6 {
       font-family: FontAwesome;
       content: "\f105";
       font-size: 16px;
-      color: #727272;
+      color: #717070;
       font-weight: 300;
       padding: 0 3px 0 8px;
       line-height: 14px;
