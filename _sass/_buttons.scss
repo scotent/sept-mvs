@@ -67,6 +67,13 @@
     }
 }
 
+.button {
+    @media all and (max-width: $screen-xxs-max) {
+        width: 100% !important;
+        margin-right: 0 !important;
+    }
+}
+
 // Overrides for Scot Gov styling //
 article a[href^="//"]:not(.button),
 article a[href^="http://"]:not(.button),
