@@ -68,35 +68,53 @@
 h1 {
     font-size: 49px;
     line-height: 56px;
+    @media all and (max-width: $screen-xxs-max) {
+        font-size: 36px;
+        line-height: 42px;
+    }
 }
 
 h2 {
     font-size: 26px;
     line-height: 35px;
+    @media all and (max-width: $screen-xxs-max) {
+        font-size: 20px;
+        line-height: 28px;
+    }
 }
 
 h3 {
     font-size: 19px;
     line-height: 28px;
+    @media all and (max-width: $screen-xxs-max) {
+        font-size: 16px;
+        line-height: 25px;
+    }
 }
 
 h4 {
     font-size: 16px;
     line-height: 25px;
+    @media all and (max-width: $screen-xxs-max) {
+    }
 }
 
 h5 {
     font-size: 14px;
     line-height: 23px;
+    @media all and (max-width: $screen-xxs-max) {
+    }
 }
 
 h6 {
     font-size: 12px;
     line-height: 20px;
+    @media all and (max-width: $screen-xxs-max) {
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
+    //font-weight: 700;
 }
 
 .leader {
@@ -159,6 +177,15 @@ h1, h2, h3, h4, h5, h6 {
     }
     .breadcrumb > .active {
         color: $se-grey;
+    }
+}
+.breadcrumbs ol.breadcrumb {
+    padding: 0;
+    .breadcrumb-item {
+        @media all and (max-width: $screen-xxs-max) {
+            float: left;
+            clear: left;
+        }
     }
 }
 

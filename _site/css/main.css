@@ -606,14 +606,26 @@ ol.breadcrumb {
 h1 {
   font-size: 49px;
   line-height: 56px; }
+  @media all and (max-width: 479px) {
+    h1 {
+      font-size: 36px;
+      line-height: 42px; } }
 
 h2 {
   font-size: 26px;
   line-height: 35px; }
+  @media all and (max-width: 479px) {
+    h2 {
+      font-size: 20px;
+      line-height: 28px; } }
 
 h3 {
   font-size: 19px;
   line-height: 28px; }
+  @media all and (max-width: 479px) {
+    h3 {
+      font-size: 16px;
+      line-height: 25px; } }
 
 h4 {
   font-size: 16px;
@@ -626,9 +638,6 @@ h5 {
 h6 {
   font-size: 12px;
   line-height: 20px; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 700; }
 
 .leader {
   font-size: 25px;
@@ -679,6 +688,13 @@ h1, h2, h3, h4, h5, h6 {
       content: none; }
   .breadcrumbs .breadcrumb > .active {
     color: #727272; }
+
+.breadcrumbs ol.breadcrumb {
+  padding: 0; }
+  @media all and (max-width: 479px) {
+    .breadcrumbs ol.breadcrumb .breadcrumb-item {
+      float: left;
+      clear: left; } }
 
 a[href^="tel:"] {
   color: #00427F;

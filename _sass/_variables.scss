@@ -38,3 +38,54 @@ $se-black:          #2F3E44;
 
 $alert-padding: 0 0 0 7px;
 $line-height-computed: 10px 0 0 0;
+
+// Defining Breakpoints
+$screen-xxs-min: 320px;
+
+$screen-xs-min: 480px;
+$screen-xxs-max: ($screen-xs-min - 1);
+
+$screen-sm-min: 768px;
+$screen-xs-max: ($screen-sm-min - 1);
+
+$screen-md-min: 992px;
+$screen-sm-max: ($screen-md-min - 1);
+
+$screen-lg-min: 1170px;
+$screen-md-max: ($screen-lg-min - 1);
+
+
+// Usage
+//@media (max-width: $screen-xs-max) { ... }
+//@media (min-width: $screen-sm-min) { ... }
+//@media (max-width: $screen-sm-max) { ... }
+//@media (min-width: $screen-md-min) { ... }
+//@media (max-width: $screen-md-max) { ... }
+//@media (min-width: $screen-lg-min) { ... }
+
+// Example
+//
+//Over 1170
+//@media (min-width: $screen-lg-min) {
+//    body {
+//        background-color: blue;
+//    }
+//}
+//Between 992 and 1169
+//@media (max-width: $screen-md-max) {
+//    body {
+//        background-color: green;
+//    }
+//}
+//Between 768 and 991
+//@media (max-width: $screen-xs-max) {
+//    body {
+//        background-color: yellow;
+//    }
+//}
+//Between 320 and 767
+//@media (max-width: $screen-xxs-max) {
+//    body {
+//        background-color: pink;
+//    }
+//}
