@@ -39,4 +39,3 @@ $(window).load(function() {
 $(window).resize(function(){
     equalheight('.portal-panel .panel-inner');
 });
-
