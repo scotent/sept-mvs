@@ -303,6 +303,17 @@ textarea {
     top: -2px;
     display: inline-block; }
 
+.button.button-back {
+  background: none;
+  color: #00427F;
+  padding-left: 0; }
+  .button.button-back:before {
+    content: '\f053';
+    font-family: FontAwesome;
+    padding: 0 10px 0 0;
+    position: relative;
+    top: 1px; }
+
 @media all and (max-width: 479px) {
   .button {
     width: 100% !important;
@@ -340,11 +351,28 @@ input[type=email] {
   border: 1px solid #727272;
   border-radius: 0px; }
 
+input[type="radio"],
+input[type="checkbox"] {
+  display: inline-block;
+  width: 1px;
+  font-size: 40px;
+  margin: 0 0 0 10px; }
+
 div.relative input.fancy-checkbox, div.relative input.fancy-radio {
   position: absolute; }
 
+label {
+  margin-bottom: 7px;
+  font-family: din-mediumregular; }
+  @media all and (max-width: 479px) {
+    label {
+      font-size: 16px; } }
+
 label.fancy-checkbox, label.fancy-radio {
   white-space: normal; }
+  @media all and (max-width: 479px) {
+    label.fancy-checkbox, label.fancy-radio {
+      margin-top: 0; } }
 
 label.inline {
   margin-right: 0; }
@@ -376,6 +404,9 @@ label.inline {
     .error-summary ul li {
       list-style: none; }
 
+form h2 {
+  margin-top: inherit; }
+
 tr:first-child td:first-child {
   padding: 8px; }
 
@@ -383,6 +414,12 @@ td, thead + tbody tr:first-child td {
   border-bottom: 1px solid #ebebeb;
   padding: 8px;
   vertical-align: top; }
+
+.input-wrapper label {
+  display: inline-block;
+  font-weight: normal;
+  margin-right: 30px;
+  line-height: 22px; }
 
 .input-small {
   width: 100%; }
@@ -465,18 +502,25 @@ table.plain {
    ========================================================================== */
 .file-upload-list .file-upload-wrapper {
   padding: 10px 0;
+  margin: 0;
   border-top: 1px solid #727272;
   position: relative; }
   .file-upload-list .file-upload-wrapper:last-of-type {
     border-bottom: 1px solid #727272;
     margin-bottom: 20px; }
+  .file-upload-list .file-upload-wrapper .file-details-wrapper {
+    padding-left: 0; }
   .file-upload-list .file-upload-wrapper .file-name {
     display: inline;
     width: calc(100% - 70px); }
+  .file-upload-list .file-upload-wrapper .file-remove-wrapper {
+    padding-right: 0; }
   .file-upload-list .file-upload-wrapper .file-remove {
-    position: absolute;
     right: 0;
-    top: 10px; }
+    top: 10px;
+    text-align: right;
+    width: 100%;
+    display: inline-block; }
   .file-upload-list .file-upload-wrapper.empty {
     color: #6D6D6D; }
   .file-upload-list .file-upload-wrapper.failed .failed-text {
@@ -484,9 +528,17 @@ table.plain {
     display: block;
     padding-left: 35px; }
 
-.key-status .key {
-  display: inline-block;
-  margin-right: 20px; }
+.key-wrapper {
+  float: left;
+  clear: both;
+  width: 100%; }
+  .key-wrapper .key-status .key {
+    display: inline-block;
+    margin-right: 20px; }
+    @media all and (max-width: 479px) {
+      .key-wrapper .key-status .key {
+        float: left;
+        clear: left; } }
 
 .file-status:before {
   font-family: FontAwesome;
@@ -597,16 +649,37 @@ ol.breadcrumb {
   font-family: FontAwesome;
   padding: 0 5px 0 0;
   font-size: 30px; }
-.info-note.caution:before {
-  background: none;
-  content: "\f071";
-  left: 10px;
-  position: absolute;
-  top: 25px;
-  width: 36px;
-  font-family: FontAwesome;
-  padding: 0 5px 0 0;
-  font-size: 30px; }
+  @media all and (max-width: 479px) {
+    .info-note.note:before {
+      top: 32px; } }
+.info-note.caution {
+  font-size: 16px !important;
+  border-width: 1px 0;
+  border-bottom-width: 1px;
+  border-color: #727272;
+  border-bottom-color: #727272;
+  border-style: solid;
+  border-bottom-style: solid;
+  background-color: inherit;
+  padding: 20px 10px 27px 59px;
+  font-weight: 700; }
+  @media all and (max-width: 479px) {
+    .info-note.caution {
+      margin-bottom: 10px;
+      padding-bottom: 0; } }
+  .info-note.caution:before {
+    background: none;
+    content: "\f071";
+    left: 10px;
+    position: absolute;
+    top: 25px;
+    width: 36px;
+    font-family: FontAwesome;
+    padding: 0 5px 0 0;
+    font-size: 30px; }
+    @media all and (max-width: 479px) {
+      .info-note.caution:before {
+        top: 32px; } }
 .info-note fieldset {
   margin-bottom: 0; }
 .info-note input[type="radio"],
@@ -614,6 +687,32 @@ ol.breadcrumb {
   width: 0;
   margin-left: 0; }
 
+.upload-wrapper .info-note.caution {
+  border-bottom: none;
+  margin-bottom: 0; }
+.upload-wrapper .info-note.caution + fieldset {
+  border-bottom: 1px solid #727272;
+  padding: 0 0 10px 10px;
+  margin-top: 0; }
+  .upload-wrapper .info-note.caution + fieldset input {
+    margin: 0; }
+  .upload-wrapper .info-note.caution + fieldset label {
+    margin-top: 0; }
+  .upload-wrapper .info-note.caution + fieldset input + label.fancy-checkbox::before {
+    left: -6px;
+    top: -4px; }
+    @media all and (max-width: 568px) {
+      .upload-wrapper .info-note.caution + fieldset input + label.fancy-checkbox::before {
+        left: 2px;
+        top: 0; } }
+
+@media all and (max-width: 610px) {
+  label.fancy-checkbox,
+  label.fancy-radio {
+    position: relative;
+    padding-left: 50px;
+    margin-top: 21px;
+    margin-left: 0; } }
 h1 {
   font-size: 49px;
   line-height: 56px; }
@@ -654,7 +753,8 @@ h6 {
   font-size: 25px;
   line-height: 34px;
   font-weight: 300;
-  margin: 0 0 35px 0; }
+  margin: 0 0 35px 0;
+  word-wrap: break-word; }
   @media all and (max-width: 479px) {
     .leader {
       font-size: 19px;
@@ -742,7 +842,10 @@ a[href^="tel:"] {
    SE dot com Custom styles 
    ========================================================================== */
 body {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; }
 
 #main {
   padding-bottom: 50px; }
@@ -764,12 +867,13 @@ a {
 
 footer {
   padding-top: 3em;
-  border-top: #ebebeb 1px solid; }
+  border-top: #ebebeb 1px solid;
+  text-align: center; }
   footer .navbar {
     margin: 2em 0;
     border-bottom: none; }
     footer .navbar ul {
-      margin: 0px;
+      margin: 0;
       padding: 0; }
       footer .navbar ul li {
         display: inline-block;

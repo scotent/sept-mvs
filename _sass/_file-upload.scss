@@ -6,20 +6,29 @@
 .file-upload-list {
     .file-upload-wrapper {
         padding: 10px 0;
+        margin: 0;
         border-top: 1px solid $se-grey;
         position: relative;
         &:last-of-type {
             border-bottom: 1px solid $se-grey;
             margin-bottom: 20px;
         }
+        .file-details-wrapper {
+            padding-left: 0;
+        }
         .file-name {
             display: inline;
             width: calc(100% - 70px);
         }
+        .file-remove-wrapper {
+            padding-right: 0;
+        }
         .file-remove {
-            position: absolute;
             right: 0;
             top: 10px;
+            text-align: right;
+            width: 100%;
+            display: inline-block;
         }
         &.empty {
             color: $se-mid-grey;
@@ -34,10 +43,19 @@
     }
 }
 
-.key-status {
-    .key {
-        display: inline-block;
-        margin-right: 20px;
+.key-wrapper {
+    float: left;
+    clear: both;
+    width: 100%;
+    .key-status {
+        .key {
+            display: inline-block;
+            margin-right: 20px;
+            @media all and (max-width: $screen-xxs-max) {
+                float: left;
+                clear: left;
+            }
+        }
     }
 }
 
@@ -83,6 +101,3 @@
         }
     }
 }
-
-
-

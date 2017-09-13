@@ -25,3 +25,9 @@
 /* Usage ..
 @include transition(background-color 0.5s, color 0.5s);
  */
+
+@mixin unselectable() {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}

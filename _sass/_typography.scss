@@ -40,9 +40,26 @@
             font-family: FontAwesome;
             padding: 0 5px 0 0;
             font-size: 30px;
+            @media all and (max-width: $screen-xxs-max) {
+                top: 32px;
+            }
         }
     }
     &.caution {
+        font-size: 16px !important;
+        border-width: 1px 0;
+        border-bottom-width: 1px;
+        border-color: $se-grey;
+        border-bottom-color: $se-grey;
+        border-style: solid;
+        border-bottom-style: solid;
+        background-color: inherit;
+        padding: 20px 10px 27px 59px;
+        font-weight: 700;
+        @media all and (max-width: $screen-xxs-max) {
+            margin-bottom: 10px;
+            padding-bottom: 0;
+        }
         &:before {
             background: none;
             content: "\f071";
@@ -53,6 +70,9 @@
             font-family: FontAwesome;
             padding: 0 5px 0 0;
             font-size: 30px;
+            @media all and (max-width: $screen-xxs-max) {
+                top: 32px;
+            }
         }
     }
     fieldset {
@@ -61,6 +81,43 @@
     input[type="radio"],
     input[type="checkbox"] {
         width: 0;
+        margin-left: 0;
+    }
+}
+
+.upload-wrapper {
+    .info-note.caution {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+    .info-note.caution + fieldset {
+        border-bottom: 1px solid $se-grey;
+        padding: 0 0 10px 10px;
+        margin-top: 0;
+        input {
+            margin: 0;
+        }
+        label {
+            margin-top: 0;
+        }
+        input + label.fancy-checkbox::before {
+            left: -6px;
+            top: -4px;
+            @media all and (max-width: 568px) {
+                left: 2px;
+                top: 0;
+            }
+        }
+    }
+}
+
+
+@media all and (max-width: 610px) {
+    label.fancy-checkbox,
+    label.fancy-radio {
+        position: relative;
+        padding-left: 50px;
+        margin-top: 21px;
         margin-left: 0;
     }
 }
@@ -122,6 +179,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 34px;
     font-weight: 300;
     margin: 0 0 35px 0;
+    word-wrap: break-word;
     @media all and (max-width: $screen-xxs-max) {
         font-size: 19px;
         line-height: 28px;

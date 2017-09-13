@@ -68,6 +68,21 @@
 }
 
 .button {
+    &.button-back {
+        background: none;
+        color: $se-blue;
+        padding-left: 0;
+        &:before {
+            content:'\f053';
+            font-family: FontAwesome;
+            padding: 0 10px 0 0;
+            position: relative;
+            top: 1px;
+        }
+    }
+}
+
+.button {
     @media all and (max-width: $screen-xxs-max) {
         width: 100% !important;
         margin-right: 0 !important;
