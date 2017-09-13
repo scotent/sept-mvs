@@ -37,6 +37,9 @@ table.plain {
     margin: 0;
     tr:first-child td:first-child {
         padding: 8px 15px;
+        @media all and (max-width: $screen-sm-max) {
+            padding: 8px;
+        }
     }
     tr:first-child td, th {
         border-bottom: 1px solid $se-mid-grey;
