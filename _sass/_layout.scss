@@ -4,17 +4,16 @@
    SE Custom styles for layout 
    ========================================================================== */
 
-
 /* Alpha / Beta banner */
 .banner {
-  background: #333;
-  color: white;
-  padding: 0.25em;
-  font-size: 0.8em;
+    background: #333;
+    color: white;
+    padding: 0.25em;
+    font-size: 0.8em;
 }
 
 .banner a {
-  color: white;
+    color: white;
 }
 
 .grey-bg {
@@ -22,19 +21,19 @@
 }
 
 a {
-  color: $se-blue;
+    color: $se-blue;
 }
 
 // Override Scot Gov color //
 .emphasis {
-  &:before {
-    background-color: $se-blue;
-  }
+    &:before {
+        background-color: $se-blue;
+    }
 }
 
 // Override top margin on h1 if there are breadcrumbs //
 .breadcrumbs ~ header div h1 {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
 //header {
@@ -43,95 +42,101 @@ a {
 
 // -- Breadcrumbs -- //
 .breadcrumbs {
-  font-size: 14px;
-  margin: 14px 0 13px;
-  color: $se-grey;
-  padding-left: 0;
-  .breadcrumbs__item,
-  .breadcrumb-item {
-    display: inline-block;
-    margin-bottom: 0;
-    margin-left: 0;
-    padding: 0;
-    position: relative;
-    &:after {
-      font-family: FontAwesome;
-      content: "\f105";
-      font-size: 16px;
-      color: $se-grey;
-      font-weight: 300;
-      padding: 0 3px 0 8px;
-      line-height: 14px;
-      box-sizing: inherit;
-      position: relative;
-      top: 1px;
+    font-size: 14px;
+    margin: 14px 0 13px;
+    color: $se-grey;
+    padding-left: 0;
+    .breadcrumbs__item,
+    .breadcrumb-item {
+        display: inline-block;
+        margin-bottom: 0;
+        margin-left: 0;
+        padding: 0;
+        position: relative;
+        &:after {
+            font-family: FontAwesome;
+            content: "\f105";
+            font-size: 16px;
+            color: $se-grey;
+            font-weight: 300;
+            padding: 0 3px 0 8px;
+            line-height: 14px;
+            box-sizing: inherit;
+            position: relative;
+            top: 1px;
+        }
+        &:before {
+            content: "";
+            padding: 0;
+        }
+        &:last-of-type:after {
+            content: none;
+        }
     }
-    &:before {
-      content: "";
-      padding: 0;
-    }
-    &:last-of-type:after {
-      content: none;
-    }
-  }
 }
 
 .right-align {
-  float: right;
-  &.right-link-inline {
-    position: relative;
-    top: 50px;
-  }
+    float: right;
+    &.right-link-inline {
+        position: relative;
+        top: 50px;
+    }
 }
 
 .panel-grey {
-  background-color: $se-light-mid-grey;
-  padding: 20px;
-  margin-bottom: 30px;
+    background-color: $se-light-mid-grey;
+    padding: 20px;
+    margin-bottom: 30px;
 }
 
 textarea {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+
+.imrs-enquiry textarea {
+    margin-bottom: 0;
 }
 
 .declaration .input-wrapper {
-  border: solid $se-grey;
-  border-width: 1px 0;
-  padding: 10px 0;
-  input {
-    margin: 0;
-  }
-  label {
-    margin: 0;
-  }
+    border: solid $se-grey;
+    border-width: 1px 0;
+    padding: 10px 0;
+    input {
+        margin: 0;
+    }
+    label {
+        margin: 0;
+    }
 }
 
 .confirm-wrapper {
-  background-color: $se-dark-green;
-  text-align: center;
-  padding: 20px;
-  color: $se-white;
-  margin: 25px 0 20px;
+    background-color: $se-dark-green;
+    text-align: center;
+    padding: 20px;
+    color: $se-white;
+    margin: 25px 0 20px;
 }
 
 .card-view {
-  background-color: $se-light-grey;
-  padding: 20px;
-  display: inline-block;
-  margin: 0 0 30px;
-  width: 100%;
-  section {
-    margin: 0 0 40px;
-  }
-  @media all and (max-width: $screen-xxs-max) {
-    padding: 10px;
-    margin: 0 0 20px;
-  }
+    background-color: $se-light-grey;
+    padding: 20px;
+    display: inline-block;
+    margin: 0 0 30px;
+    width: 100%;
+    section {
+        margin: 0 0 40px;
+    }
+    @media all and (max-width: $screen-xxs-max) {
+        padding: 10px;
+        margin: 0 0 20px;
+    }
 }
+
 .account-portal-wrapper {
-  .card-view {
-    padding: 30px 10px;
-  }
+    .card-view {
+        padding: 30px 10px;
+    }
 }
 
 //.portal-panel {
@@ -157,71 +162,69 @@ textarea {
 //}
 
 .portal-panel {
-  min-height: 200px;
-  margin-bottom: 20px;
-  .panel-header {
-    h2 {
-      font-weight: 300;
-      border-bottom: 1px solid $se-grey;
-      margin-top: 15px;
-    }
-  }
-  .panel-inner {
-    background-color: $se-light-grey;
     min-height: 200px;
-    padding: 12px;
-  }
-  .panel-content {
-    padding-bottom: 2em;
-  }
+    margin-bottom: 20px;
+    .panel-header {
+        h2 {
+            font-weight: 300;
+            border-bottom: 1px solid $se-grey;
+            margin-top: 15px;
+        }
+    }
+    .panel-inner {
+        background-color: $se-light-grey;
+        min-height: 200px;
+        padding: 12px;
+    }
+    .panel-content {
+        padding-bottom: 2em;
+    }
 }
 
 .contact-panel {
-  min-height: 200px;
-  margin-bottom: 20px;
-  .contact-panel-inner {
-    background-color: $se-white;
-    min-height: 200px;
-    padding: 0 0 15px;
-    &.grey {
-      background-color: $se-light-grey;
+    min-height: 100px;
+    margin-bottom: 20px;
+    .contact-panel-inner {
+        background: none;
+        min-height: 100px;
+        padding: 0 0 15px;
+        width: 100%;
+        &.grey {
+            background-color: $se-light-grey;
+        }
+        .contact-panel-header {
+            font-size: 20px;
+            border-bottom: 1px solid $se-light-grey;
+            padding: 0 0 10px;
+            margin: 0 0 10px;
+        }
+        .contact-name {
+            font-weight: 700;
+        }
+        .contact-position {
+            margin-bottom: 15px;
+        }
+        .hours-title {
+            font-weight: 700;
+        }
+        .hours {
+            margin-bottom: 15px;
+        }
     }
-    .contact-panel-header {
-      font-size: 20px;
-      border-bottom: 1px solid $se-light-grey;
-      padding: 0 0 10px;
-      margin: 0 0 10px;
-    }
-    .contact-name {
-
-    }
-    .contact-position {
-      font-weight: 700;
-      margin-bottom: 15px;
-    }
-    .phone {
-
-    }
-    .email {
-
-    }
-    .hours {
-      margin-top: 15px;
-    }
-  }
 }
 
 .contact-panel {
-  .location-title {
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
+    .location-title {
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
 }
 
 .other-service-wrapper {
-  .service-image {
-    max-width: 300px;
-  }
-  .service-description {
-  }
+    .service-image {
+        max-width: 300px;
+        margin-bottom: 15px;
+    }
+    .service-description {
+    }
 }

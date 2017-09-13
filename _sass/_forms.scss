@@ -11,7 +11,7 @@ input[type=email] {
     font-size: 16px;
     height: 42px;
     border: 1px solid #727272;
-    border-radius: 0px;
+    border-radius: 0;
 }
 
 input[type="radio"],
@@ -28,7 +28,7 @@ div.relative input.fancy-checkbox, div.relative input.fancy-radio {
 
 label {
     margin-bottom: 7px;
-    font-family: din-mediumregular;
+    font-family: din-mediumregular, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
     @media all and (max-width: $screen-xxs-max) {
         font-size: 16px;
     }
@@ -129,4 +129,9 @@ td, thead + tbody tr:first-child td {
 
 .input-large {
     width: 100%;
+}
+
+.char-count {
+    font-size: 14px;
+    color: $se-grey;
 }

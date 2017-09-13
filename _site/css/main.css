@@ -20,6 +20,10 @@ body {
   font-size: 16px;
   line-height: 23px;
   font-weight: normal; }
+  @media all and (max-width: 479px) {
+    body {
+      font-size: 15px;
+      line-height: 21px; } }
 
 @font-face {
   font-family: 'din-blackregular';
@@ -52,7 +56,7 @@ body {
   font-weight: normal;
   font-style: normal; }
 h1, h2, h3, h4, h5, h6 {
-  font-family: din-mediumregular; }
+  font-family: din-mediumregular, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 /* ==========================================================================
    Variables 
@@ -128,6 +132,9 @@ a {
 textarea {
   margin-bottom: 20px; }
 
+.imrs-enquiry textarea {
+  margin-bottom: 0; }
+
 .declaration .input-wrapper {
   border: solid #727272;
   border-width: 1px 0;
@@ -175,12 +182,13 @@ textarea {
     padding-bottom: 2em; }
 
 .contact-panel {
-  min-height: 200px;
+  min-height: 100px;
   margin-bottom: 20px; }
   .contact-panel .contact-panel-inner {
-    background-color: #ffffff;
-    min-height: 200px;
-    padding: 0 0 15px; }
+    background: none;
+    min-height: 100px;
+    padding: 0 0 15px;
+    width: 100%; }
     .contact-panel .contact-panel-inner.grey {
       background-color: #ecf0f1; }
     .contact-panel .contact-panel-inner .contact-panel-header {
@@ -188,18 +196,22 @@ textarea {
       border-bottom: 1px solid #ecf0f1;
       padding: 0 0 10px;
       margin: 0 0 10px; }
+    .contact-panel .contact-panel-inner .contact-name {
+      font-weight: 700; }
     .contact-panel .contact-panel-inner .contact-position {
-      font-weight: 700;
       margin-bottom: 15px; }
+    .contact-panel .contact-panel-inner .hours-title {
+      font-weight: 700; }
     .contact-panel .contact-panel-inner .hours {
-      margin-top: 15px; }
+      margin-bottom: 15px; }
 
 .contact-panel .location-title {
   font-weight: 700;
   margin-bottom: 10px; }
 
 .other-service-wrapper .service-image {
-  max-width: 300px; }
+  max-width: 300px;
+  margin-bottom: 15px; }
 
 /* ==========================================================================
    SE Custom styles for navbar
@@ -349,7 +361,7 @@ input[type=email] {
   font-size: 16px;
   height: 42px;
   border: 1px solid #727272;
-  border-radius: 0px; }
+  border-radius: 0; }
 
 input[type="radio"],
 input[type="checkbox"] {
@@ -363,7 +375,7 @@ div.relative input.fancy-checkbox, div.relative input.fancy-radio {
 
 label {
   margin-bottom: 7px;
-  font-family: din-mediumregular; }
+  font-family: din-mediumregular, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif; }
   @media all and (max-width: 479px) {
     label {
       font-size: 16px; } }
@@ -441,6 +453,10 @@ td, thead + tbody tr:first-child td {
 
 .input-large {
   width: 100%; }
+
+.char-count {
+  font-size: 14px;
+  color: #727272; }
 
 /* ==========================================================================
    SE Custom styles for images 
@@ -689,6 +705,9 @@ ol.breadcrumb {
 .info-note input[type="checkbox"] {
   width: 0;
   margin-left: 0; }
+
+.imrs-enquiry fieldset {
+  margin-top: 0; }
 
 .upload-wrapper .info-note.caution {
   border-bottom: none;

@@ -12,6 +12,10 @@ body {
     font-size: 16px;
     line-height: 23px;
     font-weight: normal;
+    @media all and (max-width: $screen-xxs-max) {
+        font-size: 15px;
+        line-height: 21px;
+    }
 }
 
 
@@ -67,5 +71,5 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: din-mediumregular;
+    font-family: din-mediumregular, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

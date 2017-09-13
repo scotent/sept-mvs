@@ -14,10 +14,10 @@
     <![endif]-->
 
 
-    <title>Key contacts</title>
+    <title>IMRS - ask our researchers</title>
     <meta name="description" content="">
 
-    <link rel="canonical" href="http://localhost:4000/sept-mvs/sept-mvs/account-portal/key-contacts.html">
+    <link rel="canonical" href="http://localhost:4000/sept-mvs/sept-mvs/account-portal/imrs/IMRS-enquiry-form.html">
     <link rel="alternate" type="application/rss+xml" title="Scottish Enterprise September MVS" href="http://localhost:4000/sept-mvs/feed.xml">
 
     <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900' rel='stylesheet' type='text/css'>
@@ -89,7 +89,7 @@
             <div class="col-md-12">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Dynamic breadcrumbs</a></li>
-                    <li class="breadcrumb-item active">Key contacts</li>
+                    <li class="breadcrumb-item active">IMRS - ask our researchers</li>
                 </ol>
             </div>
         </div>
@@ -101,7 +101,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="post-title">Key contacts</h1>
+                <h1 class="post-title">IMRS - ask our researchers</h1>
             </div>
         </div>
     </div>
@@ -109,67 +109,44 @@
 
 <div id="main" class="container">
     <div class="row">
-        <div class="col-md-12 col-lg-9">
+        <div class="col-lg-9 col-md-12">
     <p class="leader">
-        Quick access to your team at Scottish Enterprise
+        Tell us a bit about your business and your market research needs and we'll give you an update within five days.
     </p>
+
     <div class="card-view">
-        <div class="contact-panel col-md-12">
-            <div class="contact-panel-inner">
-                <h2 class="emphasis">
-                    Account manager
-                </h2>
-                <div class="row">
-                    <div class="contact-name-wrapper col-sm-12 col-md-6">
-                        <div class="contact-name">
-                            Kirsty Smith
-                        </div>
-                        <div class="contact-position">
-                            Client growth account manager
-                        </div>
-                    </div>
-                    <div class="contact-details-wrapper col-sm-12 col-md-6 ">
-                        <div class="phone">
-                            <i class="fa fa-phone-square" aria-hidden="true"></i>
-                            <a href="tel:+441411819876">0141 181 9876</a>
-                        </div>
-                        <div class="email">
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                            <a href="mailto:kirsty.smith@scotent.co.uk">kirsty.smith@scotent.co.uk</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="card-view">
-        <div class="contact-panel col-md-12">
-            <div class="contact-panel-inner">
-                <h2 class="emphasis">
-                    Customer help line
-                </h2>
-                <div class="row">
-                    <div class="contact-name-wrapper col-sm-12 col-md-6">
-                        <div class="hours-title">
-                            Opening hours:
-                        </div>
-                        <div class="hours">
-                            Mon - Fri &nbsp; 09:00 - 18:00
-                        </div>
-                    </div>
-                    <div class="contact-details-wrapper col-sm-12 col-md-6 ">
-                        <div class="phone">
-                            <i class="fa fa-phone-square" aria-hidden="true"></i>
-                            <a href="tel:+44300 013 3385">0300 013 3385</a>
-                        </div>
-                        <div class="email">
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                            <a href="mailto:enquiries@scotent.co.uk">enquiries@scotent.co.uk</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <form id="imrs-enquiry" class="imrs-enquiry">
+            <h2 class="emphasis">
+                Business activities
+            </h2>
+            <fieldset>
+                <legend class="sr-only">
+                    Describe your business activities
+                </legend>
+                <label for="business-description">A brief description of your business activities and your product or services</label>
+                <p>
+                    What is unique about your business? What is your current situation & what general gaps or frustrations are you encountering?
+                </p>
+                <textarea id="business-description"></textarea>
+                <div class="char-count">1000 characters left</div>
+            </fieldset>
+
+            <h2 class="emphasis">
+                How can we help you?
+            </h2>
+            <fieldset>
+                <legend class="sr-only">
+                    What would you like to know?
+                </legend>
+                <label for="how-can-we-help">What would you like to know?</label>
+                <p>
+                    Have you considered possible routes to markets and which countries you could target? What are the market trends and buying behaviours? We can help you find and identify potential customers, partners and competitors.
+                </p>
+                <textarea id="how-can-we-help"></textarea>
+                <div class="char-count">1000 characters left</div>
+            </fieldset>
+            <a href="IMRS-enquiry-confirmation.html" class="button button-primary">Send your enquiry</a>
+        </form>
     </div>
 </div>
 
