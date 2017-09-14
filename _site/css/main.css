@@ -489,7 +489,7 @@ table.table-striped tbody tr td a {
 table.table-striped tbody tr thead + tbody tr:nth-child(2n-1) td {
   background: #ecf0f1; }
 table.table-striped tbody tr:hover td {
-  background: #dddddd !important; }
+  background: #f1f1f1 !important; }
 
 h2 ~ table {
   margin-top: 0; }

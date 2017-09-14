@@ -24,7 +24,7 @@ table.table-striped tbody tr {
         background: $se-light-grey;
     }
     &:hover td {
-        background: $se-light-mid-grey !important;
+        background: $se-grey-hover !important;
     }
 }
 h2 ~ table {
