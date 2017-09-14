@@ -111,12 +111,18 @@
             top: -4px;
             @media all and (max-width: 568px) {
                 left: 2px;
-                top: 0;
+                top: 3px;
             }
         }
     }
 }
-
+input + label.fancy-checkbox::before {
+    top: -4px;
+    @media all and (max-width: 568px) {
+        left: 2px;
+        top: 4px;
+    }
+}
 
 @media all and (max-width: 610px) {
     label.fancy-checkbox,
@@ -204,8 +210,28 @@ h1, h2, h3, h4, h5, h6 {
 
 // Override Scot Gov color //
 .emphasis {
+    display: inline-block;
+    font-weight: 500;
+    padding-top: 20px;
+    position: relative;
     &:before {
         background-color: $se-blue;
+        border-radius: 8px;
+        content: '';
+        height: 8px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        @media all and (max-width: $screen-xxs-max) {
+            height: 6px;
+        }
+    }
+    @media all and (max-width: $screen-xxs-max) {
+        padding-top: 12px;
+        &:before {
+            height: 6px;
+        }
     }
 }
 
@@ -273,4 +299,8 @@ a[href^="tel:"] {
 
 .optional {
     color: $se-mid-grey;
+}
+
+caption {
+    margin-left: 8px !important;
 }
