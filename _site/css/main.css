@@ -315,6 +315,11 @@ textarea {
     top: -2px;
     display: inline-block; }
 
+@media all and (max-width: 479px) {
+  .button {
+    width: 100% !important;
+    margin-right: 0 !important; } }
+
 .button.button-back {
   background: none;
   color: #00427F;
@@ -325,11 +330,9 @@ textarea {
     padding: 0 10px 0 0;
     position: relative;
     top: 1px; }
-
-@media all and (max-width: 479px) {
-  .button {
-    width: 100% !important;
-    margin-right: 0 !important; } }
+  @media all and (max-width: 479px) {
+    .button.button-back {
+      text-align: left; } }
 
 article a[href^="//"]:not(.button),
 article a[href^="http://"]:not(.button),
@@ -456,7 +459,7 @@ td, thead + tbody tr:first-child td {
 
 .char-count {
   font-size: 14px;
-  color: #727272; }
+  color: #6D6D6D; }
 
 /* ==========================================================================
    SE Custom styles for images 
