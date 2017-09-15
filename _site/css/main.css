@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ==========================================================================
    Mixins
    ========================================================================== */
@@ -19,7 +20,8 @@ body {
   font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 23px;
-  font-weight: normal; }
+  font-weight: normal;
+  -­webkit­font­smoothing: antialiased; }
   @media all and (max-width: 479px) {
     body {
       font-size: 15px;
@@ -185,6 +187,8 @@ textarea {
 .contact-panel {
   min-height: 100px;
   margin-bottom: 20px; }
+  .contact-panel .card-view {
+    margin-bottom: 10px; }
   .contact-panel .contact-panel-inner {
     background: none;
     min-height: 100px;
@@ -192,6 +196,9 @@ textarea {
     width: 100%; }
     .contact-panel .contact-panel-inner.grey {
       background-color: #ecf0f1; }
+    @media all and (max-width: 479px) {
+      .contact-panel .contact-panel-inner .row > div {
+        margin-bottom: 20px; } }
     .contact-panel .contact-panel-inner .contact-panel-header {
       font-size: 20px;
       border-bottom: 1px solid #ecf0f1;
@@ -213,6 +220,8 @@ textarea {
 .other-service-wrapper .service-image {
   max-width: 300px;
   margin-bottom: 15px; }
+  .other-service-wrapper .service-image img {
+    height: 198px; }
 
 /* ==========================================================================
    SE Custom styles for navbar

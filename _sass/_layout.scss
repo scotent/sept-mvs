@@ -183,6 +183,9 @@ textarea {
 .contact-panel {
     min-height: 100px;
     margin-bottom: 20px;
+    .card-view {
+        margin-bottom: 10px;
+    }
     .contact-panel-inner {
         background: none;
         min-height: 100px;
@@ -190,6 +193,11 @@ textarea {
         width: 100%;
         &.grey {
             background-color: $se-light-grey;
+        }
+        .row > div {
+            @media all and (max-width: $screen-xxs-max) {
+                margin-bottom: 20px;
+            }
         }
         .contact-panel-header {
             font-size: 20px;
@@ -223,6 +231,9 @@ textarea {
     .service-image {
         max-width: 300px;
         margin-bottom: 15px;
+        img {
+            height: 198px;
+        }
     }
     .service-description {
     }
