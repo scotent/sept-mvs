@@ -30,7 +30,10 @@ body {
 @font-face {
   font-family: 'din-blackregular';
   src: url("/sept-mvs/assets/fonts/Din/din-blac-webfont.eot");
-  src: url("/sept-mvs/assets/fonts/Din/din-blac-webfont.eot?#iefix") format("embedded-opentype"), url("/sept-mvs/assets/fonts/Din/din-blac-webfont.woff") format("woff"), url("/sept-mvs/assets/fonts/Din/din-blac-webfont.ttf") format("truetype"), url("/sept-mvs/assets/fonts/Din/din-blac-webfont.svg#din-blackregular") format("svg");
+  src: url("/sept-mvs/assets/fonts/Din/din-blac-webfont.eot?#iefix") format("embedded-opentype"),
+  url("/sept-mvs/assets/fonts/Din/din-blac-webfont.woff") format("woff"),
+  url("/sept-mvs/assets/fonts/Din/din-blac-webfont.ttf") format("truetype"),
+  url("/sept-mvs/assets/fonts/Din/din-blac-webfont.svg#din-blackregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
