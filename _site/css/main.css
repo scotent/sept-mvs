@@ -8,6 +8,9 @@
 /* Usage ..
 @include transition(background-color 0.5s, color 0.5s);
  */
+/* Usage ..
+@include border-radius(0);
+ */
 /* ==========================================================================
    Variables 
    ========================================================================== */
@@ -30,10 +33,7 @@ body {
 @font-face {
   font-family: 'din-blackregular';
   src: url("/sept-mvs/assets/fonts/Din/din-blac-webfont.eot");
-  src: url("/sept-mvs/assets/fonts/Din/din-blac-webfont.eot?#iefix") format("embedded-opentype"),
-  url("/sept-mvs/assets/fonts/Din/din-blac-webfont.woff") format("woff"),
-  url("/sept-mvs/assets/fonts/Din/din-blac-webfont.ttf") format("truetype"),
-  url("/sept-mvs/assets/fonts/Din/din-blac-webfont.svg#din-blackregular") format("svg");
+  src: url("/sept-mvs/assets/fonts/Din/din-blac-webfont.eot?#iefix") format("embedded-opentype"), url("/sept-mvs/assets/fonts/Din/din-blac-webfont.woff") format("woff"), url("/sept-mvs/assets/fonts/Din/din-blac-webfont.ttf") format("truetype"), url("/sept-mvs/assets/fonts/Din/din-blac-webfont.svg#din-blackregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
@@ -432,9 +432,6 @@ label.inline {
     .error-summary ul li {
       list-style: none; }
 
-form h2 {
-  margin-top: inherit; }
-
 tr:first-child td:first-child {
   padding: 8px; }
 
@@ -472,7 +469,7 @@ td, thead + tbody tr:first-child td {
 
 .char-count {
   font-size: 14px;
-  color: #6D6D6D; }
+  color: #999999; }
 
 /* ==========================================================================
    SE Custom styles for images 
@@ -514,7 +511,7 @@ table.plain {
       table.plain tr:first-child td:first-child {
         padding: 8px; } }
   table.plain tr:first-child td, table.plain th {
-    border-bottom: 1px solid #6D6D6D;
+    border-bottom: 1px solid #999999;
     font-weight: 700;
     padding: 8px 15px;
     text-align: left;
@@ -523,7 +520,7 @@ table.plain {
     padding-left: 8px; }
   table.plain tr td {
     background: none;
-    border-bottom: 1px solid #6D6D6D;
+    border-bottom: 1px solid #999999;
     font-weight: 700; }
     table.plain tr td:not(:first-child) {
       font-weight: 300; }
@@ -538,10 +535,14 @@ table.plain {
 .file-upload-list .file-upload-wrapper {
   padding: 10px 0;
   margin: 0;
-  border-top: 1px solid #727272;
+  border-bottom: 1px solid #727272;
   position: relative; }
+  .file-upload-list .file-upload-wrapper:first-of-type {
+    border-top: 1px solid #727272; }
   .file-upload-list .file-upload-wrapper:last-of-type {
-    border-bottom: 1px solid #727272;
+    border-bottom: 3px solid #D65811;
+    border-bottom: 3px solid #999999;
+    border-top: none;
     margin-bottom: 20px; }
   .file-upload-list .file-upload-wrapper .file-details-wrapper {
     padding-left: 0; }
@@ -557,16 +558,35 @@ table.plain {
     width: 100%;
     display: inline-block; }
   .file-upload-list .file-upload-wrapper.empty {
-    color: #6D6D6D; }
+    color: #999999;
+    border-top: none;
+    padding: 0 0 10px; }
   .file-upload-list .file-upload-wrapper.failed .failed-text {
     color: #d60000;
     display: block;
     padding-left: 35px; }
+.file-upload-list .file-upload-wrapper .form-file label {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 16px; }
+.file-upload-list .file-upload-wrapper .form-file input {
+  background-color: #ffffff;
+  height: auto;
+  border: 1px solid #00427F;
+  width: 100%;
+  padding: 9px 15px;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */ }
 
 .key-wrapper {
   float: left;
   clear: both;
-  width: 100%; }
+  width: 100%;
+  padding: 0 0 20px;
+  margin: 0 0 20px;
+  border-bottom: 3px solid #999999; }
   .key-wrapper .key-status .key {
     display: inline-block;
     margin-right: 20px; }
@@ -766,6 +786,10 @@ h1 {
       font-size: 36px;
       line-height: 42px; } }
 
+form h2 {
+  margin-top: inherit;
+  font-size: 26px; }
+
 h2 {
   font-size: 26px;
   line-height: 35px; }
@@ -889,7 +913,7 @@ a[href^="tel:"] {
   margin-bottom: 0; }
 
 .optional {
-  color: #6D6D6D; }
+  color: #999999; }
 
 caption {
   margin-left: 8px !important; }
@@ -902,6 +926,9 @@ caption {
  */
 /* Usage ..
 @include transition(background-color 0.5s, color 0.5s);
+ */
+/* Usage ..
+@include border-radius(0);
  */
 /* ==========================================================================
    Variables 

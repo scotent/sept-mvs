@@ -7,10 +7,15 @@
     .file-upload-wrapper {
         padding: 10px 0;
         margin: 0;
-        border-top: 1px solid $se-grey;
+        border-bottom: 1px solid $se-grey;
         position: relative;
+        &:first-of-type {
+            border-top: 1px solid $se-grey;
+        }
         &:last-of-type {
-            border-bottom: 1px solid $se-grey;
+            border-bottom: 3px solid $se-orange;
+            border-bottom: 3px solid $se-mid-grey;
+            border-top: none;
             margin-bottom: 20px;
         }
         .file-details-wrapper {
@@ -32,6 +37,8 @@
         }
         &.empty {
             color: $se-mid-grey;
+            border-top: none;
+            padding: 0 0 10px;
         }
         &.failed {
             .failed-text {
@@ -41,12 +48,33 @@
             }
         }
     }
+
+    .file-upload-wrapper {
+        .form-file {
+            label {
+                font-weight: 300;
+                font-style: italic;
+                font-size: 16px;
+            }
+            input {
+                background-color: $se-white;
+                height: auto;
+                border: 1px solid $se-blue;
+                width: 100%;
+                padding: 9px 15px;
+                @include border-radius(0);
+            }
+        }
+    }
 }
 
 .key-wrapper {
     float: left;
     clear: both;
     width: 100%;
+    padding: 0 0 20px;
+    margin: 0 0 20px;
+    border-bottom: 3px solid $se-mid-grey;
     .key-status {
         .key {
             display: inline-block;

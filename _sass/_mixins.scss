@@ -26,8 +26,23 @@
 @include transition(background-color 0.5s, color 0.5s);
  */
 
+
 @mixin unselectable() {
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
 }
+
+
+// Sets the border radius for all 4 corners
+// The site uses no border-radius so this is
+// used to override any browser defaults.
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+    background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+/* Usage ..
+@include border-radius(0);
+ */
