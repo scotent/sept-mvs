@@ -52,7 +52,7 @@ label.inline {
 }
 
 .form-group {
-    padding: 0 20px 0 20px;;
+    padding: 0 20px 0 0;
 }
 
 .form-group:first-of-type {
@@ -87,6 +87,10 @@ label.inline {
 }
 
 
+textarea {
+    margin-bottom: 0;
+    @include border-radius(0);
+}
 
 tr:first-child td:first-child {
     padding: 8px;
@@ -130,7 +134,11 @@ td, thead + tbody tr:first-child td {
 }
 
 .char-count {
-    font-size: 14px;
+    font-size: 14px !important;
     color: $se-mid-grey;
+}
+
+.change-link {
+    text-align: right !important;
 }
 

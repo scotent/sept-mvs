@@ -36,7 +36,7 @@ h2 ~ table {
 table.plain {
     margin: 0;
     tr:first-child td:first-child {
-        padding: 8px 15px;
+        padding: 8px 15px 8px 0;
         @media all and (max-width: $screen-sm-max) {
             padding: 8px;
         }
@@ -44,7 +44,7 @@ table.plain {
     tr:first-child td, th {
         border-bottom: 1px solid $se-mid-grey;
         font-weight: 700;
-        padding: 8px 15px;
+        padding: 8px 15px 8px 0;
         text-align: left;
         vertical-align: top;
     }
@@ -66,5 +66,8 @@ table.plain {
     }
     thead + tbody tr:nth-child(2n-1) td {
         background: none;
+    }
+    tr > :first-child {
+        padding-left: 0;
     }
 }

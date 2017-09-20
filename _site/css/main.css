@@ -131,9 +131,6 @@ a {
   padding: 20px;
   margin-bottom: 30px; }
 
-textarea {
-  margin-bottom: 20px; }
-
 .imrs-enquiry textarea {
   margin-bottom: 0; }
 
@@ -408,7 +405,7 @@ label.inline {
     margin-right: 30px; }
 
 .form-group {
-  padding: 0 20px 0 20px; }
+  padding: 0 20px 0 0; }
 
 .form-group:first-of-type {
   margin-top: 28px; }
@@ -431,6 +428,13 @@ label.inline {
     margin: 0; }
     .error-summary ul li {
       list-style: none; }
+
+textarea {
+  margin-bottom: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */ }
 
 tr:first-child td:first-child {
   padding: 8px; }
@@ -468,8 +472,11 @@ td, thead + tbody tr:first-child td {
   width: 100%; }
 
 .char-count {
-  font-size: 14px;
+  font-size: 14px !important;
   color: #999999; }
+
+.change-link {
+  text-align: right !important; }
 
 /* ==========================================================================
    SE Custom styles for images 
@@ -506,14 +513,14 @@ h2 ~ table {
 table.plain {
   margin: 0; }
   table.plain tr:first-child td:first-child {
-    padding: 8px 15px; }
+    padding: 8px 15px 8px 0; }
     @media all and (max-width: 991px) {
       table.plain tr:first-child td:first-child {
         padding: 8px; } }
   table.plain tr:first-child td, table.plain th {
     border-bottom: 1px solid #999999;
     font-weight: 700;
-    padding: 8px 15px;
+    padding: 8px 15px 8px 0;
     text-align: left;
     vertical-align: top; }
   table.plain tr:first-child td:not(:first-child) {
@@ -528,6 +535,8 @@ table.plain {
     background: none; }
   table.plain thead + tbody tr:nth-child(2n-1) td {
     background: none; }
+  table.plain tr > :first-child {
+    padding-left: 0; }
 
 /* ==========================================================================
    File upload styling
