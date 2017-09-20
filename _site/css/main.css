@@ -404,6 +404,9 @@ label.inline {
   label.inline:not(:last-of-type) {
     margin-right: 30px; }
 
+td.title {
+  font-size: 19px; }
+
 .form-group {
   padding: 0 20px 0 0; }
 

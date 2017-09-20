@@ -5,8 +5,8 @@
     <description></description>
     <link>http://localhost:4000/sept-mvs/</link>
     <atom:link href="http://localhost:4000/sept-mvs/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 20 Sep 2017 12:25:49 +0100</pubDate>
-    <lastBuildDate>Wed, 20 Sep 2017 12:25:49 +0100</lastBuildDate>
+    <pubDate>Wed, 20 Sep 2017 12:33:50 +0100</pubDate>
+    <lastBuildDate>Wed, 20 Sep 2017 12:33:50 +0100</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
   </channel>
