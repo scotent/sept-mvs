@@ -216,6 +216,8 @@ a {
 .contact-panel .location-title {
   font-weight: 700;
   margin-bottom: 10px; }
+.contact-panel .location-co-name {
+  font-weight: 700; }
 
 .other-service-wrapper .service-image {
   max-width: 300px;
