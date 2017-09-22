@@ -232,3 +232,19 @@ a {
     .service-description {
     }
 }
+
+.evidence-header {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+
+.evidence-item {
+    border-top: 1px solid $se-grey;
+    padding: 5px 0;
+    &:last-of-type {
+        border-bottom: 1px solid $se-grey;
+        margin: 0 0 20px;
+    }
+}
+
