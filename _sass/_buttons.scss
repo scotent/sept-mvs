@@ -2,6 +2,12 @@
    SE Custom styles for buttons and links
    ========================================================================== */
 
+*:active,
+.link:active {
+    outline: none !important;
+}
+
+
 .button {
     line-height: 1.5;
     height: auto;
