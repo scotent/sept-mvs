@@ -60,9 +60,6 @@ body {
   src: url("/sept-mvs/assets/fonts/Din/din-regu-webfont.eot?#iefix") format("embedded-opentype"), url("/sept-mvs/assets/fonts/Din/din-regu-webfont.woff") format("woff"), url("/sept-mvs/assets/fonts/Din/din-regu-webfont.ttf") format("truetype"), url("/sept-mvs/assets/fonts/Din/din-regu-webfont.svg#din-regularregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-h1, h2, h3, h4, h5, h6 {
-  font-family: din-mediumregular, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
 /* ==========================================================================
    Variables 
    ========================================================================== */
@@ -153,22 +150,6 @@ a {
   padding: 20px;
   color: #ffffff;
   margin: 25px 0 20px; }
-
-.card-view {
-  background-color: #ecf0f1;
-  padding: 20px;
-  display: inline-block;
-  margin: 0 0 30px;
-  width: 100%; }
-  .card-view section {
-    margin: 0 0 40px; }
-  @media all and (max-width: 479px) {
-    .card-view {
-      padding: 10px;
-      margin: 0 0 20px; } }
-
-.account-portal-wrapper .card-view {
-  padding: 30px 10px; }
 
 .portal-panel {
   min-height: 200px;
@@ -283,6 +264,30 @@ a {
 .link:active {
   outline: none !important; }
 
+*,
+*:active {
+  outline: none; }
+  * :focus,
+  *:active :focus {
+    outline: none; }
+  * ::-moz-focus-inner,
+  *:active ::-moz-focus-inner {
+    border: 0; }
+
+a:active {
+  outline: none; }
+  a:active :focus {
+    outline: none; }
+  a:active ::-moz-focus-inner {
+    border: 0; }
+
+button::-moz-focus-inner {
+  border: 0; }
+  button::-moz-focus-inner :focus {
+    outline: none; }
+  button::-moz-focus-inner ::-moz-focus-inner {
+    border: 0; }
+
 .button {
   line-height: 1.5;
   height: auto;
@@ -386,6 +391,7 @@ input[type="submit"] {
    SE Custom styles for forms 
    ========================================================================== */
 input[type=text],
+input[type=number],
 input[type=password],
 input[type=email] {
   margin-top: 7px;
@@ -401,7 +407,11 @@ input[type="checkbox"] {
   font-size: 40px;
   margin: 0 0 0 10px; }
 
-div.relative input.fancy-checkbox, div.relative input.fancy-radio {
+.input-group input[type="number"].grey {
+  margin-top: 0; }
+
+div.relative input.fancy-checkbox,
+div.relative input.fancy-radio {
   position: absolute; }
 
 label {
@@ -411,10 +421,12 @@ label {
     label {
       font-size: 16px; } }
 
-label.fancy-checkbox, label.fancy-radio {
+label.fancy-checkbox,
+label.fancy-radio {
   white-space: normal; }
   @media all and (max-width: 479px) {
-    label.fancy-checkbox, label.fancy-radio {
+    label.fancy-checkbox,
+    label.fancy-radio {
       margin-top: 0; } }
 
 label.inline {
@@ -422,11 +434,14 @@ label.inline {
   label.inline:not(:last-of-type) {
     margin-right: 30px; }
 
-td.title {
-  font-size: 19px; }
+select {
+  min-width: 110px;
+  height: 42px; }
 
 .form-group {
   padding: 0 20px 0 0; }
+  .form-group:first-of-type {
+    margin-top: 28px; }
 
 .form-group:first-of-type {
   margin-top: 28px; }
@@ -449,6 +464,13 @@ td.title {
     margin: 0; }
     .error-summary ul li {
       list-style: none; }
+  .error-summary:focus {
+    outline: none; }
+
+.current-errors li {
+  list-style: none; }
+  .current-errors li:focus {
+    outline: none; }
 
 textarea {
   margin-bottom: 0;
@@ -456,14 +478,6 @@ textarea {
   border-radius: 0;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */ }
-
-tr:first-child td:first-child {
-  padding: 8px; }
-
-td, thead + tbody tr:first-child td {
-  border-bottom: 1px solid #ebebeb;
-  padding: 8px;
-  vertical-align: top; }
 
 .input-wrapper label {
   display: inline-block;
@@ -499,6 +513,20 @@ td, thead + tbody tr:first-child td {
 .change-link {
   text-align: right !important; }
 
+input + label.fancy-checkbox::before {
+  top: -4px; }
+  @media all and (max-width: 568px) {
+    input + label.fancy-checkbox::before {
+      left: 2px;
+      top: 4px; } }
+
+@media all and (max-width: 610px) {
+  label.fancy-checkbox,
+  label.fancy-radio {
+    position: relative;
+    padding-left: 50px;
+    margin-top: 21px;
+    margin-left: 0; } }
 /* ==========================================================================
    SE Custom styles for images 
    ========================================================================== */
@@ -518,6 +546,22 @@ td, thead + tbody tr:first-child td {
     position: absolute;
     bottom: 1em; }
 
+.card-view {
+  background-color: #ecf0f1;
+  padding: 20px;
+  display: inline-block;
+  margin: 0 0 30px;
+  width: 100%; }
+  .card-view section {
+    margin: 0 0 40px; }
+  @media all and (max-width: 479px) {
+    .card-view {
+      padding: 10px;
+      margin: 0 0 20px; } }
+
+.account-portal-wrapper .card-view {
+  padding: 30px 10px; }
+
 /* ==========================================================================
    SE Custom styles for tables
    ========================================================================== */
@@ -527,9 +571,6 @@ table.table-striped tbody tr thead + tbody tr:nth-child(2n-1) td {
   background: #ecf0f1; }
 table.table-striped tbody tr:hover td {
   background: #f1f1f1 !important; }
-
-h2 ~ table {
-  margin-top: 0; }
 
 table.plain {
   margin: 0; }
@@ -559,8 +600,19 @@ table.plain {
   table.plain tr > :first-child {
     padding-left: 0; }
 
+td.title {
+  font-size: 19px; }
+
+tr:first-child td:first-child {
+  padding: 8px; }
+
+td, thead + tbody tr:first-child td {
+  border-bottom: 1px solid #ebebeb;
+  padding: 8px;
+  vertical-align: top; }
+
 /* ==========================================================================
-   File upload styling
+   SE Custom styles for File upload
    ========================================================================== */
 .file-upload-list .file-upload-wrapper {
   padding: 10px 0;
@@ -650,6 +702,31 @@ table.plain {
   color: #d60000;
   content: "\f06a"; }
 
+.fileUpload {
+  position: relative;
+  overflow: hidden;
+  /*margin:10px;*/ }
+
+.fileUpload input.upload {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0); }
+
+.upload-file-text {
+  position: relative;
+  margin: 0 0 5px 0px;
+  font-weight: 300; }
+
+.upload-file-caption {
+  position: relative;
+  margin: 0 0 5px 15px; }
+
 /* ==========================================================================
    Variables 
    ========================================================================== */
@@ -721,93 +798,6 @@ ol.breadcrumb {
 /* ==========================================================================
    SE Custom styles for typography 
    ========================================================================== */
-/*------------------------------------*\
-    $INFORMATIONAL NOTES
-\*------------------------------------*/
-.info-note.note:before {
-  background: none;
-  content: "\f06a";
-  left: 10px;
-  position: absolute;
-  top: 25px;
-  width: 36px;
-  font-family: FontAwesome;
-  padding: 0 5px 0 0;
-  font-size: 30px; }
-  @media all and (max-width: 479px) {
-    .info-note.note:before {
-      top: 32px; } }
-.info-note.caution {
-  font-size: 16px !important;
-  border-width: 1px 0;
-  border-bottom-width: 1px;
-  border-color: #727272;
-  border-bottom-color: #727272;
-  border-style: solid;
-  border-bottom-style: solid;
-  background-color: inherit;
-  padding: 20px 10px 27px 59px;
-  font-weight: 700; }
-  @media all and (max-width: 479px) {
-    .info-note.caution {
-      margin-bottom: 10px;
-      padding-bottom: 0; } }
-  .info-note.caution:before {
-    background: none;
-    content: "\f071";
-    left: 10px;
-    position: absolute;
-    top: 25px;
-    width: 36px;
-    font-family: FontAwesome;
-    padding: 0 5px 0 0;
-    font-size: 30px; }
-    @media all and (max-width: 479px) {
-      .info-note.caution:before {
-        top: 32px; } }
-.info-note fieldset {
-  margin-bottom: 0; }
-.info-note input[type="radio"],
-.info-note input[type="checkbox"] {
-  width: 0;
-  margin-left: 0; }
-
-.imrs-enquiry fieldset {
-  margin-top: 0; }
-
-.upload-wrapper .info-note.caution {
-  border-bottom: none;
-  margin-bottom: 0; }
-.upload-wrapper .info-note.caution + fieldset {
-  border-bottom: 1px solid #727272;
-  padding: 0 0 10px 10px;
-  margin-top: 0; }
-  .upload-wrapper .info-note.caution + fieldset input {
-    margin: 0; }
-  .upload-wrapper .info-note.caution + fieldset label {
-    margin-top: 0; }
-  .upload-wrapper .info-note.caution + fieldset input + label.fancy-checkbox::before {
-    left: -6px;
-    top: -4px; }
-    @media all and (max-width: 568px) {
-      .upload-wrapper .info-note.caution + fieldset input + label.fancy-checkbox::before {
-        left: 2px;
-        top: 3px; } }
-
-input + label.fancy-checkbox::before {
-  top: -4px; }
-  @media all and (max-width: 568px) {
-    input + label.fancy-checkbox::before {
-      left: 2px;
-      top: 4px; } }
-
-@media all and (max-width: 610px) {
-  label.fancy-checkbox,
-  label.fancy-radio {
-    position: relative;
-    padding-left: 50px;
-    margin-top: 21px;
-    margin-left: 0; } }
 h1 {
   font-size: 49px;
   line-height: 56px; }
@@ -822,12 +812,14 @@ form h2 {
 
 h2 {
   font-size: 26px;
-  line-height: 35px;
-  font-weight: 500; }
+  line-height: 35px; }
   @media all and (max-width: 479px) {
     h2 {
       font-size: 20px;
       line-height: 28px; } }
+
+h2 ~ table {
+  margin-top: 0; }
 
 h3 {
   font-size: 19px;
@@ -849,6 +841,18 @@ h6 {
   font-size: 12px;
   line-height: 20px; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: din-mediumregular, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+h1 {
+  font-weight: 700; }
+
+h2, h3, h4, h5, h6 {
+  font-weight: 500; }
+
+.text-large {
+  font-size: 20px; }
+
 .leader {
   font-size: 25px;
   line-height: 34px;
@@ -860,9 +864,6 @@ h6 {
       font-size: 19px;
       line-height: 28px;
       margin-bottom: 15px; } }
-
-.text-large {
-  font-size: 20px; }
 
 .container > .row > div > .leader {
   margin-top: 15px; }
@@ -948,6 +949,79 @@ a[href^="tel:"] {
 
 caption {
   margin-left: 8px !important; }
+
+/*------------------------------------*\
+    $INFORMATIONAL NOTES
+\*------------------------------------*/
+.info-note.note:before {
+  background: none;
+  content: "\f06a";
+  left: 10px;
+  position: absolute;
+  top: 25px;
+  width: 36px;
+  font-family: FontAwesome;
+  padding: 0 5px 0 0;
+  font-size: 30px; }
+  @media all and (max-width: 479px) {
+    .info-note.note:before {
+      top: 32px; } }
+.info-note.caution {
+  font-size: 16px !important;
+  border-width: 1px 0;
+  border-bottom-width: 1px;
+  border-color: #727272;
+  border-bottom-color: #727272;
+  border-style: solid;
+  border-bottom-style: solid;
+  background-color: inherit;
+  padding: 20px 10px 27px 59px;
+  font-weight: 700; }
+  @media all and (max-width: 479px) {
+    .info-note.caution {
+      margin-bottom: 10px;
+      padding-bottom: 0; } }
+  .info-note.caution:before {
+    background: none;
+    content: "\f071";
+    left: 10px;
+    position: absolute;
+    top: 25px;
+    width: 36px;
+    font-family: FontAwesome;
+    padding: 0 5px 0 0;
+    font-size: 30px; }
+    @media all and (max-width: 479px) {
+      .info-note.caution:before {
+        top: 32px; } }
+.info-note fieldset {
+  margin-bottom: 0; }
+.info-note input[type="radio"],
+.info-note input[type="checkbox"] {
+  width: 0;
+  margin-left: 0; }
+
+.imrs-enquiry fieldset {
+  margin-top: 0; }
+
+.upload-wrapper .info-note.caution {
+  border-bottom: none;
+  margin-bottom: 0; }
+.upload-wrapper .info-note.caution + fieldset {
+  border-bottom: 1px solid #727272;
+  padding: 0 0 10px 10px;
+  margin-top: 0; }
+  .upload-wrapper .info-note.caution + fieldset input {
+    margin: 0; }
+  .upload-wrapper .info-note.caution + fieldset label {
+    margin-top: 0; }
+  .upload-wrapper .info-note.caution + fieldset input + label.fancy-checkbox::before {
+    left: -6px;
+    top: -4px; }
+    @media all and (max-width: 568px) {
+      .upload-wrapper .info-note.caution + fieldset input + label.fancy-checkbox::before {
+        left: 2px;
+        top: 3px; } }
 
 /* ==========================================================================
    Mixins

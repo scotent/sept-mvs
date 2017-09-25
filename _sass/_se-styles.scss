@@ -4,70 +4,74 @@
 /* ==========================================================================
    SE dot com Custom styles 
    ========================================================================== */
-   
+
 body {
-  margin-bottom: 0;
-  @include unselectable();
+    margin-bottom: 0;
+    @include unselectable();
 }
 
 #main {
-  padding-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 a {
-  color: $se-blue;
-  @include transition(color 0.5s, text-decoration 0.5s);
-  &:hover {
-    color: $se-light-blue;
+    color: $se-blue;
     @include transition(color 0.5s, text-decoration 0.5s);
-  }
+    &:hover {
+        color: $se-light-blue;
+        @include transition(color 0.5s, text-decoration 0.5s);
+    }
 }
 
 footer {
-  padding-top: 3em;
-  border-top: $grey-borders 1px solid;
-  text-align: center;
-  .navbar {
-    margin: 2em 0;
-    border-bottom: none;
-    ul {
-      margin: 0;
-      padding: 0;
-    li {display: inline-block; margin-right: 1em;}
+    padding-top: 3em;
+    border-top: $grey-borders 1px solid;
+    text-align: center;
+    .navbar {
+        margin: 2em 0;
+        border-bottom: none;
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                display: inline-block;
+                margin-right: 1em;
+            }
+        }
     }
-  }  
 }
 
 .inline {
-  display: inline;
-  &:not(:last-of-type) {
-    margin-right: 30px;
-  }
+    display: inline;
+    &:not(:last-of-type) {
+        margin-right: 30px;
+    }
 }
 
 #logo-block {
-  margin-left: -1em;
+    margin-left: -1em;
 }
 
 @media (max-width: 992px) {
-  footer {
-    text-align: center;
-    #logo-block {
-      text-align: center;
-      margin-left: 0;
-      img {max-width: 25%;
-        
-      }
+    footer {
+        text-align: center;
+        #logo-block {
+            text-align: center;
+            margin-left: 0;
+            img {
+                max-width: 25%;
+
+            }
+        }
     }
-  }
 }
 
 @media (max-width: 786px) {
-  footer {
-    #logo-block {
-      img {
-        max-width: 45%;
-      }
+    footer {
+        #logo-block {
+            img {
+                max-width: 45%;
+            }
+        }
     }
-  }
 }

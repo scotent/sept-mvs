@@ -1,49 +1,46 @@
-
 @import 'variables.scss';
 
 /* ==========================================================================
    SE Custom styles for misceleaneous elements 
    ========================================================================== */
 
-
 .margin-1tb {
-  margin-top: 1em;
-  margin-bottom: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .margin-1t {
-  margin-top: 1em;
+    margin-top: 1em;
 }
 
 .margin-1b {
-  margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 .margin-2tb {
-  margin-top: 2em;
-  margin-bottom: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .margin-2t {
-  margin-top: 2em;
+    margin-top: 2em;
 }
 
 .margin-2b {
-  margin-bottom: 2em;
+    margin-bottom: 2em;
 }
 
 .block {
-  display: block;
+    display: block;
 }
 
-.margin-1{
+.margin-1 {
     margin: 1em 1em 1em 1em;
 }
 
-.margin-1r{
+.margin-1r {
     margin-right: 1em;
 }
-
 
 @media (max-width: 768px) {
     .banner .pull-right {
@@ -51,22 +48,19 @@
     }
 }
 
-
-
 //list styling
 
-.clean-list{
+.clean-list {
     list-style: none;
-    margin-left:1em;
+    margin-left: 1em;
 }
 
-.disclaimer{
+.disclaimer {
     font-size: 14px;
 }
 
-
 //breadcrumbs
-ol.breadcrumb{
+ol.breadcrumb {
     margin-left: 0;
     padding: 8px 0;
     margin-bottom: 0;
@@ -74,25 +68,22 @@ ol.breadcrumb{
     background-color: transparent;
 }
 
-
 //hide text from AT
 .sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
-
-.text-bold{
+.text-bold {
     font-weight: 500;
 }
 
-
 .info-note.note:before {
-  background-image: url(../images/icons/note_@2x.png);
+    background-image: url(../images/icons/note_@2x.png);
 }

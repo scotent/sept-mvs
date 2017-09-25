@@ -2,6 +2,198 @@
    SE Custom styles for typography 
    ========================================================================== */
 
+// -- Headings -- //
+
+h1 {
+    font-size: 49px;
+    line-height: 56px;
+    @media all and (max-width: $screen-xxs-max) {
+        font-size: 36px;
+        line-height: 42px;
+    }
+}
+
+// override bootstrap
+form h2 {
+    margin-top: inherit;
+    font-size: 26px;
+}
+
+h2 {
+    font-size: 26px;
+    line-height: 35px;
+    @media all and (max-width: $screen-xxs-max) {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+h2 ~ table {
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 19px;
+    line-height: 28px;
+    @media all and (max-width: $screen-xxs-max) {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+h4 {
+    font-size: 16px;
+    line-height: 25px;
+    @media all and (max-width: $screen-xxs-max) {
+    }
+}
+
+h5 {
+    font-size: 14px;
+    line-height: 23px;
+    @media all and (max-width: $screen-xxs-max) {
+    }
+}
+
+h6 {
+    font-size: 12px;
+    line-height: 20px;
+    @media all and (max-width: $screen-xxs-max) {
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: din-mediumregular, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h2, h3, h4, h5, h6 {
+    font-weight: 500;
+}
+
+.text-large {
+    font-size: 20px;
+}
+
+.leader {
+    font-size: 25px;
+    line-height: 34px;
+    font-weight: 300;
+    margin: 0 0 35px 0;
+    word-wrap: break-word;
+    @media all and (max-width: $screen-xxs-max) {
+        font-size: 19px;
+        line-height: 28px;
+        margin-bottom: 15px;
+    }
+}
+
+// Create margin on First .leader within a container //
+.container > .row > div > .leader {
+    margin-top: 15px;
+}
+
+// Override Scot Gov color //
+.emphasis {
+    display: inline-block;
+    font-weight: 500;
+    padding-top: 20px;
+    position: relative;
+    &:before {
+        background-color: $se-blue;
+        border-radius: 8px;
+        content: '';
+        height: 8px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        @media all and (max-width: $screen-xxs-max) {
+            height: 6px;
+        }
+    }
+    @media all and (max-width: $screen-xxs-max) {
+        padding-top: 12px;
+        &:before {
+            height: 6px;
+        }
+    }
+}
+
+// -- Breadcrumbs -- //
+.breadcrumbs {
+    font-size: 14px;
+    margin: 0 0 13px;
+    color: $se-grey;
+    padding-left: 0;
+    // TODO refactor to be just .breadcrumbs-item //
+    .breadcrumbs__item,
+    .breadcrumb-item {
+        display: inline-block;
+        margin-bottom: 0;
+        margin-left: 0;
+        padding: 0;
+        position: relative;
+        text-transform: capitalize;
+        &:after {
+            font-family: FontAwesome;
+            content: "\f105";
+            font-size: 16px;
+            color: $se-grey;
+            font-weight: 300;
+            padding: 0 3px 0 8px;
+            line-height: 14px;
+            box-sizing: inherit;
+            position: relative;
+            top: 1px;
+        }
+        &:before {
+            content: "";
+            padding: 0;
+        }
+        &:last-of-type:after {
+            content: none;
+        }
+    }
+    .breadcrumb > .active {
+        color: $se-grey;
+    }
+}
+
+.breadcrumbs ol.breadcrumb {
+    padding: 0;
+    .breadcrumb-item {
+        @media all and (max-width: $screen-xxs-max) {
+            float: left;
+            clear: left;
+        }
+    }
+}
+
+a[href^="tel:"] {
+    color: $se-blue;
+    text-decoration: none;
+}
+
+.form-group p.bold-heading {
+    font-size: 19px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-top: 7px;
+    margin-bottom: 0;
+}
+
+.optional {
+    color: $se-mid-grey;
+}
+
+caption {
+    margin-left: 8px !important;
+}
+
 /*------------------------------------*\
     $INFORMATIONAL NOTES
 \*------------------------------------*/
@@ -12,8 +204,8 @@
 
 //@media only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx) {
 //.info-note.note:before {
-    //background-image: url("../img/icons/note_@2x.png") !important;
-    //background-size: 26px 26px !important;
+//background-image: url("../img/icons/note_@2x.png") !important;
+//background-size: 26px 26px !important;
 
 //    font-family: FontAwesome;
 //    content: "\f071";
@@ -115,198 +307,4 @@
             }
         }
     }
-}
-input + label.fancy-checkbox::before {
-    top: -4px;
-    @media all and (max-width: 568px) {
-        left: 2px;
-        top: 4px;
-    }
-}
-
-@media all and (max-width: 610px) {
-    label.fancy-checkbox,
-    label.fancy-radio {
-        position: relative;
-        padding-left: 50px;
-        margin-top: 21px;
-        margin-left: 0;
-    }
-}
-
-h1 {
-    font-size: 49px;
-    line-height: 56px;
-    @media all and (max-width: $screen-xxs-max) {
-        font-size: 36px;
-        line-height: 42px;
-    }
-}
-
-form h2 {
-    margin-top: inherit;
-    font-size: 26px;
-}
-h2 {
-    font-size: 26px;
-    line-height: 35px;
-    font-weight: 500;
-    @media all and (max-width: $screen-xxs-max) {
-        font-size: 20px;
-        line-height: 28px;
-    }
-}
-
-
-h3 {
-    font-size: 19px;
-    line-height: 28px;
-    @media all and (max-width: $screen-xxs-max) {
-        font-size: 16px;
-        line-height: 25px;
-    }
-}
-
-h4 {
-    font-size: 16px;
-    line-height: 25px;
-    @media all and (max-width: $screen-xxs-max) {
-    }
-}
-
-h5 {
-    font-size: 14px;
-    line-height: 23px;
-    @media all and (max-width: $screen-xxs-max) {
-    }
-}
-
-h6 {
-    font-size: 12px;
-    line-height: 20px;
-    @media all and (max-width: $screen-xxs-max) {
-    }
-}
-
-h1, h2, h3, h4, h5, h6 {
-    //font-weight: 700;
-}
-
-.leader {
-    font-size: 25px;
-    line-height: 34px;
-    font-weight: 300;
-    margin: 0 0 35px 0;
-    word-wrap: break-word;
-    @media all and (max-width: $screen-xxs-max) {
-        font-size: 19px;
-        line-height: 28px;
-        margin-bottom: 15px;
-    }
-}
-
-.text-large {
-    font-size: 20px;
-}
-
-// Create margin on First .leader within a container //
-.container > .row > div > .leader {
-    margin-top: 15px;
-}
-
-// Override Scot Gov color //
-.emphasis {
-    display: inline-block;
-    font-weight: 500;
-    padding-top: 20px;
-    position: relative;
-    &:before {
-        background-color: $se-blue;
-        border-radius: 8px;
-        content: '';
-        height: 8px;
-        left: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-        @media all and (max-width: $screen-xxs-max) {
-            height: 6px;
-        }
-    }
-    @media all and (max-width: $screen-xxs-max) {
-        padding-top: 12px;
-        &:before {
-            height: 6px;
-        }
-    }
-}
-
-// -- Breadcrumbs -- //
-.breadcrumbs {
-    font-size: 14px;
-    margin: 0 0 13px;
-    color: $se-grey;
-    padding-left: 0;
-    // TODO refactor to be just .breadcrumbs-item //
-    .breadcrumbs__item,
-    .breadcrumb-item {
-        display: inline-block;
-        margin-bottom: 0;
-        margin-left: 0;
-        padding: 0;
-        position: relative;
-        text-transform: capitalize;
-        &:after {
-            font-family: FontAwesome;
-            content: "\f105";
-            font-size: 16px;
-            color: $se-grey;
-            font-weight: 300;
-            padding: 0 3px 0 8px;
-            line-height: 14px;
-            box-sizing: inherit;
-            position: relative;
-            top: 1px;
-        }
-        &:before {
-            content: "";
-            padding: 0;
-        }
-        &:last-of-type:after {
-            content: none;
-        }
-    }
-    .breadcrumb > .active {
-        color: $se-grey;
-    }
-}
-.breadcrumbs ol.breadcrumb {
-    padding: 0;
-    .breadcrumb-item {
-        @media all and (max-width: $screen-xxs-max) {
-            float: left;
-            clear: left;
-        }
-    }
-}
-
-a[href^="tel:"] {
-    color: $se-blue;
-    text-decoration: none;
-}
-
-.form-group p.bold-heading {
-    font-size: 19px;
-    line-height: 28px;
-    font-weight: 700;
-    margin-top: 7px;
-    margin-bottom: 0;
-}
-
-.optional {
-    color: $se-mid-grey;
-}
-
-caption {
-    margin-left: 8px !important;
 }

@@ -16,3 +16,25 @@
     bottom: 1em;
   }
 }
+
+.card-view {
+  background-color: $se-light-grey;
+  padding: 20px;
+  display: inline-block;
+  margin: 0 0 30px;
+  width: 100%;
+  section {
+    margin: 0 0 40px;
+  }
+  @media all and (max-width: $screen-xxs-max) {
+    padding: 10px;
+    margin: 0 0 20px;
+  }
+}
+
+.account-portal-wrapper {
+  .card-view {
+    padding: 30px 10px;
+  }
+}
+
