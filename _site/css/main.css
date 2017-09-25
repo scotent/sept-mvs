@@ -177,7 +177,7 @@ a {
     width: 100%; }
     .contact-panel .contact-panel-inner.grey {
       background-color: #ecf0f1; }
-    @media all and (max-width: 479px) {
+    @media all and (max-width: 1169px) {
       .contact-panel .contact-panel-inner .row > div {
         margin-bottom: 20px; } }
     .contact-panel .contact-panel-inner .contact-panel-header {
