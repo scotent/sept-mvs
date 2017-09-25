@@ -1,0 +1,68 @@
+/* ==========================================================================
+   SE Custom styles for the progress indicator 
+   ========================================================================== */
+
+ol#progress--indicator {
+    padding: 1em;
+    font-size: 1.1em;
+    background: white;
+
+    li {
+        list-style: none;
+        margin-bottom: 0.5em;
+        color: #666;
+        .light {
+            height: 17px;
+            width: 17px;
+            background: $se-mid-grey;
+            border-radius: 100%;
+            display: inline-block;
+            margin-right: 0.5em;
+            margin-left: 0.25em;
+            position: relative;
+            top: 7px;
+            &::before {
+                content: '';
+                position: relative;
+                display: inline-block;
+                width: 23px;
+                height: 23px;
+                left: -3px;
+                top: -3px;
+                border: 1px solid black;
+                border-radius: 100%;
+            }
+        }
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+        &.current--step {
+            font-weight: bold;
+            color: #000;
+            .light {
+                background: $se-light-blue;
+            }
+        }
+        &.complete {
+            color: #666;
+            .light {
+                background: $accessible-green;
+                &::after {
+                    font-family: FontAwesome;
+                    content: "\f00c";
+                    font-size: 11px;
+                    color: white;
+                    position: absolute;
+                    top: -5px;
+                    left: 3px;
+                }
+            }
+        }
+        &.incomplete {
+            color: #666;
+            .light {
+                background: orange;
+            }
+        }
+    }
+}
