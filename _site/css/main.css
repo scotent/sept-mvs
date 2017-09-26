@@ -811,8 +811,8 @@ form h2 {
   font-size: 26px; }
 
 h2 {
-  font-size: 26px;
-  line-height: 35px; }
+  font-size: 30px;
+  line-height: 40px; }
   @media all and (max-width: 479px) {
     h2 {
       font-size: 20px;
@@ -876,13 +876,14 @@ h2, h3, h4, h5, h6 {
 .emphasis {
   display: inline-block;
   font-weight: 500;
-  padding-top: 20px;
-  position: relative; }
+  padding-top: 15px;
+  position: relative;
+  margin: 20px 0 15px; }
   .emphasis:before {
     background-color: #00427F;
     border-radius: 8px;
     content: '';
-    height: 8px;
+    height: 7px;
     left: 0;
     position: absolute;
     right: 0;
