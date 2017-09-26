@@ -62,8 +62,14 @@ h6 {
     }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
+    font-family: din-regularregular, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: -1px;
+}
+
+h2, h3, h4, h5, h6 {
     font-family: din-mediumregular, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: -1px;
 }
 
 h1 {

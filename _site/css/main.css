@@ -841,8 +841,13 @@ h6 {
   font-size: 12px;
   line-height: 20px; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: din-mediumregular, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+h1 {
+  font-family: din-regularregular, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: -1px; }
+
+h2, h3, h4, h5, h6 {
+  font-family: din-mediumregular, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: -1px; }
 
 h1 {
   font-weight: 700; }
@@ -1042,10 +1047,7 @@ caption {
    SE dot com Custom styles 
    ========================================================================== */
 body {
-  margin-bottom: 0;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none; }
+  margin-bottom: 0; }
 
 #main {
   padding-bottom: 50px; }
