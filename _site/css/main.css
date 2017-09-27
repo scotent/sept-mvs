@@ -611,6 +611,9 @@ td, thead + tbody tr:first-child td {
   padding: 8px;
   vertical-align: top; }
 
+h2 ~ table {
+  margin-top: 0; }
+
 /* ==========================================================================
    SE Custom styles for File upload
    ========================================================================== */
@@ -815,11 +818,8 @@ h2 {
   line-height: 40px; }
   @media all and (max-width: 479px) {
     h2 {
-      font-size: 20px;
-      line-height: 28px; } }
-
-h2 ~ table {
-  margin-top: 0; }
+      font-size: 24px;
+      line-height: 30px; } }
 
 h3 {
   font-size: 19px;

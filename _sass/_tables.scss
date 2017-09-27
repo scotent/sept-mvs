@@ -80,3 +80,8 @@ td, thead + tbody tr:first-child td {
     padding: 8px;
     vertical-align: top;
 }
+
+// any table following an h2
+h2 ~ table {
+    margin-top: 0;
+}
