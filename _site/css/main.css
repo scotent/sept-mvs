@@ -1023,6 +1023,19 @@ footer {
         display: inline-block;
         margin-right: 1em; }
 
+.site-feedback {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center; }
+  .site-feedback a {
+    color: #ffffff;
+    background-color: #00427F;
+    padding: 8px 15px;
+    text-decoration: none; }
+    .site-feedback a:hover {
+      color: #FFFFFF;
+      text-decoration: underline; }
+
 .inline {
   display: inline; }
   .inline:not(:last-of-type) {
