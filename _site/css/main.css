@@ -573,7 +573,8 @@ table.table-striped tbody tr:hover td {
   background: #f1f1f1 !important; }
 
 table.plain {
-  margin: 0; }
+  margin: 0;
+  color: #333333; }
   table.plain tr:first-child td:first-child {
     padding: 8px 15px 8px 0; }
     @media all and (max-width: 991px) {
@@ -592,7 +593,7 @@ table.plain {
     border-bottom: 1px solid #999999;
     font-weight: 700; }
     table.plain tr td:not(:first-child) {
-      font-weight: 300; }
+      font-weight: normal; }
   table.plain tr:hover {
     background: none; }
   table.plain thead + tbody tr:nth-child(2n-1) td {
@@ -1101,6 +1102,11 @@ footer {
 @media (max-width: 786px) {
   footer #logo-block img {
     max-width: 45%; } }
+ul.evidence-wrapper {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
 /* ==========================================================================
    Variables 
    ========================================================================== */

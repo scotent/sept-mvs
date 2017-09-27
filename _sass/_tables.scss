@@ -30,6 +30,7 @@ table.table-striped tbody tr {
 
 table.plain {
     margin: 0;
+    color: $se-dark-grey;
     tr:first-child td:first-child {
         padding: 8px 15px 8px 0;
         @media all and (max-width: $screen-sm-max) {
@@ -51,7 +52,7 @@ table.plain {
         border-bottom: 1px solid $se-mid-grey;
         font-weight: 700;
         &:not(:first-child) {
-            font-weight: 300;
+            font-weight: normal;
         }
     }
     tr {
