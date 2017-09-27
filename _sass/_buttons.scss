@@ -2,42 +2,6 @@
 // SE Custom styles for buttons and links
 // ==========================================================================
 
-*:active,
-.link:active {
-    outline: none !important
-}
-
-*,
-*:active {
-    outline: none;
-    :focus {
-        outline:none;
-    }
-    ::-moz-focus-inner {
-        border:0;
-    }
-}
-
-a:active {
-    outline: none;
-    :focus {
-        outline:none;
-    }
-    ::-moz-focus-inner {
-        border:0;
-    }
-}
-
-button::-moz-focus-inner {
-    border: 0;
-    :focus {
-        outline:none;
-    }
-    ::-moz-focus-inner {
-        border:0;
-    }
-}
-
 .button {
     line-height: 1.5;
     height: auto;

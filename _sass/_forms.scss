@@ -97,17 +97,11 @@ select {
             list-style: none;
         }
     }
-    &:focus {
-        outline: none;
-    }
 }
 
 .current-errors {
     li {
         list-style: none;
-        &:focus {
-            outline: none;
-        }
     }
 }
 
