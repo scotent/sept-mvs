@@ -1,20 +1,5 @@
 @charset "UTF-8";
 /* ==========================================================================
-   Mixins
-   ========================================================================== */
-/* Usage ..
-@include Opacity(0);
- */
-/* Usage ..
-@include transition(background-color 0.5s, color 0.5s);
- */
-/* Usage ..
-@include border-radius(0);
- */
-/* ==========================================================================
-   Variables 
-   ========================================================================== */
-/* ==========================================================================
    Fonts
    ========================================================================== */
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
@@ -60,12 +45,6 @@ body {
   src: url("/sept-mvs/assets/fonts/Din/din-regu-webfont.eot?#iefix") format("embedded-opentype"), url("/sept-mvs/assets/fonts/Din/din-regu-webfont.woff") format("woff"), url("/sept-mvs/assets/fonts/Din/din-regu-webfont.ttf") format("truetype"), url("/sept-mvs/assets/fonts/Din/din-regu-webfont.svg#din-regularregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-/* ==========================================================================
-   Variables 
-   ========================================================================== */
-/* ==========================================================================
-   SE Custom styles for layout 
-   ========================================================================== */
 /* Alpha / Beta banner */
 .banner {
   background: #333;
@@ -218,9 +197,6 @@ a {
     border-bottom: 1px solid #727272;
     margin: 0 0 20px; }
 
-/* ==========================================================================
-   SE Custom styles for navbar
-   ========================================================================== */
 .navbar {
   border-bottom: 1px solid #ebebeb;
   background: white;
@@ -257,9 +233,6 @@ a {
     .navbar .navbar-brand > img {
       display: block;
       width: auto; } }
-/* ==========================================================================
-   SE Custom styles for buttons and links
-   ========================================================================== */
 *:active,
 .link:active {
   outline: none !important; }
@@ -384,12 +357,6 @@ input[type="button"],
 input[type="submit"] {
   padding: 1em 40px; }
 
-/* ==========================================================================
-   Variables 
-   ========================================================================== */
-/* ==========================================================================
-   SE Custom styles for forms 
-   ========================================================================== */
 input[type=text],
 input[type=number],
 input[type=password],
@@ -527,15 +494,9 @@ input + label.fancy-checkbox::before {
     padding-left: 50px;
     margin-top: 21px;
     margin-left: 0; } }
-/* ==========================================================================
-   SE Custom styles for images 
-   ========================================================================== */
 .img-fit {
   width: 100%; }
 
-/* ==========================================================================
-   SE Custom styles for card layouts 
-   ========================================================================== */
 .card {
   padding: 1em 1em 3em 1em;
   margin-bottom: 1em;
@@ -562,9 +523,6 @@ input + label.fancy-checkbox::before {
 .account-portal-wrapper .card-view {
   padding: 30px 10px; }
 
-/* ==========================================================================
-   SE Custom styles for tables
-   ========================================================================== */
 table.table-striped tbody tr td a {
   display: block; }
 table.table-striped tbody tr thead + tbody tr:nth-child(2n-1) td {
@@ -615,9 +573,6 @@ td, thead + tbody tr:first-child td {
 h2 ~ table {
   margin-top: 0; }
 
-/* ==========================================================================
-   SE Custom styles for File upload
-   ========================================================================== */
 .file-upload-list .file-upload-wrapper {
   padding: 10px 0;
   margin: 0;
@@ -731,12 +686,6 @@ h2 ~ table {
   position: relative;
   margin: 0 0 5px 15px; }
 
-/* ==========================================================================
-   Variables 
-   ========================================================================== */
-/* ==========================================================================
-   SE Custom styles for misceleaneous elements 
-   ========================================================================== */
 .margin-1tb {
   margin-top: 1em;
   margin-bottom: 1em; }
@@ -799,9 +748,6 @@ ol.breadcrumb {
 .info-note.note:before {
   background-image: url(../images/icons/note_@2x.png); }
 
-/* ==========================================================================
-   SE Custom styles for typography 
-   ========================================================================== */
 h1 {
   font-size: 49px;
   line-height: 56px; }
@@ -1030,24 +976,6 @@ caption {
         left: 2px;
         top: 3px; } }
 
-/* ==========================================================================
-   Mixins
-   ========================================================================== */
-/* Usage ..
-@include Opacity(0);
- */
-/* Usage ..
-@include transition(background-color 0.5s, color 0.5s);
- */
-/* Usage ..
-@include border-radius(0);
- */
-/* ==========================================================================
-   Variables 
-   ========================================================================== */
-/* ==========================================================================
-   SE dot com Custom styles 
-   ========================================================================== */
 body {
   margin-bottom: 0; }
 
@@ -1107,12 +1035,6 @@ ul.evidence-wrapper {
   padding: 0;
   list-style: none; }
 
-/* ==========================================================================
-   Variables 
-   ========================================================================== */
-/* ==========================================================================
-   Global Scot Custom styles
-   ========================================================================== */
 body.globalscot {
   padding-top: 100px !important;
   padding-bottom: 20px !important; }

@@ -1,7 +1,6 @@
-
-/* ==========================================================================
-   Mixins
-   ========================================================================== */
+// ==========================================================================
+// Mixins
+// ==========================================================================
 
 @mixin Opacity($value){
     $IEValue: $value*100;
@@ -9,9 +8,9 @@
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
     filter: alpha(opacity=$IEValue);
 }
-/* Usage ..
-@include Opacity(0);
- */
+// Usage ..
+//  @include Opacity(0);
+//
 
 
 // This accepts multiple args //
@@ -22,9 +21,9 @@
     -o-transition: $transition;
     transition: $transition;
 }
-/* Usage ..
-@include transition(background-color 0.5s, color 0.5s);
- */
+// Usage ..
+// @include transition(background-color 0.5s, color 0.5s);
+//
 
 
 @mixin unselectable() {
@@ -43,6 +42,6 @@
     border-radius: $radius;
     background-clip: padding-box;  /* stops bg color from leaking outside the border: */
 }
-/* Usage ..
-@include border-radius(0);
- */
+// Usage ..
+// @include border-radius(0);
+//
