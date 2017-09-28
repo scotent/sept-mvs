@@ -39,10 +39,6 @@ body {
   src: url("/sept-mvs/assets/fonts/Din/din-medi-webfont.eot?#iefix") format("embedded-opentype"), url("/sept-mvs/assets/fonts/Din/din-medi-webfont.woff") format("woff"), url("/sept-mvs/assets/fonts/Din/din-medi-webfont.ttf") format("truetype"), url("/sept-mvs/assets/fonts/Din/din-medi-webfont.svg#din-mediumregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  @font-face {
-    font-family: 'din-mediumregular';
-    src: url("/sept-mvs/assets/fonts/Din/din-medi-webfont.svg") format("svg"); } }
 @font-face {
   font-family: 'din-regularregular';
   src: url("/sept-mvs/assets/fonts/Din/din-regu-webfont.eot");
@@ -809,7 +805,7 @@ h2, h3, h4, h5, h6 {
   font-weight: 500;
   padding-top: 15px;
   position: relative;
-  margin: 20px 0 15px; }
+  margin: 10px 0 15px; }
   .emphasis:before {
     background-color: #00427F;
     border-radius: 8px;
