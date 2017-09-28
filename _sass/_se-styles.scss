@@ -7,6 +7,9 @@
 
 body {
     margin-bottom: 0;
+    &.error {
+        text-align: center;
+    }
 }
 
 #main {

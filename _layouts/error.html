@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+  {% include head.html %}
+
+  <body class="error">
+    
+   {% include navigation-mini.html %}
+
+    <header>
+      <div class="container">
+        <h1 class="post-title margin-2t">{{ page.title }}</h1>
+      </div>
+    </header>
+
+    <div id="main" class="container">
+      <div class="row margin-2t">
+      {{ content }}
+    </div>
+    </div>
+
+   <div class="site-feedback">
+       <a id="myLink" target="_blank" href="https://www.surveymonkey.co.uk/r/NF8SMMG?varPage=null.html">Is there something wrong with this page?</a>
+   </div>
+
+
+
+   <script>
+       var x = window.location.href;
+       document.getElementById("myLink").href = "https://www.surveymonkey.co.uk/r/NF8SMMG?varPage="+encodeURIComponent(x);
+   </script>
+  </body>
+
+</html>

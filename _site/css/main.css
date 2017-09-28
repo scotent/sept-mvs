@@ -980,6 +980,8 @@ caption {
 
 body {
   margin-bottom: 0; }
+  body.error {
+    text-align: center; }
 
 #main {
   padding-bottom: 50px; }
