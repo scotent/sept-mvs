@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
- 
-  {% include head.html %}
 
-  <body class="error">
-    
-   {% include navigation-mini.html %}
+{% include head.html %}
 
-    <header>
-      <div class="container">
-        <h1 class="post-title margin-2t">{{ page.title }}</h1>
-      </div>
-    </header>
+<body class="grant-details">
 
-    <div id="main" class="container">
-      <div class="row margin-2t">
-      {{ content }}
+{% include beta-banner.html %}
+
+{% include navigation.html %}
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="post-title">{{ page.title }}</h1>
+            </div>
+        </div>
     </div>
+</header>
+
+<div id="main" class="container">
+    <div class="row">
+        {{ content }}
     </div>
+</div>
 
-   <div class="site-feedback">
-       <a id="myLink" target="_blank" href="https://www.surveymonkey.co.uk/r/NF8SMMG?varPage=null.html">Is there something wrong with this page?</a>
-   </div>
+{% include main-footer.html %}
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
+<script src="/sept-mvs/js/vendor/main.js" type="text/javascript"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 
-   <script>
-       var x = window.location.href;
-       document.getElementById("myLink").href = "https://www.surveymonkey.co.uk/r/NF8SMMG?varPage="+encodeURIComponent(x);
-   </script>
-  </body>
+</body>
 
 </html>

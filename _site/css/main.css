@@ -980,7 +980,7 @@ caption {
 
 body {
   margin-bottom: 0; }
-  body.error {
+  body .error {
     text-align: center; }
 
 #main {
