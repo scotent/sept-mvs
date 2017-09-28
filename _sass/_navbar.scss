@@ -10,14 +10,46 @@
         height: auto;
     }
 
-    .navbar-nav li {
-        padding-top: 0;
-        & > a {
-            padding: 15px;
-            line-height: 46px;
-            text-decoration: none;
+    .navbar-header {
+        display: inline;
+    }
+    .welcome {
+        display: inline;
+        float: right;
+        text-align: right;
+        padding: 27px 15px 20px;
+        @media all and (max-width: $screen-xs-max) {
+            display: none;
         }
     }
+    #navbar {
+
+        @media all and (min-width: $screen-xs-max) {
+
+            display: inline;
+            width: inherit;
+        }
+        .navbar-nav {
+            margin-left: 10px;
+            li {
+                padding-top: 0;
+                & > a {
+                    padding: 15px;
+                    line-height: 46px;
+                    text-decoration: none;
+                    &:hover {
+                        background-color: $se-light-grey;
+                    }
+                    &.disabled:hover {
+                        background-color: transparent;
+                        cursor: default;
+                    }
+                }
+            }
+        }
+    }
+
+
 
     .navbar-toggle {
         border-color: #ddd;
