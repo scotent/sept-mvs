@@ -3,7 +3,7 @@
 // ==========================================================================
 
 .navbar {
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid $se-light-grey;
     background: white;
     margin-bottom: 20px;
     .navbar-brand {
@@ -52,9 +52,10 @@
 
 
     .navbar-toggle {
-        border-color: #ddd;
+        border-color: $se-lighter-grey;
+        margin-right: 0;
         .icon-bar {
-            background-color: #888;
+            background-color: $se-lighter-grey;
         }
     }
 }

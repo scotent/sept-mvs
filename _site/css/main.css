@@ -198,7 +198,7 @@ a {
     margin: 0 0 20px; }
 
 .navbar {
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid #ecf0f1;
   background: white;
   margin-bottom: 20px; }
   .navbar .navbar-brand {
@@ -231,9 +231,10 @@ a {
           background-color: transparent;
           cursor: default; }
   .navbar .navbar-toggle {
-    border-color: #ddd; }
+    border-color: #bbbbbb;
+    margin-right: 0; }
     .navbar .navbar-toggle .icon-bar {
-      background-color: #888; }
+      background-color: #bbbbbb; }
 
 @media (max-width: 768px) {
   .navbar .navbar-brand {
