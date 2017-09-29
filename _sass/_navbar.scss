@@ -30,7 +30,7 @@
             width: inherit;
         }
         .navbar-nav {
-            margin-left: 10px;
+            margin: 0 0 0 10px;
             li {
                 padding-top: 0;
                 & > a {
@@ -115,6 +115,5 @@
     }
     .pull-right {
         padding: 6px 0 0;
-        margin-right: -15px;
     }
 }

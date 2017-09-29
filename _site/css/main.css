@@ -218,7 +218,7 @@ a {
       display: inline;
       width: inherit; } }
   .navbar #navbar .navbar-nav {
-    margin-left: 10px; }
+    margin: 0 0 0 10px; }
     .navbar #navbar .navbar-nav li {
       padding-top: 0; }
       .navbar #navbar .navbar-nav li > a {
@@ -267,8 +267,7 @@ a {
   text-transform: uppercase;
   margin: 0 5px 0 0; }
 .banner .pull-right {
-  padding: 6px 0 0;
-  margin-right: -15px; }
+  padding: 6px 0 0; }
 
 .button {
   line-height: 1.5;
