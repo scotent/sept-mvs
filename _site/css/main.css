@@ -690,6 +690,63 @@ h2 ~ table {
   position: relative;
   margin: 0 0 5px 15px; }
 
+#fileupload {
+  display: none; }
+
+.file-upload-inner {
+  margin: 5px 0; }
+  .file-upload-inner label {
+    display: inline;
+    font-style: normal !important; }
+  .file-upload-inner form {
+    display: table-row; }
+  .file-upload-inner span[role=button] {
+    display: table-cell;
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 8px 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 2px solid #00427F;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #00427F;
+    outline: none; }
+  .file-upload-inner span[role=button]:hover,
+  .file-upload-inner span[role=button]:focus {
+    background-color: #ffffff;
+    border-color: #00427F;
+    color: #00427F;
+    outline: 2px solid transparent; }
+  .file-upload-inner .hide {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0; }
+  .file-upload-inner input {
+    padding: 13px 15px !important;
+    width: calc(100% - 129px) !important; }
+  .file-upload-inner input[type=text] {
+    display: table-cell;
+    margin-left: -5px;
+    width: 20rem;
+    font-family: Arial;
+    font-size: 1rem;
+    padding: 8px 8px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 2px solid #00427F;
+    color: #2F3E44;
+    background-color: #ffffff; }
+  .file-upload-inner input[type=text]:focus {
+    border-color: #00427F;
+    outline: 2px solid transparent; }
+
 .margin-1tb {
   margin-top: 1em;
   margin-bottom: 1em; }
