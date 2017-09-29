@@ -37,31 +37,13 @@
         &.empty {
             color: $se-mid-grey;
             border-top: none;
-            padding: 0 0 10px;
+            padding: 0 0 10px 0;
         }
         &.failed {
             .failed-text {
                 color: $se-red;
                 display: block;
                 padding-left: 35px;
-            }
-        }
-    }
-
-    .file-upload-wrapper {
-        .form-file {
-            label {
-                font-weight: 300;
-                font-style: italic;
-                font-size: 16px;
-            }
-            input {
-                background-color: $se-white;
-                height: auto;
-                border: 1px solid $se-blue;
-                width: 100%;
-                padding: 9px 15px;
-                @include border-radius(0);
             }
         }
     }
@@ -166,26 +148,29 @@
 }
 
 .file-upload-inner {
-    margin: 5px 0;
+    padding: 10px 0;
     label {
         display: inline;
-        font-style: normal !important;
     }
     form {
         display: table-row;
     }
     span[role=button] {
         display: table-cell;
-        font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        margin: 0;
+        width: 130px;
+        height: 48px;
+        font-family: din-mediumregular;
         font-size: 17px;
         font-weight: 400;
-        padding: 8px 10px;
+        line-height: 20px;
+        padding: 12px 9px;
         border: 2px solid $se-blue;
         color: $se-white;
         cursor: pointer;
         background-color: $se-blue;
         outline: none;
-        width: 130px;
+        border-collapse: collapse;
         @include transition(background-color 0.5s);
         &:hover,
         &:focus {
@@ -205,20 +190,22 @@
         clip: rect(0,0,0,0);
         border: 0;
     }
-    input {
-        padding: 13px 15px !important;
-        width: calc(100% - 130px) !important;
-    }
     input[type=text] {
         display: table-cell;
-        margin-left: -5px;
-        width: 20rem;
-        font-family: Arial;
-        font-size: 1rem;
-        padding: 8px 8px;
+        margin: 0 0 0 -5px;
+        width: calc(100% - 130px);
+        height: 48px;
+        font-family: din-mediumregular;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 20px;
+        padding: 12px 15px;
         border: 2px solid  $se-blue;
+        border-left: none;
         color: $se-black;
         background-color: $se-white;
+        outline: none;
+        border-collapse: collapse;
         &:focus {
             border-color: $se-blue;
             outline: 2px solid transparent;

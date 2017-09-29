@@ -605,25 +605,11 @@ h2 ~ table {
   .file-upload-list .file-upload-wrapper.empty {
     color: #999999;
     border-top: none;
-    padding: 0 0 10px; }
+    padding: 0 0 10px 0; }
   .file-upload-list .file-upload-wrapper.failed .failed-text {
     color: #d60000;
     display: block;
     padding-left: 35px; }
-.file-upload-list .file-upload-wrapper .form-file label {
-  font-weight: 300;
-  font-style: italic;
-  font-size: 16px; }
-.file-upload-list .file-upload-wrapper .form-file input {
-  background-color: #ffffff;
-  height: auto;
-  border: 1px solid #00427F;
-  width: 100%;
-  padding: 9px 15px;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  background-clip: padding-box;
-  /* stops bg color from leaking outside the border: */ }
 
 .key-wrapper {
   float: left;
@@ -694,24 +680,27 @@ h2 ~ table {
   display: none; }
 
 .file-upload-inner {
-  margin: 5px 0; }
+  padding: 10px 0; }
   .file-upload-inner label {
-    display: inline;
-    font-style: normal !important; }
+    display: inline; }
   .file-upload-inner form {
     display: table-row; }
   .file-upload-inner span[role=button] {
     display: table-cell;
-    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    width: 130px;
+    height: 48px;
+    font-family: din-mediumregular;
     font-size: 17px;
     font-weight: 400;
-    padding: 8px 10px;
+    line-height: 20px;
+    padding: 12px 9px;
     border: 2px solid #00427F;
     color: #ffffff;
     cursor: pointer;
     background-color: #00427F;
     outline: none;
-    width: 130px;
+    border-collapse: collapse;
     -webkit-transition: background-color 0.5s;
     -moz-transition: background-color 0.5s;
     -ms-transition: background-color 0.5s;
@@ -731,19 +720,22 @@ h2 ~ table {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0; }
-  .file-upload-inner input {
-    padding: 13px 15px !important;
-    width: calc(100% - 130px) !important; }
   .file-upload-inner input[type=text] {
     display: table-cell;
-    margin-left: -5px;
-    width: 20rem;
-    font-family: Arial;
-    font-size: 1rem;
-    padding: 8px 8px;
+    margin: 0 0 0 -5px;
+    width: calc(100% - 130px);
+    height: 48px;
+    font-family: din-mediumregular;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 12px 15px;
     border: 2px solid #00427F;
+    border-left: none;
     color: #2F3E44;
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    outline: none;
+    border-collapse: collapse; }
     .file-upload-inner input[type=text]:focus {
       border-color: #00427F;
       outline: 2px solid transparent; }
