@@ -255,6 +255,20 @@ a {
     .navbar .navbar-brand > img {
       display: block;
       width: auto; } }
+.banner a {
+  text-decoration: none; }
+  .banner a:hover {
+    color: #ffffff;
+    text-decoration: underline; }
+.banner .beta {
+  font-size: 1.125em;
+  background-color: #C35517;
+  padding: 3px 7px;
+  text-transform: uppercase;
+  margin: 0 5px 0 0; }
+.banner .pull-right {
+  padding: 6px 0 0; }
+
 .button {
   line-height: 1.5;
   height: auto;
