@@ -2,7 +2,7 @@
 // Mixins
 // ==========================================================================
 
-@mixin Opacity($value){
+@mixin Opacity($value) {
     $IEValue: $value*100;
     opacity: $value;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
@@ -40,7 +40,7 @@
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
     border-radius: $radius;
-    background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+    background-clip: padding-box; /* stops bg color from leaking outside the border: */
 }
 // Usage ..
 // @include border-radius(0);

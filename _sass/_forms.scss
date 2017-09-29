@@ -65,6 +65,12 @@ select {
 
 .form-group {
     padding: 0 20px 0 0;
+
+    @media screen and (max-width: $screen-xs-min) {
+        padding: 0;
+    }
+
+
     &:first-of-type {
         margin-top: 28px;
     }

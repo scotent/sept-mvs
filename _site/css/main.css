@@ -415,6 +415,9 @@ select {
 
 .form-group {
   padding: 0 20px 0 0; }
+  @media screen and (max-width: 480px) {
+    .form-group {
+      padding: 0; } }
   .form-group:first-of-type {
     margin-top: 28px; }
 
@@ -802,9 +805,6 @@ ol.breadcrumb {
 .info-note.note:before {
   background-image: url(../images/icons/note_@2x.png); }
 
-/* ==========================================================================
-   SE Custom styles for typography
-   ========================================================================== */
 h1 {
   font-size: 49px;
   line-height: 56px;
@@ -937,7 +937,6 @@ h2, h3, h4, h5, h6 {
       top: 1px; }
     .breadcrumbs .breadcrumbs__item:before,
     .breadcrumbs .breadcrumb-item:before {
-      content: "";
       padding: 0; }
     .breadcrumbs .breadcrumbs__item:last-of-type:after,
     .breadcrumbs .breadcrumb-item:last-of-type:after {
