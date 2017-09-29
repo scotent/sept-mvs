@@ -180,20 +180,20 @@
         font-size: 17px;
         font-weight: 400;
         padding: 8px 10px;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
         border: 2px solid $se-blue;
         color: $se-white;
         cursor: pointer;
         background-color: $se-blue;
         outline: none;
-    }
-    span[role=button]:hover,
-    span[role=button]:focus {
-        background-color: $se-white;
-        border-color: $se-blue;
-        color: $se-blue;
-        outline: 2px solid transparent;
+        width: 130px;
+        @include transition(background-color 0.5s);
+        &:hover,
+        &:focus {
+            background-color: $se-white;
+            border-color: $se-blue;
+            color: $se-blue;
+            outline: 2px solid transparent;
+        }
     }
     .hide {
         position: absolute;
@@ -206,9 +206,8 @@
         border: 0;
     }
     input {
-        //width: inherit !important;
         padding: 13px 15px !important;
-        width: calc(100% - 129px) !important;
+        width: calc(100% - 130px) !important;
     }
     input[type=text] {
         display: table-cell;
@@ -217,14 +216,12 @@
         font-family: Arial;
         font-size: 1rem;
         padding: 8px 8px;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
         border: 2px solid  $se-blue;
         color: $se-black;
         background-color: $se-white;
-    }
-    input[type=text]:focus {
-        border-color: $se-blue;
-        outline: 2px solid transparent;
+        &:focus {
+            border-color: $se-blue;
+            outline: 2px solid transparent;
+        }
     }
 }
