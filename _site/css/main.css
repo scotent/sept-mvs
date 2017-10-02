@@ -802,9 +802,6 @@ ol.breadcrumb {
 .text-bold {
   font-weight: 500; }
 
-.info-note.note:before {
-  background-image: url(../images/icons/note_@2x.png); }
-
 h1 {
   font-size: 49px;
   line-height: 56px;
@@ -968,56 +965,64 @@ a[href^="tel:"] {
 caption {
   margin-left: 8px !important; }
 
-/*------------------------------------*\
-    $INFORMATIONAL NOTES
-\*------------------------------------*/
-.info-note.note:before {
-  background: none;
-  content: "\f06a";
-  left: 10px;
-  position: absolute;
-  top: 25px;
-  width: 36px;
-  font-family: FontAwesome;
-  padding: 0 5px 0 0;
-  font-size: 30px; }
-  @media all and (max-width: 479px) {
+.info-note {
+  clear: both;
+  line-height: 21px;
+  margin: 35px 0;
+  position: relative;
+  top: 4px;
+  padding: 20px 10px 20px 54px !important; }
+  .info-note.note {
+    border-width: 1px 0;
+    border-color: #727272;
+    border-style: solid;
+    font-size: 17px; }
     .info-note.note:before {
-      top: 32px; } }
-.info-note.caution {
-  font-size: 16px !important;
-  border-width: 1px 0;
-  border-bottom-width: 1px;
-  border-color: #727272;
-  border-bottom-color: #727272;
-  border-style: solid;
-  border-bottom-style: solid;
-  background-color: inherit;
-  padding: 20px 10px 27px 59px;
-  font-weight: 700; }
-  @media all and (max-width: 479px) {
-    .info-note.caution {
-      margin-bottom: 10px;
-      padding-bottom: 0; } }
-  .info-note.caution:before {
-    background: none;
-    content: "\f071";
-    left: 10px;
-    position: absolute;
-    top: 25px;
-    width: 36px;
-    font-family: FontAwesome;
-    padding: 0 5px 0 0;
-    font-size: 30px; }
+      background: none;
+      content: "\f05a";
+      left: 13px;
+      position: absolute;
+      top: 37%;
+      width: 36px;
+      font-family: FontAwesome;
+      padding: 0 5px 0 0;
+      font-size: 30px;
+      color: #00427F; }
+      @media all and (max-width: 992px) {
+        .info-note.note:before {
+          top: 25px; } }
+  .info-note.caution {
+    font-size: 16px !important;
+    border-width: 1px 0;
+    border-color: #727272;
+    border-style: solid;
+    background-color: inherit;
+    font-weight: 700; }
     @media all and (max-width: 479px) {
-      .info-note.caution:before {
-        top: 32px; } }
-.info-note fieldset {
-  margin-bottom: 0; }
-.info-note input[type="radio"],
-.info-note input[type="checkbox"] {
-  width: 0;
-  margin-left: 0; }
+      .info-note.caution {
+        padding-bottom: 13px; } }
+    .info-note.caution:before {
+      background: none;
+      content: "\f071";
+      left: 10px;
+      position: absolute;
+      top: 37%;
+      width: 36px;
+      font-family: FontAwesome;
+      padding: 0 5px 0 0;
+      font-size: 30px;
+      color: #FF9900; }
+      @media all and (max-width: 992px) {
+        .info-note.caution:before {
+          top: 30px; } }
+  .info-note fieldset {
+    margin-bottom: 0; }
+  .info-note input[type="radio"],
+  .info-note input[type="checkbox"] {
+    width: 0;
+    margin-left: 0; }
+  .info-note ul {
+    margin-left: 16px; }
 
 .imrs-enquiry fieldset {
   margin-top: 0; }

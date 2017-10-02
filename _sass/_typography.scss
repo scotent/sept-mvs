@@ -206,76 +206,61 @@ caption {
     margin-left: 8px !important;
 }
 
-/*------------------------------------*\
-    $INFORMATIONAL NOTES
-\*------------------------------------*/
-
-//.info-note.note:before {
-//    background: url("../img/icons/note.png") no-repeat 0 0 transparent !important;
-//}
-
-//@media only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx) {
-//.info-note.note:before {
-//background-image: url("../img/icons/note_@2x.png") !important;
-//background-size: 26px 26px !important;
-
-//    font-family: FontAwesome;
-//    content: "\f071";
-//    padding: 0 5px 0 0;
-//}
-
-//}
-//.info-note.caution:before {
-//  background: url("../img/icons/caution.png") no-repeat 0 0 transparent !important;
-//}
-//@media only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx) {
-
-//}
+//*------------------------------------*
+//    $INFORMATIONAL NOTES
+//*------------------------------------*
 
 .info-note {
+    clear: both;
+    line-height: 21px;
+    margin: 35px 0;
+    position: relative;
+    top: 4px;
+    padding: 20px 10px 20px 54px !important;
     &.note {
+        border-width: 1px 0;
+        border-color: $se-grey;
+        border-style: solid;
+        font-size: 17px;
         &:before {
             background: none;
-            content: "\f06a";
-            left: 10px;
+            content: "\f05a";
+            left: 13px;
             position: absolute;
-            top: 25px;
+            top: 37%;
             width: 36px;
             font-family: FontAwesome;
             padding: 0 5px 0 0;
             font-size: 30px;
-            @media all and (max-width: $screen-xxs-max) {
-                top: 32px;
+            color: $se-blue;
+            @media all and (max-width: $screen-md-min) {
+                top: 25px;
             }
         }
     }
     &.caution {
         font-size: 16px !important;
         border-width: 1px 0;
-        border-bottom-width: 1px;
         border-color: $se-grey;
-        border-bottom-color: $se-grey;
         border-style: solid;
-        border-bottom-style: solid;
         background-color: inherit;
-        padding: 20px 10px 27px 59px;
         font-weight: 700;
         @media all and (max-width: $screen-xxs-max) {
-            margin-bottom: 10px;
-            padding-bottom: 0;
+            padding-bottom: 13px;
         }
         &:before {
             background: none;
             content: "\f071";
             left: 10px;
             position: absolute;
-            top: 25px;
+            top: 37%;
             width: 36px;
             font-family: FontAwesome;
             padding: 0 5px 0 0;
             font-size: 30px;
-            @media all and (max-width: $screen-xxs-max) {
-                top: 32px;
+            color: $se-amber;
+            @media all and (max-width: $screen-md-min) {
+                top: 30px;
             }
         }
     }
@@ -286,6 +271,9 @@ caption {
     input[type="checkbox"] {
         width: 0;
         margin-left: 0;
+    }
+    ul {
+        margin-left: 16px;
     }
 }
 
