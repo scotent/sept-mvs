@@ -611,6 +611,7 @@ h2 ~ table {
       text-decoration: none; }
       .file-upload-list .file-upload-wrapper .file-remove a:hover {
         color: #2F3E44;
+        background: none;
         text-decoration: underline; }
   .file-upload-list .file-upload-wrapper.empty {
     color: #999999;
