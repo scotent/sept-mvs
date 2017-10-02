@@ -270,7 +270,7 @@ a {
   padding: 6px 0 0; }
 
 .button {
-  line-height: 1.5;
+  line-height: 1.500em;
   height: auto;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -328,11 +328,10 @@ a {
     position: relative;
     top: -2px;
     display: inline-block; }
-
-@media all and (max-width: 479px) {
-  .button {
-    width: 100% !important;
-    margin-right: 0 !important; } }
+  @media screen and (max-width: 480px) {
+    .button {
+      width: 100% !important;
+      margin-right: 0 !important; } }
 
 .button.button-back {
   background: none;
@@ -604,7 +603,15 @@ h2 ~ table {
     top: 10px;
     text-align: right;
     width: 100%;
-    display: inline-block; }
+    display: inline-block;
+    background: none; }
+    .file-upload-list .file-upload-wrapper .file-remove a {
+      color: #00427F;
+      background: none;
+      text-decoration: none; }
+      .file-upload-list .file-upload-wrapper .file-remove a:hover {
+        color: #2F3E44;
+        text-decoration: underline; }
   .file-upload-list .file-upload-wrapper.empty {
     color: #999999;
     border-top: none;
@@ -613,6 +620,12 @@ h2 ~ table {
     color: #d60000;
     display: block;
     padding-left: 35px; }
+
+.right-align.right-link-inline.examples {
+  top: 37px;
+  text-decoration: none; }
+  .right-align.right-link-inline.examples:hover {
+    text-decoration: underline; }
 
 .key-wrapper {
   float: left;
@@ -624,6 +637,11 @@ h2 ~ table {
   .key-wrapper .key-status .key {
     display: inline-block;
     margin-right: 20px; }
+    @media all and (max-width: 660px) {
+      .key-wrapper .key-status .key {
+        float: left; }
+        .key-wrapper .key-status .key:nth-of-type(3) {
+          clear: left; } }
     @media all and (max-width: 479px) {
       .key-wrapper .key-status .key {
         float: left;

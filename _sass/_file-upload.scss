@@ -33,6 +33,16 @@
             text-align: right;
             width: 100%;
             display: inline-block;
+            background: none;
+            a {
+                color: $se-blue;
+                background: none;
+                text-decoration: none;
+                &:hover {
+                    color: $se-black;
+                    text-decoration: underline;
+                }
+            }
         }
         &.empty {
             color: $se-mid-grey;
@@ -49,6 +59,14 @@
     }
 }
 
+.right-align.right-link-inline.examples {
+    top: 37px;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 .key-wrapper {
     float: left;
     clear: both;
@@ -60,6 +78,12 @@
         .key {
             display: inline-block;
             margin-right: 20px;
+            @media all and (max-width: 660px) {
+                float: left;
+                &:nth-of-type(3){
+                    clear: left;
+                }
+            }
             @media all and (max-width: $screen-xxs-max) {
                 float: left;
                 clear: left;

@@ -3,7 +3,7 @@
 // ==========================================================================
 
 .button {
-    line-height: 1.5;
+    line-height: 1.500em;
     height: auto;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -65,10 +65,8 @@
         top: -2px;
         display: inline-block;
     }
-}
 
-.button {
-    @media all and (max-width: $screen-xxs-max) {
+    @media screen and (max-width: $screen-xs-min) {
         width: 100% !important;
         margin-right: 0 !important;
     }
