@@ -111,11 +111,39 @@ input[type="submit"] {
     padding: 1em 40px;
 }
 
+.page-loading {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
 .button.loading {
     padding: 1em 50px 1em 30px;
     &:hover {
         cursor: not-allowed !important;
     }
+}
+
+.page-loading .loader {
+    margin: 0 auto;
+    font-size: 20px;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-indent: -9999em;
+    -webkit-animation: load5 1.1s infinite ease;
+    animation: load5 1.1s infinite ease;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 .button .loader {
