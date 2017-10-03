@@ -81,11 +81,15 @@ select {
 }
 
 .form-group-error {
-    border-left: $error-red 5px solid;
+    border: $error-red 1px solid;
     padding-left: 15px;
     label {
         color: $error-red;
     }
+}
+
+.error-message {
+    color: $error-red;
 }
 
 .error-summary {

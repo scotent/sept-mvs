@@ -509,10 +509,13 @@ select {
   margin-top: 28px; }
 
 .form-group-error {
-  border-left: #d32205 5px solid;
+  border: #d32205 1px solid;
   padding-left: 15px; }
   .form-group-error label {
     color: #d32205; }
+
+.error-message {
+  color: #d32205; }
 
 .error-summary {
   border: 5px solid #d32205;
