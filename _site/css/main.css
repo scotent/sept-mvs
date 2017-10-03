@@ -281,7 +281,8 @@ a {
         padding: 12px 0 11px;
         color: #2F3E44 !important;
         display: inline-block;
-        width: 30%; }
+        width: 30%;
+        vertical-align: middle; }
         .accordion.date-change .panel-heading h3.header-light {
           font-family: "din-lightregular", "Helvetica Neue", Helvetica, Arial, sans-serif; }
       .accordion.date-change .panel-heading p.sub-title {
