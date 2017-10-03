@@ -17,7 +17,7 @@
     <title>Fourth quarter claim - Change your claim</title>
     <meta name="description" content="">
 
-    <link rel="canonical" href="http://localhost:4000/sept-mvs/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-change.html">
+    <link rel="canonical" href="http://localhost:4000/sept-mvs/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-change-alt.html">
     <link rel="alternate" type="application/rss+xml" title="Scottish Enterprise September MVS" href="http://localhost:4000/sept-mvs/feed.xml">
 
     <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900' rel='stylesheet' type='text/css'>
@@ -111,106 +111,58 @@
 <div id="main" class="container">
     <div class="row">
         <div class="col-lg-9 col-md-12">
-    <p class="leader">You can request a change to the claim due date, claim amount or both.<br/>
+    <p class="leader">You can request a change to the claim due date, claim amount or both.<br />
         Please give a reason for the change.
     </p>
-    <div id="form" class="form">
-        <div id="accordion" class="panel-group accordion date-change">
-            <div class="panel panel-default">
-                <div class="panel-heading collapsed" data-toggle="collapse" href="#collapseOne">
 
-                    <h3>Date this claim is due</h3>
-                    <h3 class="header-light">20 Sep 2017</h3>
-                    <span class="header-panel-icon"></span>
+    <div class="card-view">
+        <div id="form" class="form">
+            <h2 class="emphasis">Change claim date(s)</h2>
+            <table class="plain">
+                <thead>
+                <tr>
+                    <th><span class="sr-only">column title</span></th>
+                    <th><span class="sr-only">column details</span></th>
+                    <th><span class="sr-only">change details link</span></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="title">Date this claim is due</td>
+                    <td>20 Sep 2017</td>
+                    <td class="change-link"><a>Change</a></td>
+                </tr>
+                </tbody>
+            </table>
+
+            <h2 class="emphasis">Change claim amount</h2>
+            <table class="plain">
+                <thead>
+                <tr>
+                    <th><span class="sr-only">column title</span></th>
+                    <th><span class="sr-only">column details</span></th>
+                    <th><span class="sr-only">change details link</span></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="title">Amount you expect to claim</td>
+                    <td>£10,000</td>
+                    <td class="change-link"><a>Change</a></td>
+                </tr>
+                </tbody>
+            </table>
 
 
-                </div>
-                <div id="collapseOne" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <div class="date-change-wrapper">
-
-                            <div class="row">
-                                <div class="col-md-4 col-sm-12">
-                                    <h3>Change date to</h3>
-                                </div>
-                                <div class="col-md-8 col-sm-12 date-change-item">
-                                    <fieldset>
-                                        <input type="date" placeholder="date-picker">
-                                    </fieldset>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-4 col-sm-12 date-change-item">
-                                    <h3>Requested date</h3>
-                                </div>
-                                <div class="col-md-8 col-sm-12 date-change-item">
-                                    <h3>28 Nov 2017</h3>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <p class="col-md-12 margin-1t">
-                                    You can also change future claim due dates by the same amount of time.
-                                </p>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4 col-sm-12 date-change-item">
-                                    <h3>Change future claim dates</h3>
-                                </div>
-                                <div class="col-md-8 col-sm-12 form-group relative" id="radio">
-                                    <fieldset aria-required="true" id="radio-link">
-                                        <legend class="sr-only">
-                                            Do ypu want to change future dates?
-                                        </legend>
-                                        <div class="radio-wrapper">
-                                            <input required="true" id="yes" name="date-cascade" class="grey form-control fancy-radio" type="radio">
-                                            <label for="yes" class="inline fancy-radio">Yes</label>
-                                            <input required="true" id="no" name="date-cascade" class="grey form-control fancy-radio" type="radio">
-                                            <label for="no" class="inline fancy-radio">No</label>
-                                            <ul class="current-errors"></ul>
-                                        </div>
-                                    </fieldset>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="form-group relative">
+                <label for="comments">Reason for the change</label>
+                <textarea rows="4" id="comments"></textarea>
+                <div class="char-count">1000 characters left</div>
+                <ul class="current-errors"></ul>
             </div>
-            <div class="panel panel-default">
-                <div class="panel-heading collapsed" data-toggle="collapse" href="#collapseTwo">
-
-                    <h3>Amount you expect to claim</h3>
-                    <h3 class="header-light">£2000</h3>
-                    <span class="header-panel-icon"></span>
-
-                </div>
-                <div id="collapseTwo" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <div class="date-change-wrapper">
-
-                            <div class="row">
-                                <div class="col-md-4 col-sm-12 date-change-item">
-                                    <h3>New amount</h3>
-                                </div>
-                                <div class="col-md-8 col-sm-12 date-change-item">
-                                    <fieldset class="currency-input">
-                                        <input type="text">
-                                    </fieldset>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div>
+                <a href="claim-detail.html" class="button button-primary">Request change</a>
             </div>
-        </div>
-        <div class="form-group relative">
-            <label for="comments">Reason for the change</label>
-            <textarea rows="4" id="comments"></textarea>
-            <div class="char-count">1000 characters left</div>
-            <ul class="current-errors"></ul>
-        </div>
-        <div>
-            <a href="claim-detail.html" class="button button-primary">Request change</a>
         </div>
     </div>
     <a href="claim-detail.html" class="button button-back">Back to Claim detail</a>
