@@ -515,7 +515,8 @@ select {
     color: #d32205; }
 
 .error-message {
-  color: #d32205; }
+  color: #d32205;
+  padding-top: 5px; }
 
 .error-summary {
   border: 5px solid #d32205;

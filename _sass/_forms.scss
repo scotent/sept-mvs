@@ -90,6 +90,7 @@ select {
 
 .error-message {
     color: $error-red;
+    padding-top: 5px;
 }
 
 .error-summary {
@@ -177,5 +178,3 @@ input + label.fancy-checkbox::before {
         margin-left: 0;
     }
 }
-
-
