@@ -14,7 +14,7 @@
     <![endif]-->
 
 
-    <title>Fourth quarter claim - Change your claim</title>
+    <title>Fourth quarter claim - Change your claim - ALT</title>
     <meta name="description" content="">
 
     <link rel="canonical" href="http://localhost:4000/sept-mvs/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-change-alt.html">
@@ -90,7 +90,7 @@
             <div class="col-md-12">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Dynamic breadcrumbs</a></li>
-                    <li class="breadcrumb-item active">Fourth quarter claim - Change your claim</li>
+                    <li class="breadcrumb-item active">Fourth quarter claim - Change your claim - ALT</li>
                 </ol>
             </div>
         </div>
@@ -102,7 +102,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="post-title">Fourth quarter claim - Change your claim</h1>
+                <h1 class="post-title">Fourth quarter claim - Change your claim - ALT</h1>
             </div>
         </div>
     </div>
@@ -111,26 +111,54 @@
 <div id="main" class="container">
     <div class="row">
         <div class="col-lg-9 col-md-12">
-    <p class="leader">You can request a change to the claim due date, claim amount or both.<br />
+    <p class="leader">You can request a change to the claim due date, claim amount or both.<br/>
         Please give a reason for the change.
     </p>
 
     <div class="card-view">
-        <div id="form" class="form">
-            <h2 class="emphasis">Change claim date(s)</h2>
-            <table class="plain">
+        <div id="form" class="form date-change-alt">
+            <h2 class="emphasis">Change claim date</h2>
+            <table class="plain margin-2b">
                 <thead>
                 <tr>
-                    <th><span class="sr-only">column title</span></th>
+                    <th width="55%"><span class="sr-only">column title</span></th>
                     <th><span class="sr-only">column details</span></th>
-                    <th><span class="sr-only">change details link</span></th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td class="title">Date this claim is due</td>
                     <td>20 Sep 2017</td>
-                    <td class="change-link"><a>Change</a></td>
+                </tr>
+                <tr>
+                    <td class="title">Change date to</td>
+                    <td><input type="date" placeholder="date-picker"></td>
+                </tr>
+                <tr>
+                    <td class="title">Requested date</td>
+                    <td>28 Oct 2017</td>
+                </tr>
+                <tr>
+                    <td class="title">Change future claim dates
+
+                        <p class="text-light">
+                            You can also change future claim due dates<br />by the same amount.
+                        </p>
+                    </td>
+                    <td>
+                        <fieldset aria-required="true" id="radio-link">
+                            <legend class="sr-only">
+                                Do ypu want to change future dates?
+                            </legend>
+                            <div class="radio-wrapper">
+                                <input required="true" id="yes" name="date-cascade" class="grey form-control fancy-radio" type="radio">
+                                <label for="yes" class="inline fancy-radio">Yes</label>
+                                <input required="true" id="no" name="date-cascade" class="grey form-control fancy-radio" type="radio">
+                                <label for="no" class="inline fancy-radio">No</label>
+                                <ul class="current-errors"></ul>
+                            </div>
+                        </fieldset>
+                    </td>
                 </tr>
                 </tbody>
             </table>
@@ -139,23 +167,25 @@
             <table class="plain">
                 <thead>
                 <tr>
-                    <th><span class="sr-only">column title</span></th>
+                    <th width="55%"><span class="sr-only">column title</span></th>
                     <th><span class="sr-only">column details</span></th>
-                    <th><span class="sr-only">change details link</span></th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td class="title">Amount you expect to claim</td>
                     <td>£10,000</td>
-                    <td class="change-link"><a>Change</a></td>
+                </tr>
+                <tr>
+                    <td class="title">New amount</td>
+                    <td><input type="text" placeholder="£"></td>
                 </tr>
                 </tbody>
             </table>
 
 
             <div class="form-group relative">
-                <label for="comments">Reason for the change</label>
+                <h2 class="emphasis">Reason for the change</h2>
                 <textarea rows="4" id="comments"></textarea>
                 <div class="char-count">1000 characters left</div>
                 <ul class="current-errors"></ul>
