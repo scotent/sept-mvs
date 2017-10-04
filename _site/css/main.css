@@ -650,7 +650,8 @@ select {
 
 .error-message {
   color: #d32205;
-  padding-top: 5px; }
+  padding-top: 5px;
+  text-align: left; }
 
 .error-summary {
   border: 5px solid #d32205;
@@ -1007,6 +1008,9 @@ h2 ~ table {
     -webkit-transition: width .6s ease;
     -o-transition: width .6s ease;
     transition: width .6s ease; }
+
+.error .file-upload-inner input[type="text"].file-upload-input {
+  border-color: #d32205; }
 
 .margin-1tb {
   margin-top: 1em;

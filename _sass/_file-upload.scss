@@ -263,3 +263,10 @@
     }
 }
 
+.error {
+    .file-upload-inner {
+        input[type="text"].file-upload-input {
+            border-color: $error-red;
+        }
+    }
+}

@@ -254,10 +254,33 @@
                                 <label for="filename1" class="hide">
                                     uploaded file
                                 </label>
-                                <input type="text" id="filename1" autocomplete="off" readonly placeholder="no file uploaded">
+                                <input type="text" id="filename1" class="file-upload-input" autocomplete="off" readonly placeholder="upload file">
                             </div>
                         </div>
                     </div>
+
+                    <div class="file-upload-list error">
+                        <div class="file-upload-wrapper">
+                            <div class="form-file file-upload-inner">
+                                <label for="fileupload" id="buttonlabel">
+                                    <span role="button" aria-controls="filename" tabindex="0">
+                                      Add a new file
+                                    </span>
+                                </label>
+                                <input type="file" id="fileupload">
+                                <label for="filename1" class="hide">
+                                    uploaded file
+                                </label>
+                                <input type="text" id="filename1" class="file-upload-input" autocomplete="off" readonly placeholder="upload file">
+
+                                <div class="error-message">
+                                    Error message here
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
