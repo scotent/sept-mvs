@@ -50,20 +50,45 @@ title: Fourth quarter claim - Change your claim
                                 <div class="col-md-4 col-sm-12 claim-change-item">
                                     <h3>Change future claim dates</h3>
                                 </div>
+
                                 <div class="col-md-8 col-sm-12 form-group relative" id="radio">
-                                    <fieldset aria-required="true" id="radio-link">
+                                    <fieldset aria-required="true" required="true" id="radio-link" role="radiogroup">
                                         <legend class="sr-only">
-                                            Do ypu want to change future dates?
+                                            Do you want to cascade this date change to future due dates?
                                         </legend>
                                         <div class="radio-wrapper">
-                                            <input required="true" id="yes" name="date-cascade" class="grey form-control fancy-radio" type="radio">
+                                            <input
+                                                    required
+                                                    #dateCascadeRef="ngModel"
+                                                    type="radio"
+                                                    [(ngModel)]="amendedClaim.cascadeDateChange"
+                                                    name="date-cascade"
+                                                    id="yes"
+                                                    value="Yes"
+                                                    (ngModelChange)="onCascadeDate($event)"
+                                                    class="grey form-control fancy-radio">
                                             <label for="yes" class="inline fancy-radio">Yes</label>
-                                            <input required="true" id="no" name="date-cascade" class="grey form-control fancy-radio" type="radio">
+
+                                            <input
+                                                    required
+                                                    #dateCascadeRef="ngModel"
+                                                    type="radio"
+                                                    [(ngModel)]="amendedClaim.cascadeDateChange"
+                                                    name="date-cascade"
+                                                    checked="checked"
+                                                    id="no"
+                                                    value="No"
+                                                    (ngModelChange)="onCascadeDate($event)"
+                                                    class="grey form-control fancy-radio">
                                             <label for="no" class="inline fancy-radio">No</label>
+
                                             <ul class="current-errors"></ul>
                                         </div>
                                     </fieldset>
                                 </div>
+
+
+
                             </div>
                         </div>
                     </div>
