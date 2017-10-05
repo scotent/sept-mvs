@@ -265,6 +265,13 @@ a {
     border-color: #333333; }
     .accordion.claim-change .panel-default {
       border-color: #333333; }
+    .accordion.claim-change label {
+      font-weight: 500;
+      font-family: 'din-mediumregular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+      letter-spacing: -1px;
+      font-size: 19px;
+      line-height: 28px;
+      margin: 10px 0 7px; }
     .accordion.claim-change .panel-heading {
       background-color: #ffffff;
       border-color: #ecf0f1;
@@ -310,13 +317,6 @@ a {
       padding: 9px 0 0; }
     .accordion.claim-change .claim-change-wrapper .claim-change-item {
       height: 50px; }
-    .accordion.claim-change .claim-change-wrapper label.claim-change-item {
-      font-weight: 500;
-      font-family: 'din-mediumregular', "Helvetica Neue", Helvetica, Arial, sans-serif;
-      letter-spacing: -1px;
-      font-size: 19px;
-      line-height: 28px;
-      margin: 10px 0 7px; }
     .accordion.claim-change .claim-change-wrapper currency-input input[type="text"] {
       margin-top: 0 !important; }
     .accordion.claim-change .claim-change-wrapper .form-group {
@@ -333,7 +333,17 @@ a {
       border: none;
       font-size: 20px;
       font-weight: 300;
-      font-family: "din-lightregular", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+      font-family: 'din-lightregular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+      position: relative;
+      top: -2px; }
+
+.claim-change label {
+  font-weight: 500;
+  font-family: 'din-mediumregular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: -1px;
+  font-size: 19px;
+  line-height: 28px;
+  margin: 10px 0 7px; }
 
 .date-change-alt table {
   margin-bottom: 2em !important; }
