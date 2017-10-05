@@ -30,6 +30,14 @@
     margin-bottom: 2em;
 }
 
+.margin-3t{
+    margin-top:3em;
+}
+
+.margin-3b{
+    margin-bottom:3em;
+}
+
 .block {
     display: block;
 }
@@ -82,4 +90,24 @@ ol.breadcrumb {
 
 .text-bold {
     font-weight: 500;
+}
+
+.img-example{
+    height: 120px;
+    background-color: gray;
+    display:block;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.leader-m{
+    font-size: 25px;
+    line-height: 34px;
+    font-weight: 300;
+    margin: 20px 0 10px 0;
+    word-wrap: break-word;
 }
