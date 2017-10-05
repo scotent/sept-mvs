@@ -333,7 +333,9 @@ a {
       border: none;
       font-size: 20px;
       font-weight: 300;
-      font-family: "din-lightregular", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+      font-family: "din-lightregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      position: relative;
+      top: -2px; }
 
 .date-change-alt table {
   margin-bottom: 2em !important; }

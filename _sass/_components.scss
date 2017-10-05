@@ -76,6 +76,14 @@
         .panel-default {
             border-color: $se-dark-grey;
         }
+        label {
+            font-weight: 500;
+            font-family: 'din-mediumregular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+            letter-spacing: -1px;
+            font-size: 19px;
+            line-height: 28px;
+            margin: 10px 0 7px;
+        }
         .panel-heading {
             background-color: $se-white;
             border-color: $se-light-grey;
@@ -129,14 +137,6 @@
             .claim-change-item {
                 height: 50px;
             }
-            label.claim-change-item {
-                font-weight: 500;
-                font-family: 'din-mediumregular', "Helvetica Neue", Helvetica, Arial, sans-serif;
-                letter-spacing: -1px;
-                font-size: 19px;
-                line-height: 28px;
-                margin: 10px 0 7px;
-            }
             currency-input {
                 input[type="text"] {
                     margin-top: 0!important;
@@ -160,9 +160,22 @@
                 border: none;
                 font-size: 20px;
                 font-weight: 300;
-                font-family: 'din-lightregular', "Helvetica Neue", Helvetica, Arial, sans-serif ;
+                font-family: 'din-lightregular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+                position: relative;
+                top: -2px;
             }
         }
+    }
+}
+
+.claim-change {
+    label {
+        font-weight: 500;
+        font-family: 'din-mediumregular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+        letter-spacing: -1px;
+        font-size: 19px;
+        line-height: 28px;
+        margin: 10px 0 7px;
     }
 }
 
