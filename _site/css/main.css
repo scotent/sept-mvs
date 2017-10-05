@@ -1106,8 +1106,7 @@ ol.breadcrumb {
   height: 120px;
   background-color: gray;
   display: block;
-  margin: 0 0 10px 0;
-  text-align: center; }
+  margin: 0 0 10px 0; }
 
 .bold {
   font-weight: bold; }
@@ -1118,6 +1117,9 @@ ol.breadcrumb {
   font-weight: 300;
   margin: 20px 0 10px 0;
   word-wrap: break-word; }
+
+hr {
+  border-bottom-color: #dddddd; }
 
 h1 {
   font-size: 49px;

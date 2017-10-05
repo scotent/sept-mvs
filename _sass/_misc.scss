@@ -97,7 +97,7 @@ ol.breadcrumb {
     background-color: gray;
     display:block;
     margin: 0 0 10px 0;
-    text-align: center;
+
 }
 
 .bold{
@@ -110,4 +110,8 @@ ol.breadcrumb {
     font-weight: 300;
     margin: 20px 0 10px 0;
     word-wrap: break-word;
+}
+
+hr{
+    border-bottom-color: $se-light-mid-grey;
 }
