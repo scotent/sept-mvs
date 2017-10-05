@@ -1119,6 +1119,9 @@ ol.breadcrumb {
   margin: 20px 0 10px 0;
   word-wrap: break-word; }
 
+hr {
+  border-bottom-color: #dddddd; }
+
 h1 {
   font-size: 49px;
   line-height: 56px;
