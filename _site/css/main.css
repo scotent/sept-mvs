@@ -1106,8 +1106,7 @@ ol.breadcrumb {
   height: 120px;
   background-color: gray;
   display: block;
-  margin: 0 0 10px 0;
-  text-align: center; }
+  margin: 0 0 10px 0; }
 
 .bold {
   font-weight: bold; }
