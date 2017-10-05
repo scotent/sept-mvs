@@ -261,11 +261,11 @@ a {
           transition: color 0.5s; }
   .accordion.panel-group .panel + .panel {
     margin-top: 0; }
-  .accordion.date-change {
+  .accordion.claim-change {
     border-color: #333333; }
-    .accordion.date-change .panel-default {
+    .accordion.claim-change .panel-default {
       border-color: #333333; }
-    .accordion.date-change .panel-heading {
+    .accordion.claim-change .panel-heading {
       background-color: #ffffff;
       border-color: #ecf0f1;
       border-width: 1px 1px 0 1px;
@@ -276,23 +276,23 @@ a {
       -ms-transition: background-color 0.5s;
       -o-transition: background-color 0.5s;
       transition: background-color 0.5s; }
-      .accordion.date-change .panel-heading h3 {
+      .accordion.claim-change .panel-heading h3 {
         margin: 0 30px 0 0;
         padding: 12px 0 11px;
         color: #2F3E44 !important;
         display: inline-block;
         width: 30%;
         vertical-align: middle; }
-        .accordion.date-change .panel-heading h3.header-light {
+        .accordion.claim-change .panel-heading h3.header-light {
           font-family: "din-lightregular", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-      .accordion.date-change .panel-heading p.sub-title {
+      .accordion.claim-change .panel-heading p.sub-title {
         padding-top: 5px;
         padding-bottom: 12px;
         color: #666666;
         margin: 0;
         font-size: 18px;
         margin-right: 30px; }
-      .accordion.date-change .panel-heading .header-panel-icon {
+      .accordion.claim-change .panel-heading .header-panel-icon {
         position: absolute;
         top: 44%;
         right: 56px;
@@ -302,23 +302,38 @@ a {
         background-image: url("../img/icons/icons-plus-minus.png");
         background-repeat: no-repeat;
         background-position: 0 -16px; }
-        .accordion.date-change .panel-heading .header-panel-icon:before {
+        .accordion.claim-change .panel-heading .header-panel-icon:before {
           content: 'Change';
           color: #00427F; }
-    .accordion.date-change .date-change-wrapper fieldset {
+    .accordion.claim-change .claim-change-wrapper fieldset, .accordion.claim-change .claim-change-wrapper.form-group {
       margin: 0;
       padding: 9px 0 0; }
-    .accordion.date-change .date-change-wrapper .date-change-item {
+    .accordion.claim-change .claim-change-wrapper .claim-change-item {
       height: 50px; }
-    .accordion.date-change .date-change-wrapper .form-group {
+    .accordion.claim-change .claim-change-wrapper label.claim-change-item {
+      font-weight: 500;
+      font-family: 'din-mediumregular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+      letter-spacing: -1px;
+      font-size: 19px;
+      line-height: 28px;
+      margin: 10px 0 7px; }
+    .accordion.claim-change .claim-change-wrapper currency-input input[type="text"] {
+      margin-top: 0 !important; }
+    .accordion.claim-change .claim-change-wrapper .form-group {
       margin: 0;
       padding: 0; }
-      .accordion.date-change .date-change-wrapper .form-group label {
+      .accordion.claim-change .claim-change-wrapper .form-group label {
         margin-top: 0; }
-      .accordion.date-change .date-change-wrapper .form-group .radio-wrapper {
+      .accordion.claim-change .claim-change-wrapper .form-group .radio-wrapper {
         margin-left: 15px; }
-    .accordion.date-change .date-change-wrapper .currency-input {
+    .accordion.claim-change .claim-change-wrapper .currency-input-box {
       padding: 0 0 20px; }
+    .accordion.claim-change .claim-change-wrapper .input-group-addon {
+      background: none;
+      border: none;
+      font-size: 20px;
+      font-weight: 300;
+      font-family: "din-lightregular", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .date-change-alt table {
   margin-bottom: 2em !important; }

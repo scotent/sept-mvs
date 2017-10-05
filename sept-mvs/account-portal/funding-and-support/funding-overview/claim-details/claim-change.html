@@ -8,7 +8,7 @@ title: Fourth quarter claim - Change your claim
         Please give a reason for the change.
     </p>
     <div id="form" class="form">
-        <div id="accordion" class="panel-group accordion date-change">
+        <div id="accordion" class="panel-group accordion claim-change">
             <div class="panel panel-default">
                 <div class="panel-heading collapsed" data-toggle="collapse" href="#collapseOne">
 
@@ -20,13 +20,13 @@ title: Fourth quarter claim - Change your claim
                 </div>
                 <div id="collapseOne" class="panel-collapse collapse">
                     <div class="panel-body">
-                        <div class="date-change-wrapper">
+                        <div class="claim-change-wrapper">
 
                             <div class="row">
                                 <div class="col-md-4 col-sm-12">
                                     <h3>Change date to</h3>
                                 </div>
-                                <div class="col-md-8 col-sm-12 date-change-item">
+                                <div class="col-md-8 col-sm-12 claim-change-item">
                                     <fieldset>
                                         <input type="date" placeholder="date-picker">
                                     </fieldset>
@@ -34,10 +34,10 @@ title: Fourth quarter claim - Change your claim
                             </div>
 
                             <div class="row">
-                                <div class="col-md-4 col-sm-12 date-change-item">
+                                <div class="col-md-4 col-sm-12 claim-change-item">
                                     <h3>Requested date</h3>
                                 </div>
-                                <div class="col-md-8 col-sm-12 date-change-item">
+                                <div class="col-md-8 col-sm-12 claim-change-item">
                                     <h3>28 Nov 2017</h3>
                                 </div>
                             </div>
@@ -47,7 +47,7 @@ title: Fourth quarter claim - Change your claim
                                 </p>
                             </div>
                             <div class="row">
-                                <div class="col-md-4 col-sm-12 date-change-item">
+                                <div class="col-md-4 col-sm-12 claim-change-item">
                                     <h3>Change future claim dates</h3>
                                 </div>
                                 <div class="col-md-8 col-sm-12 form-group relative" id="radio">
@@ -79,17 +79,41 @@ title: Fourth quarter claim - Change your claim
                 </div>
                 <div id="collapseTwo" class="panel-collapse collapse">
                     <div class="panel-body">
-                        <div class="date-change-wrapper">
-
+                        <div class="claim-change-wrapper">
                             <div class="row">
-                                <div class="col-md-4 col-sm-12 date-change-item">
+                                <div class="col-md-4 col-sm-12 claim-change-item">
                                     <h3>New amount</h3>
                                 </div>
-                                <div class="col-md-8 col-sm-12 date-change-item">
-                                    <fieldset class="currency-input">
+                                <div class="col-md-8 col-sm-12 claim-change-item">
+                                    <fieldset class="currency-input-box">
                                         <input type="text">
                                     </fieldset>
                                 </div>
+
+
+                                <!--<fieldset class="form-group">-->
+                                    <label class="col-md-4 col-sm-12 claim-change-item" for="claimAmendmentAmount">New amount</label>
+                                    <div class="input-group icon-left col-md-8 col-sm-12 claim-change-item">
+                                        <div class="input-group-addon">&#163;</div>
+                                        <currency-input #costToRecruitRef="ngModel"
+                                                        (change)="onChangeClaimAmount($event)"
+                                                        id="claimAmendmentAmount"
+                                                        validateRange
+                                                        [min]="0.00000000000001"
+                                                        [max]="999999999999999"
+                                                        name="claimAmendmentAmount"
+                                                        [inputId]="'claimAmendmentAmount'"
+                                                        [precision]="2"
+                                                        required
+                                                        [(ngModel)]="amendedClaim.proposedAmount">
+                                        </currency-input>
+                                    </div>
+                                <!--</fieldset>-->
+
+
+
+
+
                             </div>
                         </div>
                     </div>

@@ -71,7 +71,7 @@
         margin-top: 0;
     }
 
-    &.date-change {
+    &.claim-change {
         border-color: $se-dark-grey;
         .panel-default {
             border-color: $se-dark-grey;
@@ -120,13 +120,27 @@
             }
         }
 
-        .date-change-wrapper {
-            fieldset {
+        .claim-change-wrapper {
+            fieldset,
+            &.form-group {
                 margin: 0;
                 padding: 9px 0 0;
             }
-            .date-change-item {
+            .claim-change-item {
                 height: 50px;
+            }
+            label.claim-change-item {
+                font-weight: 500;
+                font-family: 'din-mediumregular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+                letter-spacing: -1px;
+                font-size: 19px;
+                line-height: 28px;
+                margin: 10px 0 7px;
+            }
+            currency-input {
+                input[type="text"] {
+                    margin-top: 0!important;
+                }
             }
             .form-group {
                 margin: 0;
@@ -138,8 +152,15 @@
                     margin-left: 15px;
                 }
             }
-            .currency-input {
+            .currency-input-box {
                 padding: 0 0 20px;
+            }
+            .input-group-addon {
+                background: none;
+                border: none;
+                font-size: 20px;
+                font-weight: 300;
+                font-family: 'din-lightregular', "Helvetica Neue", Helvetica, Arial, sans-serif ;
             }
         }
     }
