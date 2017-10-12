@@ -1239,8 +1239,7 @@ h2, h3, h4, h5, h6 {
     margin-bottom: 0;
     margin-left: 0;
     padding: 0;
-    position: relative;
-    text-transform: capitalize; }
+    position: relative; }
     .breadcrumbs .breadcrumbs__item:after,
     .breadcrumbs .breadcrumb-item:after {
       font-family: FontAwesome;
