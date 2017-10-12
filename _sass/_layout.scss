@@ -64,13 +64,7 @@ a {
     }
 }
 
-.right-align {
-    float: right;
-    &.right-link-inline {
-        position: relative;
-        top: 50px;
-    }
-}
+
 
 .panel-grey {
     background-color: $se-light-mid-grey;
