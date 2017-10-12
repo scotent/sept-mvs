@@ -845,6 +845,9 @@ td, thead + tbody tr:first-child td {
 h2 ~ table {
   margin-top: 0; }
 
+section.upload-wrapper {
+  border-bottom: 3px solid #727272; }
+
 .file-upload-list {
   border-top: 1px solid #727272; }
 .file-upload-list .file-upload-wrapper {
@@ -882,8 +885,7 @@ h2 ~ table {
 .file-upload-list .file-upload-wrapper.empty {
   color: #999999;
   border-top: none;
-  padding: 0 0 10px 0;
-  border-bottom: 3px solid #727272; }
+  padding: 0 0 10px 0; }
 .file-upload-list .file-upload-wrapper.empty label.form-label {
   font-size: 16px;
   line-height: 20px;
