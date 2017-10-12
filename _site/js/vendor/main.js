@@ -1,5 +1,7 @@
 console.log('main.js loaded');
 
+
+// Function to make targeted elements equal height //
 equalheight = function(container){
 
     var currentTallest = 0,
@@ -31,11 +33,12 @@ equalheight = function(container){
     });
 };
 
+// Trigger on window load //
 $(window).load(function() {
     equalheight('.portal-panel .panel-inner');
 });
 
-
+// Trigger on window resize //
 $(window).resize(function(){
     equalheight('.portal-panel .panel-inner');
 });

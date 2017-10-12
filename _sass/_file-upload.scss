@@ -3,6 +3,7 @@
 //  ==========================================================================
 
 .file-upload-list {
+    border-top: 1px solid $se-grey;
     .file-upload-wrapper {
         padding: 10px 0;
         margin: 0;
@@ -12,8 +13,6 @@
             border-top: 1px solid $se-grey;
         }
         &:last-of-type {
-            border-bottom: 3px solid $se-orange;
-            border-bottom: 3px solid $se-mid-grey;
             border-top: none;
             margin-bottom: 20px;
         }
@@ -49,6 +48,7 @@
             color: $se-mid-grey;
             border-top: none;
             padding: 0 0 10px 0;
+            border-bottom: 3px solid $se-grey;
         }
         &.failed {
             .failed-text {

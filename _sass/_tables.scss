@@ -27,6 +27,12 @@ table.table-striped tbody tr {
     }
 }
 
+table.table-striped:not(.active) tbody tr {
+    &:hover td {
+        background: $se-grey-hover !important;
+    }
+}
+
 table.plain {
     margin: 0;
     color: $se-dark-grey;

@@ -787,6 +787,9 @@ table.table-striped tbody tr thead + tbody tr:nth-child(2n-1) td {
 table.table-striped tbody tr:hover td {
   background: #f1f1f1 !important; }
 
+table.table-striped:not(.active) tbody tr:hover td {
+  background: #f1f1f1 !important; }
+
 table.plain {
   margin: 0;
   color: #333333; }
@@ -830,6 +833,8 @@ td, thead + tbody tr:first-child td {
 h2 ~ table {
   margin-top: 0; }
 
+.file-upload-list {
+  border-top: 1px solid #727272; }
 .file-upload-list .file-upload-wrapper {
   padding: 10px 0;
   margin: 0;
@@ -838,8 +843,6 @@ h2 ~ table {
 .file-upload-list .file-upload-wrapper:first-of-type {
   border-top: 1px solid #727272; }
 .file-upload-list .file-upload-wrapper:last-of-type {
-  border-bottom: 3px solid #D65811;
-  border-bottom: 3px solid #999999;
   border-top: none;
   margin-bottom: 20px; }
 .file-upload-list .file-upload-wrapper .file-details-wrapper {
@@ -867,7 +870,8 @@ h2 ~ table {
 .file-upload-list .file-upload-wrapper.empty {
   color: #999999;
   border-top: none;
-  padding: 0 0 10px 0; }
+  padding: 0 0 10px 0;
+  border-bottom: 3px solid #727272; }
 .file-upload-list .file-upload-wrapper.failed .failed-text {
   color: #d60000;
   display: block;
