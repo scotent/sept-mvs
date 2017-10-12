@@ -2,6 +2,10 @@
 //  SE Custom styles for File upload
 //  ==========================================================================
 
+section.upload-wrapper {
+    border-bottom: 3px solid $se-grey;
+}
+
 .file-upload-list {
     border-top: 1px solid $se-grey;
     .file-upload-wrapper {
@@ -50,7 +54,7 @@
             color: $se-mid-grey;
             border-top: none;
             padding: 0 0 10px 0;
-            border-bottom: 3px solid $se-grey;
+            //border-bottom: 3px solid $se-grey;
             label.form-label {
                 font-size: 16px;
                 line-height: 20px;
