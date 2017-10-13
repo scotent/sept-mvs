@@ -125,7 +125,7 @@
 
     <div class="card-view">
         <h2 class="emphasis">Supporting files</h2>
-        <a class="right-align right-link-inline examples" href="#">See examples</a>
+        <a class="right-align right-link-inline examples" href="claim-examples.html#bacs-transaction-list" target="_blank">See examples</a>
         <section class="key-wrapper">
             <h3>Key</h3>
             <div class="key-status">
@@ -149,6 +149,92 @@
         </section>
 
         <form>
+
+
+
+
+            <section class="upload-wrapper">
+                <h3>Bank statements</h3>
+                <div class="file-upload-list">
+                    <div class="file-upload-wrapper empty">
+                        <div class="form-file file-upload-inner">
+                            <label for="fileupload" id="buttonlabel">
+                                    <span role="button" aria-controls="filename" tabindex="0">
+                                      Add a new file
+                                    </span>
+                            </label>
+                            <input type="file" id="fileupload">
+                            <label for="filename3" class="hide">
+                                uploaded file
+                            </label>
+                            <input type="text" id="filename3" autocomplete="off" readonly placeholder="no file uploaded">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div id="accordion" class="panel-group accordion claim-evidence">
+                <div class="panel panel-default">
+                    <div class="panel-heading collapsed" data-toggle="collapse" href="#collapseOne">
+
+                        <h3>Bacs</h3>
+                        <span class="header-panel-icon">What to provide</span>
+
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <section id="bacs-transaction-list">
+                                <div class="row">
+                                    <div class="col-md-10 col-sm-9 col-xs-12">
+                                        <p>If the costs you are claiming appear as part of a single bulk Bacs payment on your bank statement (for example, as 'Payroll'), then you must submit a
+                                            <strong>Bacs transaction list</strong>, as well as a bank statement as evidence of payment. Any transactions not relevant to your claim can be redacted
+                                            (obscured or scored through).</p>
+
+                                        <h3>The Bacs transaction list must:</h3>
+                                        <ul>
+                                            <li>Be clearly identifiable as coming from your payment or payroll system</li>
+                                            <li>Clearly show <strong>individual payees, payment amounts</strong> and <strong>dates</strong></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-2 col-sm-3 col-xs-12 evidence-img">
+                                        <p class="bold margin-1b">
+                                            Example:
+                                        </p>
+                                        <a class="margin-1t" href="">
+                                            <img src="/sept-mvs/images/claim-evidence-examples/bacs.jpg" class="img-example" alt="Bacs example">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="info-note caution">Please note: The total payment sum and payment date on the transaction list must match the amount and date that appears on your
+                                            bank statement. Any transactions not relevant to your claim can be redacted (obscured or scored through).
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <section class="upload-wrapper">
+                <div class="file-upload-list">
+                    <div class="file-upload-wrapper empty">
+                        <div class="form-file file-upload-inner">
+                            <label for="fileupload" id="buttonlabel">
+                                    <span role="button" aria-controls="filename" tabindex="0">
+                                      Add a new file
+                                    </span>
+                            </label>
+                            <input type="file" id="fileupload">
+                            <label for="filename2" class="hide">
+                                uploaded file
+                            </label>
+                            <input type="text" id="filename2" autocomplete="off" readonly placeholder="no file uploaded">
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <section class="upload-wrapper">
                 <h3>Payslips</h3>
@@ -176,14 +262,12 @@
                             </span>
 
                             <!--<div class="progress margin-1t">-->
-                                <!--<div class="progress-bar" role="progressbar" aria-valuenow="70"-->
-                                     <!--aria-valuemin="0" aria-valuemax="100" style="width:70%">-->
-                                    <!--<span class="sr-only">70% Complete</span>-->
-                                <!--</div>-->
+                            <!--<div class="progress-bar" role="progressbar" aria-valuenow="70"-->
+                            <!--aria-valuemin="0" aria-valuemax="100" style="width:70%">-->
+                            <!--<span class="sr-only">70% Complete</span>-->
+                            <!--</div>-->
                             <!--</div>-->
                         </div>
-
-
 
 
                         <div class="col-sm-2 col-xs-12 file-remove-wrapper">
@@ -246,7 +330,7 @@
                         </div>
                     </div>
                     <div class="file-upload-list">
-                        <div class="file-upload-wrapper">
+                        <div class="file-upload-wrapper empty">
                             <div class="form-file file-upload-inner">
                                 <label for="fileupload" id="buttonlabel">
                                     <span role="button" aria-controls="filename" tabindex="0">
@@ -263,71 +347,30 @@
                     </div>
                 </div>
             </section>
+
             <section class="upload-wrapper">
-                <h3>Upload element in error state</h3>
-                <div class="file-upload-wrapper">
-                    <div class="file-upload-list error">
-                        <div class="file-upload-wrapper">
-                            <div class="form-file file-upload-inner">
-                                <label for="fileupload" id="buttonlabel">
+                <h3>Evidence type error state</h3>
+                <div class="file-upload-list error">
+                    <div class="file-upload-wrapper empty">
+                        <div class="form-file file-upload-inner">
+                            <label for="fileupload" id="buttonlabel">
                                     <span role="button" aria-controls="filename" tabindex="0">
                                       Add a new file
                                     </span>
-                                </label>
-                                <input type="file" id="fileupload">
-                                <label for="filename1" class="hide">
-                                    uploaded file
-                                </label>
-                                <input type="text" id="filename1" class="file-upload-input" autocomplete="off" readonly placeholder="upload file">
+                            </label>
+                            <input type="file" id="fileupload">
+                            <label for="filename1" class="hide">
+                                uploaded file
+                            </label>
+                            <input type="text" id="filename1" class="file-upload-input" autocomplete="off" readonly placeholder="upload file">
 
-                                <div class="error-message">
-                                    Error message here
-                                </div>
-
+                            <div class="error-message">
+                                Error message here
                             </div>
+
                         </div>
                     </div>
 
-                </div>
-            </section>
-
-            <section class="upload-wrapper">
-                <h3>BACS</h3>
-                <div class="file-upload-list">
-                    <div class="file-upload-wrapper empty">
-                        <div class="form-file file-upload-inner">
-                            <label for="fileupload" id="buttonlabel">
-                                    <span role="button" aria-controls="filename" tabindex="0">
-                                      Add a new file
-                                    </span>
-                            </label>
-                            <input type="file" id="fileupload">
-                            <label for="filename2" class="hide">
-                                uploaded file
-                            </label>
-                            <input type="text" id="filename2" autocomplete="off" readonly placeholder="no file uploaded">
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="upload-wrapper">
-                <h3>Bank statements</h3>
-                <div class="file-upload-list">
-                    <div class="file-upload-wrapper empty">
-                        <div class="form-file file-upload-inner">
-                            <label for="fileupload" id="buttonlabel">
-                                    <span role="button" aria-controls="filename" tabindex="0">
-                                      Add a new file
-                                    </span>
-                            </label>
-                            <input type="file" id="fileupload">
-                            <label for="filename3" class="hide">
-                                uploaded file
-                            </label>
-                            <input type="text" id="filename3" autocomplete="off" readonly placeholder="no file uploaded">
-                        </div>
-                    </div>
                 </div>
             </section>
 
@@ -341,7 +384,7 @@
                     files you’ve uploaded. Or if you have a summary document, attach this as an
                     additional file.</p>
                 <h3>Additional comments</h3>
-                <textarea id="additional-comments"rows="4"></textarea>
+                <textarea id="additional-comments" rows="4"></textarea>
                 <h3 class="margin-1t">Attach additional files</h3>
                 <div class="file-upload-list">
                     <div class="file-upload-wrapper empty">
