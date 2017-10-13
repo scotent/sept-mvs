@@ -5,11 +5,22 @@
 // SE dot com Custom styles
 // ==========================================================================
 
+html, body {
+    height: 100%;
+}
+
 body {
     margin-bottom: 0;
     .error {
         text-align: center;
     }
+}
+
+// Height is dynamically added by js - to force sticky footer //
+.content-wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
 }
 
 #main {
@@ -29,8 +40,9 @@ footer {
     padding-top: 3em;
     border-top: $grey-borders 1px solid;
     text-align: center;
+    background-color: $se-white;
     .navbar {
-        margin: 2em 0;
+        margin: 2em 0 1em;
         border-bottom: none;
         ul {
             margin: 0;
@@ -43,6 +55,13 @@ footer {
     }
 }
 
+.footer {
+    bottom: 0;
+    left: 0;
+    position: inherit;
+    right: 0;
+}
+
 .site-feedback {
     margin: 0 auto;
     width: 100%;
@@ -52,6 +71,8 @@ footer {
         background-color: $se-blue;
         padding: 8px 15px;
         text-decoration: none;
+        display: inline-block;
+        height: 40px;
         &:hover {
             color: $white;
             text-decoration: underline;

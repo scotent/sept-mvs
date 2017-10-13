@@ -40,13 +40,16 @@
 
     <script src="/sept-mvs/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
+    <script src="/sept-mvs/js/vendor/main.js"></script>
+
 
 </head>
 
 
 <body>
 
-<div class="banner">
+<div class="content-wrapper">
+    <div class="banner">
     <div class="container">
         <div class="row">
             <div class="col-sm-8">
@@ -61,7 +64,7 @@
 
 
 
-<nav class="navbar">
+    <nav class="navbar">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -84,33 +87,33 @@
     
 
 
-<section class="breadcrumbs">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Dynamic breadcrumbs</a></li>
-                    <li class="breadcrumb-item active">Grant Details - Page layouts</li>
-                </ol>
+    <section class="breadcrumbs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Dynamic breadcrumbs</a></li>
+                        <li class="breadcrumb-item active">Grant Details - Page layouts</li>
+                    </ol>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
-<header>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="post-title">Grant Details - Page layouts</h1>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="post-title">Grant Details - Page layouts</h1>
+                </div>
             </div>
         </div>
-    </div>
-</header>
+    </header>
 
-<div id="main" class="container">
-    <div class="row">
-        <a href="../index.html">< Back to Sept MVS Menu</a>
+    <div id="main" class="container">
+        <div class="row">
+            <a href="../index.html">< Back to Sept MVS Menu</a>
 
 <ul>
   <h2>Grant Detail</h2>
@@ -131,19 +134,21 @@
   <li><a href="claim-detail/upload-evidence.html">Upload evidence</a></li>
   <li><a href="claim-detail/claim-summary.html">Claim summary</a></li>
 </ul>
+        </div>
     </div>
+
+    <!-- Pushes footer on small page content-->
+    <div class="push"></div>
 </div>
 
-<footer>
+<footer class="footer">
     <div class="container">
 
         <div id="logo-block">
-
             <img src="/sept-mvs/images/footer/scottish-enterprise.png" alt="Scottish Enterprise"/>
             <img src="/sept-mvs/images/footer/europe-scotland.png" alt="Europe Scotland"/>
             <img src="/sept-mvs/images/footer/highlands-islands-enterprise.png" alt="Highlands and Islands Enterprise"/>
             <img src="/sept-mvs/images/footer/scottish-development-international.png" alt="Scottish Development International"/>
-
         </div>
 
         <nav class="navbar">
@@ -156,13 +161,13 @@
                 <li><a href="/sept-mvs/sept-mvs/terms-and-conditions.html">Terms and conditions</a></li>
             </ul>
         </nav>
+
+        <div class="site-feedback">
+            <a id="myLink" target="_blank" href="https://www.surveymonkey.co.uk/r/NF8SMMG?varPage=null.html">Can we improve this page?</a>
+        </div>
+
     </div>
 </footer>
-<div class="site-feedback">
-    <a id="myLink" target="_blank" href="https://www.surveymonkey.co.uk/r/NF8SMMG?varPage=null.html">Can we improve this page?</a>
-</div>
-
-
 
 <script>
     var x = window.location.href;

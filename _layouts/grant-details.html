@@ -5,39 +5,44 @@
 
 <body>
 
-{% include beta-banner.html %}
+<div class="content-wrapper">
+    {% include beta-banner.html %}
 
 
-{% include navigation.html %}
+    {% include navigation.html %}
 
-<section class="breadcrumbs">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Dynamic breadcrumbs</a></li>
-                    <li class="breadcrumb-item active">{{ page.title }}</li>
-                </ol>
+    <section class="breadcrumbs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Dynamic breadcrumbs</a></li>
+                        <li class="breadcrumb-item active">{{ page.title }}</li>
+                    </ol>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
-<header>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="post-title">{{ page.title }}</h1>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="post-title">{{ page.title }}</h1>
+                </div>
             </div>
         </div>
-    </div>
-</header>
+    </header>
 
-<div id="main" class="container">
-    <div class="row">
-        {{ content }}
+    <div id="main" class="container">
+        <div class="row">
+            {{ content }}
+        </div>
     </div>
+
+    <!-- Pushes footer on small page content-->
+    <div class="push"></div>
 </div>
 
 {% include main-footer.html %}
