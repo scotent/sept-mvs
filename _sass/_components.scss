@@ -217,19 +217,46 @@
                 font-size: 18px;
                 margin-right: 30px;
             }
-            .header-panel-icon {
-                position: absolute;
-                top: 44%;
-                right: 0;
-                height: 16px;
-                width: inherit;
-                margin-top: -8px;
-                background-image: url('../img/icons/icons-plus-minus.png');
-                background-repeat: no-repeat;
-                background-position: 0 -16px;
-                color: $se-blue;
-                &:before {
+            &.collapsed {
+                .header-panel-icon {
+                    position: absolute;
+                    top: 44%;
+                    right: 0;
+                    height: 16px;
+                    width: inherit;
+                    margin-top: -8px;
+                    background-image: url('../img/icons/icons-plus-minus.png');
+                    background-repeat: no-repeat;
+                    background-position: 0 -16px;
                     color: $se-blue;
+                    &:before {
+                        color: $se-blue;
+                        content: '\f0d7';
+                        font-family: FontAwesome;
+                        font-size: 1.25em;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            &:not(.collapsed) {
+                .header-panel-icon {
+                    position: absolute;
+                    top: 44%;
+                    right: 0;
+                    height: 16px;
+                    width: inherit;
+                    margin-top: -8px;
+                    background-image: url('../img/icons/icons-plus-minus.png');
+                    background-repeat: no-repeat;
+                    background-position: 0 -16px;
+                    color: $se-blue;
+                    &:before {
+                        color: $se-blue;
+                        content: '\f0d8';
+                        font-family: FontAwesome;
+                        font-size: 1.25em;
+                        margin-right: 10px;
+                    }
                 }
             }
         }
