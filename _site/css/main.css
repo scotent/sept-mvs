@@ -377,7 +377,7 @@ a {
         margin-right: 30px; }
       .accordion.claim-evidence .panel-heading.collapsed .header-panel-icon {
         position: absolute;
-        top: 44%;
+        top: 25%;
         right: 0;
         height: 16px;
         width: inherit;
@@ -394,7 +394,7 @@ a {
           margin-right: 10px; }
       .accordion.claim-evidence .panel-heading:not(.collapsed) .header-panel-icon {
         position: absolute;
-        top: 44%;
+        top: 25%;
         right: 0;
         height: 16px;
         width: inherit;
@@ -929,8 +929,22 @@ td, thead + tbody tr:first-child td {
 h2 ~ table {
   margin-top: 0; }
 
+table.table-striped.no-hover tbody tr:hover td {
+  background: none !important; }
+
 section.upload-wrapper {
   border-bottom: 3px solid #727272; }
+  section.upload-wrapper .upload-header {
+    position: relative; }
+    section.upload-wrapper .upload-header h3.short {
+      padding-bottom: 5px; }
+      section.upload-wrapper .upload-header h3.short ~ a {
+        top: 2px !important;
+        position: absolute;
+        right: 0; }
+
+form.claim-evidence-form {
+  display: inline-block; }
 
 .file-upload-list {
   border-top: 1px solid #727272; }
@@ -1551,6 +1565,21 @@ footer {
   right: 0; }
 
 .site-feedback {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center; }
+  .site-feedback a {
+    color: #ffffff;
+    background-color: #00427F;
+    padding: 8px 15px;
+    text-decoration: none;
+    display: inline-block;
+    height: 40px; }
+    .site-feedback a:hover {
+      color: #FFFFFF;
+      text-decoration: underline; }
+
+.site-feedback-1 {
   position: fixed;
   top: 25%;
   right: 0;
@@ -1559,7 +1588,7 @@ footer {
   text-align: right;
   z-index: 9999;
   margin-top: -15px; }
-  .site-feedback a {
+  .site-feedback-1 a {
     color: #ffffff;
     background-color: #00427F;
     padding: 8px 15px;
@@ -1576,7 +1605,7 @@ footer {
     border-bottom: solid 1px #333;
     border-left: solid 1px #333;
     border-right: solid 1px #fff; }
-    .site-feedback a:hover {
+    .site-feedback-1 a:hover {
       color: #FFFFFF;
       text-decoration: underline;
       background-color: #727272; }

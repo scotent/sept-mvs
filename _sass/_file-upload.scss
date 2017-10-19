@@ -4,6 +4,22 @@
 
 section.upload-wrapper {
     border-bottom: 3px solid $se-grey;
+    .upload-header {
+        position: relative;
+        h3.short {
+            padding-bottom: 5px;
+            ~ a {
+                top: 2px!important;
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+
+}
+
+form.claim-evidence-form {
+    display: inline-block;
 }
 
 .file-upload-list {

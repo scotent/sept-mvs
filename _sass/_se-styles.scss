@@ -62,26 +62,26 @@ footer {
     right: 0;
 }
 
-//.site-feedback {
-//    margin: 0 auto;
-//    width: 100%;
-//    text-align: center;
-//    a {
-//        color: $se-white;
-//        background-color: $se-blue;
-//        padding: 8px 15px;
-//        text-decoration: none;
-//        display: inline-block;
-//        height: 40px;
-//        &:hover {
-//            color: $white;
-//            text-decoration: underline;
-//        }
-//    }
-//}
-
-
 .site-feedback {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    a {
+        color: $se-white;
+        background-color: $se-blue;
+        padding: 8px 15px;
+        text-decoration: none;
+        display: inline-block;
+        height: 40px;
+        &:hover {
+            color: $white;
+            text-decoration: underline;
+        }
+    }
+}
+
+
+.site-feedback-1 {
     position: fixed;
     top: 25%;
     right: 0;
