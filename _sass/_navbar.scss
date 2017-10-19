@@ -39,6 +39,7 @@
                     text-decoration: none;
                     &:hover {
                         background-color: $se-light-grey;
+                        text-decoration: underline;
                     }
                     &.disabled:hover {
                         background-color: transparent;

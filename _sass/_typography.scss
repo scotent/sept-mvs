@@ -135,6 +135,16 @@ h2, h3, h4, h5, h6 {
     }
 }
 
+a, .link {
+    color: $se-blue;
+    text-decoration: none;
+    word-wrap: break-word;
+    @include transition(background-color 0.36s, color 0.36s);
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 // -- Breadcrumbs -- //
 .breadcrumbs {
     font-size: 14px;
@@ -187,6 +197,17 @@ h2, h3, h4, h5, h6 {
 a[href^="tel:"] {
     color: $se-blue;
     text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.banner {
+    a[href^="tel:"] {
+        color: $white;
+        &:hover {
+            color: $se-grey-hover;
+        }
+    }
 }
 
 .form-group p.bold-heading {
@@ -306,9 +327,4 @@ caption {
             }
         }
     }
-}
-
-a[href^="tel"]{
-    color:inherit;
-    text-decoration:none;
 }

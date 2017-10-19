@@ -45,3 +45,14 @@
 // Usage ..
 // @include border-radius(0);
 //
+
+
+// Rotate text by the chosen amount
+@mixin rotate-text($val) {
+    -ms-transform: rotate($val); /* IE 9 */
+    -webkit-transform: rotate($val); /* Chrome, Safari, Opera */
+    transform: rotate($val);
+}
+// Usage ..
+// @include rotate-text(-90deg);
+//

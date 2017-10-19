@@ -62,23 +62,122 @@ footer {
     right: 0;
 }
 
+//.site-feedback {
+//    margin: 0 auto;
+//    width: 100%;
+//    text-align: center;
+//    a {
+//        color: $se-white;
+//        background-color: $se-blue;
+//        padding: 8px 15px;
+//        text-decoration: none;
+//        display: inline-block;
+//        height: 40px;
+//        &:hover {
+//            color: $white;
+//            text-decoration: underline;
+//        }
+//    }
+//}
+
+
 .site-feedback {
-    margin: 0 auto;
-    width: 100%;
-    text-align: center;
+    position: fixed;
+    top: 33%;
+    right: 0;
+    width: 115px;
+    height: 0;
+    text-align:right;
+    z-index:9999;
+    margin-top:-15px;
+
     a {
         color: $se-white;
         background-color: $se-blue;
         padding: 8px 15px;
         text-decoration: none;
-        display: inline-block;
-        height: 40px;
+        display: block;
+        height: 65px;
         &:hover {
             color: $white;
             text-decoration: underline;
+            background-color: $se-grey;
         }
+        @include rotate-text(-90deg);
+
+        text-align:center;
+        width: 165px;
+        border-bottom: solid 1px #333;
+        border-left: solid 1px #333;
+        border-right: solid 1px #fff;
     }
 }
+
+.site-feedback-2 {
+    position: fixed;
+    top: 55%;
+    right: 0;
+    width: 104px;
+    height: 0;
+    text-align:right;
+    z-index:9999;
+    margin-top:-15px;
+    a {
+        color: $se-white;
+        background-color: $se-blue;
+        padding: 8px 15px;
+        text-decoration: none;
+        display: block;
+        height: 41px;
+        &:hover {
+            color: $white;
+            text-decoration: underline;
+            background-color: $se-grey;
+        }
+        @include rotate-text(-90deg);
+
+        text-align:center;
+        width: 165px;
+        border-bottom: solid 1px #333;
+        border-left: solid 1px #333;
+        border-right: solid 1px #fff;
+    }
+}
+
+.site-feedback-3 {
+    position: fixed;
+    bottom: 15%;
+    right: 0;
+    width: 104px;
+    height: 0;
+    text-align:right;
+    z-index:9999;
+    margin-top:-15px;
+    a {
+        color: $se-white;
+        background-color: $se-blue;
+        padding: 8px 15px;
+        text-decoration: none;
+        display: block;
+        height: 41px;
+        &:hover {
+            color: $white;
+            text-decoration: underline;
+            background-color: $se-grey;
+        }
+        @include rotate-text(-90deg);
+
+        text-align:center;
+        width: 165px;
+        border-bottom: solid 1px #333;
+        border-left: solid 1px #333;
+        border-right: solid 1px #fff;
+    }
+}
+
+
+
+
 
 .inline {
     display: inline;
