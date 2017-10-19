@@ -83,7 +83,7 @@ footer {
 
 .site-feedback {
     position: fixed;
-    top: 33%;
+    top: 25%;
     right: 0;
     width: 115px;
     height: 0;
@@ -124,11 +124,11 @@ footer {
     margin-top:-15px;
     a {
         color: $se-white;
-        background-color: $se-blue;
+        background-color: $se-dark-green;
         padding: 8px 15px;
         text-decoration: none;
         display: block;
-        height: 41px;
+        height: 101px;
         &:hover {
             color: $white;
             text-decoration: underline;
@@ -137,7 +137,7 @@ footer {
         @include rotate-text(-90deg);
 
         text-align:center;
-        width: 165px;
+        width: 226px;
         border-bottom: solid 1px #333;
         border-left: solid 1px #333;
         border-right: solid 1px #fff;

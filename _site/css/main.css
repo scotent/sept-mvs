@@ -1552,7 +1552,7 @@ footer {
 
 .site-feedback {
   position: fixed;
-  top: 33%;
+  top: 25%;
   right: 0;
   width: 115px;
   height: 0;
@@ -1592,18 +1592,18 @@ footer {
   margin-top: -15px; }
   .site-feedback-2 a {
     color: #ffffff;
-    background-color: #00427F;
+    background-color: #03634D;
     padding: 8px 15px;
     text-decoration: none;
     display: block;
-    height: 41px;
+    height: 101px;
     -ms-transform: rotate(-90deg);
     /* IE 9 */
     -webkit-transform: rotate(-90deg);
     /* Chrome, Safari, Opera */
     transform: rotate(-90deg);
     text-align: center;
-    width: 165px;
+    width: 226px;
     border-bottom: solid 1px #333;
     border-left: solid 1px #333;
     border-right: solid 1px #fff; }
