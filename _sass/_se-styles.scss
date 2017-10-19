@@ -175,6 +175,39 @@ footer {
     }
 }
 
+.site-feedback-4 {
+    position: fixed;
+    top: 40%;
+    right: -50px;
+    width: 104px;
+    height: 0;
+    text-align: left;
+    z-index:9999;
+    margin-top:-15px;
+    @include transition(right 0.54s);
+    a {
+        color: $se-white;
+        background-color: $se-dark-green;
+        padding: 2px 15px 10px 10px;
+        text-decoration: none;
+        display: block;
+        height: 41px;
+        &:hover {
+            color: $white;
+            text-decoration: underline;
+            background-color: $se-black;
+        }
+        text-align: left;
+        width: 280px;
+        border-bottom: solid 1px #333;
+        border-left: solid 1px #333;
+        border-right: solid 1px #fff;
+    }
+    &:hover {
+        right: 160px;
+    }
+}
+
 
 
 
