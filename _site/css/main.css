@@ -1603,9 +1603,7 @@ footer {
     transform: rotate(-90deg);
     text-align: center;
     width: 165px;
-    border-bottom: solid 1px #333;
-    border-left: solid 1px #333;
-    border-right: solid 1px #fff; }
+    border: none; }
     .site-feedback-1 a:hover {
       color: #FFFFFF;
       text-decoration: underline;
@@ -1634,9 +1632,7 @@ footer {
     transform: rotate(-90deg);
     text-align: center;
     width: 226px;
-    border-bottom: solid 1px #333;
-    border-left: solid 1px #333;
-    border-right: solid 1px #fff; }
+    border: none; }
     .site-feedback-2 a:hover {
       color: #FFFFFF;
       text-decoration: underline;
@@ -1665,9 +1661,7 @@ footer {
     transform: rotate(-90deg);
     text-align: center;
     width: 165px;
-    border-bottom: solid 1px #333;
-    border-left: solid 1px #333;
-    border-right: solid 1px #fff; }
+    border: none; }
     .site-feedback-3 a:hover {
       color: #FFFFFF;
       text-decoration: underline;
@@ -1696,9 +1690,7 @@ footer {
     height: 41px;
     text-align: left;
     width: 280px;
-    border-bottom: solid 1px #333;
-    border-left: solid 1px #333;
-    border-right: solid 1px #fff;
+    border: none;
     -webkit-border-radius: 20px;
     border-radius: 20px;
     background-clip: padding-box;
@@ -1716,7 +1708,7 @@ footer {
 .site-help-1 {
   position: fixed;
   top: 15%;
-  right: -50px;
+  right: -63px;
   width: 104px;
   height: 0;
   text-align: left;
@@ -1729,16 +1721,14 @@ footer {
   transition: right 0.54s; }
   .site-help-1 a {
     color: #ffffff;
-    background-color: #03634D;
+    background-color: #d60000;
     padding: 9px 15px 10px 10px;
     text-decoration: none;
     display: block;
     height: 41px;
     text-align: left;
-    width: 280px;
-    border-bottom: solid 1px #333;
-    border-left: solid 1px #333;
-    border-right: solid 1px #fff;
+    width: 300px;
+    border: none;
     -webkit-border-radius: 20px;
     border-radius: 20px;
     background-clip: padding-box;
@@ -1750,9 +1740,9 @@ footer {
     .site-help-1 a .fa {
       vertical-align: top;
       margin-top: -6px;
-      padding: 1px 10px 0 7px; }
+      padding: 1px 5px 0 7px; }
   .site-help-1:hover {
-    right: 160px; }
+    right: 180px; }
 
 .inline {
   display: inline; }
