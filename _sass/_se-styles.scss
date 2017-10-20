@@ -214,6 +214,45 @@ footer {
     }
 }
 
+.site-help-1 {
+    position: fixed;
+    top: 15%;
+    right: -50px;
+    width: 104px;
+    height: 0;
+    text-align: left;
+    z-index:9999;
+    margin-top:-15px;
+    @include transition(right 0.54s);
+    a {
+        color: $se-white;
+        background-color: $se-dark-green;
+        padding: 9px 15px 10px 10px;
+        text-decoration: none;
+        display: block;
+        height: 41px;
+        &:hover {
+            color: $white;
+            text-decoration: underline;
+            background-color: rgba(47,62,68,0.90);
+        }
+        text-align: left;
+        width: 280px;
+        border-bottom: solid 1px #333;
+        border-left: solid 1px #333;
+        border-right: solid 1px #fff;
+        @include border-radius(20px);
+        .fa {
+            vertical-align: top;
+            margin-top: -6px;
+            padding: 1px 10px 0 7px;;
+        }
+    }
+    &:hover {
+        right: 160px;
+    }
+}
+
 
 
 

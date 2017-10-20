@@ -1713,6 +1713,47 @@ footer {
   .site-feedback-4:hover {
     right: 160px; }
 
+.site-help-1 {
+  position: fixed;
+  top: 15%;
+  right: -50px;
+  width: 104px;
+  height: 0;
+  text-align: left;
+  z-index: 9999;
+  margin-top: -15px;
+  -webkit-transition: right 0.54s;
+  -moz-transition: right 0.54s;
+  -ms-transition: right 0.54s;
+  -o-transition: right 0.54s;
+  transition: right 0.54s; }
+  .site-help-1 a {
+    color: #ffffff;
+    background-color: #03634D;
+    padding: 9px 15px 10px 10px;
+    text-decoration: none;
+    display: block;
+    height: 41px;
+    text-align: left;
+    width: 280px;
+    border-bottom: solid 1px #333;
+    border-left: solid 1px #333;
+    border-right: solid 1px #fff;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */ }
+    .site-help-1 a:hover {
+      color: #FFFFFF;
+      text-decoration: underline;
+      background-color: rgba(47, 62, 68, 0.9); }
+    .site-help-1 a .fa {
+      vertical-align: top;
+      margin-top: -6px;
+      padding: 1px 10px 0 7px; }
+  .site-help-1:hover {
+    right: 160px; }
+
 .inline {
   display: inline; }
   .inline:not(:last-of-type) {
