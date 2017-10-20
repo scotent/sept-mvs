@@ -1577,7 +1577,8 @@ footer {
     height: 40px; }
     .site-feedback a:hover {
       color: #FFFFFF;
-      text-decoration: underline; }
+      text-decoration: underline;
+      background-color: #2F3E44; }
 
 .site-feedback-1 {
   position: fixed;
@@ -1608,7 +1609,7 @@ footer {
     .site-feedback-1 a:hover {
       color: #FFFFFF;
       text-decoration: underline;
-      background-color: #727272; }
+      background-color: #2F3E44; }
 
 .site-feedback-2 {
   position: fixed;
@@ -1639,7 +1640,7 @@ footer {
     .site-feedback-2 a:hover {
       color: #FFFFFF;
       text-decoration: underline;
-      background-color: #727272; }
+      background-color: #2F3E44; }
 
 .site-feedback-3 {
   position: fixed;
@@ -1670,7 +1671,7 @@ footer {
     .site-feedback-3 a:hover {
       color: #FFFFFF;
       text-decoration: underline;
-      background-color: #727272; }
+      background-color: #2F3E44; }
 
 .site-feedback-4 {
   position: fixed;

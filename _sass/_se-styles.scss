@@ -76,6 +76,7 @@ footer {
         &:hover {
             color: $white;
             text-decoration: underline;
+            background-color: $se-black;
         }
     }
 }
@@ -101,7 +102,7 @@ footer {
         &:hover {
             color: $white;
             text-decoration: underline;
-            background-color: $se-grey;
+            background-color: $se-black;
         }
         @include rotate-text(-90deg);
 
@@ -132,7 +133,7 @@ footer {
         &:hover {
             color: $white;
             text-decoration: underline;
-            background-color: $se-grey;
+            background-color: $se-black;
         }
         @include rotate-text(-90deg);
 
@@ -163,7 +164,7 @@ footer {
         &:hover {
             color: $white;
             text-decoration: underline;
-            background-color: $se-grey;
+            background-color: $se-black;
         }
         @include rotate-text(-90deg);
 
