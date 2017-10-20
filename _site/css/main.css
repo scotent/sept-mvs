@@ -1690,7 +1690,7 @@ footer {
   .site-feedback-4 a {
     color: #ffffff;
     background-color: #03634D;
-    padding: 2px 15px 10px 10px;
+    padding: 8px 15px 10px 10px;
     text-decoration: none;
     display: block;
     height: 41px;
@@ -1698,11 +1698,18 @@ footer {
     width: 280px;
     border-bottom: solid 1px #333;
     border-left: solid 1px #333;
-    border-right: solid 1px #fff; }
+    border-right: solid 1px #fff;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */ }
     .site-feedback-4 a:hover {
       color: #FFFFFF;
       text-decoration: underline;
       background-color: #2F3E44; }
+    .site-feedback-4 a .fa {
+      vertical-align: top;
+      margin-top: -6px; }
   .site-feedback-4:hover {
     right: 160px; }
 
