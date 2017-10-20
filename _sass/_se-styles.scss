@@ -91,7 +91,6 @@ footer {
     text-align:right;
     z-index:9999;
     margin-top:-15px;
-
     a {
         color: $se-white;
         background-color: $se-blue;
@@ -99,16 +98,16 @@ footer {
         text-decoration: none;
         display: block;
         height: 65px;
+        @include rotate-text(-90deg);
+        @include transition(background-color 0.54s);
+        text-align:center;
+        width: 165px;
+        border: none;
         &:hover {
             color: $white;
             text-decoration: underline;
             background-color: $se-black;
         }
-        @include rotate-text(-90deg);
-
-        text-align:center;
-        width: 165px;
-        border: none;
     }
 }
 
@@ -128,16 +127,16 @@ footer {
         text-decoration: none;
         display: block;
         height: 101px;
+        @include rotate-text(-90deg);
+        @include transition(background-color 0.54s);
+        text-align:center;
+        width: 226px;
+        border: none;
         &:hover {
             color: $white;
             text-decoration: underline;
             background-color: $se-black;
         }
-        @include rotate-text(-90deg);
-
-        text-align:center;
-        width: 226px;
-        border: none;
     }
 }
 
@@ -157,16 +156,16 @@ footer {
         text-decoration: none;
         display: block;
         height: 41px;
+        @include rotate-text(-90deg);
+        @include transition(background-color 0.54s);
+        text-align:center;
+        width: 165px;
+        border: none;
         &:hover {
             color: $white;
             text-decoration: underline;
             background-color: $se-black;
         }
-        @include rotate-text(-90deg);
-
-        text-align:center;
-        width: 165px;
-        border: none;
     }
 }
 
@@ -187,15 +186,16 @@ footer {
         text-decoration: none;
         display: block;
         height: 41px;
+        text-align: left;
+        width: 280px;
+        border: none;
+        @include border-radius(20px);
+        @include transition(background-color 0.54s);
         &:hover {
             color: $white;
             text-decoration: underline;
             background-color: rgba(47,62,68,0.90);
         }
-        text-align: left;
-        width: 280px;
-        border: none;
-        @include border-radius(20px);
         .fa {
             vertical-align: top;
             margin-top: -6px;
@@ -223,15 +223,16 @@ footer {
         text-decoration: none;
         display: block;
         height: 41px;
+        text-align: left;
+        width: 300px;
+        border: none;
+        @include border-radius(20px);
+        @include transition(background-color 0.54s);
         &:hover {
             color: $white;
             text-decoration: underline;
             background-color: rgba(47,62,68,0.90);
         }
-        text-align: left;
-        width: 300px;
-        border: none;
-        @include border-radius(20px);
         .fa {
             vertical-align: top;
             margin-top: -6px;
