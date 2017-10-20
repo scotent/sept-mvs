@@ -1690,7 +1690,7 @@ footer {
   .site-feedback-4 a {
     color: #ffffff;
     background-color: #03634D;
-    padding: 8px 15px 10px 10px;
+    padding: 9px 15px 10px 10px;
     text-decoration: none;
     display: block;
     height: 41px;
@@ -1706,7 +1706,7 @@ footer {
     .site-feedback-4 a:hover {
       color: #FFFFFF;
       text-decoration: underline;
-      background-color: #2F3E44; }
+      background-color: rgba(47, 62, 68, 0.9); }
     .site-feedback-4 a .fa {
       vertical-align: top;
       margin-top: -6px; }
