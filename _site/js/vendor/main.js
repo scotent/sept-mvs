@@ -87,9 +87,11 @@ equalheight = function(container){
 // Trigger on window load //
 $(window).load(function() {
     equalheight('.portal-panel .panel-inner');
+    equalheight('.contact-panel');
 });
 
 // Trigger on window resize //
 $(window).resize(function(){
     equalheight('.portal-panel .panel-inner');
+    equalheight('.contact-panel');
 });
