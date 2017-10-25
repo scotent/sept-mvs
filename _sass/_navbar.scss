@@ -2,11 +2,38 @@
 // SE Custom styles for navbar
 // ==========================================================================
 
-.navbar {
+
+
+
+header {
+    margin-bottom: 0;
+    &.site-header {
+        //height: 80px;
+    }
+}
+
+
+header nav.navbar {
     border-bottom: 1px solid $se-light-grey;
-    //background: white;
-    margin-bottom: 20px;
+    background: white;
+    margin-bottom: 0;
+    border-width: 0 0 1px 0;
+    @include border-radius(0);
+    //height: 80px;
+    &.fixed {
+        position: fixed;
+        z-index: 10000;
+        top: 0;
+        left: 0;
+        right: 0;
+        @include box-shadow( 0, 0, 9px, $se-mid-grey)
+    }
+
     .navbar-brand {
+        float: left;
+        padding: 12px 15px;
+        font-size: 18px;
+        line-height: 20px;
         height: auto;
     }
 
@@ -63,7 +90,8 @@
 
 @media (max-width: 768px) {
 
-    .navbar {
+    header .navbar {
+        background-color: pink!important;
         .navbar-brand {
             padding: 0.5em;
             max-width: 230px;
@@ -98,23 +126,3 @@
     }
 }
 
-
-.banner {
-    a {
-        text-decoration: none;
-        &:hover {
-            color: $se-white;
-            text-decoration: underline;
-        }
-    }
-    .beta {
-        font-size: 1.125em;
-        background-color: $se-beta;
-        padding: 3px 7px;
-        text-transform: uppercase;
-        margin: 0 5px 0 0;
-    }
-    .pull-right {
-        padding: 6px 0 0;
-    }
-}

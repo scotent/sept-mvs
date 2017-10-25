@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+
+<section class="content-wrapper">
+
+    {% include beta-banner.html %}
+    <header class="site-header">
+        {% include navigation.html %}
+    </header>
+
+    <section class="breadcrumbs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/sept-mvs/sept-mvs/site-map.html">Site map</a></li>
+                        <li class="breadcrumb-item active">{{ page.title }}</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section><!--Breadcrumbs-->
+
+    <section id="main" class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="post-title">{{ page.title }}</h1>
+            </div>
+        </div>
+        <div class="row">
+            {{ content }}
+        </div>
+    </section><!--Main-->
+
+    <!--Push footer on small page content-->
+    <div class="push"></div>
+</section><!--Content-wrapper-->
+
+{% include main-footer-no-feedback.html %}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="/sept-mvs/js/vendor/main.js" type="text/javascript"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

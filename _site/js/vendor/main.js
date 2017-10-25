@@ -1,6 +1,45 @@
 console.log('main.js loaded');
 
 
+// cache the element
+var $navBar = $('nav.navbar');
+
+// find original navigation bar position
+var navPos = $navBar.offset().top;
+
+$(document).ready(function() {
+    var s1 = $('nav.navbar').height();
+    var s2 = $('header.site-header').height();
+
+    if (s1 != s2) {
+        $('header.site-header').css('height', s1 + "px");
+    }
+});
+$(window).resize(function(){
+    var s1 = $('nav.navbar').height();
+    var s2 = $('header.site-header').height();
+
+    if (s1 != s2) {
+        $('header.site-header').css('height', s1 + "px");
+    }
+});
+
+// on scroll
+$(window).scroll(function() {
+
+    // get scroll position from top of the page
+    var scrollPos = $(this).scrollTop();
+
+    // check if scroll position is >= the nav position
+    if (scrollPos >= navPos) {
+        $navBar.addClass('fixed');
+    } else {
+        $navBar.removeClass('fixed');
+    }
+
+});
+
+
 // Function to create Responsive Sticky Footer //
 $(document).ready(function () {
     $(window).resize(function () {
@@ -12,7 +51,6 @@ $(document).ready(function () {
 
     $(window).resize();
 });
-
 
 // Function to make targeted elements equal height //
 equalheight = function(container){

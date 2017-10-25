@@ -7,7 +7,7 @@
 h1 {
     font-size: 49px;
     line-height: 56px;
-    margin: 28px 0 25px;
+    margin: 10px 0 25px;
     @media all and (max-width: $screen-xxs-max) {
         font-size: 36px;
         line-height: 42px;
@@ -148,7 +148,7 @@ a, .link {
 // -- Breadcrumbs -- //
 .breadcrumbs {
     font-size: 14px;
-    margin: 0 0 13px;
+    margin: 20px 0 13px;
     color: $se-grey;
     padding-left: 0;
     // TODO refactor to be just .breadcrumbs-item //
@@ -172,7 +172,7 @@ a, .link {
             top: 1px;
         }
         &:before {
-            //content: "";
+            content: "";
             padding: 0;
         }
         &:last-of-type:after {
@@ -199,14 +199,6 @@ a[href^="tel:"] {
     text-decoration: none;
     &:hover {
         text-decoration: underline;
-    }
-}
-.banner {
-    a[href^="tel:"] {
-        color: $white;
-        &:hover {
-            color: $se-grey-hover;
-        }
     }
 }
 
