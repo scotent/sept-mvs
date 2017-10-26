@@ -871,7 +871,8 @@ input + label.fancy-checkbox::before {
   padding: 30px 10px; }
 
 table.table-striped tbody tr td a {
-  display: block; }
+  display: block;
+  color: #256691; }
 table.table-striped tbody tr thead + tbody tr:nth-child(2n-1) td {
   background: #ecf0f1; }
 table.table-striped tbody tr:hover td {
@@ -923,8 +924,54 @@ td, thead + tbody tr:first-child td {
 h2 ~ table {
   margin-top: 0; }
 
+table.table-striped.no-hover th.center {
+  text-align: center; }
+
 table.table-striped.no-hover tbody tr:hover td {
   background: none !important; }
+table.table-striped.no-hover tbody tr.status td {
+  line-height: 1em; }
+  table.table-striped.no-hover tbody tr.status td progress {
+    color: pink !important; }
+table.table-striped.no-hover tbody tr td.has-link {
+  text-align: center; }
+  table.table-striped.no-hover tbody tr td.has-link a {
+    background-color: #00427F;
+    color: #ffffff;
+    padding: 8px 0;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */ }
+table.table-striped.no-hover tbody tr.status-due td.has-link a {
+  background-color: #03634D !important; }
+  table.table-striped.no-hover tbody tr.status-due td.has-link a:hover {
+    background-color: #2F3E44 !important; }
+table.table-striped.no-hover tbody tr.status-started td.has-link a {
+  background-color: #03634D !important; }
+  table.table-striped.no-hover tbody tr.status-started td.has-link a:hover {
+    background-color: #2F3E44 !important; }
+table.table-striped.no-hover tbody tr.status-claimed td.has-link a {
+  background-color: #00427F !important; }
+  table.table-striped.no-hover tbody tr.status-claimed td.has-link a:hover {
+    background-color: #2F3E44 !important; }
+table.table-striped.no-hover tbody tr progress {
+  color: #552200;
+  font-size: 1px;
+  line-height: 9px;
+  width: 100%;
+  padding: 0 1px 0 0;
+  height: 7px;
+  border: 1px solid #727272;
+  background: #fff; }
+table.table-striped.no-hover tbody tr td.status-active progress {
+  color: #727272; }
+table.table-striped.no-hover tbody tr td.status-due progress {
+  color: #FF9900; }
+table.table-striped.no-hover tbody tr.status-started .progress-bar {
+  color: #FF9900; }
+table.table-striped.no-hover tbody tr td.status-claimed progress {
+  color: #00CC00; }
 
 section.upload-wrapper {
   border-bottom: 3px solid #727272; }
@@ -1311,7 +1358,7 @@ h2, h3, h4, h5, h6 {
   font-size: 25px;
   line-height: 34px;
   font-weight: 300;
-  margin: 0 0 35px 0;
+  margin: 0 0 25px 0;
   word-wrap: break-word; }
   @media all and (max-width: 479px) {
     .leader {
@@ -1779,6 +1826,32 @@ ul.evidence-wrapper {
   margin: 0;
   padding: 0;
   list-style: none; }
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #00427F;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #00427F;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); }
+  .dropdown-menu a {
+    color: #ffffff !important; }
+    .dropdown-menu a:hover {
+      background-color: #2F3E44 !important; }
 
 body.globalscot {
   padding-top: 100px !important;

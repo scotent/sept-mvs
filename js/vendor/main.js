@@ -39,6 +39,13 @@ $(window).scroll(function() {
 
 });
 
+$(document).ready(function () {
+    if ($(‘td’).
+    hasClass(‘.td-link’) )
+    {
+        $(document.body).addClass(‘has-link’);
+    }
+});
 
 // Function to create Responsive Sticky Footer //
 $(document).ready(function () {
