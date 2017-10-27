@@ -942,7 +942,9 @@ table.table-striped.no-hover tbody tr td.has-link {
     -webkit-border-radius: 8px;
     border-radius: 8px;
     background-clip: padding-box;
-    /* stops bg color from leaking outside the border: */ }
+    /* stops bg color from leaking outside the border: */
+    width: 80%;
+    margin: auto; }
 table.table-striped.no-hover tbody tr.status-due td.has-link a {
   background-color: #03634D !important; }
   table.table-striped.no-hover tbody tr.status-due td.has-link a:hover {
@@ -964,14 +966,58 @@ table.table-striped.no-hover tbody tr progress {
   height: 7px;
   border: 1px solid #727272;
   background: #fff; }
-table.table-striped.no-hover tbody tr td.status-active progress {
-  color: #727272; }
-table.table-striped.no-hover tbody tr td.status-due progress {
-  color: #FF9900; }
-table.table-striped.no-hover tbody tr.status-started .progress-bar {
-  color: #FF9900; }
-table.table-striped.no-hover tbody tr td.status-claimed progress {
-  color: #00CC00; }
+table.table-striped.no-hover tbody tr.status-active progress::-webkit-progress-bar {
+  background-color: #ffffff;
+  width: 100%; }
+table.table-striped.no-hover tbody tr.status-active progress::-webkit-progress-value {
+  background-color: #999999 !important; }
+table.table-striped.no-hover tbody tr.status-active progress {
+  background-color: #ffffff; }
+table.table-striped.no-hover tbody tr.status-active progress::-moz-progress-bar {
+  background-color: #999999 !important; }
+table.table-striped.no-hover tbody tr.status-active progress {
+  background-color: #ffffff; }
+table.table-striped.no-hover tbody tr.status-active progress {
+  color: #999999; }
+table.table-striped.no-hover tbody tr.status-due progress::-webkit-progress-bar {
+  background-color: #ffffff;
+  width: 100%; }
+table.table-striped.no-hover tbody tr.status-due progress::-webkit-progress-value {
+  background-color: #03634D !important; }
+table.table-striped.no-hover tbody tr.status-due progress {
+  background-color: #ffffff; }
+table.table-striped.no-hover tbody tr.status-due progress::-moz-progress-bar {
+  background-color: #03634D !important; }
+table.table-striped.no-hover tbody tr.status-due progress {
+  background-color: #ffffff; }
+table.table-striped.no-hover tbody tr.status-due progress {
+  color: #03634D; }
+table.table-striped.no-hover tbody tr.status-started progress::-webkit-progress-bar {
+  background-color: #ffffff;
+  width: 100%; }
+table.table-striped.no-hover tbody tr.status-started progress::-webkit-progress-value {
+  background-color: #03634D !important; }
+table.table-striped.no-hover tbody tr.status-started progress {
+  background-color: #ffffff; }
+table.table-striped.no-hover tbody tr.status-started progress::-moz-progress-bar {
+  background-color: #03634D !important; }
+table.table-striped.no-hover tbody tr.status-started progress {
+  background-color: #ffffff; }
+table.table-striped.no-hover tbody tr.status-started progress {
+  color: #03634D; }
+table.table-striped.no-hover tbody tr.status-claimed progress::-webkit-progress-bar {
+  background-color: #ffffff;
+  width: 100%; }
+table.table-striped.no-hover tbody tr.status-claimed progress::-webkit-progress-value {
+  background-color: #00427F !important; }
+table.table-striped.no-hover tbody tr.status-claimed progress {
+  background-color: #ffffff; }
+table.table-striped.no-hover tbody tr.status-claimed progress::-moz-progress-bar {
+  background-color: #00427F !important; }
+table.table-striped.no-hover tbody tr.status-claimed progress {
+  background-color: #ffffff; }
+table.table-striped.no-hover tbody tr.status-claimed progress {
+  color: #00427F; }
 
 section.upload-wrapper {
   border-bottom: 3px solid #727272; }
@@ -1852,6 +1898,15 @@ ul.evidence-wrapper {
     color: #ffffff !important; }
     .dropdown-menu a:hover {
       background-color: #2F3E44 !important; }
+  .dropdown-menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+    font-size: 16px; }
 
 body.globalscot {
   padding-top: 100px !important;

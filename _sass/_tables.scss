@@ -114,6 +114,8 @@ table.table-striped.no-hover tbody tr {
             color: $se-white;
             padding: 8px 0;
             @include border-radius(8px);
+            width: 80%;
+            margin: auto;
         }
 
     }
@@ -136,10 +138,6 @@ table.table-striped.no-hover tbody tr {
         }
     }
 
-
-
-
-
     progress {
         color: #552200;
         font-size: 1px;
@@ -151,24 +149,16 @@ table.table-striped.no-hover tbody tr {
         background: #fff;
     }
 
-
-
-
-
-    td.status-active progress {
-        color: $se-grey;
+    &.status-active {
+        @include progress-bar($se-mid-grey, $se-white);
     }
-    td.status-due progress {
-        color: $se-amber;
+    &.status-due {
+        @include progress-bar($se-dark-green, $se-white);
     }
-    &.status-started .progress-bar {
-        color: $se-amber;
+    &.status-started {
+        @include progress-bar($se-dark-green, $se-white);
     }
-    td.status-claimed progress {
-        color: $se-bright-green;
+    &.status-claimed {
+        @include progress-bar($se-blue, $se-white);
     }
-
-
-
-
 }
