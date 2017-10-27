@@ -40,10 +40,9 @@ $(window).scroll(function() {
 });
 
 $(document).ready(function () {
-    if ($(‘td’).
-    hasClass(‘.td-link’) )
+    if ($('td').hasClass('.td-link') )
     {
-        $(document.body).addClass(‘has-link’);
+        $(document.body).addClass('has-link');
     }
 });
 
