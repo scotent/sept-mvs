@@ -327,7 +327,10 @@ ul.evidence-wrapper {
         white-space: nowrap;
         font-size: 16px;
     }
-
+    @media all and (max-width: $screen-sm-min) {
+        left: inherit;
+        right: 0;
+    }
 }
 
 

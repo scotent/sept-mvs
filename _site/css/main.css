@@ -942,7 +942,8 @@ table.table-striped.no-hover tbody tr td.has-link {
     background-clip: padding-box;
     /* stops bg color from leaking outside the border: */
     width: 80%;
-    margin: auto; }
+    margin: auto;
+    max-width: 140px; }
 table.table-striped.no-hover tbody tr.status-new td.has-link a {
   background-color: #999999 !important; }
   table.table-striped.no-hover tbody tr.status-new td.has-link a:hover {
@@ -1054,63 +1055,50 @@ table.table-striped.no-hover tbody tr.status-paid progress {
 table.table-striped.no-hover tbody tr.status-paid progress {
   color: #610e6c; }
 
-/*
-Max width before this PARTICULAR table gets nasty
-This query will take effect for any screen smaller than 760px
-and also iPads specifically.
-*/
 @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* Force table to not be like tables anymore */
-  table, thead, tbody, th, td, tr {
-    display: block; }
+  .table-responsive {
+    /* Hide table headers (but not display: none;, for accessibility) */ }
+    .table-responsivetable, .table-responsive thead, .table-responsive tbody, .table-responsive th, .table-responsive td, .table-responsive tr {
+      display: block; }
+    .table-responsive thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px; }
+    .table-responsive tr {
+      border: 1px solid #ccc; }
+    .table-responsive td {
+      /* Behave  like a "row" */
+      border: none;
+      border-bottom: 1px solid #eee;
+      position: relative;
+      padding-left: 50%; }
+    .table-responsive td:before {
+      /* Now like a table header */
+      position: absolute;
+      /* Top/left values mimic padding */
+      top: 33%;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      font-weight: 700;
+      text-align: left; }
 
-  /* Hide table headers (but not display: none;, for accessibility) */
-  thead tr {
-    position: absolute;
-    top: -9999px;
-    left: -9999px; }
-
-  tr {
-    border: 1px solid #ccc; }
-
-  td {
-    /* Behave  like a "row" */
-    border: none;
-    border-bottom: 1px solid #eee;
-    position: relative;
-    padding-left: 50%; }
-
-  td:before {
-    /* Now like a table header */
-    position: absolute;
-    /* Top/left values mimic padding */
-    top: 6px;
-    left: 6px;
-    width: 45%;
-    padding-right: 10px;
-    white-space: nowrap; }
-
-  /*
-  Label the data
-  */
-  .claim-schedule {
-    /*
-Label the data
-*/ }
-    .claim-schedule td {
-      padding: 10px 0 10px 50% !important; }
-    .claim-schedule td:nth-of-type(1):before {
-      content: "Claim name"; }
-    .claim-schedule td:nth-of-type(2):before {
-      content: "Due date"; }
-    .claim-schedule td:nth-of-type(3):before {
-      content: "Amount"; }
-    .claim-schedule td:nth-of-type(4):before {
-      content: "Status"; }
-    .claim-schedule td:nth-of-type(5):before {
-      content: "Adjust"; }
-    .claim-schedule td:nth-of-type(6):before {
-      content: "Actions"; } }
+  .claim-schedule td {
+    padding: 10px 10px 10px 50% !important; }
+  .claim-schedule td:nth-of-type(1):before {
+    content: "Claim name"; }
+  .claim-schedule td:nth-of-type(2):before {
+    content: "Due date"; }
+  .claim-schedule td:nth-of-type(3):before {
+    content: "Amount"; }
+  .claim-schedule td:nth-of-type(4):before {
+    content: "Status"; }
+  .claim-schedule td:nth-of-type(5):before {
+    content: "Adjust"; }
+  .claim-schedule td:nth-of-type(6):before {
+    content: "Actions"; } }
 section.upload-wrapper {
   border-bottom: 3px solid #727272; }
   section.upload-wrapper .upload-header {
@@ -1999,6 +1987,10 @@ ul.evidence-wrapper {
     color: #333;
     white-space: nowrap;
     font-size: 16px; }
+  @media all and (max-width: 768px) {
+    .dropdown-menu {
+      left: inherit;
+      right: 0; } }
 
 body.globalscot {
   padding-top: 100px !important;
