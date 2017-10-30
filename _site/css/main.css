@@ -1992,6 +1992,23 @@ ul.evidence-wrapper {
       left: inherit;
       right: 0; } }
 
+.timeout {
+  background-color: #FFEAEF;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  display: block;
+  position: absolute;
+  z-index: 999999;
+  top: 117px;
+  max-width: 1170px;
+  -webkit-box-shadow: 0 5px 5px #dddddd;
+  -moz-box-shadow: 0 5px 5px #dddddd;
+  box-shadow: 0 5px 5px #dddddd; }
+  .timeout .button {
+    display: inline-block;
+    margin-top: 1em; }
+
 body.globalscot {
   padding-top: 100px !important;
   padding-bottom: 20px !important; }

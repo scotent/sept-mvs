@@ -333,4 +333,19 @@ ul.evidence-wrapper {
     }
 }
 
-
+.timeout {
+    background-color: $se-light-pink;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: block;
+    position: absolute;
+    z-index: 999999;
+    top: 117px;
+    max-width: 1170px;
+    @include box-shadow(0, 5px, 5px, $se-light-mid-grey);
+    .button {
+        display: inline-block;
+        margin-top: 1em;
+    }
+}
