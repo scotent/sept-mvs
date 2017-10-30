@@ -1,6 +1,8 @@
 console.log('main.js loaded');
 
 
+// -- Responsive Sticky header -- //
+
 // cache the element
 var $navBar = $('nav.navbar');
 
@@ -39,14 +41,9 @@ $(window).scroll(function() {
 
 });
 
-$(document).ready(function () {
-    if ($('td').hasClass('.td-link') )
-    {
-        $(document.body).addClass('has-link');
-    }
-});
 
-// Function to create Responsive Sticky Footer //
+// -- Responsive Sticky Footer -- //
+
 $(document).ready(function () {
     $(window).resize(function () {
         var footerHeight = ($('.footer').outerHeight());
@@ -58,7 +55,9 @@ $(document).ready(function () {
     $(window).resize();
 });
 
-// Function to make targeted elements equal height //
+
+// -- Make targeted elements equal height -- //
+
 equalheight = function(container){
 
     var currentTallest = 0,
