@@ -113,7 +113,7 @@ footer {
 
 .site-feedback-2 {
     position: fixed;
-    top: 55%;
+    top: 63%;
     right: 0;
     width: 104px;
     height: 0;
@@ -341,11 +341,21 @@ ul.evidence-wrapper {
     position: absolute;
     z-index: 999999;
     top: 117px;
-    max-width: 1170px;
+    max-width: 1150px;
     @include box-shadow(0, 5px, 5px, $se-light-mid-grey);
+    @media all and (max-width: $screen-lg-min) {
+        background-color: yellow;
+    }
+    @media all and (max-width: $screen-sm-max) {
+        background-color: green;
+    }
+    @media all and (max-width: $screen-xs-max) {
+        background-color: aqua;
+    }
     .button {
         display: inline-block;
-        margin-top: 1em;
+        //margin-top: 1em;
+        margin: 1em;
     }
 }
 
