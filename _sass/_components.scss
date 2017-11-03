@@ -296,3 +296,36 @@
     }
 }
 
+.accordion.claim-evidence.tester {
+    .panel-heading {
+        .panel-top {
+            background-color: $se-light-blue;
+            color: $se-white;
+            padding: 20px 20px 0;
+            h3 {
+                color: $se-white !important;
+                margin-top: 0;
+            }
+        }
+        .panel-mid {
+            background-color: $se-light-grey;
+            padding: 20px 20px 0;
+            .evidence-description {
+                padding: 0 150px 15px 0;
+            }
+            .header-panel-icon {
+                top: 76%;
+                right: 20px;
+                &:before {
+                }
+            }
+        }
+    }
+    .panel-collapse {
+        background-color: $se-light-grey;
+        padding: 20px;
+    }
+}
+
+
+

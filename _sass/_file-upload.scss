@@ -20,6 +20,7 @@ section.upload-wrapper {
 
 form.claim-evidence-form {
     display: inline-block;
+    width: 100%;
 }
 
 .file-upload-list {
@@ -105,30 +106,33 @@ form.claim-evidence-form {
     }
 }
 
-.key-wrapper {
-    float: left;
-    clear: both;
-    width: 100%;
-    padding: 0 0 20px;
-    margin: 0 0 20px;
-    border-bottom: 3px solid $se-mid-grey;
-    .key-status {
-        .key {
-            display: inline-block;
-            margin-right: 20px;
-            @media all and (max-width: 660px) {
-                float: left;
-                &:nth-of-type(3){
+section {
+    section.key-wrapper {
+        float: left;
+        clear: both;
+        width: 100%;
+        padding: 0 0 20px;
+        margin: 0;
+        border-bottom: 3px solid $se-mid-grey;
+        .key-status {
+            .key {
+                display: inline-block;
+                margin-right: 20px;
+                @media all and (max-width: 660px) {
+                    float: left;
+                    &:nth-of-type(3){
+                        clear: left;
+                    }
+                }
+                @media all and (max-width: $screen-xxs-max) {
+                    float: left;
                     clear: left;
                 }
-            }
-            @media all and (max-width: $screen-xxs-max) {
-                float: left;
-                clear: left;
             }
         }
     }
 }
+
 
 .file-status {
     &:before {
@@ -305,5 +309,39 @@ form.claim-evidence-form {
         input[type="text"].file-upload-input {
             border-color: $error-red;
         }
+    }
+}
+
+.g-test {
+    .file-upload-button {
+        margin-top: 40px;
+        padding: 30px;
+        border: 1px solid black;
+        height: 100px;
+        width: 100px;
+        background: transparent;
+        font-size: 66px;
+        padding-top: 0px;
+        border-radius: 5px;
+        border: 2px solid rgb(255, 228, 0);
+        color: rgb(255, 228, 0);
+    }
+
+    .file-upload-input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+        border: 3px solid red;
+    }
+}
+
+.upload-container {
+    .upload-wrapper {
+        margin: 0;
     }
 }

@@ -1,0 +1,991 @@
+---
+layout: layout-general
+title: Fourth quarter claim - Claim evidence
+---
+
+<div class="col-lg-9 col-md-12">
+
+    <p class="leader">We require evidence of your costs (invoices/payslips etc.) and
+        matched evidence of your payment of these costs (Bank and/or bacs statements/Credit card statements etc.)</p>
+    <div class="leader highlight">
+        Upload all your evidence files in support of this claim.
+        <ul>
+            <li>Each individual file shouldn’t be larger than 10MB.</li>
+            <li>We’ll check each file for viruses and notify you of any problems.</li>
+            <li>Preferred file types : pdf, jpg, png.</li>
+        </ul>
+
+    </div>
+
+    <h2 class="emphasis">Supporting files</h2>
+    <a class="right-align right-link-inline examples" href="claim-examples.html" target="_blank">See examples</a>
+
+    <section class="card-view">
+
+        <section class="key-wrapper">
+            <h3>Key</h3>
+            <div class="key-status">
+                <div class="key success">
+                    <i class="fa fa-check fa-1x fa-fw"></i>
+                    File added
+                </div>
+                <div class="key processing">
+                    <i class="fa fa-refresh fa-1x fa-fw"></i>
+                    Processing
+                </div>
+                <div class="key failed failed-upload">
+                    <i class="fa fa-times fa-1x fa-fw"></i>
+                    Failed upload
+                </div>
+                <div class="key failed failed-scan">
+                    <i class="fa fa-exclamation-circle fa-1x fa-fw"></i>
+                    Failed scan
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+
+    <div id="accordion-tt" class="panel-group accordion claim-evidence tester">
+        <div class="panel panel-default">
+            <div class="panel-heading collapsed" data-toggle="collapse" href="#collapseOne-tt">
+                <div class="panel-top">
+                    <h3>Bank statements</h3>
+                </div>
+                <div class="panel-mid">
+                    <div class="evidence-description">
+                        Bank statements must show transaction dates, amounts and payees that match other evidence, such as invoices, salary payments or receipts.
+                    </div>
+                    <span class="header-panel-icon">Help</span>
+                </div>
+            </div>
+            <div id="collapseOne-tt" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <section id="bank-statement-tt">
+                        <div class="row">
+                            {% include evidence-bank.html %}
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="card-view upload-container">
+        <form class="claim-evidence-form">
+            <section class="upload-wrapper">
+                <div class="file-upload-list">
+                    <div class="file-upload-wrapper empty">
+                        <div class="form-file file-upload-inner">
+                            <label for="fileupload" id="buttonlabel-tt">
+                                <span role="button" aria-controls="filename" tabindex="0">
+                                  Add a new file
+                                </span>
+                            </label>
+                            <input type="file" id="fileupload">
+                            <label for="fileupload" class="hide">
+                                uploaded file
+                            </label>
+                            <input type="text" id="filename-tt" autocomplete="off" readonly placeholder="no file uploaded">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </form>
+    </section>
+
+
+    <!--BACS STATEMENTS-->
+
+    <div id="accordion-bc" class="panel-group accordion claim-evidence tester">
+        <div class="panel panel-default">
+            <div class="panel-heading collapsed" data-toggle="collapse" href="#collapseOne-bc">
+                <div class="panel-top">
+                    <h3>Bacs statements</h3>
+                </div>
+                <div class="panel-mid">
+                    <div class="evidence-description">
+                        Bacs statements must show individual salary payments. If you don't use Bacs,
+                        include output from your payroll system that lists individual salary payments.
+                    </div>
+                    <span class="header-panel-icon">Help</span>
+                </div>
+            </div>
+            <div id="collapseOne-bc" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <section id="bank-statement-bc">
+                        <div class="row">
+                            {% include evidence-bacs.html %}
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="card-view upload-container">
+        <form class="claim-evidence-form">
+            <section class="upload-wrapper">
+                <div class="file-upload-list">
+                    <div class="file-upload-wrapper empty">
+                        <div class="form-file file-upload-inner">
+                            <label for="fileupload" id="buttonlabel-bc">
+                                <span role="button" aria-controls="filename" tabindex="0">
+                                  Add a new file
+                                </span>
+                            </label>
+                            <input type="file" id="fileupload">
+                            <label for="fileupload" class="hide">
+                                uploaded file
+                            </label>
+                            <input type="text" id="filename-bc" autocomplete="off" readonly placeholder="no file uploaded">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </form>
+    </section>
+
+
+    <!--CREDIT CARD STATEMENTS-->
+
+    <div id="accordion-cc" class="panel-group accordion claim-evidence tester">
+        <div class="panel panel-default">
+            <div class="panel-heading collapsed" data-toggle="collapse" href="#collapseOne-cc">
+                <div class="panel-top">
+                    <h3>Credit card statements</h3>
+                </div>
+                <div class="panel-mid">
+                    <div class="evidence-description">
+                        Credit card statements must clearly show dates, amounts and payees.
+                        You must also submit a bank statement showing payment of credit card transactions.
+                    </div>
+                    <span class="header-panel-icon">Help</span>
+                </div>
+            </div>
+            <div id="collapseOne-cc" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <section id="bank-statement-cc">
+                        <div class="row">
+                            {% include evidence-credit-card.html %}
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="card-view upload-container">
+        <form class="claim-evidence-form">
+            <section class="upload-wrapper">
+                <div class="file-upload-list">
+                    <div class="file-upload-wrapper empty">
+                        <div class="form-file file-upload-inner">
+                            <label for="fileupload" id="buttonlabel-cc">
+                                <span role="button" aria-controls="filename" tabindex="0">
+                                  Add a new file
+                                </span>
+                            </label>
+                            <input type="file" id="fileupload">
+                            <label for="fileupload" class="hide">
+                                uploaded file
+                            </label>
+                            <input type="text" id="filename-cc" autocomplete="off" readonly placeholder="no file uploaded">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </form>
+    </section>
+
+
+    <!--CHEQUES-->
+
+    <div id="accordion-ch" class="panel-group accordion claim-evidence tester">
+        <div class="panel panel-default">
+            <div class="panel-heading collapsed" data-toggle="collapse" href="#collapseOne-ch">
+                <div class="panel-top">
+                    <h3>Company cheques</h3>
+                </div>
+                <div class="panel-mid">
+                    <div class="evidence-description">
+                        &nbsp;
+                    </div>
+                    <span class="header-panel-icon">Help</span>
+                </div>
+            </div>
+            <div id="collapseOne-ch" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <section id="bank-statement-ch">
+                        <div class="row">
+                            {% include evidence-cheque.html %}
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="card-view upload-container">
+        <form class="claim-evidence-form">
+            <section class="upload-wrapper">
+                <div class="file-upload-list">
+                    <div class="file-upload-wrapper empty">
+                        <div class="form-file file-upload-inner">
+                            <label for="fileupload" id="buttonlabel-ch">
+                                <span role="button" aria-controls="filename" tabindex="0">
+                                  Add a new file
+                                </span>
+                            </label>
+                            <input type="file" id="fileupload">
+                            <label for="fileupload" class="hide">
+                                uploaded file
+                            </label>
+                            <input type="text" id="filename-ch" autocomplete="off" readonly placeholder="no file uploaded">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </form>
+    </section>
+
+
+    <!--RECEIPTED INVOICE OR SUPPLIER STATEMENTS-->
+
+    <div id="accordion-ri" class="panel-group accordion claim-evidence tester">
+        <div class="panel panel-default">
+            <div class="panel-heading collapsed" data-toggle="collapse" href="#collapseOne-ri">
+                <div class="panel-top">
+                    <h3>Receipted invoice or supplier statement</h3>
+                </div>
+                <div class="panel-mid">
+                    <div class="evidence-description">
+                        &nbsp;
+                    </div>
+                    <span class="header-panel-icon">Help</span>
+                </div>
+            </div>
+            <div id="collapseOne-ri" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <section id="bank-statement-ri">
+                        <div class="row">
+                            {% include evidence-receipted-invoice.html %}
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="card-view upload-container">
+        <form class="claim-evidence-form">
+            <section class="upload-wrapper">
+                <div class="file-upload-list">
+                    <div class="file-upload-wrapper empty">
+                        <div class="form-file file-upload-inner">
+                            <label for="fileupload" id="buttonlabel-ri">
+                                <span role="button" aria-controls="filename" tabindex="0">
+                                  Add a new file
+                                </span>
+                            </label>
+                            <input type="file" id="fileupload">
+                            <label for="fileupload" class="hide">
+                                uploaded file
+                            </label>
+                            <input type="text" id="filename-ri" autocomplete="off" readonly placeholder="no file uploaded">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </form>
+    </section>
+
+
+    <!--SUPPLIER/CONSULTANT COSTS-->
+
+    <div id="accordion-sc" class="panel-group accordion claim-evidence tester">
+        <div class="panel panel-default">
+            <div class="panel-heading collapsed" data-toggle="collapse" href="#collapseOne-sc">
+                <div class="panel-top">
+                    <h3>Supplier/consultant costs</h3>
+                </div>
+                <div class="panel-mid">
+                    <div class="evidence-description">
+                        &nbsp;
+                    </div>
+                    <span class="header-panel-icon">Help</span>
+                </div>
+            </div>
+            <div id="collapseOne-sc" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <section id="bank-statement-sc">
+                        <div class="row">
+                            {% include evidence-supplier-costs.html %}
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="card-view upload-container">
+        <form class="claim-evidence-form">
+            <section class="upload-wrapper">
+                <div class="file-upload-list">
+                    <div class="file-upload-wrapper empty">
+                        <div class="form-file file-upload-inner">
+                            <label for="fileupload" id="buttonlabel-sc">
+                                <span role="button" aria-controls="filename" tabindex="0">
+                                  Add a new file
+                                </span>
+                            </label>
+                            <input type="file" id="fileupload">
+                            <label for="fileupload" class="hide">
+                                uploaded file
+                            </label>
+                            <input type="text" id="filename-sc" autocomplete="off" readonly placeholder="no file uploaded">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </form>
+    </section>
+
+
+    <!--SALARIES - ESIF-->
+
+    <div id="accordion-se" class="panel-group accordion claim-evidence tester">
+        <div class="panel panel-default">
+            <div class="panel-heading collapsed" data-toggle="collapse" href="#collapseOne-se">
+                <div class="panel-top">
+                    <h3>Salaries - ESIF</h3>
+                </div>
+                <div class="panel-mid">
+                    <div class="evidence-description">
+                        &nbsp;
+                    </div>
+                    <span class="header-panel-icon">Help</span>
+                </div>
+            </div>
+            <div id="collapseOne-se" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <section id="bank-statement-se">
+                        <div class="row">
+                            {% include evidence-salaries-esif.html %}
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="card-view upload-container">
+        <form class="claim-evidence-form">
+            <section class="upload-wrapper">
+                <div class="file-upload-list">
+                    <div class="file-upload-wrapper empty">
+                        <div class="form-file file-upload-inner">
+                            <label for="fileupload" id="buttonlabel-se">
+                                <span role="button" aria-controls="filename" tabindex="0">
+                                  Add a new file
+                                </span>
+                            </label>
+                            <input type="file" id="fileupload">
+                            <label for="fileupload" class="hide">
+                                uploaded file
+                            </label>
+                            <input type="text" id="filename-se" autocomplete="off" readonly placeholder="no file uploaded">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </form>
+    </section>
+
+
+    <!--SALARIES - NON-ESIF-->
+
+    <div id="accordion-sn" class="panel-group accordion claim-evidence tester">
+        <div class="panel panel-default">
+            <div class="panel-heading collapsed" data-toggle="collapse" href="#collapseOne-sn">
+                <div class="panel-top">
+                    <h3>Salaries - non-ESIF</h3>
+                </div>
+                <div class="panel-mid">
+                    <div class="evidence-description">
+                        &nbsp;
+                    </div>
+                    <span class="header-panel-icon">Help</span>
+                </div>
+            </div>
+            <div id="collapseOne-sn" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <section id="bank-statement-sn">
+                        <div class="row">
+                            {% include evidence-salaries-non-esif.html %}
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="card-view upload-container">
+        <form class="claim-evidence-form">
+            <section class="upload-wrapper">
+                <div class="file-upload-list">
+                    <div class="file-upload-wrapper empty">
+                        <div class="form-file file-upload-inner">
+                            <label for="fileupload" id="buttonlabel-sn">
+                                <span role="button" aria-controls="filename" tabindex="0">
+                                  Add a new file
+                                </span>
+                            </label>
+                            <input type="file" id="fileupload">
+                            <label for="fileupload" class="hide">
+                                uploaded file
+                            </label>
+                            <input type="text" id="filename-sn" autocomplete="off" readonly placeholder="no file uploaded">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </form>
+    </section>
+
+
+    <!--TIMESHEETS-->
+
+    <div id="accordion-ts" class="panel-group accordion claim-evidence tester">
+        <div class="panel panel-default">
+            <div class="panel-heading collapsed" data-toggle="collapse" href="#collapseOne-ts">
+                <div class="panel-top">
+                    <h3>Timesheets</h3>
+                </div>
+                <div class="panel-mid">
+                    <div class="evidence-description">
+                        &nbsp;
+                    </div>
+                    <span class="header-panel-icon">Help</span>
+                </div>
+            </div>
+            <div id="collapseOne-ts" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <section id="bank-statement-ts">
+                        <div class="row">
+                            {% include evidence-salaries-non-esif.html %}
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="card-view upload-container">
+        <form class="claim-evidence-form">
+            <section class="upload-wrapper">
+                <div class="file-upload-list">
+                    <div class="file-upload-wrapper empty">
+                        <div class="form-file file-upload-inner">
+                            <label for="fileupload" id="buttonlabel-ts">
+                                <span role="button" aria-controls="filename" tabindex="0">
+                                  Add a new file
+                                </span>
+                            </label>
+                            <input type="file" id="fileupload">
+                            <label for="fileupload" class="hide">
+                                uploaded file
+                            </label>
+                            <input type="text" id="filename-ts" autocomplete="off" readonly placeholder="no file uploaded">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </form>
+    </section>
+
+
+    <!--COMPANY PAYROLL-->
+
+    <div id="accordion-cp" class="panel-group accordion claim-evidence tester">
+        <div class="panel panel-default">
+            <div class="panel-heading collapsed" data-toggle="collapse" href="#collapseOne-cp">
+                <div class="panel-top">
+                    <h3>Company payroll</h3>
+                </div>
+                <div class="panel-mid">
+                    <div class="evidence-description">
+                        &nbsp;
+                    </div>
+                    <span class="header-panel-icon">Help</span>
+                </div>
+            </div>
+            <div id="collapseOne-cp" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <section id="bank-statement-cp">
+                        <div class="row">
+                            {% include evidence-salaries-non-esif.html %}
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="card-view upload-container">
+        <form class="claim-evidence-form">
+            <section class="upload-wrapper">
+                <div class="file-upload-list">
+                    <div class="file-upload-wrapper empty">
+                        <div class="form-file file-upload-inner">
+                            <label for="fileupload" id="buttonlabel-cp">
+                                <span role="button" aria-controls="filename" tabindex="0">
+                                  Add a new file
+                                </span>
+                            </label>
+                            <input type="file" id="fileupload">
+                            <label for="fileupload" class="hide">
+                                uploaded file
+                            </label>
+                            <input type="text" id="filename-cp" autocomplete="off" readonly placeholder="no file uploaded">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </form>
+    </section>
+
+
+    <!--TRAVEL AND ACCOMMODATION-->
+
+    <div id="accordion-ta" class="panel-group accordion claim-evidence tester">
+        <div class="panel panel-default">
+            <div class="panel-heading collapsed" data-toggle="collapse" href="#collapseOne-ta">
+                <div class="panel-top">
+                    <h3>Travel and accomodation</h3>
+                </div>
+                <div class="panel-mid">
+                    <div class="evidence-description">
+                        &nbsp;
+                    </div>
+                    <span class="header-panel-icon">Help</span>
+                </div>
+            </div>
+            <div id="collapseOne-ta" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <section id="bank-statement-ta">
+                        <div class="row">
+                            {% include evidence-salaries-non-esif.html %}
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="card-view upload-container">
+        <form class="claim-evidence-form">
+            <section class="upload-wrapper">
+                <div class="file-upload-list">
+                    <div class="file-upload-wrapper empty">
+                        <div class="form-file file-upload-inner">
+                            <label for="fileupload" id="buttonlabel-ta">
+                                <span role="button" aria-controls="filename" tabindex="0">
+                                  Add a new file
+                                </span>
+                            </label>
+                            <input type="file" id="fileupload">
+                            <label for="fileupload" class="hide">
+                                uploaded file
+                            </label>
+                            <input type="text" id="filename-ta" autocomplete="off" readonly placeholder="no file uploaded">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </form>
+    </section>
+    
+
+    <!--PAYSLIPS-->
+
+    <div id="accordion-ps" class="panel-group accordion claim-evidence tester">
+        <div class="panel panel-default">
+            <div class="panel-heading collapsed" data-toggle="collapse" href="#collapseOne-ps">
+                <div class="panel-top">
+                    <h3>Payslips</h3>
+                </div>
+                <div class="panel-mid">
+                    <div class="evidence-description">
+                        Payslips must cover the whole period you are claiming for. For example,
+                        if this is a quarterly claim, you must include three month's payslips.
+                    </div>
+                    <span class="header-panel-icon">Help</span>
+                </div>
+            </div>
+            <div id="collapseOne-ps" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <section id="bank-statement-ps">
+                        <div class="row">
+                            {% include evidence-salaries-esif.html %}
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="card-view upload-container">
+        <form class="claim-evidence-form">
+            <section class="upload-wrapper">
+                <div class="file-upload-list">
+
+
+                    <div class="file-upload-wrapper row success">
+                        <div class="col-sm-10 col-xs-12 file-details-wrapper">
+                            <i class="fa fa-check fa-1x fa-fw"></i>
+                            <span class="file-name">
+                                019273-0117.pdf
+                            </span>
+                        </div>
+                        <div class="col-sm-2 col-xs-12 file-remove-wrapper">
+                            <span class="file-remove">
+                            <a href="#" class="btn-remove">
+                                    Remove
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="file-upload-wrapper row processing">
+                        <div class="col-sm-10 col-xs-12 file-details-wrapper">
+                            <i class="fa fa-refresh fa-spin fa-1x fa-fw"></i>
+                            <span class="file-name">
+                                019273-0117-with-quite-a-long-title.pdf
+                            </span>
+                        </div>
+                        <div class="col-sm-2 col-xs-12 file-remove-wrapper">
+                            <span class="file-remove">
+                            <a href="#" class="btn-remove">
+                                    Remove
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="file-upload-wrapper row success">
+                        <div class="col-sm-10 col-xs-12 file-details-wrapper">
+                            <i class="fa fa-check fa-1x fa-fw"></i>
+                            <span class="file-name">
+                                019273-0117-with-an-even-longer-and-longer-and-longer-name.pdf
+                            </span>
+                        </div>
+                        <div class="col-sm-2 col-xs-12 file-remove-wrapper">
+                        <span class="file-remove">
+                            <a href="#" class="btn-remove">
+                                Remove
+                            </a>
+                        </span>
+                        </div>
+                    </div>
+                    <div class="file-upload-wrapper row failed failed-upload">
+                        <div class="col-sm-10 col-xs-12 file-details-wrapper">
+                            <i class="fa fa-times fa-1x fa-fw"></i>
+                            <div class="file-name">
+                                019273-0117-failed.pdf
+                                <div class="failed-text">
+                                    Your file has not uploaded successfully [HELP LINK HERE]
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 col-xs-12 file-remove-wrapper">
+                            <div class="file-remove">
+                                <a href="#" class="btn-remove">
+                                    Re-try
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="file-upload-wrapper row failed failed-scan">
+                        <div class="col-sm-10 col-xs-12 file-details-wrapper">
+                            <i class="fa fa-exclamation-circle fa-1x fa-fw"></i>
+                            <div class="file-name">
+                                019273-0117-failed.pdf
+                                <div class="failed-text">
+                                    We have found a problem with your file [HELP LINK HERE]
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 col-xs-12 file-remove-wrapper">
+                            <div class="file-remove">
+                                <a href="#" class="btn-remove">
+                                    Remove
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="file-upload-wrapper empty">
+                        <div class="form-file file-upload-inner">
+                            <label for="fileupload" id="buttonlabel-ps">
+                                <span role="button" aria-controls="filename" tabindex="0">
+                                  Add a new file
+                                </span>
+                            </label>
+                            <input type="file" id="fileupload">
+                            <label for="fileupload" class="hide">
+                                uploaded file
+                            </label>
+                            <input type="text" id="filename-ps" autocomplete="off" readonly placeholder="no file uploaded">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="upload-wrapper">
+                <h3>Evidence type error state</h3>
+                <div class="file-upload-list error">
+                    <div class="file-upload-wrapper empty">
+                        <div class="form-file file-upload-inner">
+                            <label for="fileupload" id="buttonlabel">
+                                <span role="button" aria-controls="filename" tabindex="0">
+                                    Add a new file
+                                </span>
+                            </label>
+                            <input type="file" id="fileupload">
+                            <label for="filename1" class="hide">
+                                uploaded file
+                            </label>
+                            <input type="text" id="filename1" class="file-upload-input" autocomplete="off" readonly placeholder="upload file">
+
+                            <div class="error-message">
+                                Error message here
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </form>
+    </section>
+
+
+    <!--PAYSLIPS-->
+
+    <!--<section class="card-view">-->
+        <!--<form>-->
+            <!--<section class="upload-wrapper">-->
+                <!--<h3>Payslips</h3>-->
+                <!--<div class="file-upload-list">-->
+                    <!--<div class="file-upload-wrapper row success">-->
+                        <!--<div class="col-sm-10 col-xs-12 file-details-wrapper">-->
+                            <!--<i class="fa fa-check fa-1x fa-fw"></i>-->
+                            <!--<span class="file-name">-->
+                                <!--019273-0117.pdf-->
+                            <!--</span>-->
+                        <!--</div>-->
+                        <!--<div class="col-sm-2 col-xs-12 file-remove-wrapper">-->
+                            <!--<span class="file-remove">-->
+                            <!--<a href="#" class="btn-remove">-->
+                                    <!--Remove-->
+                                <!--</a>-->
+                            <!--</span>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="file-upload-wrapper row processing">-->
+                        <!--<div class="col-sm-10 col-xs-12 file-details-wrapper">-->
+                            <!--<i class="fa fa-refresh fa-spin fa-1x fa-fw"></i>-->
+                            <!--<span class="file-name">-->
+                                <!--019273-0117-with-quite-a-long-title.pdf-->
+                            <!--</span>-->
+                        <!--</div>-->
+                        <!--<div class="col-sm-2 col-xs-12 file-remove-wrapper">-->
+                            <!--<span class="file-remove">-->
+                            <!--<a href="#" class="btn-remove">-->
+                                    <!--Remove-->
+                                <!--</a>-->
+                            <!--</span>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="file-upload-wrapper row success">-->
+                        <!--<div class="col-sm-10 col-xs-12 file-details-wrapper">-->
+                            <!--<i class="fa fa-check fa-1x fa-fw"></i>-->
+                            <!--<span class="file-name">-->
+                                <!--019273-0117-with-an-even-longer-and-longer-and-longer-name.pdf-->
+                            <!--</span>-->
+                        <!--</div>-->
+                        <!--<div class="col-sm-2 col-xs-12 file-remove-wrapper">-->
+                        <!--<span class="file-remove">-->
+                            <!--<a href="#" class="btn-remove">-->
+                                <!--Remove-->
+                            <!--</a>-->
+                        <!--</span>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="file-upload-wrapper row failed failed-upload">-->
+                        <!--<div class="col-sm-10 col-xs-12 file-details-wrapper">-->
+                            <!--<i class="fa fa-times fa-1x fa-fw"></i>-->
+                            <!--<div class="file-name">-->
+                                <!--019273-0117-failed.pdf-->
+                                <!--<div class="failed-text">-->
+                                    <!--Your file has not uploaded successfully [HELP LINK HERE]-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-sm-2 col-xs-12 file-remove-wrapper">-->
+                            <!--<div class="file-remove">-->
+                                <!--<a href="#" class="btn-remove">-->
+                                    <!--Re-try-->
+                                <!--</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="file-upload-wrapper row failed failed-scan">-->
+                        <!--<div class="col-sm-10 col-xs-12 file-details-wrapper">-->
+                            <!--<i class="fa fa-exclamation-circle fa-1x fa-fw"></i>-->
+                            <!--<div class="file-name">-->
+                                <!--019273-0117-failed.pdf-->
+                                <!--<div class="failed-text">-->
+                                    <!--We have found a problem with your file [HELP LINK HERE]-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-sm-2 col-xs-12 file-remove-wrapper">-->
+                            <!--<div class="file-remove">-->
+                                <!--<a href="#" class="btn-remove">-->
+                                    <!--Remove-->
+                                <!--</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="file-upload-list">-->
+                        <!--<div class="file-upload-wrapper empty">-->
+                            <!--<div class="form-file file-upload-inner">-->
+                                <!--<label for="fileupload" id="buttonlabel">-->
+                                    <!--<span role="button" aria-controls="filename" tabindex="0">-->
+                                      <!--Add a new file-->
+                                    <!--</span>-->
+                                <!--</label>-->
+                                <!--<input type="file" id="fileupload">-->
+                                <!--<label for="filename1" class="hide">-->
+                                    <!--uploaded file-->
+                                <!--</label>-->
+                                <!--<input type="text" id="filename1" class="file-upload-input" autocomplete="off" readonly placeholder="upload file">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</section>-->
+
+            <!--<section class="upload-wrapper">-->
+                <!--<h3>Evidence type error state</h3>-->
+                <!--<div class="file-upload-list error">-->
+                    <!--<div class="file-upload-wrapper empty">-->
+                        <!--<div class="form-file file-upload-inner">-->
+                            <!--<label for="fileupload" id="buttonlabel">-->
+                                    <!--<span role="button" aria-controls="filename" tabindex="0">-->
+                                      <!--Add a new file-->
+                                    <!--</span>-->
+                            <!--</label>-->
+                            <!--<input type="file" id="fileupload">-->
+                            <!--<label for="filename1" class="hide">-->
+                                <!--uploaded file-->
+                            <!--</label>-->
+                            <!--<input type="text" id="filename1" class="file-upload-input" autocomplete="off" readonly placeholder="upload file">-->
+
+                            <!--<div class="error-message">-->
+                                <!--Error message here-->
+                            <!--</div>-->
+
+                        <!--</div>-->
+                    <!--</div>-->
+
+                <!--</div>-->
+            <!--</section>-->
+        <!--</form>-->
+    <!--</section>-->
+
+
+    <!--ADDITIONAL INFO-->
+
+    <section class="card-view">
+        <form>
+            <section class="upload-wrapper">
+                <h2 class="emphasis margin-1b">Additional information</h2>
+                <p>Please provide any extra information that could help process your claim quickly.
+                    For example, tell us in the space below where to find relevant payments on the
+                    files you’ve uploaded. Or if you have a summary document, attach this as an
+                    additional file.</p>
+                <h3>Additional comments</h3>
+                <textarea id="additional-comments" rows="4"></textarea>
+                <p class="word-count"><span>1000</span> characters remaining</p>
+                <h3 class="margin-1t">Attach additional files</h3>
+                <div class="file-upload-list">
+                    <div class="file-upload-wrapper empty">
+                        <div class="form-file file-upload-inner">
+                            <label for="fileupload" id="buttonlabel">
+                                    <span role="button" aria-controls="filename" tabindex="0">
+                                      Add a new file
+                                    </span>
+                            </label>
+                            <input type="file" id="fileupload">
+                            <label for="filename4" class="hide">
+                                uploaded file
+                            </label>
+                            <input type="text" id="filename4" autocomplete="off" readonly placeholder="no file uploaded">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </form>
+    </section>
+
+
+    <!--RECONCILLIATION-->
+
+    <section class="card-view">
+        <form>
+            <section class="upload-wrapper">
+                <h3>Reconcilliation</h3>
+                <p>
+                    Please match up your evidence items.
+                </p>
+
+            </section>
+        </form>
+    </section>
+
+    <!--CHECK INFO COMPLETE-->
+
+    <section class="card-view">
+        <form>
+            <section class="upload-wrapper">
+                <div class="info-note caution">
+                    <p>Have you uploaded all the evidence needed to support this claim?
+                    </p>
+
+                </div>
+                <fieldset>
+                    <legend class="sr-only">
+                        Confirm all evidence uploaded
+                    </legend>
+                    <div class="input-wrapper">
+                        <input name="###" id="###id" class="fancy-checkbox" type="checkbox">
+                        <label for="###id" class="inline fancy-checkbox">I have included all the evidence required to support this claim</label>
+                    </div>
+                </fieldset>
+            </section>
+        </form>
+    </section>
+
+
+    <!--CONTROLS-->
+
+    <section class="card-view">
+        <form>
+            <a href="claim-declaration.html" class="button button-primary">Continue claim</a>
+            <a href="claim-detail.html" class="button button-tertiary">Save and exit claim</a>
+        </form>
+    </section>
+    <a href="../funding-overview-imfh.html" class="button button-back">Back to Claim overview</a>
+
+</div>

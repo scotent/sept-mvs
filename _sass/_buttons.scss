@@ -11,7 +11,7 @@
     text-transform: none;
     font-weight: 400;
     margin-bottom : 15px;
-    @include transition(background-color 0.5s, color 0.5s);
+    @include transition(background-color 0.5s, color 0.5s,-webkit-box-shadow 0.5s,-moz-box-shadow 0.5s);
     &.button-primary {
         background-color: $se-blue;
         &.disabled {
@@ -20,13 +20,29 @@
         &:not(.disabled):hover {
             background-color: $se-white;
             color: $se-blue;
-            -webkit-box-shadow:inset 0 0 0 3px $se-blue;
-            -moz-box-shadow:inset 0 0 0 3px $se-blue;
+            //-webkit-box-shadow:inset 0 0 0 3px $se-blue;
+            //-moz-box-shadow:inset 0 0 0 3px $se-blue;
             @include transition(background-color 0.5s, color 0.5s);
         }
         &:active,
         &:focus {
             color: $se-white;
+        }
+        &.inverse {
+            background-color: $se-white;
+            color: $se-blue;
+            margin: 2px 0;
+            padding: 0.5em 1em;
+            &:hover {
+                background-color: $se-yellow;
+                border: none;
+                //-webkit-box-shadow:inset 0 0 0 3px $se-yellow;
+                //-moz-box-shadow:inset 0 0 0 3px $se-yellow;
+            }
+            &:active,
+            &:focus {
+                color: $se-yellow;
+            }
         }
     }
     &.button-secondary {
@@ -37,8 +53,8 @@
         &:not(.disabled):hover {
             background-color: $se-white;
             color: $se-light-blue;
-            -webkit-box-shadow:inset 0 0 0 3px $se-light-blue;
-            -moz-box-shadow:inset 0 0 0 3px $se-light-blue;
+            //-webkit-box-shadow:inset 0 0 0 3px $se-light-blue;
+            //-moz-box-shadow:inset 0 0 0 3px $se-light-blue;
             @include transition(background-color 0.5s, color 0.5s);
         }
         &:active,

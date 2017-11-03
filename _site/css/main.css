@@ -46,33 +46,55 @@ body {
   font-weight: normal;
   font-style: normal; }
 /* Alpha / Beta banner */
-section.banner {
-  background: #333;
+.beta {
+  margin: 0; }
+
+section.banner.beta {
+  background: #333333;
   color: white;
-  padding: 0.25em;
+  padding: 0.625em 0.25em;
   font-size: 0.8em; }
-  section.banner a {
+  section.banner.beta a {
     color: white;
     text-decoration: none; }
-    section.banner a:hover {
+    section.banner.beta a:hover {
       color: #ffffff;
       text-decoration: underline; }
-  section.banner a[href^="tel:"] {
+  section.banner.beta a[href^="tel:"] {
     color: #FFFFFF; }
-    section.banner a[href^="tel:"]:hover {
+    section.banner.beta a[href^="tel:"]:hover {
       color: #f1f1f1; }
-  section.banner .beta {
+  section.banner.beta .beta {
     font-size: 1.125em;
     background-color: #C35517;
     padding: 3px 7px;
     text-transform: uppercase;
     margin: 0 5px 0 0; }
-  section.banner .pull-right {
-    padding: 6px 0 0; }
+  section.banner.beta .pull-right {
+    padding: 0; }
+    @media (max-width: 768px) {
+      section.banner.beta .pull-right {
+        float: none !important; } }
 
-@media (max-width: 768px) {
-  .banner .pull-right {
-    float: none !important; } }
+/* Cookie banner */
+section.banner.cookies {
+  background: #00427F;
+  color: white;
+  padding: 0.625em 0;
+  font-size: 0.8em; }
+  section.banner.cookies a {
+    color: white;
+    text-decoration: none; }
+    section.banner.cookies a:hover {
+      color: #ffffff;
+      text-decoration: underline; }
+  section.banner.cookies .pull-right {
+    padding: 0;
+    margin-top: 12px; }
+    @media (max-width: 768px) {
+      section.banner.cookies .pull-right {
+        float: none !important; } }
+
 .grey-bg {
   background-color: #F2F2F2; }
 
@@ -419,6 +441,25 @@ a {
       padding: 0;
       margin: 0; }
 
+.accordion.claim-evidence.tester .panel-heading .panel-top {
+  background-color: #2A7CB2;
+  color: #ffffff;
+  padding: 20px 20px 0; }
+  .accordion.claim-evidence.tester .panel-heading .panel-top h3 {
+    color: #ffffff !important;
+    margin-top: 0; }
+.accordion.claim-evidence.tester .panel-heading .panel-mid {
+  background-color: #ecf0f1;
+  padding: 20px 20px 0; }
+  .accordion.claim-evidence.tester .panel-heading .panel-mid .evidence-description {
+    padding: 0 150px 15px 0; }
+  .accordion.claim-evidence.tester .panel-heading .panel-mid .header-panel-icon {
+    top: 76%;
+    right: 20px; }
+.accordion.claim-evidence.tester .panel-collapse {
+  background-color: #ecf0f1;
+  padding: 20px; }
+
 header {
   margin-bottom: 0; }
 
@@ -508,11 +549,11 @@ header nav.navbar {
   text-transform: none;
   font-weight: 400;
   margin-bottom: 15px;
-  -webkit-transition: background-color 0.5s, color 0.5s;
-  -moz-transition: background-color 0.5s, color 0.5s;
-  -ms-transition: background-color 0.5s, color 0.5s;
-  -o-transition: background-color 0.5s, color 0.5s;
-  transition: background-color 0.5s, color 0.5s; }
+  -webkit-transition: background-color 0.5s, color 0.5s, -webkit-box-shadow 0.5s, -moz-box-shadow 0.5s;
+  -moz-transition: background-color 0.5s, color 0.5s, -webkit-box-shadow 0.5s, -moz-box-shadow 0.5s;
+  -ms-transition: background-color 0.5s, color 0.5s, -webkit-box-shadow 0.5s, -moz-box-shadow 0.5s;
+  -o-transition: background-color 0.5s, color 0.5s, -webkit-box-shadow 0.5s, -moz-box-shadow 0.5s;
+  transition: background-color 0.5s, color 0.5s, -webkit-box-shadow 0.5s, -moz-box-shadow 0.5s; }
   .button.button-primary {
     background-color: #00427F; }
     .button.button-primary.disabled {
@@ -520,8 +561,6 @@ header nav.navbar {
     .button.button-primary:not(.disabled):hover {
       background-color: #ffffff;
       color: #00427F;
-      -webkit-box-shadow: inset 0 0 0 3px #00427F;
-      -moz-box-shadow: inset 0 0 0 3px #00427F;
       -webkit-transition: background-color 0.5s, color 0.5s;
       -moz-transition: background-color 0.5s, color 0.5s;
       -ms-transition: background-color 0.5s, color 0.5s;
@@ -529,6 +568,16 @@ header nav.navbar {
       transition: background-color 0.5s, color 0.5s; }
     .button.button-primary:active, .button.button-primary:focus {
       color: #ffffff; }
+    .button.button-primary.inverse {
+      background-color: #ffffff;
+      color: #00427F;
+      margin: 2px 0;
+      padding: 0.5em 1em; }
+      .button.button-primary.inverse:hover {
+        background-color: #FDB813;
+        border: none; }
+      .button.button-primary.inverse:active, .button.button-primary.inverse:focus {
+        color: #FDB813; }
   .button.button-secondary {
     background-color: #2A7CB2; }
     .button.button-secondary.disabled {
@@ -536,8 +585,6 @@ header nav.navbar {
     .button.button-secondary:not(.disabled):hover {
       background-color: #ffffff;
       color: #2A7CB2;
-      -webkit-box-shadow: inset 0 0 0 3px #2A7CB2;
-      -moz-box-shadow: inset 0 0 0 3px #2A7CB2;
       -webkit-transition: background-color 0.5s, color 0.5s;
       -moz-transition: background-color 0.5s, color 0.5s;
       -ms-transition: background-color 0.5s, color 0.5s;
@@ -1111,7 +1158,8 @@ section.upload-wrapper {
         right: 0; }
 
 form.claim-evidence-form {
-  display: inline-block; }
+  display: inline-block;
+  width: 100%; }
 
 .file-upload-list {
   border-top: 1px solid #727272; }
@@ -1173,23 +1221,23 @@ form.claim-evidence-form {
       .right-align.right-link-inline.examples:hover {
         text-decoration: underline; }
 
-.key-wrapper {
+section section.key-wrapper {
   float: left;
   clear: both;
   width: 100%;
   padding: 0 0 20px;
-  margin: 0 0 20px;
+  margin: 0;
   border-bottom: 3px solid #999999; }
-  .key-wrapper .key-status .key {
+  section section.key-wrapper .key-status .key {
     display: inline-block;
     margin-right: 20px; }
     @media all and (max-width: 660px) {
-      .key-wrapper .key-status .key {
+      section section.key-wrapper .key-status .key {
         float: left; }
-        .key-wrapper .key-status .key:nth-of-type(3) {
+        section section.key-wrapper .key-status .key:nth-of-type(3) {
           clear: left; } }
     @media all and (max-width: 479px) {
-      .key-wrapper .key-status .key {
+      section section.key-wrapper .key-status .key {
         float: left;
         clear: left; } }
 
@@ -1332,6 +1380,32 @@ form.claim-evidence-form {
 
 .error .file-upload-inner input[type="text"].file-upload-input {
   border-color: #d32205; }
+
+.g-test .file-upload-button {
+  margin-top: 40px;
+  padding: 30px;
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+  background: transparent;
+  font-size: 66px;
+  padding-top: 0px;
+  border-radius: 5px;
+  border: 2px solid #ffe400;
+  color: #ffe400; }
+.g-test .file-upload-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  border: 3px solid red; }
+
+.upload-container .upload-wrapper {
+  margin: 0; }
 
 .margin-1tb {
   margin-top: 1em;
@@ -1491,6 +1565,10 @@ h2, h3, h4, h5, h6 {
       font-size: 19px;
       line-height: 28px;
       margin-bottom: 15px; } }
+  .leader.highlight {
+    background-color: #00427F;
+    color: #ffffff;
+    padding: 20px; }
 
 .container > .row > div > .leader {
   margin-top: 15px; }
@@ -1671,6 +1749,9 @@ caption {
       .upload-wrapper .info-note.caution + fieldset input + label.fancy-checkbox::before {
         left: 2px;
         top: 3px; } }
+
+.card-view .info-note.caution, .card-view .info-note.note {
+  margin-top: 0; }
 
 html, body {
   height: 100%; }
@@ -1997,22 +2078,11 @@ ul.evidence-wrapper {
   text-align: center;
   padding-top: 2em;
   padding-bottom: 2em;
-  position: absolute;
   z-index: 999999;
-  top: 117px;
-  max-width: 1150px;
+  margin-top: -20px;
   -webkit-box-shadow: 0 5px 5px #dddddd;
   -moz-box-shadow: 0 5px 5px #dddddd;
   box-shadow: 0 5px 5px #dddddd; }
-  @media all and (max-width: 1170px) {
-    .timeout {
-      background-color: yellow; } }
-  @media all and (max-width: 991px) {
-    .timeout {
-      background-color: green; } }
-  @media all and (max-width: 767px) {
-    .timeout {
-      background-color: aqua; } }
   .timeout .button {
     display: inline-block;
     margin: 1em; }

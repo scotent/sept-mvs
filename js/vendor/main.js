@@ -3,32 +3,34 @@ console.log('main.js loaded');
 
 // -- Responsive Sticky header -- //
 
-// cache the element
+// cache the elements
 var $navBar = $('nav.navbar');
+var $siteHeader = $('header.site-header');
 
 // find original navigation bar position
 var navPos = $navBar.offset().top;
 
 $(document).ready(function() {
-    var s1 = $('nav.navbar').height();
-    var s2 = $('header.site-header').height();
+    var s1 = $($navBar).height();
+    var s2 = $($siteHeader).height();
 
     if (s1 != s2) {
-        $('header.site-header').css('height', s1 + "px");
+        $($siteHeader).css('height', s1 + "px");
     }
 });
+
+// on resize
 $(window).resize(function(){
-    var s1 = $('nav.navbar').height();
-    var s2 = $('header.site-header').height();
+    var s1 = $($navBar).height();
+    var s2 = $($siteHeader).height();
 
     if (s1 != s2) {
-        $('header.site-header').css('height', s1 + "px");
+        $($siteHeader).css('height', s1 + "px");
     }
 });
 
 // on scroll
 $(window).scroll(function() {
-
     // get scroll position from top of the page
     var scrollPos = $(this).scrollTop();
 
@@ -38,7 +40,6 @@ $(window).scroll(function() {
     } else {
         $navBar.removeClass('fixed');
     }
-
 });
 
 
@@ -51,7 +52,6 @@ $(document).ready(function () {
 
         $('.content-wrapper').css({'marginBottom': '-' + footerHeight + 'px'});
     });
-
     $(window).resize();
 });
 
@@ -66,7 +66,6 @@ equalheight = function(container){
         $el,
         topPosition = 0;
     $(container).each(function() {
-
         $el = $(this);
         $($el).height('auto')
         topPostion = $el.position().top;

@@ -5,10 +5,17 @@
 // ==========================================================================
 
 /* Alpha / Beta banner */
-section.banner {
-    background: #333;
+
+// Scot gov override
+.beta {
+    margin: 0;
+}
+
+
+section.banner.beta {
+    background: $se-dark-grey;
     color: white;
-    padding: 0.25em;
+    padding: 0.625em 0.25em;
     font-size: 0.8em;
     a {
         color: white;
@@ -32,15 +39,37 @@ section.banner {
         margin: 0 5px 0 0;
     }
     .pull-right {
-        padding: 6px 0 0;
+        padding: 0;
+        @media (max-width: 768px) {
+            float: none !important;
+        }
     }
 }
 
-@media (max-width: 768px) {
-    .banner .pull-right {
-        float: none !important;
+
+/* Cookie banner */
+section.banner.cookies {
+    background: $se-blue;
+    color: white;
+    padding: 0.625em 0;
+    font-size: 0.8em;
+    a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+            color: $se-white;
+            text-decoration: underline;
+        }
+    }
+    .pull-right {
+        padding: 0;
+        margin-top: 12px;
+        @media (max-width: 768px) {
+            float: none !important;
+        }
     }
 }
+
 
 
 .grey-bg {

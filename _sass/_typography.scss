@@ -100,6 +100,11 @@ h2, h3, h4, h5, h6 {
         line-height: 28px;
         margin-bottom: 15px;
     }
+    &.highlight {
+        background-color: $se-blue;
+        color: $se-white;
+        padding: 20px;
+    }
 }
 
 // Create margin on First .leader within a container //
@@ -317,6 +322,15 @@ caption {
                 left: 2px;
                 top: 3px;
             }
+        }
+    }
+}
+
+.card-view {
+    .info-note {
+        &.caution,
+        &.note {
+            margin-top: 0;
         }
     }
 }
