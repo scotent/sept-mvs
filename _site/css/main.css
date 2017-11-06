@@ -205,6 +205,9 @@ a {
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */ }
 
+.card-view img {
+  width: 100%; }
+
 .accordion {
   position: relative;
   border-bottom: 1px solid #dddddd; }
@@ -1536,7 +1539,7 @@ ol.breadcrumb {
   font-weight: 500; }
 
 .img-example {
-  height: 120px;
+  height: 100%;
   background-color: gray;
   display: block;
   margin: 0 0 10px 0; }

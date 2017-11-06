@@ -220,10 +220,9 @@ a {
 .border-test {
     border: 1px solid $se-lighter-grey;
     @include border-radius(9px);
-    //background-color: $se-grey-hover;
-    //table {
-    //    background-color: $se-white !important;
-    //}
 }
 
+.card-view img {
+    width: 100%;
+}
 
