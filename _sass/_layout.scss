@@ -222,7 +222,8 @@ a {
     @include border-radius(9px);
 }
 
-.card-view img {
+.card-view img,
+.img-example {
     width: 100%;
 }
 

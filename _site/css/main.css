@@ -205,7 +205,8 @@ a {
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */ }
 
-.card-view img {
+.card-view img,
+.img-example {
   width: 100%; }
 
 .accordion {
