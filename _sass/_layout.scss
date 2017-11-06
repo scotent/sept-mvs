@@ -63,7 +63,6 @@ section.banner.cookies {
     }
     .pull-right {
         padding: 0;
-        margin-top: 12px;
         @media (max-width: 768px) {
             float: none !important;
         }
@@ -217,3 +216,14 @@ a {
         margin: 0 0 20px;
     }
 }
+
+.border-test {
+    border: 1px solid $se-lighter-grey;
+    @include border-radius(9px);
+    //background-color: $se-grey-hover;
+    //table {
+    //    background-color: $se-white !important;
+    //}
+}
+
+

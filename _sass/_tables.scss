@@ -31,7 +31,8 @@ table.table-striped tbody tr {
 
 table.table-striped:not(.active) tbody tr {
     &:hover td {
-        background: $se-grey-hover !important;
+        //background: $se-grey-hover !important;
+        background: $se-white !important;
     }
 }
 
@@ -114,16 +115,27 @@ table.table-striped.no-hover tbody tr {
             width: 80%;
             margin: auto;
             max-width: 140px;
+            &.request-change {
+                background-color: inherit;
+                color: $se-blue;
+                padding: 8px 0;
+                @include border-radius(8px);
+                width: 80%;
+                margin: auto;
+                max-width: 140px;
+                font-size: 0.75em;
+                margin-bottom: -8px;
+            }
         }
 
     }
     &.status-new td.has-link a {
-        background-color: $se-mid-grey !important;
-        &:hover {
-            background-color: $se-black !important;
-        }
+        //background-color: $se-mid-grey !important;
+        //&:hover {
+        //    background-color: $se-black !important;
+        //}
     }
-    &.status-due td.has-link a {
+    &.status-due td.has-link a:not(.request-change) {
         background-color: $accessible-green !important;
         &:hover {
             background-color: $se-black !important;

@@ -89,8 +89,7 @@ section.banner.cookies {
       color: #ffffff;
       text-decoration: underline; }
   section.banner.cookies .pull-right {
-    padding: 0;
-    margin-top: 12px; }
+    padding: 0; }
     @media (max-width: 768px) {
       section.banner.cookies .pull-right {
         float: none !important; } }
@@ -198,6 +197,13 @@ a {
   .evidence-item:last-of-type {
     border-bottom: 1px solid #727272;
     margin: 0 0 20px; }
+
+.border-test {
+  border: 1px solid #bbbbbb;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */ }
 
 .accordion {
   position: relative;
@@ -961,7 +967,7 @@ table.table-striped tbody tr:hover td {
   background: #f1f1f1 !important; }
 
 table.table-striped:not(.active) tbody tr:hover td {
-  background: #f1f1f1 !important; }
+  background: #ffffff !important; }
 
 table.plain {
   margin: 0;
@@ -1026,13 +1032,22 @@ table.table-striped.no-hover tbody tr td.has-link {
     width: 80%;
     margin: auto;
     max-width: 140px; }
-table.table-striped.no-hover tbody tr.status-new td.has-link a {
-  background-color: #999999 !important; }
-  table.table-striped.no-hover tbody tr.status-new td.has-link a:hover {
-    background-color: #2F3E44 !important; }
-table.table-striped.no-hover tbody tr.status-due td.has-link a {
+    table.table-striped.no-hover tbody tr td.has-link a.request-change {
+      background-color: inherit;
+      color: #00427F;
+      padding: 8px 0;
+      -webkit-border-radius: 8px;
+      border-radius: 8px;
+      background-clip: padding-box;
+      /* stops bg color from leaking outside the border: */
+      width: 80%;
+      margin: auto;
+      max-width: 140px;
+      font-size: 0.75em;
+      margin-bottom: -8px; }
+table.table-striped.no-hover tbody tr.status-due td.has-link a:not(.request-change) {
   background-color: #128512 !important; }
-  table.table-striped.no-hover tbody tr.status-due td.has-link a:hover {
+  table.table-striped.no-hover tbody tr.status-due td.has-link a:not(.request-change):hover {
     background-color: #2F3E44 !important; }
 table.table-striped.no-hover tbody tr.status-started td.has-link a {
   background-color: #03634D !important; }
