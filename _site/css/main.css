@@ -541,10 +541,42 @@ header nav.navbar {
       display: block;
       width: auto; } }
 .button {
+  align-items: flex-start;
+  background: #727272;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  display: table;
+  font-size: 17px;
+  font-weight: bold;
+  height: 70px;
+  line-height: 21px;
+  padding: 7px 40px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  vertical-align: middle;
+  /* width: 100%; */
+  -moz-transition: background 1s;
+  -o-transition: background 1s;
+  -webkit-transition: background 1s;
+  transition: background 1s; }
+
+@media all and (min-width: 1200px) {
+  .button {
+    width: 360px; } }
+@media all and (min-width: 992px) {
+  .button {
+    width: 293px; } }
+@media all and (min-width: 768px) {
+  .button {
+    width: 344px; } }
+.button {
   line-height: 1.500em;
   height: auto;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding: 1em;
   width: auto !important;
   text-transform: none;
   font-weight: 400;
@@ -555,7 +587,8 @@ header nav.navbar {
   -o-transition: background-color 0.5s, color 0.5s, -webkit-box-shadow 0.5s, -moz-box-shadow 0.5s;
   transition: background-color 0.5s, color 0.5s, -webkit-box-shadow 0.5s, -moz-box-shadow 0.5s; }
   .button.button-primary {
-    background-color: #00427F; }
+    background-color: #00427F;
+    color: #ffffff; }
     .button.button-primary.disabled {
       background-color: #666666; }
     .button.button-primary:not(.disabled):hover {
@@ -579,7 +612,8 @@ header nav.navbar {
       .button.button-primary.inverse:active, .button.button-primary.inverse:focus {
         color: #FDB813; }
   .button.button-secondary {
-    background-color: #2A7CB2; }
+    background-color: #2A7CB2;
+    color: #ffffff; }
     .button.button-secondary.disabled {
       background-color: #666666; }
     .button.button-secondary:not(.disabled):hover {
@@ -613,7 +647,8 @@ header nav.navbar {
 .button.button-back {
   background: none;
   color: #00427F;
-  padding-left: 0; }
+  padding-left: 0;
+  margin: 20px 0 0; }
   .button.button-back:before {
     content: '\f053';
     font-family: FontAwesome;
