@@ -2092,7 +2092,7 @@ ul.evidence-wrapper {
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); }
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.75); }
   .dropdown-menu a {
     color: #ffffff !important; }
     .dropdown-menu a:hover {
@@ -2110,6 +2110,9 @@ ul.evidence-wrapper {
     .dropdown-menu {
       left: inherit;
       right: 0; } }
+  .dropdown-menu.light-blue {
+    background-color: #2A7CB2;
+    border: 1px solid #2A7CB2; }
 
 .timeout {
   background-color: #FFEAEF;

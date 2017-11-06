@@ -310,7 +310,7 @@ ul.evidence-wrapper {
     border: 1px solid rgba(0,0,0,.15);
     border-radius: 4px;
     -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
-    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.75);
     a {
         color: $se-white !important;
         &:hover {
@@ -330,6 +330,10 @@ ul.evidence-wrapper {
     @media all and (max-width: $screen-sm-min) {
         left: inherit;
         right: 0;
+    }
+    &.light-blue {
+        background-color: $se-light-blue;
+        border: 1px solid $se-light-blue;
     }
 }
 
