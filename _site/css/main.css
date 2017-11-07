@@ -45,6 +45,9 @@ body {
   src: url("/sept-mvs/assets/fonts/Din/din-regu-webfont.eot?#iefix") format("embedded-opentype"), url("/sept-mvs/assets/fonts/Din/din-regu-webfont.woff") format("woff"), url("/sept-mvs/assets/fonts/Din/din-regu-webfont.ttf") format("truetype"), url("/sept-mvs/assets/fonts/Din/din-regu-webfont.svg#din-regularregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+.fa:not(.fa-spin) {
+  animation: none; }
+
 /* Alpha / Beta banner */
 .beta {
   margin: 0; }
@@ -210,8 +213,7 @@ a {
   width: 100%; }
 
 .accordion {
-  position: relative;
-  border-bottom: 1px solid #dddddd; }
+  border-bottom: 0 solid red; }
   .accordion .panel-default {
     border-color: #dddddd;
     border-radius: 0;

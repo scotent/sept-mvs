@@ -71,3 +71,17 @@ body {
     font-weight: normal;
     font-style: normal;
 }
+
+// In IE there is a bug which means the uploaded file status icon
+// doesn't get 're-drawn' and therefore when it changes to a
+// 'check' (tick) it keeps spinning.
+// This is the fix
+
+.fa {
+    &:not(.fa-spin) {
+        animation: none;
+    }
+}
+
+
+

@@ -3,8 +3,9 @@
 // ==========================================================================
 
 .accordion {
-    position: relative;
-    border-bottom: 1px solid $se-light-mid-grey;
+    //position: relative;
+    //border-bottom: 1px solid $se-light-mid-grey;
+    border-bottom: 0 solid red;
 
     .panel-default {
         border-color: $se-light-mid-grey;
