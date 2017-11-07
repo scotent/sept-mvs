@@ -212,6 +212,16 @@ a {
 .img-example {
   width: 100%; }
 
+.row.summary-group {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 0 20px;
+  border: 3px solid #03634D;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */ }
+
 .accordion {
   border-bottom: 0 solid red; }
   .accordion .panel-default {
