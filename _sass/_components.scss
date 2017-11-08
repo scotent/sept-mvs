@@ -328,5 +328,50 @@
     }
 }
 
-
-
+#accordion1 {
+    > .panel-default {
+        > .panel-heading {
+            background-color: $se-blue;
+            //padding: 0;
+            h3 {
+                color: $se-white;
+                //margin: 0;
+                //a {
+                //    padding: 20px 15px 10px;
+                //}
+            }
+        }
+        .panel-collapse {
+            .panel-heading {
+                background-color: $se-light-blue;
+                h3 {
+                    color: $se-white;
+                }
+            }
+            .panel-collapse {
+                .panel-heading {
+                    background-color: $se-light-grey;
+                }
+            }
+            .panel-mid {
+                position: relative;
+            }
+            .evidence-description {
+                max-width: 80%;
+                //background-color: red;
+                display: inline-block;
+            }
+            .header-panel-icon {
+                max-width: 19%;
+                //background-color: pink;
+                display: inline-block;
+                top: 23px;
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+    * {
+        outline: none !important;
+    }
+}

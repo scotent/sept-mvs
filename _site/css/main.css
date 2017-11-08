@@ -482,6 +482,30 @@ a {
   background-color: #ecf0f1;
   padding: 20px; }
 
+#accordion1 > .panel-default > .panel-heading {
+  background-color: #00427F; }
+  #accordion1 > .panel-default > .panel-heading h3 {
+    color: #ffffff; }
+#accordion1 > .panel-default .panel-collapse .panel-heading {
+  background-color: #2A7CB2; }
+  #accordion1 > .panel-default .panel-collapse .panel-heading h3 {
+    color: #ffffff; }
+#accordion1 > .panel-default .panel-collapse .panel-collapse .panel-heading {
+  background-color: #ecf0f1; }
+#accordion1 > .panel-default .panel-collapse .panel-mid {
+  position: relative; }
+#accordion1 > .panel-default .panel-collapse .evidence-description {
+  max-width: 80%;
+  display: inline-block; }
+#accordion1 > .panel-default .panel-collapse .header-panel-icon {
+  max-width: 19%;
+  display: inline-block;
+  top: 23px;
+  position: absolute;
+  right: 0; }
+#accordion1 * {
+  outline: none !important; }
+
 header {
   margin-bottom: 0; }
 
