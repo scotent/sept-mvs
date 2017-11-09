@@ -482,29 +482,98 @@ a {
   background-color: #ecf0f1;
   padding: 20px; }
 
-#accordion1 > .panel-default > .panel-heading {
-  background-color: #00427F; }
-  #accordion1 > .panel-default > .panel-heading h3 {
+.accordion-evidence .panel-title {
+  color: #ffffff; }
+.accordion-evidence > .panel-default > .panel-heading {
+  background: #00427F;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #00427F, #003566);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #00427F, #003566);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #00427F, #003566);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #00427F, #003566);
+  /* Standard syntax */ }
+  .accordion-evidence > .panel-default > .panel-heading h3 {
     color: #ffffff; }
-#accordion1 > .panel-default .panel-collapse .panel-heading {
-  background-color: #2A7CB2; }
-  #accordion1 > .panel-default .panel-collapse .panel-heading h3 {
+.accordion-evidence > .panel-default .panel-collapse .panel-heading {
+  background: #077796;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #077796, #06647e);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #077796, #06647e);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #077796, #06647e);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #077796, #06647e);
+  /* Standard syntax */ }
+  .accordion-evidence > .panel-default .panel-collapse .panel-heading h3 {
     color: #ffffff; }
-#accordion1 > .panel-default .panel-collapse .panel-collapse .panel-heading {
-  background-color: #ecf0f1; }
-#accordion1 > .panel-default .panel-collapse .panel-mid {
+.accordion-evidence > .panel-default .panel-collapse .card-view {
+  margin-bottom: 0; }
+.accordion-evidence > .panel-default .panel-collapse .panel-collapse .panel-heading {
+  background: #078C85;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #078C85, #06746e);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #078C85, #06746e);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #078C85, #06746e);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #078C85, #06746e);
+  /* Standard syntax */ }
+.accordion-evidence > .panel-default .panel-collapse .panel-collapse .panel-collapse .panel-heading {
+  background: #ecf0f1; }
+.accordion-evidence > .panel-default .panel-collapse .panel-mid {
   position: relative; }
-#accordion1 > .panel-default .panel-collapse .evidence-description {
+.accordion-evidence > .panel-default .panel-collapse .evidence-description {
   max-width: 80%;
+  color: #333333;
   display: inline-block; }
-#accordion1 > .panel-default .panel-collapse .header-panel-icon {
-  max-width: 19%;
-  display: inline-block;
-  top: 23px;
-  position: absolute;
-  right: 0; }
-#accordion1 * {
+.accordion-evidence * {
   outline: none !important; }
+
+.accordion-evidence .panel-heading .panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  width: calc(100% - 40px);
+  display: inline-block; }
+.accordion-evidence .panel-heading.collapsed > .header-panel-icon {
+  width: 40px;
+  text-align: right;
+  float: right;
+  color: #ffffff;
+  font-size: 26px; }
+  .accordion-evidence .panel-heading.collapsed > .header-panel-icon:before {
+    content: '\f0d7';
+    font-family: FontAwesome; }
+.accordion-evidence .panel-heading:not(.collapsed) > .header-panel-icon {
+  width: 40px;
+  text-align: right;
+  float: right;
+  color: #ffffff;
+  font-size: 26px; }
+  .accordion-evidence .panel-heading:not(.collapsed) > .header-panel-icon:before {
+    content: '\f0d8';
+    font-family: FontAwesome; }
+.accordion-evidence .panel-heading.collapsed .panel-mid .header-panel-icon.help {
+  float: right; }
+  .accordion-evidence .panel-heading.collapsed .panel-mid .header-panel-icon.help:before {
+    content: '\f0d7';
+    font-family: FontAwesome;
+    color: #333333;
+    font-size: 20px;
+    padding-right: 9px; }
+.accordion-evidence .panel-heading:not(.collapsed) .panel-mid .header-panel-icon.help {
+  float: right; }
+  .accordion-evidence .panel-heading:not(.collapsed) .panel-mid .header-panel-icon.help:before {
+    content: '\f0d8';
+    font-family: FontAwesome;
+    color: #333333;
+    font-size: 20px;
+    padding-right: 9px; }
 
 header {
   margin-bottom: 0; }
@@ -1407,16 +1476,16 @@ section section.key-wrapper {
     display: table-cell;
     margin: 0;
     width: 130px;
-    height: 48px;
+    height: 42px;
     font-family: din-mediumregular;
     font-size: 17px;
     font-weight: 400;
     line-height: 20px;
-    padding: 12px 9px;
-    border: 2px solid #00427F;
+    padding: 9px;
+    border: 2px solid #078C85;
     color: #ffffff;
     cursor: pointer;
-    background-color: #00427F;
+    background-color: #078C85;
     outline: none;
     border-collapse: collapse;
     -webkit-transition: background-color 0.5s;
@@ -1426,8 +1495,8 @@ section section.key-wrapper {
     transition: background-color 0.5s; }
     .file-upload-inner span[role=button]:hover, .file-upload-inner span[role=button]:focus {
       background-color: #ffffff;
-      border-color: #00427F;
-      color: #00427F;
+      border-color: #078C85;
+      color: #078C85;
       outline: 2px solid transparent; }
   .file-upload-inner .hide {
     position: absolute;
@@ -1442,20 +1511,20 @@ section section.key-wrapper {
     display: table-cell;
     margin: 0 0 0 -5px;
     width: calc(100% - 130px);
-    height: 48px;
+    height: 42px;
     font-family: din-mediumregular;
     font-size: 17px;
     font-weight: 400;
     line-height: 20px;
     padding: 12px 15px;
-    border: 2px solid #00427F;
+    border: 2px solid #078C85;
     border-left: none;
     color: #2F3E44;
     background-color: #ffffff;
     outline: none;
     border-collapse: collapse; }
     .file-upload-inner input[type=text]:focus {
-      border-color: #00427F;
+      border-color: #078C85;
       outline: 2px solid transparent; }
 
 .progress {

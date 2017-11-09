@@ -225,24 +225,24 @@ section {
         display: table-cell;
         margin: 0;
         width: 130px;
-        height: 48px;
+        height: 42px;
         font-family: din-mediumregular;
         font-size: 17px;
         font-weight: 400;
         line-height: 20px;
-        padding: 12px 9px;
-        border: 2px solid $se-blue;
+        padding: 9px;
+        border: 2px solid $se-green-sec;
         color: $se-white;
         cursor: pointer;
-        background-color: $se-blue;
+        background-color: $se-green-sec;
         outline: none;
         border-collapse: collapse;
         @include transition(background-color 0.5s);
         &:hover,
         &:focus {
             background-color: $se-white;
-            border-color: $se-blue;
-            color: $se-blue;
+            border-color: $se-green-sec;
+            color: $se-green-sec;
             outline: 2px solid transparent;
         }
     }
@@ -260,20 +260,20 @@ section {
         display: table-cell;
         margin: 0 0 0 -5px;
         width: calc(100% - 130px);
-        height: 48px;
+        height: 42px;
         font-family: din-mediumregular;
         font-size: 17px;
         font-weight: 400;
         line-height: 20px;
         padding: 12px 15px;
-        border: 2px solid  $se-blue;
+        border: 2px solid  $se-green-sec;
         border-left: none;
         color: $se-black;
         background-color: $se-white;
         outline: none;
         border-collapse: collapse;
         &:focus {
-            border-color: $se-blue;
+            border-color: $se-green-sec;
             outline: 2px solid transparent;
         }
     }
