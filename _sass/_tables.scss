@@ -129,26 +129,17 @@ table.table-striped.no-hover tbody tr {
         }
 
     }
-    &.status-new td.has-link a {
-        //background-color: $se-mid-grey !important;
-        //&:hover {
-        //    background-color: $se-black !important;
-        //}
+    td.has-link a.request-change {
+        background-color: transparent;
     }
     &.status-due td.has-link a:not(.request-change) {
-        background-color: $accessible-green !important;
+        background-color: $se-green-sec !important;
         &:hover {
             background-color: $se-black !important;
         }
     }
     &.status-started td.has-link a {
-        background-color: $se-dark-green !important;
-        &:hover {
-            background-color: $se-black !important;
-        }
-    }
-    &.status-completed td.has-link a {
-        background-color: $se-light-blue !important;
+        background-color: $se-blue-sec !important;
         &:hover {
             background-color: $se-black !important;
         }
@@ -159,13 +150,22 @@ table.table-striped.no-hover tbody tr {
             background-color: $se-black !important;
         }
     }
+    &.status-approved td.has-link a {
+        background-color: $se-blue !important;
+        &:hover {
+            background-color: $se-black !important;
+        }
+    }
     &.status-paid td.has-link a {
-        background-color: $se-purple !important;
+        background-color: $se-blue !important;
         &:hover {
             background-color: $se-black !important;
         }
     }
 
+    td.has-link a.request-change {
+        background-color: transparent !important;
+    }
     progress {
         font-size: 1px;
         line-height: 9px;
@@ -180,19 +180,19 @@ table.table-striped.no-hover tbody tr {
         @include progress-bar($se-mid-grey, $se-white);
     }
     &.status-due {
-        @include progress-bar($accessible-green, $se-white);
+        @include progress-bar($se-green-sec, $se-white);
     }
     &.status-started {
-        @include progress-bar($se-dark-green, $se-white);
-    }
-    &.status-completed {
-        @include progress-bar($se-light-blue, $se-white);
+        @include progress-bar($se-blue-sec, $se-white);
     }
     &.status-submitted {
         @include progress-bar($se-blue, $se-white);
     }
+    &.status-approved {
+        @include progress-bar($se-blue, $se-white);
+    }
     &.status-paid {
-        @include progress-bar($se-purple, $se-white);
+        @include progress-bar($se-blue, $se-white);
     }
 }
 

@@ -216,7 +216,7 @@ a {
   padding-top: 10px;
   padding-bottom: 10px;
   margin: 0 0 20px;
-  border: 3px solid #03634D;
+  border: 3px solid #077796;
   -webkit-border-radius: 9px;
   border-radius: 9px;
   background-clip: padding-box;
@@ -1154,26 +1154,30 @@ table.table-striped.no-hover tbody tr td.has-link {
       max-width: 140px;
       font-size: 0.75em;
       margin-bottom: -8px; }
+table.table-striped.no-hover tbody tr td.has-link a.request-change {
+  background-color: transparent; }
 table.table-striped.no-hover tbody tr.status-due td.has-link a:not(.request-change) {
-  background-color: #128512 !important; }
+  background-color: #078C85 !important; }
   table.table-striped.no-hover tbody tr.status-due td.has-link a:not(.request-change):hover {
     background-color: #2F3E44 !important; }
 table.table-striped.no-hover tbody tr.status-started td.has-link a {
-  background-color: #03634D !important; }
+  background-color: #077796 !important; }
   table.table-striped.no-hover tbody tr.status-started td.has-link a:hover {
-    background-color: #2F3E44 !important; }
-table.table-striped.no-hover tbody tr.status-completed td.has-link a {
-  background-color: #2A7CB2 !important; }
-  table.table-striped.no-hover tbody tr.status-completed td.has-link a:hover {
     background-color: #2F3E44 !important; }
 table.table-striped.no-hover tbody tr.status-submitted td.has-link a {
   background-color: #00427F !important; }
   table.table-striped.no-hover tbody tr.status-submitted td.has-link a:hover {
     background-color: #2F3E44 !important; }
+table.table-striped.no-hover tbody tr.status-approved td.has-link a {
+  background-color: #00427F !important; }
+  table.table-striped.no-hover tbody tr.status-approved td.has-link a:hover {
+    background-color: #2F3E44 !important; }
 table.table-striped.no-hover tbody tr.status-paid td.has-link a {
-  background-color: #610e6c !important; }
+  background-color: #00427F !important; }
   table.table-striped.no-hover tbody tr.status-paid td.has-link a:hover {
     background-color: #2F3E44 !important; }
+table.table-striped.no-hover tbody tr td.has-link a.request-change {
+  background-color: transparent !important; }
 table.table-striped.no-hover tbody tr progress {
   font-size: 1px;
   line-height: 9px;
@@ -1199,41 +1203,28 @@ table.table-striped.no-hover tbody tr.status-due progress::-webkit-progress-bar 
   background-color: #ffffff;
   width: 100%; }
 table.table-striped.no-hover tbody tr.status-due progress::-webkit-progress-value {
-  background-color: #128512 !important; }
+  background-color: #078C85 !important; }
 table.table-striped.no-hover tbody tr.status-due progress {
   background-color: #ffffff; }
 table.table-striped.no-hover tbody tr.status-due progress::-moz-progress-bar {
-  background-color: #128512 !important; }
+  background-color: #078C85 !important; }
 table.table-striped.no-hover tbody tr.status-due progress {
   background-color: #ffffff; }
 table.table-striped.no-hover tbody tr.status-due progress {
-  color: #128512; }
+  color: #078C85; }
 table.table-striped.no-hover tbody tr.status-started progress::-webkit-progress-bar {
   background-color: #ffffff;
   width: 100%; }
 table.table-striped.no-hover tbody tr.status-started progress::-webkit-progress-value {
-  background-color: #03634D !important; }
+  background-color: #077796 !important; }
 table.table-striped.no-hover tbody tr.status-started progress {
   background-color: #ffffff; }
 table.table-striped.no-hover tbody tr.status-started progress::-moz-progress-bar {
-  background-color: #03634D !important; }
+  background-color: #077796 !important; }
 table.table-striped.no-hover tbody tr.status-started progress {
   background-color: #ffffff; }
 table.table-striped.no-hover tbody tr.status-started progress {
-  color: #03634D; }
-table.table-striped.no-hover tbody tr.status-completed progress::-webkit-progress-bar {
-  background-color: #ffffff;
-  width: 100%; }
-table.table-striped.no-hover tbody tr.status-completed progress::-webkit-progress-value {
-  background-color: #2A7CB2 !important; }
-table.table-striped.no-hover tbody tr.status-completed progress {
-  background-color: #ffffff; }
-table.table-striped.no-hover tbody tr.status-completed progress::-moz-progress-bar {
-  background-color: #2A7CB2 !important; }
-table.table-striped.no-hover tbody tr.status-completed progress {
-  background-color: #ffffff; }
-table.table-striped.no-hover tbody tr.status-completed progress {
-  color: #2A7CB2; }
+  color: #077796; }
 table.table-striped.no-hover tbody tr.status-submitted progress::-webkit-progress-bar {
   background-color: #ffffff;
   width: 100%; }
@@ -1247,19 +1238,32 @@ table.table-striped.no-hover tbody tr.status-submitted progress {
   background-color: #ffffff; }
 table.table-striped.no-hover tbody tr.status-submitted progress {
   color: #00427F; }
+table.table-striped.no-hover tbody tr.status-approved progress::-webkit-progress-bar {
+  background-color: #ffffff;
+  width: 100%; }
+table.table-striped.no-hover tbody tr.status-approved progress::-webkit-progress-value {
+  background-color: #00427F !important; }
+table.table-striped.no-hover tbody tr.status-approved progress {
+  background-color: #ffffff; }
+table.table-striped.no-hover tbody tr.status-approved progress::-moz-progress-bar {
+  background-color: #00427F !important; }
+table.table-striped.no-hover tbody tr.status-approved progress {
+  background-color: #ffffff; }
+table.table-striped.no-hover tbody tr.status-approved progress {
+  color: #00427F; }
 table.table-striped.no-hover tbody tr.status-paid progress::-webkit-progress-bar {
   background-color: #ffffff;
   width: 100%; }
 table.table-striped.no-hover tbody tr.status-paid progress::-webkit-progress-value {
-  background-color: #610e6c !important; }
+  background-color: #00427F !important; }
 table.table-striped.no-hover tbody tr.status-paid progress {
   background-color: #ffffff; }
 table.table-striped.no-hover tbody tr.status-paid progress::-moz-progress-bar {
-  background-color: #610e6c !important; }
+  background-color: #00427F !important; }
 table.table-striped.no-hover tbody tr.status-paid progress {
   background-color: #ffffff; }
 table.table-striped.no-hover tbody tr.status-paid progress {
-  color: #610e6c; }
+  color: #00427F; }
 
 @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* Force table to not be like tables anymore */
@@ -1741,7 +1745,7 @@ h2, h3, h4, h5, h6 {
       line-height: 28px;
       margin-bottom: 15px; } }
   .leader.highlight {
-    background-color: #00427F;
+    background-color: #078C85;
     color: #ffffff;
     padding: 20px; }
 
