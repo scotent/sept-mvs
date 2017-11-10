@@ -1178,6 +1178,8 @@ table.table-striped.no-hover tbody tr.status-paid td.has-link a {
     background-color: #2F3E44 !important; }
 table.table-striped.no-hover tbody tr td.has-link a.request-change {
   background-color: transparent !important; }
+  table.table-striped.no-hover tbody tr td.has-link a.request-change:hover {
+    background-color: transparent !important; }
 table.table-striped.no-hover tbody tr progress {
   font-size: 1px;
   line-height: 9px;

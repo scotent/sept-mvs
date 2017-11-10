@@ -165,6 +165,9 @@ table.table-striped.no-hover tbody tr {
 
     td.has-link a.request-change {
         background-color: transparent !important;
+        &:hover {
+            background-color: transparent !important;
+        }
     }
     progress {
         font-size: 1px;
