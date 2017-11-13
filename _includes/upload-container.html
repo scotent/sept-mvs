@@ -4,19 +4,35 @@
             <div class="file-upload-list">
                 <div class="file-upload-wrapper empty">
                     <div class="form-file file-upload-inner">
-                        <label for="fileupload" id="buttonlabel">
-                            <span role="button" aria-controls="filename" tabindex="0">
-                              Add a new file
-                            </span>
+                        <label>
+                            <input type="file" style="display:none">
+                            <span class="btn btn-primary">Add a new file</span>
                         </label>
-                        <input type="file" id="fileupload">
-                        <label for="fileupload" class="hide">
-                            uploaded file
-                        </label>
-                        <input type="text" id="filename" autocomplete="off" readonly placeholder="no file uploaded">
+                    </div>
+                    <div class="form-group relative">
+                        <label for="name-1">Amount</label>
+                        <input required id="name-1" class="form-control" type="text" placeholder="Claim amount">
                     </div>
                 </div>
             </div>
         </section>
     </form>
 </section>
+
+
+<!--GRL - TEST <br />-->
+
+<!--<div id="upload_button" style="display:inline-block">-->
+
+    <!--<label>-->
+        <!--<input type="file" style="display:none">-->
+        <!--<span class="btn btn-primary">Upload files</span>-->
+    <!--</label>-->
+
+    <!--<div class="form-group relative">-->
+        <!--<label for="name-1">Amount</label>-->
+        <!--<input required id="name-1" class="grey form-control input&#45;&#45;small" type="text" placeholder="Claim amount">-->
+        <!--<ul class="current-errors"></ul>-->
+    <!--</div>-->
+
+<!--</div>-->

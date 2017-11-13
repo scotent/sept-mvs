@@ -201,7 +201,8 @@ a {
     border-bottom: 1px solid #727272;
     margin: 0 0 20px; }
 
-.border-test {
+.border-test,
+.border-thin {
   border: 1px solid #bbbbbb;
   -webkit-border-radius: 9px;
   border-radius: 9px;
@@ -1532,6 +1533,13 @@ section section.key-wrapper {
     .file-upload-inner input[type=text]:focus {
       border-color: #078C85;
       outline: 2px solid transparent; }
+  .file-upload-inner .btn-primary {
+    background-color: #00427F; }
+    .file-upload-inner .btn-primary:before {
+      content: '\f093';
+      font-family: FontAwesome;
+      font-size: 20px;
+      padding-right: 10px; }
 
 .progress {
   height: 20px;

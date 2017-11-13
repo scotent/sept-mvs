@@ -277,6 +277,15 @@ section {
             outline: 2px solid transparent;
         }
     }
+    .btn-primary {
+        background-color: $se-blue;
+        &:before {
+            content: '\f093';
+            font-family: FontAwesome;
+            font-size: 20px;
+            padding-right: 10px;
+        }
+    }
 }
 
 .progress {
