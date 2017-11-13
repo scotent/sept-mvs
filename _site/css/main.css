@@ -1533,13 +1533,6 @@ section section.key-wrapper {
     .file-upload-inner input[type=text]:focus {
       border-color: #078C85;
       outline: 2px solid transparent; }
-  .file-upload-inner .btn-primary {
-    background-color: #00427F; }
-    .file-upload-inner .btn-primary:before {
-      content: '\f093';
-      font-family: FontAwesome;
-      font-size: 20px;
-      padding-right: 10px; }
 
 .progress {
   height: 20px;
@@ -1592,6 +1585,165 @@ section section.key-wrapper {
 
 .upload-container .upload-wrapper {
   margin: 0; }
+
+.file-upload-wrapper.empty.new {
+  border: 3px solid #2F3E44;
+  display: inline-block;
+  width: 100%;
+  background-color: #ecf0f1;
+  color: #2F3E44; }
+  .file-upload-wrapper.empty.new .file-upload-inner label .button {
+    margin: 0 auto; }
+  .file-upload-wrapper.empty.new .file-amount-wrapper {
+    margin: 0;
+    padding: 10px 20px;
+    text-align: center; }
+    .file-upload-wrapper.empty.new .file-amount-wrapper input.file-amount {
+      border: 3px solid #2F3E44;
+      margin-top: 0;
+      padding: 0 0 0 10px;
+      color: #2F3E44;
+      width: 65%; }
+      @media all and (max-width: 1200px) {
+        .file-upload-wrapper.empty.new .file-amount-wrapper input.file-amount {
+          width: 57%; } }
+      @media all and (max-width: 992px) {
+        .file-upload-wrapper.empty.new .file-amount-wrapper input.file-amount {
+          width: 78%; } }
+      @media all and (max-width: 768px) {
+        .file-upload-wrapper.empty.new .file-amount-wrapper input.file-amount {
+          width: 230px; } }
+      @media all and (max-width: 480px) {
+        .file-upload-wrapper.empty.new .file-amount-wrapper input.file-amount {
+          width: 215px; } }
+
+.file-upload-wrapper.empty.new-1 {
+  background: #078C85;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #078C85, #06746e);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #078C85, #06746e);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #078C85, #06746e);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #078C85, #06746e);
+  /* Standard syntax */
+  color: #ffffff; }
+  .file-upload-wrapper.empty.new-1 .file-upload-inner label .button {
+    background-color: #2F3E44; }
+    .file-upload-wrapper.empty.new-1 .file-upload-inner label .button:after {
+      content: '\f093';
+      font-family: FontAwesome;
+      font-size: 20px;
+      padding-left: 10px; }
+    .file-upload-wrapper.empty.new-1 .file-upload-inner label .button:hover {
+      color: #ffffff;
+      background-color: #000000; }
+
+.file-upload-wrapper.empty.new-2 {
+  background: #078C85;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #078C85, #06746e);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #078C85, #06746e);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #078C85, #06746e);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #078C85, #06746e);
+  /* Standard syntax */
+  color: #ffffff; }
+  .file-upload-wrapper.empty.new-2 .file-upload-inner label .button {
+    background-color: #2F3E44; }
+    .file-upload-wrapper.empty.new-2 .file-upload-inner label .button:before {
+      content: '\f093';
+      font-family: FontAwesome;
+      font-size: 20px;
+      padding-right: 10px; }
+    .file-upload-wrapper.empty.new-2 .file-upload-inner label .button:hover {
+      color: #ffffff;
+      background-color: #000000; }
+
+.file-upload-wrapper.empty.new-3 {
+  background: #ffffff;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #ffffff, #e6e6e6);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #ffffff, #e6e6e6);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #ffffff, #e6e6e6);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #ffffff, #e6e6e6);
+  /* Standard syntax */
+  color: #2F3E44; }
+  .file-upload-wrapper.empty.new-3 .file-upload-inner label .button {
+    background-color: #2F3E44; }
+    .file-upload-wrapper.empty.new-3 .file-upload-inner label .button:after {
+      content: '\f093';
+      font-family: FontAwesome;
+      font-size: 20px;
+      padding-left: 10px; }
+    .file-upload-wrapper.empty.new-3 .file-upload-inner label .button:hover {
+      color: #ffffff;
+      background-color: #000000; }
+
+.file-upload-wrapper.empty.new-4 {
+  background: #ffffff;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #ffffff, #e6e6e6);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #ffffff, #e6e6e6);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #ffffff, #e6e6e6);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #ffffff, #e6e6e6);
+  /* Standard syntax */
+  color: #2F3E44; }
+  .file-upload-wrapper.empty.new-4 .file-upload-inner label .button {
+    background-color: #00427F; }
+    .file-upload-wrapper.empty.new-4 .file-upload-inner label .button:before {
+      content: '\f093';
+      font-family: FontAwesome;
+      font-size: 20px;
+      padding-right: 10px; }
+    .file-upload-wrapper.empty.new-4 .file-upload-inner label .button:hover {
+      color: #ffffff;
+      background-color: #077796; }
+
+.file-upload-wrapper.empty.new-5 {
+  background: #ecf0f1;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #ecf0f1, #dde4e6);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #ecf0f1, #dde4e6);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #ecf0f1, #dde4e6);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #ecf0f1, #dde4e6);
+  /* Standard syntax */
+  color: #2F3E44; }
+  .file-upload-wrapper.empty.new-5 .file-upload-inner label .button {
+    background-color: #00427F; }
+    .file-upload-wrapper.empty.new-5 .file-upload-inner label .button:after {
+      content: '\f093';
+      font-family: FontAwesome;
+      font-size: 20px;
+      padding-left: 10px; }
+    .file-upload-wrapper.empty.new-5 .file-upload-inner label .button:hover {
+      color: #ffffff;
+      background-color: #077796; }
+
+.file-upload-wrapper.empty.new-6 {
+  color: #2F3E44; }
+  .file-upload-wrapper.empty.new-6 .file-upload-inner label .button {
+    background-color: #00427F; }
+    .file-upload-wrapper.empty.new-6 .file-upload-inner label .button:before {
+      content: '\f093';
+      font-family: FontAwesome;
+      font-size: 20px;
+      padding-right: 10px; }
+    .file-upload-wrapper.empty.new-6 .file-upload-inner label .button:hover {
+      color: #ffffff;
+      background-color: #077796; }
 
 .margin-1tb {
   margin-top: 1em;

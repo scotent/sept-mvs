@@ -277,16 +277,22 @@ section {
             outline: 2px solid transparent;
         }
     }
-    .btn-primary {
-        background-color: $se-blue;
-        &:before {
-            content: '\f093';
-            font-family: FontAwesome;
-            font-size: 20px;
-            padding-right: 10px;
-        }
-    }
 }
+
+//.file-upload-wrapper.empty {
+//    border: 3px solid $accessible-green;
+//    display: inline-block;
+//    width: 100%;
+//    .file-amount-wrapper {
+//        margin: 0;
+//        padding: 10px 20px;
+//        input.file-amount {
+//            border: 3px solid green;
+//        }
+//
+//    }
+//}
+
 
 .progress {
     height: 20px;
@@ -354,3 +360,180 @@ section {
         margin: 0;
     }
 }
+
+
+.file-upload-wrapper.empty.new {
+    border: 3px solid $se-black;
+    display: inline-block;
+    width: 100%;
+    background-color: $se-light-grey;
+    //@include bg-grad($se-white, darken($se-white, 10%));
+    color: $se-black;
+    .file-upload-inner {
+        label {
+            .button {
+                margin: 0 auto;
+            }
+        }
+    }
+    .file-amount-wrapper {
+        margin: 0;
+        padding: 10px 20px;
+        text-align: center;
+        input.file-amount {
+            border: 3px solid $se-black;
+            margin-top: 0;
+            padding: 0 0 0 10px;
+            color: $se-black;
+            width: 65%;
+            @media all and (max-width: $screen-lg) {
+                width: 57%;
+            }
+            @media all and (max-width: $screen-md-min) {
+                width: 78%;
+            }
+            @media all and (max-width: $screen-sm-min) {
+                width: 230px;
+            }
+            @media all and (max-width: $screen-xs-min) {
+                width: 215px;
+            }
+        }
+
+    }
+}
+
+.file-upload-wrapper.empty.new-1 {
+    @include bg-grad($se-green-sec, darken($se-green-sec, 5%));
+    color: $se-white;
+    .file-upload-inner {
+        label {
+            .button {
+                background-color: $se-black;
+                &:after {
+                    content: '\f093';
+                    font-family: FontAwesome;
+                    font-size: 20px;
+                    padding-left: 10px;
+                }
+                &:hover {
+                    color: $se-white;
+                    background-color: $black;
+                }
+            }
+        }
+    }
+}
+
+
+.file-upload-wrapper.empty.new-2 {
+    @include bg-grad($se-green-sec, darken($se-green-sec, 5%));
+    color: $se-white;
+    .file-upload-inner {
+        label {
+            .button {
+                background-color: $se-black;
+                &:before {
+                    content: '\f093';
+                    font-family: FontAwesome;
+                    font-size: 20px;
+                    padding-right: 10px;
+                }
+                &:hover {
+                    color: $se-white;
+                    background-color: $black;
+                }
+            }
+        }
+    }
+}
+
+.file-upload-wrapper.empty.new-3 {
+    @include bg-grad($se-white, darken($se-white, 10%));
+    color: $se-black;
+    .file-upload-inner {
+        label {
+            .button {
+                background-color: $se-black;
+                &:after {
+                    content: '\f093';
+                    font-family: FontAwesome;
+                    font-size: 20px;
+                    padding-left: 10px;
+                }
+                &:hover {
+                    color: $se-white;
+                    background-color: $black;
+                }
+            }
+        }
+    }
+}
+
+.file-upload-wrapper.empty.new-4 {
+    @include bg-grad($se-white, darken($se-white, 10%));
+    color: $se-black;
+    .file-upload-inner {
+        label {
+            .button {
+                background-color: $se-blue;
+                &:before {
+                    content: '\f093';
+                    font-family: FontAwesome;
+                    font-size: 20px;
+                    padding-right: 10px;
+                }
+                &:hover {
+                    color: $se-white;
+                    background-color: $se-blue-sec;
+                }
+            }
+        }
+    }
+}
+
+
+.file-upload-wrapper.empty.new-5 {
+    @include bg-grad($se-light-grey, darken($se-light-grey, 5%));
+    color: $se-black;
+    .file-upload-inner {
+        label {
+            .button {
+                background-color: $se-blue;
+                &:after {
+                    content: '\f093';
+                    font-family: FontAwesome;
+                    font-size: 20px;
+                    padding-left: 10px;
+                }
+                &:hover {
+                    color: $se-white;
+                    background-color: $se-blue-sec;
+                }
+            }
+        }
+    }
+}
+
+
+.file-upload-wrapper.empty.new-6 {
+    color: $se-black;
+    .file-upload-inner {
+        label {
+            .button {
+                background-color: $se-blue;
+                &:before {
+                    content: '\f093';
+                    font-family: FontAwesome;
+                    font-size: 20px;
+                    padding-right: 10px;
+                }
+                &:hover {
+                    color: $se-white;
+                    background-color: $se-blue-sec;
+                }
+            }
+        }
+    }
+}
+
