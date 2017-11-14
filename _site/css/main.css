@@ -538,7 +538,7 @@ a {
 .accordion-evidence .panel-heading .panel-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 18px;
   width: calc(100% - 40px);
   display: inline-block; }
 .accordion-evidence .panel-heading.collapsed > .header-panel-icon {
@@ -1604,10 +1604,10 @@ section section.key-wrapper {
       margin-top: 0;
       padding: 0 0 0 10px;
       color: #2F3E44;
-      width: 72%; }
+      width: 74%; }
       @media all and (max-width: 1200px) {
         .file-upload-wrapper.empty.new .file-amount-wrapper input.file-amount {
-          width: 63%; } }
+          width: 65%; } }
       @media all and (max-width: 992px) {
         .file-upload-wrapper.empty.new .file-amount-wrapper input.file-amount {
           width: 91%; } }
