@@ -995,7 +995,8 @@ textarea {
   display: inline-block;
   font-weight: normal;
   margin-right: 30px;
-  line-height: 22px; }
+  line-height: 22px;
+  font-size: 17px; }
 
 .input-small {
   width: 100%; }
