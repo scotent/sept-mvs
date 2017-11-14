@@ -1819,18 +1819,18 @@ h6 {
   line-height: 20px;
   margin: 10px 0 7px; }
 
-h1 {
+h1, h2, h4 {
   font-family: din-regularregular, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: -1px; }
 
-h2, h3, h4, h5, h6 {
+h3, h5, h6 {
   font-family: din-mediumregular, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: -1px; }
 
-h1 {
+h1, h2 {
   font-weight: 700; }
 
-h2, h3, h4, h5, h6 {
+h3, h4, h5, h6 {
   font-weight: 500; }
 
 .text-large {
@@ -1857,7 +1857,7 @@ h2, h3, h4, h5, h6 {
 
 .emphasis {
   display: inline-block;
-  font-weight: 500;
+  font-weight: 700;
   padding-top: 15px;
   position: relative;
   margin: 10px 0 15px; }
