@@ -1603,13 +1603,13 @@ section section.key-wrapper {
       margin-top: 0;
       padding: 0 0 0 10px;
       color: #2F3E44;
-      width: 65%; }
+      width: 72%; }
       @media all and (max-width: 1200px) {
         .file-upload-wrapper.empty.new .file-amount-wrapper input.file-amount {
-          width: 57%; } }
+          width: 63%; } }
       @media all and (max-width: 992px) {
         .file-upload-wrapper.empty.new .file-amount-wrapper input.file-amount {
-          width: 78%; } }
+          width: 91%; } }
       @media all and (max-width: 768px) {
         .file-upload-wrapper.empty.new .file-amount-wrapper input.file-amount {
           width: 230px; } }
