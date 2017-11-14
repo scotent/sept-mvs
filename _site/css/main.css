@@ -1641,19 +1641,19 @@ section section.key-wrapper {
       background-color: #000000; }
 
 .file-upload-wrapper.empty.new-2 {
-  background: #078C85;
+  background: #ffffff;
   /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, #078C85, #06746e);
+  background: -webkit-linear-gradient(left, #ffffff, #e6e6e6);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, #078C85, #06746e);
+  background: -o-linear-gradient(right, #ffffff, #e6e6e6);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, #078C85, #06746e);
+  background: -moz-linear-gradient(right, #ffffff, #e6e6e6);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, #078C85, #06746e);
+  background: linear-gradient(to right, #ffffff, #e6e6e6);
   /* Standard syntax */
-  color: #ffffff; }
+  color: #2F3E44; }
   .file-upload-wrapper.empty.new-2 .file-upload-inner label .button {
-    background-color: #2F3E44; }
+    background-color: #00427F; }
     .file-upload-wrapper.empty.new-2 .file-upload-inner label .button:before {
       content: '\f093';
       font-family: FontAwesome;
@@ -1661,55 +1661,9 @@ section section.key-wrapper {
       padding-right: 10px; }
     .file-upload-wrapper.empty.new-2 .file-upload-inner label .button:hover {
       color: #ffffff;
-      background-color: #000000; }
-
-.file-upload-wrapper.empty.new-3 {
-  background: #ffffff;
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, #ffffff, #e6e6e6);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, #ffffff, #e6e6e6);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, #ffffff, #e6e6e6);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, #ffffff, #e6e6e6);
-  /* Standard syntax */
-  color: #2F3E44; }
-  .file-upload-wrapper.empty.new-3 .file-upload-inner label .button {
-    background-color: #2F3E44; }
-    .file-upload-wrapper.empty.new-3 .file-upload-inner label .button:after {
-      content: '\f093';
-      font-family: FontAwesome;
-      font-size: 20px;
-      padding-left: 10px; }
-    .file-upload-wrapper.empty.new-3 .file-upload-inner label .button:hover {
-      color: #ffffff;
-      background-color: #000000; }
-
-.file-upload-wrapper.empty.new-4 {
-  background: #ffffff;
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, #ffffff, #e6e6e6);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, #ffffff, #e6e6e6);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, #ffffff, #e6e6e6);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, #ffffff, #e6e6e6);
-  /* Standard syntax */
-  color: #2F3E44; }
-  .file-upload-wrapper.empty.new-4 .file-upload-inner label .button {
-    background-color: #00427F; }
-    .file-upload-wrapper.empty.new-4 .file-upload-inner label .button:before {
-      content: '\f093';
-      font-family: FontAwesome;
-      font-size: 20px;
-      padding-right: 10px; }
-    .file-upload-wrapper.empty.new-4 .file-upload-inner label .button:hover {
-      color: #ffffff;
       background-color: #077796; }
 
-.file-upload-wrapper.empty.new-5 {
+.file-upload-wrapper.empty.new-3 {
   background: #ecf0f1;
   /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left, #ecf0f1, #dde4e6);
@@ -1721,27 +1675,14 @@ section section.key-wrapper {
   background: linear-gradient(to right, #ecf0f1, #dde4e6);
   /* Standard syntax */
   color: #2F3E44; }
-  .file-upload-wrapper.empty.new-5 .file-upload-inner label .button {
+  .file-upload-wrapper.empty.new-3 .file-upload-inner label .button {
     background-color: #00427F; }
-    .file-upload-wrapper.empty.new-5 .file-upload-inner label .button:after {
+    .file-upload-wrapper.empty.new-3 .file-upload-inner label .button:after {
       content: '\f093';
       font-family: FontAwesome;
       font-size: 20px;
       padding-left: 10px; }
-    .file-upload-wrapper.empty.new-5 .file-upload-inner label .button:hover {
-      color: #ffffff;
-      background-color: #077796; }
-
-.file-upload-wrapper.empty.new-6 {
-  color: #2F3E44; }
-  .file-upload-wrapper.empty.new-6 .file-upload-inner label .button {
-    background-color: #00427F; }
-    .file-upload-wrapper.empty.new-6 .file-upload-inner label .button:before {
-      content: '\f093';
-      font-family: FontAwesome;
-      font-size: 20px;
-      padding-right: 10px; }
-    .file-upload-wrapper.empty.new-6 .file-upload-inner label .button:hover {
+    .file-upload-wrapper.empty.new-3 .file-upload-inner label .button:hover {
       color: #ffffff;
       background-color: #077796; }
 

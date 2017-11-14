@@ -425,52 +425,7 @@ section {
     }
 }
 
-
 .file-upload-wrapper.empty.new-2 {
-    @include bg-grad($se-green-sec, darken($se-green-sec, 5%));
-    color: $se-white;
-    .file-upload-inner {
-        label {
-            .button {
-                background-color: $se-black;
-                &:before {
-                    content: '\f093';
-                    font-family: FontAwesome;
-                    font-size: 20px;
-                    padding-right: 10px;
-                }
-                &:hover {
-                    color: $se-white;
-                    background-color: $black;
-                }
-            }
-        }
-    }
-}
-
-.file-upload-wrapper.empty.new-3 {
-    @include bg-grad($se-white, darken($se-white, 10%));
-    color: $se-black;
-    .file-upload-inner {
-        label {
-            .button {
-                background-color: $se-black;
-                &:after {
-                    content: '\f093';
-                    font-family: FontAwesome;
-                    font-size: 20px;
-                    padding-left: 10px;
-                }
-                &:hover {
-                    color: $se-white;
-                    background-color: $black;
-                }
-            }
-        }
-    }
-}
-
-.file-upload-wrapper.empty.new-4 {
     @include bg-grad($se-white, darken($se-white, 10%));
     color: $se-black;
     .file-upload-inner {
@@ -493,7 +448,7 @@ section {
 }
 
 
-.file-upload-wrapper.empty.new-5 {
+.file-upload-wrapper.empty.new-3 {
     @include bg-grad($se-light-grey, darken($se-light-grey, 5%));
     color: $se-black;
     .file-upload-inner {
@@ -514,26 +469,3 @@ section {
         }
     }
 }
-
-
-.file-upload-wrapper.empty.new-6 {
-    color: $se-black;
-    .file-upload-inner {
-        label {
-            .button {
-                background-color: $se-blue;
-                &:before {
-                    content: '\f093';
-                    font-family: FontAwesome;
-                    font-size: 20px;
-                    padding-right: 10px;
-                }
-                &:hover {
-                    color: $se-white;
-                    background-color: $se-blue-sec;
-                }
-            }
-        }
-    }
-}
-
