@@ -3,7 +3,7 @@
 //  ==========================================================================
 
 section.upload-wrapper {
-    border-bottom: 3px solid $se-grey;
+    border-bottom: 1px solid $se-grey;
     .upload-header {
         position: relative;
         h3.short {
@@ -24,7 +24,7 @@ form.claim-evidence-form {
 }
 
 .file-upload-list {
-    border-top: 1px solid $se-grey;
+    border-top: 3px solid $se-grey;
     .file-upload-wrapper {
         padding: 10px 0;
         margin: 0;
@@ -362,7 +362,7 @@ section {
 }
 
 
-.file-upload-wrapper.empty.new {
+.file-upload-wrapper.empty.new:not(.finance) {
     border: 3px solid $se-black;
     display: inline-block;
     width: 100%;
@@ -399,7 +399,6 @@ section {
                 width: 215px;
             }
         }
-
     }
 }
 
@@ -469,3 +468,98 @@ section {
         }
     }
 }
+
+.file-upload-list.finance {
+    border-top: none;
+    .file-upload-wrapper.empty.finance {
+        @include bg-grad($se-white, $se-white);
+        color: $se-white;
+        border: 3px solid $accessible-green;
+        display: inline-block;
+        width: 100%;
+        .file-upload-inner {
+            //background-color: lawngreen;
+            padding: 10px 15px 15px;
+            .description {
+                color: $se-black;
+                padding-bottom: 5px;
+            }
+            .file-browse-wrapper {
+                background-color: yellow;
+                width: 100%;
+                label {
+                    .button {
+                        background-color: $se-black;
+                        margin: 0;
+
+                        float: left;
+
+                        width: 81px;
+                        padding: 8px 10px;
+
+                        &:hover {
+                            color: $se-white;
+                            background-color: $black;
+                        }
+                    }
+                }
+                .filename {
+                    background-color: $se-white;
+                    color: $se-black;
+                    //height: 60px;
+                    border: 3px solid $se-black;
+                    width: calc(100% - 81px);
+
+                    margin: 0;
+                    float: left;
+
+                    padding: 7px 5px 6px 10px;
+                    min-height: 42px;
+                    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    font-size: 16px;
+                }
+            }
+        }
+        .file-amount-wrapper {
+            //background-color: pink;
+            margin-top: 0;
+            margin-bottom: 0;
+
+            border-left: 1px solid $se-light-mid-grey;
+            border-right: 1px solid $se-light-mid-grey;
+
+            padding: 10px 15px 15px;
+            text-align: left;
+            .description {
+                color: $se-black;
+                padding-bottom: 5px;
+            }
+            input.file-amount {
+                border: 3px solid $se-black;
+                margin-top: 0;
+                padding: 0 0 0 10px;
+                color: $se-black;
+
+                width: 100%;
+
+                //width: 74%;
+
+            }
+
+
+        }
+        .upload-button-wrapper {
+            //background-color: yellow;
+            padding: 10px 15px;
+            .upload-button {
+                margin-top: 7px;
+                padding: 8px 10px;
+                margin-bottom: 0;
+                width: 100% !important;
+
+                margin-top: 28px;
+            }
+        }
+    }
+}
+

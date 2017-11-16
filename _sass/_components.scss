@@ -414,10 +414,11 @@
             .panel-mid {
                 .header-panel-icon.help {
                     float: right;
+                    color: $se-dark-orange;
                     &:before {
                         content: '\f0d7';
                         font-family: FontAwesome;
-                        color: $se-dark-grey;
+                        color: $se-dark-orange;
                         font-size: 20px;
                         padding-right: 9px;
                     }
@@ -428,14 +429,24 @@
             .panel-mid {
                 .header-panel-icon.help {
                     float: right;
+                    color: $se-dark-orange;
                     &:before {
                         content: '\f0d8';
                         font-family: FontAwesome;
-                        color: $se-dark-grey;
+                        color: $se-dark-orange;
                         font-size: 20px;
                         padding-right: 9px;
                     }
                 }
+            }
+        }
+    }
+    .file-upload-list {
+        border-top: 1px solid $se-grey;
+        .file-upload-wrapper:not(.empty) {
+
+            &:first-of-type {
+                border-top: none;
             }
         }
     }
