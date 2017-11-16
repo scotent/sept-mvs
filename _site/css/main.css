@@ -1696,16 +1696,7 @@ section section.key-wrapper {
 .file-upload-list.finance {
   border-top: none; }
   .file-upload-list.finance .file-upload-wrapper.empty.finance {
-    background: #ffffff;
-    /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left, #ffffff, #ffffff);
-    /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, #ffffff, #ffffff);
-    /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, #ffffff, #ffffff);
-    /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, #ffffff, #ffffff);
-    /* Standard syntax */
+    background-color: #ffffff;
     border: 3px solid #128512;
     display: inline-block;
     width: 100%; }
@@ -1715,7 +1706,6 @@ section section.key-wrapper {
         color: #2F3E44;
         padding-bottom: 5px; }
       .file-upload-list.finance .file-upload-wrapper.empty.finance .file-upload-inner .file-browse-wrapper {
-        background-color: yellow;
         width: 100%; }
         .file-upload-list.finance .file-upload-wrapper.empty.finance .file-upload-inner .file-browse-wrapper label .button {
           background-color: #2F3E44;
@@ -1783,7 +1773,6 @@ section section.key-wrapper {
     .file-upload-list.finance .file-upload-wrapper.empty.finance .upload-button-wrapper {
       padding: 10px 15px; }
       .file-upload-list.finance .file-upload-wrapper.empty.finance .upload-button-wrapper .upload-button {
-        margin-top: 7px;
         padding: 9px 10px 8px;
         margin-bottom: 0;
         width: 100% !important;
@@ -1794,17 +1783,7 @@ section section.key-wrapper {
 .file-upload-list.finance {
   border-top: none; }
   .file-upload-list.finance .file-upload-wrapper.empty.other-description {
-    background: #ffffff;
-    /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left, #ffffff, #ffffff);
-    /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, #ffffff, #ffffff);
-    /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, #ffffff, #ffffff);
-    /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, #ffffff, #ffffff);
-    /* Standard syntax */
-    background-color: yellow;
+    background-color: #ffffff;
     border: 3px solid #128512;
     display: inline-block;
     width: 100%; }
@@ -1855,7 +1834,6 @@ section section.key-wrapper {
       height: 166px;
       padding: 10px 15px; }
       .file-upload-list.finance .file-upload-wrapper.empty.other-description .upload-button-wrapper .upload-button {
-        margin-top: 7px;
         padding: 9px 10px 8px;
         margin-bottom: 0;
         width: 100% !important;

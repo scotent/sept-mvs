@@ -472,19 +472,17 @@ section {
 .file-upload-list.finance {
     border-top: none;
     .file-upload-wrapper.empty.finance {
-        @include bg-grad($se-white, $se-white);
+        background-color: $se-white;
         border: 3px solid $accessible-green;
         display: inline-block;
         width: 100%;
         .file-upload-inner {
-            //background-color: lawngreen;
             padding: 10px 15px 15px;
             .description {
                 color: $se-black;
                 padding-bottom: 5px;
             }
             .file-browse-wrapper {
-                background-color: yellow;
                 width: 100%;
                 label {
                     .button {
@@ -492,11 +490,9 @@ section {
                         margin: 0;
                         line-height: 25px;
                         float: left;
-
                         width: 81px!important;
                         padding: 9px 10px 8px;
                         min-height: 42px;
-
                         &:hover {
                             color: $se-white;
                             background-color: $black;
@@ -509,10 +505,8 @@ section {
                     //height: 60px;
                     border: 3px solid $se-black;
                     width: calc(100% - 81px);
-
                     margin: 0;
                     float: left;
-
                     padding: 7px 5px 6px 10px;
                     min-height: 42px;
                     font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -529,13 +523,10 @@ section {
             }
         }
         .file-amount-wrapper {
-            //background-color: pink;
             margin-top: 0;
             margin-bottom: 0;
-
             border-left: 1px solid $se-light-mid-grey;
             border-right: 1px solid $se-light-mid-grey;
-
             padding: 10px 15px 15px;
             text-align: left;
             .description {
@@ -549,11 +540,9 @@ section {
                     margin: 0;
                     line-height: 25px;
                     float: left;
-
                     width: 29px!important;
                     padding: 9px 10px 8px;
                     min-height: 42px;
-
                     &:hover {
                         color: $se-white;
                         background-color: $black;
@@ -564,13 +553,10 @@ section {
             input.file-amount {
                 background-color: $se-white;
                 color: $se-black;
-                //height: 60px;
                 border: 3px solid $se-black;
                 width: calc(100% - 30px);
-
                 margin: 0;
                 float: left;
-
                 padding: 7px 5px 6px 10px;
                 min-height: 42px;
                 font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -579,10 +565,8 @@ section {
             }
         }
         .upload-button-wrapper {
-            //background-color: yellow;
             padding: 10px 15px;
             .upload-button {
-                margin-top: 7px;
                 padding: 9px 10px 8px;
                 margin-bottom: 0;
                 width: 100% !important;
@@ -598,13 +582,11 @@ section {
 .file-upload-list.finance {
     border-top: none;
     .file-upload-wrapper.empty.other-description {
-        @include bg-grad($se-white, $se-white);
-        background-color: yellow;
+        background-color: $se-white;
         border: 3px solid $accessible-green;
         display: inline-block;
         width: 100%;
         .file-upload-inner {
-            //background-color: lawngreen;
             padding: 10px 15px 15px;
             .file-upload-element {
                 display: inline-block;
@@ -619,13 +601,11 @@ section {
                         .button {
                             background-color: $se-black;
                             margin: 0;
-
                             float: left;
                             line-height: 25px;
                             width: 81px!important;
                             padding: 9px 10px 8px;
                             min-height: 42px;
-
                             &:hover {
                                 color: $se-white;
                                 background-color: $black;
@@ -635,13 +615,10 @@ section {
                     .filename {
                         background-color: $se-white;
                         color: $se-black;
-                        //height: 60px;
                         border: 3px solid $se-black;
                         width: calc(100% - 81px);
-
                         margin: 0;
                         float: left;
-
                         padding: 7px 5px 6px 10px;
                         min-height: 42px;
                         font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -669,7 +646,6 @@ section {
             height: 166px;
             padding: 10px 15px;
             .upload-button {
-                margin-top: 7px;
                 padding: 9px 10px 8px;
                 margin-bottom: 0;
                 width: 100% !important;
@@ -680,7 +656,6 @@ section {
         }
     }
 }
-
 
 .file-upload-list.finance.help {
     .file-upload-wrapper.empty.finance {
