@@ -1,21 +1,63 @@
 <section class="card-view upload-container">
     <form class="claim-evidence-form">
         <section class="upload-wrapper">
-            <div class="file-upload-list">
-                <div class="file-upload-wrapper empty new new-1">
-                    <div class="form-file file-upload-inner col-md-6 col-sm-6 col-xs-12">
-                        <label>
-                            <input type="file" style="display:none">
-                            <span class="button button-primary">Add a new file</span>
-                        </label>
+
+
+            <div class="file-upload-list finance help">
+                <h4>Financial version - requires value entered + file help text</h4>
+                <div class="file-upload-wrapper empty new finance">
+                    <div class="form-file file-upload-inner col-md-7 col-sm-7 col-xs-12">
+                        <div class="description">
+                            Add a new file
+                        </div>
+                        <div class="file-browse-wrapper">
+                            <label>
+                                <input type="file" style="display:none">
+                                <span class="button button-primary">Browse</span>
+                            </label>
+                            <input required id="name-1e" class="filename" type="text" placeholder="File name">
+                        </div>
+                        <div class="file-upload-help-text">
+                            Files must be less than 10MB<br />
+                            Allowed types: pdf jpg jpeg gif png tiff
+                        </div>
                     </div>
-                    <div class="form-group relative file-amount-wrapper col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group relative file-amount-wrapper col-md-3 col-sm-3 col-xs-12">
                         <label class="sr-only" for="name-1">Amount</label>
-                        <div class="descritpion">Enter the amount this file shows</div>
-                        <input required id="name-1" class="file-amount" type="text" placeholder="File amount">
+                        <div class="description">
+                            Total file value
+                        </div>
+
+                        <div class="file-amount-element">
+                            <label>
+                                <input type="file" style="display:none">
+                                <span class="button button-primary">£</span>
+                            </label>
+                            <input required id="name-2" class="file-amount" type="text" placeholder="File amount">
+                        </div>
+                    </div>
+                    <div class="upload-button-wrapper col-md-2 col-sm-2 col-xs-12">
+                        <div class="upload-button button button-primary">Upload</div>
                     </div>
                 </div>
             </div>
+            
+            <!--<div class="file-upload-list">-->
+                <!--<div class="file-upload-wrapper empty new new-1">-->
+                    <!--<div class="form-file file-upload-inner col-md-6 col-sm-6 col-xs-12">-->
+                        <!--<label>-->
+                            <!--<input type="file" style="display:none">-->
+                            <!--<span class="button button-primary">Add a new file</span>-->
+                        <!--</label>-->
+                    <!--</div>-->
+                    <!--<div class="form-group relative file-amount-wrapper col-md-6 col-sm-6 col-xs-12">-->
+                        <!--<label class="sr-only" for="name-1">Amount</label>-->
+                        <!--<div class="descritpion">Enter the amount this file shows</div>-->
+                        <!--<input required id="name-1" class="file-amount" type="text" placeholder="File amount">-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
         </section>
     </form>
 </section>
