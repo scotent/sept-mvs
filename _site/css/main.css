@@ -1706,7 +1706,6 @@ section section.key-wrapper {
     /* For Firefox 3.6 to 15 */
     background: linear-gradient(to right, #ffffff, #ffffff);
     /* Standard syntax */
-    color: #ffffff;
     border: 3px solid #128512;
     display: inline-block;
     width: 100%; }
@@ -1721,9 +1720,11 @@ section section.key-wrapper {
         .file-upload-list.finance .file-upload-wrapper.empty.finance .file-upload-inner .file-browse-wrapper label .button {
           background-color: #2F3E44;
           margin: 0;
+          line-height: 25px;
           float: left;
-          width: 81px;
-          padding: 8px 10px; }
+          width: 81px !important;
+          padding: 9px 10px 8px;
+          min-height: 42px; }
           .file-upload-list.finance .file-upload-wrapper.empty.finance .file-upload-inner .file-browse-wrapper label .button:hover {
             color: #ffffff;
             background-color: #000000; }
@@ -1738,6 +1739,13 @@ section section.key-wrapper {
           min-height: 42px;
           font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
           font-size: 16px; }
+      .file-upload-list.finance .file-upload-wrapper.empty.finance .file-upload-inner .file-upload-help-text {
+        font-size: 12px;
+        line-height: 18px;
+        color: #333333;
+        padding: 2px 2px 0 2px;
+        display: inline-block;
+        width: 100%; }
     .file-upload-list.finance .file-upload-wrapper.empty.finance .file-amount-wrapper {
       margin-top: 0;
       margin-bottom: 0;
@@ -1748,20 +1756,115 @@ section section.key-wrapper {
       .file-upload-list.finance .file-upload-wrapper.empty.finance .file-amount-wrapper .description {
         color: #2F3E44;
         padding-bottom: 5px; }
+      .file-upload-list.finance .file-upload-wrapper.empty.finance .file-amount-wrapper label {
+        margin: 0; }
+        .file-upload-list.finance .file-upload-wrapper.empty.finance .file-amount-wrapper label .button {
+          background-color: #2F3E44;
+          margin: 0;
+          line-height: 25px;
+          float: left;
+          width: 29px !important;
+          padding: 9px 10px 8px;
+          min-height: 42px; }
+          .file-upload-list.finance .file-upload-wrapper.empty.finance .file-amount-wrapper label .button:hover {
+            color: #ffffff;
+            background-color: #000000; }
       .file-upload-list.finance .file-upload-wrapper.empty.finance .file-amount-wrapper input.file-amount {
-        border: 3px solid #2F3E44;
-        margin-top: 0;
-        padding: 0 0 0 10px;
+        background-color: #ffffff;
         color: #2F3E44;
-        width: 100%; }
+        border: 3px solid #2F3E44;
+        width: calc(100% - 30px);
+        margin: 0;
+        float: left;
+        padding: 7px 5px 6px 10px;
+        min-height: 42px;
+        font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 16px; }
     .file-upload-list.finance .file-upload-wrapper.empty.finance .upload-button-wrapper {
       padding: 10px 15px; }
       .file-upload-list.finance .file-upload-wrapper.empty.finance .upload-button-wrapper .upload-button {
         margin-top: 7px;
-        padding: 8px 10px;
+        padding: 9px 10px 8px;
         margin-bottom: 0;
         width: 100% !important;
+        line-height: 25px;
+        min-height: 42px;
         margin-top: 28px; }
+
+.file-upload-list.finance {
+  border-top: none; }
+  .file-upload-list.finance .file-upload-wrapper.empty.other-description {
+    background: #ffffff;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #ffffff, #ffffff);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ffffff, #ffffff);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ffffff, #ffffff);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ffffff, #ffffff);
+    /* Standard syntax */
+    background-color: yellow;
+    border: 3px solid #128512;
+    display: inline-block;
+    width: 100%; }
+    .file-upload-list.finance .file-upload-wrapper.empty.other-description .file-upload-inner {
+      padding: 10px 15px 15px; }
+      .file-upload-list.finance .file-upload-wrapper.empty.other-description .file-upload-inner .file-upload-element {
+        display: inline-block;
+        width: 100%; }
+        .file-upload-list.finance .file-upload-wrapper.empty.other-description .file-upload-inner .file-upload-element .description {
+          color: #2F3E44;
+          padding-bottom: 5px; }
+        .file-upload-list.finance .file-upload-wrapper.empty.other-description .file-upload-inner .file-upload-element .file-browse-wrapper {
+          width: 100%; }
+          .file-upload-list.finance .file-upload-wrapper.empty.other-description .file-upload-inner .file-upload-element .file-browse-wrapper label .button {
+            background-color: #2F3E44;
+            margin: 0;
+            float: left;
+            line-height: 25px;
+            width: 81px !important;
+            padding: 9px 10px 8px;
+            min-height: 42px; }
+            .file-upload-list.finance .file-upload-wrapper.empty.other-description .file-upload-inner .file-upload-element .file-browse-wrapper label .button:hover {
+              color: #ffffff;
+              background-color: #000000; }
+          .file-upload-list.finance .file-upload-wrapper.empty.other-description .file-upload-inner .file-upload-element .file-browse-wrapper .filename {
+            background-color: #ffffff;
+            color: #2F3E44;
+            border: 3px solid #2F3E44;
+            width: calc(100% - 81px);
+            margin: 0;
+            float: left;
+            padding: 7px 5px 6px 10px;
+            min-height: 42px;
+            font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 16px; }
+      .file-upload-list.finance .file-upload-wrapper.empty.other-description .file-upload-inner .file-description-element .file-description-wrapper {
+        padding-right: 0;
+        margin: 15px 0 0; }
+        .file-upload-list.finance .file-upload-wrapper.empty.other-description .file-upload-inner .file-description-element .file-description-wrapper .file-description {
+          width: 100%;
+          border: 3px solid #2F3E44;
+          margin: 0;
+          padding: 7px 5px 6px 10px;
+          min-height: 42px;
+          font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+          font-size: 16px; }
+    .file-upload-list.finance .file-upload-wrapper.empty.other-description .upload-button-wrapper {
+      height: 166px;
+      padding: 10px 15px; }
+      .file-upload-list.finance .file-upload-wrapper.empty.other-description .upload-button-wrapper .upload-button {
+        margin-top: 7px;
+        padding: 9px 10px 8px;
+        margin-bottom: 0;
+        width: 100% !important;
+        margin-top: 113px;
+        min-height: 42px;
+        line-height: 25px; }
+
+.file-upload-list.finance.help .file-upload-wrapper.empty.finance .file-amount-wrapper {
+  border: none; }
 
 .margin-1tb {
   margin-top: 1em;

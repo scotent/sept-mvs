@@ -473,7 +473,6 @@ section {
     border-top: none;
     .file-upload-wrapper.empty.finance {
         @include bg-grad($se-white, $se-white);
-        color: $se-white;
         border: 3px solid $accessible-green;
         display: inline-block;
         width: 100%;
@@ -491,11 +490,12 @@ section {
                     .button {
                         background-color: $se-black;
                         margin: 0;
-
+                        line-height: 25px;
                         float: left;
 
-                        width: 81px;
-                        padding: 8px 10px;
+                        width: 81px!important;
+                        padding: 9px 10px 8px;
+                        min-height: 42px;
 
                         &:hover {
                             color: $se-white;
@@ -519,6 +519,14 @@ section {
                     font-size: 16px;
                 }
             }
+            .file-upload-help-text {
+                font-size: 12px;
+                line-height: 18px;
+                color: $se-dark-grey;
+                padding: 2px 2px 0 2px;
+                display: inline-block;
+                width: 100%;
+            }
         }
         .file-amount-wrapper {
             //background-color: pink;
@@ -534,32 +542,150 @@ section {
                 color: $se-black;
                 padding-bottom: 5px;
             }
-            input.file-amount {
-                border: 3px solid $se-black;
-                margin-top: 0;
-                padding: 0 0 0 10px;
-                color: $se-black;
+            label {
+                margin: 0;
+                .button {
+                    background-color: $se-black;
+                    margin: 0;
+                    line-height: 25px;
+                    float: left;
 
-                width: 100%;
+                    width: 29px!important;
+                    padding: 9px 10px 8px;
+                    min-height: 42px;
 
-                //width: 74%;
+                    &:hover {
+                        color: $se-white;
+                        background-color: $black;
+                    }
+                }
 
             }
+            input.file-amount {
+                background-color: $se-white;
+                color: $se-black;
+                //height: 60px;
+                border: 3px solid $se-black;
+                width: calc(100% - 30px);
 
+                margin: 0;
+                float: left;
 
+                padding: 7px 5px 6px 10px;
+                min-height: 42px;
+                font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-size: 16px;
+
+            }
         }
         .upload-button-wrapper {
             //background-color: yellow;
             padding: 10px 15px;
             .upload-button {
                 margin-top: 7px;
-                padding: 8px 10px;
+                padding: 9px 10px 8px;
                 margin-bottom: 0;
                 width: 100% !important;
-
+                line-height: 25px;
+                min-height: 42px;
                 margin-top: 28px;
             }
         }
     }
 }
 
+
+.file-upload-list.finance {
+    border-top: none;
+    .file-upload-wrapper.empty.other-description {
+        @include bg-grad($se-white, $se-white);
+        background-color: yellow;
+        border: 3px solid $accessible-green;
+        display: inline-block;
+        width: 100%;
+        .file-upload-inner {
+            //background-color: lawngreen;
+            padding: 10px 15px 15px;
+            .file-upload-element {
+                display: inline-block;
+                width: 100%;
+                .description {
+                    color: $se-black;
+                    padding-bottom: 5px;
+                }
+                .file-browse-wrapper {
+                    width: 100%;
+                    label {
+                        .button {
+                            background-color: $se-black;
+                            margin: 0;
+
+                            float: left;
+                            line-height: 25px;
+                            width: 81px!important;
+                            padding: 9px 10px 8px;
+                            min-height: 42px;
+
+                            &:hover {
+                                color: $se-white;
+                                background-color: $black;
+                            }
+                        }
+                    }
+                    .filename {
+                        background-color: $se-white;
+                        color: $se-black;
+                        //height: 60px;
+                        border: 3px solid $se-black;
+                        width: calc(100% - 81px);
+
+                        margin: 0;
+                        float: left;
+
+                        padding: 7px 5px 6px 10px;
+                        min-height: 42px;
+                        font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .file-description-element {
+                .file-description-wrapper {
+                    padding-right: 0;
+                    margin: 15px 0 0;
+                    .file-description {
+                        width: 100%;
+                        border: 3px solid $se-black;
+                        margin: 0;
+                        padding: 7px 5px 6px 10px;
+                        min-height: 42px;
+                        font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .upload-button-wrapper {
+            height: 166px;
+            padding: 10px 15px;
+            .upload-button {
+                margin-top: 7px;
+                padding: 9px 10px 8px;
+                margin-bottom: 0;
+                width: 100% !important;
+                margin-top: 113px;
+                min-height: 42px;
+                line-height: 25px;
+            }
+        }
+    }
+}
+
+
+.file-upload-list.finance.help {
+    .file-upload-wrapper.empty.finance {
+        .file-amount-wrapper {
+            border: none;
+        }
+    }
+}
