@@ -450,9 +450,152 @@
             }
         }
     }
-
 }
 
 
+.accordion-summary {
+    .panel-title {
+        color: $se-white;
+    }
+    > .panel-default {
+        > .panel-heading {
+            @include bg-grad($se-blue, darken($se-blue, 5%));
+            h3 {
+                color: $se-white;
+            }
+        }
+        .panel-collapse {
+            .panel-heading {
+                @include bg-grad($se-blue-sec, darken($se-blue-sec, 5%));
+                h3 {
+                    color: $se-white;
+                }
+            }
+            .card-view {
+                margin-bottom: 0;
+            }
+            .panel-collapse {
+                .panel-heading {
+                    @include bg-grad($se-green-sec, darken($se-green-sec, 5%));
+                }
+                .panel-collapse {
+                    .panel-heading {
+                        background: $se-light-grey;
+                    }
+                }
+            }
+            .panel-mid {
+                position: relative;
+            }
+            .evidence-description {
+                max-width: 80%;
+                color: $se-dark-grey;
+                display: inline-block;
+            }
+        }
+    }
+    * {
+        outline: none !important;
+    }
+}
 
+.accordion-summary {
+    .panel-heading {
+        .panel-title {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 18px;
+            width: calc(100% - 40px);
+            display: inline-block;
+        }
+        &.collapsed {
+            > .header-panel-icon {
+                width: 40px;
+                text-align: right;
+                float: right;
+                color: $se-white;
+                font-size: 26px;
+                &:before {
+                    content: '\f0d7';
+                    font-family: FontAwesome;
+                }
+            }
+        }
+        &:not(.collapsed) {
+            > .header-panel-icon {
+                width: 40px;
+                text-align: right;
+                float: right;
+                color: $se-white;
+                font-size: 26px;
+                &:before {
+                    content: '\f0d8';
+                    font-family: FontAwesome;
+                    //color: yellow;
+                }
+            }
+        }
+        &.collapsed {
+            .panel-mid {
+                .header-panel-icon.help {
+                    float: right;
+                    color: $se-dark-orange;
+                    &:before {
+                        content: '\f0d7';
+                        font-family: FontAwesome;
+                        color: $se-dark-orange;
+                        font-size: 20px;
+                        padding-right: 9px;
+                    }
+                }
+            }
+        }
+        &:not(.collapsed) {
+            .panel-mid {
+                .header-panel-icon.help {
+                    float: right;
+                    color: $se-dark-orange;
+                    &:before {
+                        content: '\f0d8';
+                        font-family: FontAwesome;
+                        color: $se-dark-orange;
+                        font-size: 20px;
+                        padding-right: 9px;
+                    }
+                }
+            }
+        }
+    }
+    .file-upload-list {
+        border-top: 1px solid $se-grey;
+        .file-upload-wrapper:not(.empty) {
 
+            &:first-of-type {
+                border-top: none;
+            }
+        }
+    }
+}
+
+.accordion-summary {
+    .evidence-wrapper {
+        //background-color: greenyellow;
+        display: inline-block;
+        width: 100%;
+        border-top: 1px solid $se-lighter-grey;
+        .evidence-item {
+            //background-color: yellow;
+            width: calc(100% - 80px);
+            padding: 3px;
+            float: left;
+            border-top: none;
+        }
+        .evidence-value {
+            //background-color: pink;
+            width: 80px;
+            text-align: right;
+            padding: 3px;
+            float: right;
+        }
+    }
+}

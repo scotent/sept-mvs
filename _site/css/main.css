@@ -582,6 +582,120 @@ a {
   .accordion-evidence .file-upload-list .file-upload-wrapper:not(.empty):first-of-type {
     border-top: none; }
 
+.accordion-summary .panel-title {
+  color: #ffffff; }
+.accordion-summary > .panel-default > .panel-heading {
+  background: #00427F;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #00427F, #003566);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #00427F, #003566);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #00427F, #003566);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #00427F, #003566);
+  /* Standard syntax */ }
+  .accordion-summary > .panel-default > .panel-heading h3 {
+    color: #ffffff; }
+.accordion-summary > .panel-default .panel-collapse .panel-heading {
+  background: #077796;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #077796, #06647e);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #077796, #06647e);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #077796, #06647e);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #077796, #06647e);
+  /* Standard syntax */ }
+  .accordion-summary > .panel-default .panel-collapse .panel-heading h3 {
+    color: #ffffff; }
+.accordion-summary > .panel-default .panel-collapse .card-view {
+  margin-bottom: 0; }
+.accordion-summary > .panel-default .panel-collapse .panel-collapse .panel-heading {
+  background: #078C85;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #078C85, #06746e);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #078C85, #06746e);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #078C85, #06746e);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #078C85, #06746e);
+  /* Standard syntax */ }
+.accordion-summary > .panel-default .panel-collapse .panel-collapse .panel-collapse .panel-heading {
+  background: #ecf0f1; }
+.accordion-summary > .panel-default .panel-collapse .panel-mid {
+  position: relative; }
+.accordion-summary > .panel-default .panel-collapse .evidence-description {
+  max-width: 80%;
+  color: #333333;
+  display: inline-block; }
+.accordion-summary * {
+  outline: none !important; }
+
+.accordion-summary .panel-heading .panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  width: calc(100% - 40px);
+  display: inline-block; }
+.accordion-summary .panel-heading.collapsed > .header-panel-icon {
+  width: 40px;
+  text-align: right;
+  float: right;
+  color: #ffffff;
+  font-size: 26px; }
+  .accordion-summary .panel-heading.collapsed > .header-panel-icon:before {
+    content: '\f0d7';
+    font-family: FontAwesome; }
+.accordion-summary .panel-heading:not(.collapsed) > .header-panel-icon {
+  width: 40px;
+  text-align: right;
+  float: right;
+  color: #ffffff;
+  font-size: 26px; }
+  .accordion-summary .panel-heading:not(.collapsed) > .header-panel-icon:before {
+    content: '\f0d8';
+    font-family: FontAwesome; }
+.accordion-summary .panel-heading.collapsed .panel-mid .header-panel-icon.help {
+  float: right;
+  color: #BF3A27; }
+  .accordion-summary .panel-heading.collapsed .panel-mid .header-panel-icon.help:before {
+    content: '\f0d7';
+    font-family: FontAwesome;
+    color: #BF3A27;
+    font-size: 20px;
+    padding-right: 9px; }
+.accordion-summary .panel-heading:not(.collapsed) .panel-mid .header-panel-icon.help {
+  float: right;
+  color: #BF3A27; }
+  .accordion-summary .panel-heading:not(.collapsed) .panel-mid .header-panel-icon.help:before {
+    content: '\f0d8';
+    font-family: FontAwesome;
+    color: #BF3A27;
+    font-size: 20px;
+    padding-right: 9px; }
+.accordion-summary .file-upload-list {
+  border-top: 1px solid #727272; }
+  .accordion-summary .file-upload-list .file-upload-wrapper:not(.empty):first-of-type {
+    border-top: none; }
+
+.accordion-summary .evidence-wrapper {
+  display: inline-block;
+  width: 100%;
+  border-top: 1px solid #bbbbbb; }
+  .accordion-summary .evidence-wrapper .evidence-item {
+    width: calc(100% - 80px);
+    padding: 3px;
+    float: left;
+    border-top: none; }
+  .accordion-summary .evidence-wrapper .evidence-value {
+    width: 80px;
+    text-align: right;
+    padding: 3px;
+    float: right; }
+
 header {
   margin-bottom: 0; }
 
