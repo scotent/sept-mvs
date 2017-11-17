@@ -582,8 +582,6 @@ a {
   .accordion-evidence .file-upload-list .file-upload-wrapper:not(.empty):first-of-type {
     border-top: none; }
 
-.accordion-summary .panel-title {
-  color: #ffffff; }
 .accordion-summary > .panel-default > .panel-heading {
   background: #00427F;
   /* For browsers that do not support gradients */
@@ -635,11 +633,32 @@ a {
   outline: none !important; }
 
 .accordion-summary .panel-heading .panel-title {
+  color: #ffffff;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 18px;
-  width: calc(100% - 40px);
+  width: 250px;
   display: inline-block; }
+.accordion-summary .panel-heading .recon-alert-wrapper {
+  background-color: #ffffff;
+  color: #2F3E44;
+  width: 180px;
+  display: inline-block;
+  padding: 0 10px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */ }
+  .accordion-summary .panel-heading .recon-alert-wrapper.recon-good:before {
+    content: '\f00c';
+    font-family: FontAwesome;
+    margin-right: 9px;
+    color: #128512; }
+  .accordion-summary .panel-heading .recon-alert-wrapper.recon-bad:before {
+    content: '\f071';
+    font-family: FontAwesome;
+    margin-right: 9px;
+    color: #FF9900; }
 .accordion-summary .panel-heading.collapsed > .header-panel-icon {
   width: 40px;
   text-align: right;

@@ -454,9 +454,6 @@
 
 
 .accordion-summary {
-    .panel-title {
-        color: $se-white;
-    }
     > .panel-default {
         > .panel-heading {
             @include bg-grad($se-blue, darken($se-blue, 5%));
@@ -502,11 +499,36 @@
 .accordion-summary {
     .panel-heading {
         .panel-title {
+            color: $se-white;
             margin-top: 0;
             margin-bottom: 0;
             font-size: 18px;
-            width: calc(100% - 40px);
+            width: 250px;
             display: inline-block;
+        }
+        .recon-alert-wrapper {
+            background-color: $se-white;
+            color: $se-black;
+            width: 180px;
+            display: inline-block;
+            padding: 0 10px;
+            @include border-radius(2px);
+            &.recon-good {
+                &:before {
+                    content: '\f00c';
+                    font-family: FontAwesome;
+                    margin-right: 9px;
+                    color: $accessible-green;
+                }
+            }
+            &.recon-bad {
+                &:before {
+                    content: '\f071';
+                    font-family: FontAwesome;
+                    margin-right: 9px;
+                    color: $se-amber;
+                }
+            }
         }
         &.collapsed {
             > .header-panel-icon {
