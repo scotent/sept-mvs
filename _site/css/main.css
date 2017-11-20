@@ -849,6 +849,8 @@ header nav.navbar {
     .button.button-primary:not(.disabled):hover {
       background-color: #ffffff;
       color: #00427F;
+      -webkit-box-shadow: inset 0 0 0 3px #00427F;
+      -moz-box-shadow: inset 0 0 0 3px #00427F;
       -webkit-transition: background-color 0.5s, color 0.5s;
       -moz-transition: background-color 0.5s, color 0.5s;
       -ms-transition: background-color 0.5s, color 0.5s;
@@ -863,7 +865,9 @@ header nav.navbar {
       padding: 0.5em 1em; }
       .button.button-primary.inverse:hover {
         background-color: #FDB813;
-        border: none; }
+        border: none;
+        -webkit-box-shadow: inset 0 0 0 3px #FDB813;
+        -moz-box-shadow: inset 0 0 0 3px #FDB813; }
       .button.button-primary.inverse:active, .button.button-primary.inverse:focus {
         color: #FDB813; }
   .button.button-secondary {
@@ -874,6 +878,8 @@ header nav.navbar {
     .button.button-secondary:not(.disabled):hover {
       background-color: #ffffff;
       color: #2A7CB2;
+      -webkit-box-shadow: inset 0 0 0 3px #2A7CB2;
+      -moz-box-shadow: inset 0 0 0 3px #2A7CB2;
       -webkit-transition: background-color 0.5s, color 0.5s;
       -moz-transition: background-color 0.5s, color 0.5s;
       -ms-transition: background-color 0.5s, color 0.5s;
@@ -1464,7 +1470,18 @@ table.table-striped.no-hover tbody tr.status-paid progress {
   .claim-schedule.trimmed td:nth-of-type(4):before {
     content: "Status"; }
   .claim-schedule.trimmed td:nth-of-type(5):before {
-    content: "Actions"; } }
+    content: "Actions"; }
+
+  .claim-schedule.mvs td {
+    padding: 10px 10px 10px 50% !important; }
+  .claim-schedule.mvs td:nth-of-type(1):before {
+    content: "Claims"; }
+  .claim-schedule.mvs td:nth-of-type(2):before {
+    content: "Status"; }
+  .claim-schedule.mvs td:nth-of-type(3):before {
+    content: "Due date"; }
+  .claim-schedule.mvs td:nth-of-type(4):before {
+    content: "Amount"; } }
 section.upload-wrapper {
   border-bottom: 1px solid #727272; }
   section.upload-wrapper .upload-header {

@@ -66,8 +66,8 @@
         &:not(.disabled):hover {
             background-color: $se-white;
             color: $se-blue;
-            //-webkit-box-shadow:inset 0 0 0 3px $se-blue;
-            //-moz-box-shadow:inset 0 0 0 3px $se-blue;
+            -webkit-box-shadow:inset 0 0 0 3px $se-blue;
+            -moz-box-shadow:inset 0 0 0 3px $se-blue;
             @include transition(background-color 0.5s, color 0.5s);
         }
         &:active,
@@ -82,8 +82,8 @@
             &:hover {
                 background-color: $se-yellow;
                 border: none;
-                //-webkit-box-shadow:inset 0 0 0 3px $se-yellow;
-                //-moz-box-shadow:inset 0 0 0 3px $se-yellow;
+                -webkit-box-shadow:inset 0 0 0 3px $se-yellow;
+                -moz-box-shadow:inset 0 0 0 3px $se-yellow;
             }
             &:active,
             &:focus {
@@ -100,8 +100,8 @@
         &:not(.disabled):hover {
             background-color: $se-white;
             color: $se-light-blue;
-            //-webkit-box-shadow:inset 0 0 0 3px $se-light-blue;
-            //-moz-box-shadow:inset 0 0 0 3px $se-light-blue;
+            -webkit-box-shadow:inset 0 0 0 3px $se-light-blue;
+            -moz-box-shadow:inset 0 0 0 3px $se-light-blue;
             @include transition(background-color 0.5s, color 0.5s);
         }
         &:active,
