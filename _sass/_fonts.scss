@@ -78,10 +78,15 @@ body {
 // This is the fix
 
 .fa {
+    width: 20px;
     &:not(.fa-spin) {
         animation: none;
     }
 }
 
-
+.phone.mobile {
+    i.fa-mobile {
+        font-size: 24px;
+    }
+}
 
