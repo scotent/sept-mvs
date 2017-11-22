@@ -2390,7 +2390,8 @@ ol.breadcrumb {
   height: 100%;
   background-color: gray;
   display: block;
-  margin: 0 0 10px 0; }
+  margin: 0 0 10px 0;
+  border: 1px solid #bbbbbb; }
 
 .bold {
   font-weight: bold; }
