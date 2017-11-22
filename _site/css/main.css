@@ -772,17 +772,27 @@ a {
   font-size: 18px;
   display: inline-block; }
 .accordion-evidence .panel-heading .cross-check-alert {
-  display: inline-block;
-  color: #FFA819; }
-  .accordion-evidence .panel-heading .cross-check-alert:before {
-    content: "\f071";
-    font-family: FontAwesome;
-    color: #FFA819;
-    left: 24px;
-    position: relative;
-    font-size: 18px;
-    top: 1px;
-    padding-right: 33px; }
+  display: inline-block; }
+  .accordion-evidence .panel-heading .cross-check-alert.mismatch {
+    color: #FFA819; }
+    .accordion-evidence .panel-heading .cross-check-alert.mismatch:before {
+      content: "\f071";
+      font-family: FontAwesome;
+      left: 24px;
+      position: relative;
+      font-size: 18px;
+      top: 1px;
+      padding-right: 33px; }
+  .accordion-evidence .panel-heading .cross-check-alert.success {
+    color: #00CC00; }
+    .accordion-evidence .panel-heading .cross-check-alert.success:before {
+      content: "\f00c";
+      font-family: FontAwesome;
+      left: 24px;
+      position: relative;
+      font-size: 18px;
+      top: 1px;
+      padding-right: 33px; }
 .accordion-evidence .panel-heading.collapsed > .header-panel-icon {
   width: 40px;
   text-align: right;

@@ -382,16 +382,29 @@
         }
         .cross-check-alert {
             display: inline-block;
-            color: $se-amber;
-            &:before {
-                content: "\f071";
-                font-family: FontAwesome;
+            &.mismatch {
                 color: $se-amber;
-                left: 24px;
-                position: relative;
-                font-size: 18px;
-                top: 1px;
-                padding-right: 33px;
+                &:before {
+                    content: "\f071";
+                    font-family: FontAwesome;
+                    left: 24px;
+                    position: relative;
+                    font-size: 18px;
+                    top: 1px;
+                    padding-right: 33px;
+                }
+            }
+            &.success {
+                color: $se-bright-green;
+                &:before {
+                    content: "\f00c";
+                    font-family: FontAwesome;
+                    left: 24px;
+                    position: relative;
+                    font-size: 18px;
+                    top: 1px;
+                    padding-right: 33px;
+                }
             }
         }
         &.collapsed {
