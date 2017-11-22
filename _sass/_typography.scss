@@ -150,6 +150,11 @@ a, .link {
     }
 }
 
+// -- If the color changes - let's make it smooth -- //
+* {
+    @include transition(color 0.36s);
+}
+
 // -- Breadcrumbs -- //
 .breadcrumbs {
     font-size: 14px;

@@ -335,16 +335,10 @@
     > .panel-default {
         > .panel-heading {
             @include bg-grad($se-blue, darken($se-blue, 5%));
-            h3 {
-                color: $se-white;
-            }
         }
         .panel-collapse {
             .panel-heading {
                 @include bg-grad($se-blue-sec, darken($se-blue-sec, 5%));
-                h3 {
-                    color: $se-white;
-                }
             }
             .card-view {
                 margin-bottom: 0;
@@ -376,12 +370,29 @@
 
 .accordion-evidence {
     .panel-heading {
+        &:hover {
+            cursor: pointer;
+        }
         .panel-title {
             margin-top: 0;
             margin-bottom: 0;
             font-size: 18px;
-            width: calc(100% - 40px);
+            //width: calc(100% - 40px);
             display: inline-block;
+        }
+        .cross-check-alert {
+            display: inline-block;
+            color: $se-amber;
+            &:before {
+                content: "\f071";
+                font-family: FontAwesome;
+                color: $se-amber;
+                left: 24px;
+                position: relative;
+                font-size: 18px;
+                top: 1px;
+                padding-right: 33px;
+            }
         }
         &.collapsed {
             > .header-panel-icon {
@@ -444,7 +455,6 @@
     .file-upload-list {
         border-top: 1px solid $se-grey;
         .file-upload-wrapper:not(.empty) {
-
             &:first-of-type {
                 border-top: none;
             }
@@ -452,6 +462,15 @@
     }
 }
 
+
+.accordion-evidence,
+.accordion-summary {
+    > .panel-default > .panel-collapse {
+        > .panel-body {
+            background-color: $se-light-grey;
+        }
+    }
+}
 
 .accordion-summary {
     > .panel-default {
@@ -553,7 +572,6 @@
                 &:before {
                     content: '\f0d8';
                     font-family: FontAwesome;
-                    //color: yellow;
                 }
             }
         }
@@ -591,7 +609,6 @@
     .file-upload-list {
         border-top: 1px solid $se-grey;
         .file-upload-wrapper:not(.empty) {
-
             &:first-of-type {
                 border-top: none;
             }
@@ -601,23 +618,54 @@
 
 .accordion-summary {
     .evidence-wrapper {
-        //background-color: greenyellow;
         display: inline-block;
         width: 100%;
         border-top: 1px solid $se-lighter-grey;
         .evidence-item {
-            //background-color: yellow;
             width: calc(100% - 80px);
             padding: 3px;
             float: left;
             border-top: none;
+            color: $se-blue-sec;
+            &:hover,
+            &:visited {
+                color: $se-blue;
+                cursor: pointer;
+            }
         }
         .evidence-value {
-            //background-color: pink;
             width: 80px;
             text-align: right;
             padding: 3px;
             float: right;
+        }
+    }
+}
+
+.accordion-summary.additional {
+    > .panel-default > .panel-collapse {
+        > .panel-body {
+            background-color: $se-white;
+        }
+    }
+    .row {
+        border-bottom: 1px solid $se-lighter-grey;
+        margin-bottom: 20px;
+        &:last-of-type {
+            border-bottom: none;
+        }
+    }
+    .evidence-wrapper {
+        display: inline-block;
+        width: 100%;
+        border: none;
+        .evidence-item {
+            width: 100%;
+            border-top: 1px solid $se-lighter-grey;
+            &:last-of-type {
+                border-bottom: 1px solid $se-lighter-grey;
+                margin: 0 0 20px;
+            }
         }
     }
 }

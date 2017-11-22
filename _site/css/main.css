@@ -729,8 +729,6 @@ a {
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(to right, #00427F, #003566);
   /* Standard syntax */ }
-  .accordion-evidence > .panel-default > .panel-heading h3 {
-    color: #ffffff; }
 .accordion-evidence > .panel-default .panel-collapse .panel-heading {
   background: #077796;
   /* For browsers that do not support gradients */
@@ -742,8 +740,6 @@ a {
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(to right, #077796, #06647e);
   /* Standard syntax */ }
-  .accordion-evidence > .panel-default .panel-collapse .panel-heading h3 {
-    color: #ffffff; }
 .accordion-evidence > .panel-default .panel-collapse .card-view {
   margin-bottom: 0; }
 .accordion-evidence > .panel-default .panel-collapse .panel-collapse .panel-heading {
@@ -768,12 +764,25 @@ a {
 .accordion-evidence * {
   outline: none !important; }
 
+.accordion-evidence .panel-heading:hover {
+  cursor: pointer; }
 .accordion-evidence .panel-heading .panel-title {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 18px;
-  width: calc(100% - 40px);
   display: inline-block; }
+.accordion-evidence .panel-heading .cross-check-alert {
+  display: inline-block;
+  color: #FFA819; }
+  .accordion-evidence .panel-heading .cross-check-alert:before {
+    content: "\f071";
+    font-family: FontAwesome;
+    color: #FFA819;
+    left: 24px;
+    position: relative;
+    font-size: 18px;
+    top: 1px;
+    padding-right: 33px; }
 .accordion-evidence .panel-heading.collapsed > .header-panel-icon {
   width: 40px;
   text-align: right;
@@ -814,6 +823,10 @@ a {
   border-top: 1px solid #727272; }
   .accordion-evidence .file-upload-list .file-upload-wrapper:not(.empty):first-of-type {
     border-top: none; }
+
+.accordion-evidence > .panel-default > .panel-collapse > .panel-body,
+.accordion-summary > .panel-default > .panel-collapse > .panel-body {
+  background-color: #ecf0f1; }
 
 .accordion-summary > .panel-default > .panel-heading {
   background: #00427F;
@@ -891,7 +904,7 @@ a {
     content: '\f071';
     font-family: FontAwesome;
     margin-right: 9px;
-    color: #FF9900; }
+    color: #FFA819; }
 .accordion-summary .panel-heading.collapsed > .header-panel-icon {
   width: 40px;
   text-align: right;
@@ -941,12 +954,34 @@ a {
     width: calc(100% - 80px);
     padding: 3px;
     float: left;
-    border-top: none; }
+    border-top: none;
+    color: #077796; }
+    .accordion-summary .evidence-wrapper .evidence-item:hover, .accordion-summary .evidence-wrapper .evidence-item:visited {
+      color: #00427F;
+      cursor: pointer; }
   .accordion-summary .evidence-wrapper .evidence-value {
     width: 80px;
     text-align: right;
     padding: 3px;
     float: right; }
+
+.accordion-summary.additional > .panel-default > .panel-collapse > .panel-body {
+  background-color: #ffffff; }
+.accordion-summary.additional .row {
+  border-bottom: 1px solid #bbbbbb;
+  margin-bottom: 20px; }
+  .accordion-summary.additional .row:last-of-type {
+    border-bottom: none; }
+.accordion-summary.additional .evidence-wrapper {
+  display: inline-block;
+  width: 100%;
+  border: none; }
+  .accordion-summary.additional .evidence-wrapper .evidence-item {
+    width: 100%;
+    border-top: 1px solid #bbbbbb; }
+    .accordion-summary.additional .evidence-wrapper .evidence-item:last-of-type {
+      border-bottom: 1px solid #bbbbbb;
+      margin: 0 0 20px; }
 
 header {
   margin-bottom: 0; }
@@ -1152,6 +1187,52 @@ header nav.navbar {
   @media all and (max-width: 479px) {
     .button.button-back {
       text-align: left; } }
+
+.button.section-complete-button {
+  background-color: #BCCB0A;
+  background-color: #B24912;
+  background-color: #00427F;
+  padding: 3px 1em;
+  font-family: din-regularregular, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: -1px;
+  font-size: 18px;
+  margin-left: 18px;
+  color: #2F3E44;
+  color: #ffffff;
+  float: right;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */ }
+  .button.section-complete-button:before {
+    content: '\f00c';
+    font-family: FontAwesome;
+    padding-right: 9px; }
+  .button.section-complete-button:hover {
+    background-color: #078C85; }
+
+.button.section-save-button {
+  background-color: #BCCB0A;
+  background-color: #8c5623;
+  background-color: #077796;
+  padding: 3px 1em;
+  font-family: din-regularregular, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: -1px;
+  font-size: 18px;
+  margin-left: 18px;
+  color: #2F3E44;
+  color: #ffffff;
+  float: right;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */ }
+  .button.section-save-button:before {
+    content: '\f0c7';
+    font-family: FontAwesome;
+    padding-right: 13px; }
+  .button.section-save-button:hover {
+    background-color: #2F3E44; }
 
 article a[href^="//"]:not(.button),
 article a[href^="http://"]:not(.button),
@@ -1715,6 +1796,9 @@ table.table-striped.no-hover tbody tr.status-paid progress {
     content: "Due date"; }
   .claim-schedule.mvs td:nth-of-type(4):before {
     content: "Amount"; } }
+.table-row-title {
+  font-weight: 700 !important; }
+
 section.upload-wrapper {
   border-bottom: 1px solid #727272; }
   section.upload-wrapper .upload-header {
@@ -1823,9 +1907,9 @@ section section.key-wrapper {
 
 .processing .fa {
   margin-right: 10px;
-  color: #FF9900; }
+  color: #FFA819; }
 .processing .file-status:before {
-  color: #FF9900;
+  color: #FFA819;
   content: "\f021"; }
 
 .failed .fa {
@@ -2432,6 +2516,13 @@ a, .link {
   a:hover, .link:hover {
     text-decoration: underline; }
 
+* {
+  -webkit-transition: color 0.36s;
+  -moz-transition: color 0.36s;
+  -ms-transition: color 0.36s;
+  -o-transition: color 0.36s;
+  transition: color 0.36s; }
+
 .breadcrumbs {
   font-size: 14px;
   margin: 20px 0 13px;
@@ -2538,7 +2629,7 @@ caption {
       font-family: FontAwesome;
       padding: 0 5px 0 0;
       font-size: 30px;
-      color: #FF9900; }
+      color: #FFA819; }
       @media all and (max-width: 992px) {
         .info-note.caution:before {
           top: 30px; } }

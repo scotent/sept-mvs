@@ -154,6 +154,54 @@
     }
 }
 
+.button.section-complete-button {
+    background-color: #BCCB0A;
+    background-color: #B24912;
+    background-color: $se-blue;
+    //@include bg-grad(#BCCB0A, darken(#BCCB0A, 5%));
+    padding: 3px 1em;
+    font-family: din-regularregular, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: -1px;
+    font-size: 18px;
+    margin-left: 18px;
+    color: $se-black;
+    color: $se-white;
+    float: right;
+    @include border-radius(3px);
+    &:before {
+        content: '\f00c';
+        font-family: FontAwesome;
+        padding-right: 9px;
+    }
+    &:hover {
+        background-color: $se-green-sec;
+    }
+}
+
+.button.section-save-button {
+    background-color: #BCCB0A;
+    background-color: #8c5623;
+    background-color: $se-blue-sec;
+    //@include bg-grad(#BCCB0A, darken(#BCCB0A, 5%));
+    padding: 3px 1em;
+    font-family: din-regularregular, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: -1px;
+    font-size: 18px;
+    margin-left: 18px;
+    color: $se-black;
+    color: $se-white;
+    float: right;
+    @include border-radius(3px);
+    &:before {
+        content: '\f0c7';
+        font-family: FontAwesome;
+        padding-right: 13px;
+    }
+    &:hover {
+        background-color: $se-black;
+    }
+}
+
 
 // Overrides for Scot Gov styling //
 article a[href^="//"]:not(.button),
