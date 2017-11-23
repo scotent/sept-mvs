@@ -682,3 +682,11 @@
         }
     }
 }
+
+.panel-heading {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+

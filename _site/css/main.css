@@ -993,6 +993,9 @@ a {
       border-bottom: 1px solid #bbbbbb;
       margin: 0 0 20px; }
 
+.panel-heading:hover {
+  cursor: pointer; }
+
 header {
   margin-bottom: 0; }
 
@@ -2525,7 +2528,8 @@ a, .link {
   -o-transition: background-color 0.36s, color 0.36s;
   transition: background-color 0.36s, color 0.36s; }
   a:hover, .link:hover {
-    text-decoration: underline; }
+    text-decoration: underline;
+    cursor: pointer; }
 
 * {
   -webkit-transition: color 0.36s;
@@ -2677,6 +2681,9 @@ caption {
 
 .card-view .info-note.caution, .card-view .info-note.note {
   margin-top: 0; }
+
+.strong {
+  font-weight: bold; }
 
 html, body {
   height: 100%; }

@@ -147,6 +147,7 @@ a, .link {
     @include transition(background-color 0.36s, color 0.36s);
     &:hover {
         text-decoration: underline;
+        cursor: pointer;
     }
 }
 
@@ -340,4 +341,7 @@ caption {
     }
 }
 
+.strong {
+    font-weight: bold;
+}
 
