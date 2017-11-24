@@ -1,0 +1,82 @@
+---
+layout: layout-general
+title: Fourth quarter claim - Claim evidence
+---
+
+<div class="col-lg-9 col-md-12">
+    <p class="leader">
+        Attach all your evidence files in support of this claim. Each individual file shouldn’t be
+        larger than 10MB. We’ll check each file for viruses and notify you of any problems.
+    </p>
+    <!--<p class="leader">To support this claim, attach all your evidence files, each not exceeding 10MB.-->
+    <!--Your files will be checked for viruses and we'll tell you if any problems have been-->
+    <!--detected.</p>-->
+
+
+    <div class="card-view">
+        <h2 class="emphasis">Supporting files</h2>
+        <a class="right-align right-link-inline examples" href="claim-examples-2.html" target="_blank">See examples</a>
+
+        <section class="key-wrapper">
+            <h3>Key</h3>
+            <div class="key-status">
+                <div class="key success">
+                    <i class="fa fa-check fa-1x fa-fw"></i>
+                    File added
+                </div>
+                <div class="key processing">
+                    <i class="fa fa-refresh fa-1x fa-fw"></i>
+                    Processing
+                </div>
+                <div class="key failed failed-upload">
+                    <i class="fa fa-times fa-1x fa-fw"></i>
+                    Failed upload
+                </div>
+                <div class="key failed failed-scan">
+                    <i class="fa fa-exclamation-circle fa-1x fa-fw"></i>
+                    Failed scan
+                </div>
+            </div>
+        </section>
+
+
+
+    </div>
+
+
+    <!--Upload-container-->
+    {% include upload-container-complex.html %}
+
+
+    <!--Upload-container-->
+    {% include evidence-file-table.html %}
+
+
+    <!--ADDITIONAL INFO-->
+
+    {% include additional-info.html %}
+
+    <div class="card-view">
+        <section class="upload-wrapper">
+            <div class="info-note caution">
+                <p>Have you uploaded all the evidence needed to support this claim?
+                </p>
+
+            </div>
+            <fieldset>
+                <legend class="sr-only">
+                    Confirm all evidence uploaded
+                </legend>
+                <div class="input-wrapper">
+                    <input name="###" id="###id" class="fancy-checkbox" type="checkbox">
+                    <label for="###id" class="inline fancy-checkbox">I have included all the evidence required to support this claim</label>
+                </div>
+            </fieldset>
+        </section>
+
+        <a href="claim-declaration.html" class="button button-primary">Continue claim</a>
+        <a href="claim-detail.html" class="button button-tertiary">Save and exit claim</a>
+    </div>
+    <a href="../funding-overview-imfh.html" class="button button-back">Back to Claim overview</a>
+
+</div>
