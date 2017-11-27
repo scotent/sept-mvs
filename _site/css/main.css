@@ -2504,6 +2504,34 @@ section section.key-wrapper {
 .file-table tr:first-child td:first-child {
   padding-left: 15px; }
 
+.additional-files-container .row {
+  border-bottom: 1px solid #727272;
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .additional-files-container .row:last-of-type {
+    border-bottom: none; }
+.additional-files-container .additional-wrapper {
+  margin: 0 0 20px; }
+  .additional-files-container .additional-wrapper .additional-element-wrapper {
+    padding: 10px;
+    border: 3px solid #727272;
+    background-color: #ffffff; }
+    .additional-files-container .additional-wrapper .additional-element-wrapper section.upload-container {
+      margin-bottom: 0; }
+    .additional-files-container .additional-wrapper .additional-element-wrapper .upload-wrapper {
+      border-bottom: none; }
+  .additional-files-container .additional-wrapper .add-more {
+    margin: 10px 10px 10px 0; }
+.additional-files-container .button {
+  padding: 9px 1em; }
+.additional-files-container .file-upload-inner {
+  padding: 0; }
+  .additional-files-container .file-upload-inner .description {
+    color: #2F3E44;
+    padding-bottom: 0 !important;
+    margin: 0 !important; }
+
 .margin-1tb {
   margin-top: 1em;
   margin-bottom: 1em; }

@@ -907,37 +907,7 @@ title: Fourth quarter claim - Claim evidence
 
     <!--ADDITIONAL INFO-->
 
-    <section class="card-view">
-        <form>
-            <section class="upload-wrapper">
-                <h2 class="emphasis margin-1b">Additional information</h2>
-                <p>Please provide any extra information that could help process your claim quickly.
-                    For example, tell us in the space below where to find relevant payments on the
-                    files you’ve uploaded. Or if you have a summary document, attach this as an
-                    additional file.</p>
-                <h3>Additional comments</h3>
-                <textarea id="additional-comments" rows="4"></textarea>
-                <p class="word-count"><span>1000</span> characters remaining</p>
-                <h3 class="margin-1t">Attach additional files</h3>
-                <div class="file-upload-list">
-                    <div class="file-upload-wrapper empty">
-                        <div class="form-file file-upload-inner">
-                            <label for="fileupload" id="buttonlabel">
-                                    <span role="button" aria-controls="filename" tabindex="0">
-                                      Add a new file
-                                    </span>
-                            </label>
-                            <input type="file" id="fileupload">
-                            <label for="filename4" class="hide">
-                                uploaded file
-                            </label>
-                            <input type="text" id="filename4" autocomplete="off" readonly placeholder="no file uploaded">
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </form>
-    </section>
+    {% include additional-info.html %}
 
 
     <!--RECONCILLIATION-->

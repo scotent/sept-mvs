@@ -1308,36 +1308,188 @@
     <!--ADDITIONAL INFO-->
 
     <section class="card-view">
-        <form>
-            <section class="upload-wrapper">
-                <h2 class="emphasis margin-1b">Additional information</h2>
-                <p>Please provide any extra information that could help process your claim quickly.
-                    For example, tell us in the space below where to find relevant payments on the
-                    files you’ve uploaded. Or if you have a summary document, attach this as an
-                    additional file.</p>
-                <h3>Additional comments</h3>
-                <textarea id="additional-comments" rows="4"></textarea>
-                <p class="word-count"><span>1000</span> characters remaining</p>
-                <h3 class="margin-1t">Attach additional files</h3>
-                <div class="file-upload-list">
-                    <div class="file-upload-wrapper empty">
-                        <div class="form-file file-upload-inner">
-                            <label for="fileupload" id="buttonlabel">
-                                    <span role="button" aria-controls="filename" tabindex="0">
-                                      Add a new file
-                                    </span>
+    <form>
+        <section class="additional-files-container">
+            <h2 class="emphasis margin-1b">Additional information</h2>
+            <p>Please provide any extra information that could help process your claim quickly.
+                For example, tell us in the space below where to find relevant payments on the
+                files you’ve uploaded. Or if you have a summary document, attach this as an
+                additional file.
+            </p>
+
+
+            <!--Accordion AA0a-->
+            <div class="panel-group accordion-evidence small" id="accordionAA0a">
+                <div class="panel panel-default">
+
+                    <!--Header-level-AA0a-->
+                    <div class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordionAA0a" href="#collapseAA0a">
+                        <h4 class="panel-title">
+                            Add additional information
+                        </h4>
+                        <span class="header-panel-icon"></span>
+                    </div>
+
+                    <!--Body-level-AA0a-->
+                    <div id="collapseAA0a" class="panel-collapse collapse">
+                        <div class="panel-body">
+
+                            <div class="additional-wrapper">
+                                <h3>Additional information item</h3>
+                                <!--<span class="description">-->
+                                    <!--(An item can contain comments and multiple files)-->
+                                <!--</span>-->
+                                <div class="additional-element-wrapper">
+
+                                    <!--Upload-container-->
+                                    <section class="upload-container">
+    <form class="claim-evidence-form">
+        <section class="upload-wrapper">
+
+            <div class="file-upload-list finance">
+                <div class="file-upload-wrapper empty new finance other">
+                    <div class="form-file file-upload-inner col-md-10 col-sm-10 col-xs-12">
+                        <h3 class="description">
+                            Add file(s)
+                        </h3>
+                        <div class="file-browse-wrapper">
+                            <label>
+                                <input type="file" style="display:none">
+                                <span class="button button-primary">Browse</span>
                             </label>
-                            <input type="file" id="fileupload">
-                            <label for="filename4" class="hide">
-                                uploaded file
-                            </label>
-                            <input type="text" id="filename4" autocomplete="off" readonly placeholder="no file uploaded">
+                            <input required id="name-1r" class="filename" type="text" placeholder="File name">
+                        </div>
+                    </div>
+                    <div class="upload-button-wrapper col-md-2 col-sm-2 col-xs-12">
+                        <div class="upload-button button button-primary">Upload</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </form>
+</section>
+
+
+
+                                    <a class="button-primary button">Add another</a>
+
+                                    <hr>
+                                    <h3>Add comments</h3>
+                                    <textarea id="additional-comments" rows="4"></textarea>
+                                    <p class="word-count"><span>1000</span> characters remaining</p>
+                                    <!--<h3 class="margin-1t">Attach additional files</h3>-->
+                                    <div class="submit-wrapper">
+                                        <a class="button-primary button submit">Submit</a>
+                                    </div>
+
+                                </div>
+                                <a class="button-primary button add-more">Add more</a>
+                            </div>
+
                         </div>
                     </div>
                 </div>
-            </section>
-        </form>
-    </section>
+            </div>
+
+
+
+
+            <!--<div class="additional-wrapper">-->
+                <!--<h3>Additional information item</h3>-->
+                <!--<div class="additional-element-wrapper">-->
+
+                    <!--&lt;!&ndash;Upload-container&ndash;&gt;-->
+                    <!--<section class="upload-container">
+    <form class="claim-evidence-form">
+        <section class="upload-wrapper">
+
+            <div class="file-upload-list finance">
+                <div class="file-upload-wrapper empty new finance other">
+                    <div class="form-file file-upload-inner col-md-10 col-sm-10 col-xs-12">
+                        <h3 class="description">
+                            Add file(s)
+                        </h3>
+                        <div class="file-browse-wrapper">
+                            <label>
+                                <input type="file" style="display:none">
+                                <span class="button button-primary">Browse</span>
+                            </label>
+                            <input required id="name-1r" class="filename" type="text" placeholder="File name">
+                        </div>
+                    </div>
+                    <div class="upload-button-wrapper col-md-2 col-sm-2 col-xs-12">
+                        <div class="upload-button button button-primary">Upload</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </form>
+</section>
+
+-->
+
+                    <!--<a class="button-primary button">Add another</a>-->
+
+                    <!--<hr>-->
+                    <!--<h3>Add comments</h3>-->
+                    <!--<textarea id="additional-comments" rows="4"></textarea>-->
+                    <!--<p class="word-count"><span>1000</span> characters remaining</p>-->
+                    <!--&lt;!&ndash;<h3 class="margin-1t">Attach additional files</h3>&ndash;&gt;-->
+                    <!--<div class="submit-wrapper">-->
+                        <!--<a class="button-primary button submit">Submit</a>-->
+                    <!--</div>-->
+
+                <!--</div>-->
+                <!--<a class="button-primary button add-more">Add more</a>-->
+            <!--</div>-->
+
+
+
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="evidence-header">Additional file(s)</div>
+                        <ul class="evidence-wrapper">
+                            <li class="evidence-item">019273-1111.pdf</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-8 col-sm-12">
+                        <div class="evidence-header">Additional comments</div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula magna sed justo fringilla iaculis.
+                            Vestibulum vitae sapien vestibulum, rutrum lacus ac, tempus mi. Etiam at
+                            lacus vestibulum, euismod velit et, sodales felis. Nunc semper semper tortor.
+                            Proin eu risus at nunc cursus consequat vel vitae ante.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="evidence-header">Additional file(s)</div>
+                        <ul class="evidence-wrapper">
+                            <li class="evidence-item">019273-2222.pdf</li>
+                            <li class="evidence-item">019273-2223.pdf</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-8 col-sm-12">
+                        <div class="evidence-header">Additional comments</div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula magna sed justo fringilla iaculis.
+                            Vestibulum vitae sapien vestibulum, rutrum lacus ac, tempus mi. Etiam at
+                            lacus vestibulum, euismod velit et, sodales felis. Nunc semper semper tortor.
+                            Proin eu risus at nunc cursus consequat vel vitae ante.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </form>
+</section>
 
 
     <!--RECONCILLIATION-->

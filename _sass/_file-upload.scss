@@ -801,3 +801,56 @@ section {
     }
 }
 
+.additional-files-container {
+    .row {
+        border-bottom: 1px solid $se-grey;
+        background-color:  $se-white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        &:last-of-type {
+            border-bottom: none;
+        }
+    }
+    .additional-wrapper {
+        //padding: 10px;
+        margin: 0 0 20px;
+        //border: 3px solid $se-black;
+        //background-color: $se-blue;
+        //color: $se-white;
+        .additional-element-wrapper {
+            padding: 10px;
+            border: 3px solid $se-grey;
+            background-color: $se-white;
+            section.upload-container {
+                margin-bottom: 0;
+            }
+            .upload-wrapper {
+                border-bottom: none;
+            }
+            .submit-wrapper {
+                //background-color: turquoise;
+                .submit {
+                    //background-color: tomato;
+                }
+            }
+
+        }
+        .add-more {
+            margin: 10px 10px 10px 0;
+            //background-color: $se-white;
+            //color: $se-blue;
+        }
+    }
+    .button {
+        padding: 9px 1em;
+    }
+    .file-upload-inner {
+        padding: 0;
+        .description {
+            color: $se-black;
+            padding-bottom: 0!important;
+            margin: 0!important;
+        }
+    }
+}
+
