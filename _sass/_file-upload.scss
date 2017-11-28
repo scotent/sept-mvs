@@ -820,12 +820,18 @@ section {
         .additional-element-wrapper {
             padding: 10px;
             border: 3px solid $se-grey;
-            background-color: $se-white;
+            background-color: darken($se-light-grey, 9%);
             section.upload-container {
-                margin-bottom: 0;
+                margin-bottom: 5px;
             }
             .upload-wrapper {
                 border-bottom: none;
+                .file-upload-inner {
+                    padding: 10px!important;
+                }
+                .upload-button {
+                    margin-top: 0!important;
+                }
             }
             .submit-wrapper {
                 //background-color: turquoise;
@@ -834,6 +840,9 @@ section {
                 }
             }
 
+        }
+        textarea {
+            border: 3px solid $se-dark-green;
         }
         .add-more {
             margin: 10px 10px 10px 0;
@@ -851,6 +860,9 @@ section {
             padding-bottom: 0!important;
             margin: 0!important;
         }
+    }
+    hr {
+        @include hr($se-grey, 1px);
     }
 }
 

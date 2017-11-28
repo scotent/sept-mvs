@@ -46,6 +46,15 @@
 //
 
 
+// HR //
+@mixin hr($color, $height) {
+    background-color: $color;
+    color: $color;
+    height: $height;
+    border: none;
+    padding-bottom: 0;
+}
+
 // Rotate text by the chosen amount
 @mixin rotate-text($val) {
     -ms-transform: rotate($val); /* IE 9 */
