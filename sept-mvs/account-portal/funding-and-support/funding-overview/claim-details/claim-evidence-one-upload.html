@@ -8,11 +8,7 @@ title: One upload - Claim evidence
         Attach all your evidence files in support of this claim. Each individual file shouldn’t be
         larger than 10MB. We’ll check each file for viruses and notify you of any problems.
     </p>
-    <!--<p class="leader">To support this claim, attach all your evidence files, each not exceeding 10MB.-->
-    <!--Your files will be checked for viruses and we'll tell you if any problems have been-->
-    <!--detected.</p>-->
-
-
+    
     <div class="card-view">
         <h2 class="emphasis">Supporting files</h2>
         <a class="right-align right-link-inline examples" href="claim-examples-2.html" target="_blank">See examples</a>
@@ -38,9 +34,6 @@ title: One upload - Claim evidence
                 </div>
             </div>
         </section>
-
-
-
     </div>
 
 
@@ -56,27 +49,22 @@ title: One upload - Claim evidence
 
     {% include additional-info.html %}
 
-    <div class="card-view">
-        <section class="upload-wrapper">
-            <div class="info-note caution">
-                <p>Have you uploaded all the evidence needed to support this claim?
-                </p>
 
-            </div>
-            <fieldset>
-                <legend class="sr-only">
-                    Confirm all evidence uploaded
-                </legend>
-                <div class="input-wrapper">
-                    <input name="###" id="###id" class="fancy-checkbox" type="checkbox">
-                    <label for="###id" class="inline fancy-checkbox">I have included all the evidence required to support this claim</label>
-                </div>
-            </fieldset>
-        </section>
+    <!--CHECK INFO COMPLETE-->
 
-        <a href="claim-declaration.html" class="button button-primary">Continue claim</a>
-        <a href="claim-detail.html" class="button button-tertiary">Save and exit claim</a>
-    </div>
+    {% include claim-info-check.html %}
+
+
+    <!--CONTROLS-->
+
+    <section class="card-view">
+        <form>
+            <a href="claim-declaration.html" class="button button-primary">Continue claim</a>
+            <a href="claim-detail.html" class="button button-tertiary">Save and exit claim</a>
+
+            <a href="claim-summary-dual-output.html" class="button button-primary temp">Claim summary (temp link)</a>
+        </form>
+    </section>
     <a href="../funding-overview-imfh.html" class="button button-back">Back to Claim overview</a>
 
 </div>
