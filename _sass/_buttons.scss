@@ -90,6 +90,9 @@
                 color: $se-yellow;
             }
         }
+        &.temp {
+            background-color: $se-amber;
+        }
     }
     &.button-secondary {
         background-color: $se-light-blue;
@@ -150,6 +153,9 @@
         }
         @media all and (max-width: $screen-xxs-max) {
             text-align: left;
+        }
+        &.temp {
+            color: $se-amber;
         }
     }
 }

@@ -134,6 +134,12 @@ section {
                 }
             }
         }
+        &.panel {
+            border-bottom: 0;
+            background-color: $se-light-grey;
+            border: none;
+            @include box-shadow(0,0,0,transparent);
+        }
     }
 }
 

@@ -24,17 +24,18 @@ title: Branding and marketing project - Claim evidence
         </ul>
     </div>
 
-    <h2 class="emphasis">Supporting files</h2>
-    <a class="right-align right-link-inline examples" href="claim-examples-2.html" target="_blank">See examples</a>
-    <p class="leader">
-        Upload your evidence in the appropriate section..
-    </p>
 </div>
 
 <!--//////////////////////////////////////////////////////-->
 
 <div class="col-lg-12 col-md-12">
     <section class="card-view">
+
+        <h2 class="emphasis">Supporting files</h2>
+        <a class="right-align right-link-inline examples" href="claim-examples-2.html" target="_blank">See examples</a>
+        <p class="leader">
+            Upload your evidence in the appropriate section..
+        </p>
 
         <!--Accordion 0a-->
         <div class="panel-group accordion-evidence" id="accordion0a">
@@ -464,35 +465,12 @@ title: Branding and marketing project - Claim evidence
 
     <!--FILE STATUS KEY-->
 
-    <section class="card-view">
-
-        <section class="key-wrapper">
-            <h3>Key</h3>
-            <div class="key-status">
-                <div class="key success">
-                    <i class="fa fa-check fa-1x fa-fw"></i>
-                    File added
-                </div>
-                <div class="key processing">
-                    <i class="fa fa-refresh fa-1x fa-fw"></i>
-                    Processing
-                </div>
-                <div class="key failed failed-upload">
-                    <i class="fa fa-times fa-1x fa-fw"></i>
-                    Failed upload
-                </div>
-                <div class="key failed failed-scan">
-                    <i class="fa fa-exclamation-circle fa-1x fa-fw"></i>
-                    Failed scan
-                </div>
-            </div>
-        </section>
-    </section>
+    {% include file-status-key.html %}
 
 
     <!--ADDITIONAL INFO-->
 
-    {% include additional-info.html %}
+    {% include additional-info-6.html %}
 
 
     <!--CHECK INFO COMPLETE-->
@@ -526,7 +504,7 @@ title: Branding and marketing project - Claim evidence
             <a href="claim-declaration.html" class="button button-primary">Continue claim</a>
             <a href="claim-detail.html" class="button button-tertiary">Save and exit claim</a>
 
-            <a href="claim-summary-dual-output.html" class="button button-primary">Claim summary (temp link)</a>
+            <a href="claim-summary-dual-output.html" class="button button-primary temp">Claim summary (temp link)</a>
         </form>
     </section>
     <a href="../funding-overview-imfh.html" class="button button-back">Back to Claim overview</a>

@@ -1230,6 +1230,8 @@ header nav.navbar {
         -moz-box-shadow: inset 0 0 0 3px #FDB813; }
       .button.button-primary.inverse:active, .button.button-primary.inverse:focus {
         color: #FDB813; }
+    .button.button-primary.temp {
+      background-color: #FFA819; }
   .button.button-secondary {
     background-color: #2A7CB2;
     color: #ffffff; }
@@ -1279,6 +1281,8 @@ header nav.navbar {
   @media all and (max-width: 479px) {
     .button.button-back {
       text-align: left; } }
+  .button.button-back.temp {
+    color: #FFA819; }
 
 .button.section-complete-button {
   background-color: #BCCB0A;
@@ -1986,6 +1990,13 @@ section section.key-wrapper {
       section section.key-wrapper .key-status .key {
         float: left;
         clear: left; } }
+  section section.key-wrapper.panel {
+    border-bottom: 0;
+    background-color: #ecf0f1;
+    border: none;
+    -webkit-box-shadow: 0 0 0 transparent;
+    -moz-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent; }
 
 .file-status:before {
   font-family: FontAwesome;
