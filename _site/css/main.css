@@ -825,8 +825,8 @@ a {
 .accordion-evidence > .panel-default > .panel-collapse > .panel-body,
 .accordion-summary > .panel-default > .panel-collapse > .panel-body {
   background-color: #ecf0f1; }
-
-.accordion-evidence > .panel-default .panel-heading {
+.accordion-evidence .panel-default .panel-heading,
+.accordion-summary .panel-default .panel-heading {
   padding: 1em;
   -webkit-border-radius: 0;
   border-radius: 0;

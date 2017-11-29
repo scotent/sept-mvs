@@ -482,15 +482,12 @@
             background-color: $se-light-grey;
         }
     }
-}
-
-.accordion-evidence {
-    > .panel-default .panel-heading {
+    .panel-default .panel-heading {
         padding: 1em;
         @include border-radius(0);
     }
-
 }
+
 .panel-group .panel {
     @include border-radius(0);
 }
