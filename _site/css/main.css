@@ -826,6 +826,19 @@ a {
 .accordion-summary > .panel-default > .panel-collapse > .panel-body {
   background-color: #ecf0f1; }
 
+.accordion-evidence > .panel-default .panel-heading {
+  padding: 1em;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */ }
+
+.panel-group .panel {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */ }
+
 .accordion-summary > .panel-default > .panel-heading {
   background: #00427F;
   /* For browsers that do not support gradients */

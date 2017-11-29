@@ -475,7 +475,6 @@
     }
 }
 
-
 .accordion-evidence,
 .accordion-summary {
     > .panel-default > .panel-collapse {
@@ -484,6 +483,21 @@
         }
     }
 }
+
+.accordion-evidence {
+    > .panel-default .panel-heading {
+        padding: 1em;
+        @include border-radius(0);
+    }
+
+}
+.panel-group .panel {
+    @include border-radius(0);
+}
+
+
+
+// -- SUMMARY styling -- //
 
 .accordion-summary {
     > .panel-default {
