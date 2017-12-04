@@ -96,3 +96,107 @@ title: Pagination styles
         </ul>
     </nav>
 </nav>
+
+<div class="col-md-9 col-sm-12">
+    <h2>Styling</h2>
+<div class="card-view">
+    <p>
+    <h3>SASS</h3>
+
+    // -- PAGINATION -- //
+
+    .pagination-wrapper {
+    text-align: center;
+    .pagination {
+    @include border-radius(0);
+    li {
+    > a {
+    @include border-radius(0);
+    color: $se-blue;
+    @include transition(background-color 0.27s);
+    font-size: 12px;
+    padding: 5px 10px;
+    }
+    &.active a {
+    color: $se-white;
+    background-color: $se-blue;
+    }
+    &:not(.active) a:hover {
+    background-color: $se-light-mid-grey;
+    }
+    > span {
+    border-width: 0 0 0 1px;
+    font-size: 12px;
+    padding: 5px 10px;
+    &:hover {
+    background-color: transparent;
+    }
+    }
+    &.first,
+    &.last,
+    &.prev,
+    &.next {
+    a {
+    padding: 5px;
+    }
+    &.disabled a {
+    color: $se-mid-grey;
+    &:hover {
+    background-color: transparent;
+    }
+    }
+    }
+    }
+    }
+    }
+
+    </p>
+</div>
+</div>
+
+<div class="col-md-9 col-sm-12">
+<div class="card-view">
+    <p>
+    <h3>CSS</h3>
+
+    .pagination-wrapper {
+    text-align: center; }
+    .pagination-wrapper .pagination {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */ }
+    .pagination-wrapper .pagination li > a {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
+    color: #00427F;
+    -webkit-transition: background-color 0.27s;
+    -moz-transition: background-color 0.27s;
+    -ms-transition: background-color 0.27s;
+    -o-transition: background-color 0.27s;
+    transition: background-color 0.27s;
+    font-size: 12px;
+    padding: 5px 10px; }
+    .pagination-wrapper .pagination li.active a {
+    color: #ffffff;
+    background-color: #00427F; }
+    .pagination-wrapper .pagination li:not(.active) a:hover {
+    background-color: #dddddd; }
+    .pagination-wrapper .pagination li > span {
+    border-width: 0 0 0 1px;
+    font-size: 12px;
+    padding: 5px 10px; }
+    .pagination-wrapper .pagination li > span:hover {
+    background-color: transparent; }
+    .pagination-wrapper .pagination li.first a, .pagination-wrapper .pagination li.last a, .pagination-wrapper .pagination li.prev a, .pagination-wrapper .pagination li.next a {
+    padding: 5px; }
+    .pagination-wrapper .pagination li.first.disabled a, .pagination-wrapper .pagination li.last.disabled a, .pagination-wrapper .pagination li.prev.disabled a, .pagination-wrapper .pagination li.next.disabled a {
+    color: #999999; }
+    .pagination-wrapper .pagination li.first.disabled a:hover, .pagination-wrapper .pagination li.last.disabled a:hover, .pagination-wrapper .pagination li.prev.disabled a:hover, .pagination-wrapper .pagination li.next.disabled a:hover {
+    background-color: transparent; }
+
+    </p>
+</div>
+</div>
