@@ -1,0 +1,98 @@
+---
+layout: layout-general
+title: Pagination styles
+---
+
+<nav class="col-md-9 col-sm-12">
+    <div class="card-view">
+        <p>
+            Example 1: more than 5 pages, use dots to separate and reinforce there are many pages
+        </p>
+    </div>
+    <nav role="menu" class="pagination-wrapper" aria-label="Pagination">
+        <ul class="pagination" id="pagination1">
+            <li class="first" role="first" data="1" rel="first">
+                <a href="#">
+                    <i class="fa fa-fast-backward"></i><br>
+                </a>
+            </li>
+            <li class="prev" role="prev" data="2" rel="prev">
+                <a href="#">
+                    <i class="fa fa-play fa-flip-horizontal"></i><br>
+                </a>
+            </li>
+            <li class="page" role="page">
+                <span>...</span>
+            </li>
+            <li class="page" role="page" data="4">
+                <a href="#">4</a>
+            </li>
+            <li class="page" role="page" data="5">
+                <a href="#">5</a>
+            </li>
+            <li class="page active" role="page" data="6">
+                <a href="#">6</a>
+            </li>
+            <li class="page" role="page" data="7">
+                <a href="#">7</a>
+            </li>
+            <li class="page" role="page" data="8">
+                <a href="#">8</a>
+            </li>
+            <li class="page" role="page">
+                <span>...</span>
+            </li>
+
+            <li class="next" role="next" data="4" rel="next">
+                <a href="#">
+                    <i class="fa fa-play"></i><br>
+                </a>
+            </li>
+            <li class="last" role="last" data="100" rel="last">
+                <a href="#">
+                    <i class="fa fa-fast-forward"></i><br>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="card-view margin-2t">
+        <p>
+            Example 2: Less than 5 pages - add class to first/prev or next/last if relevant
+        </p>
+    </div>
+
+    <nav role="menu" class="pagination-wrapper" aria-label="Pagination">
+        <ul class="pagination" id="pagination2">
+            <li class="first disabled" role="first" data="1" rel="first">
+                <a href="#">
+                    <i class="fa fa-fast-backward"></i><br>
+                </a>
+            </li>
+            <li class="prev disabled" role="prev" data="2" rel="prev">
+                <a href="#">
+                    <i class="fa fa-play fa-flip-horizontal"></i><br>
+                </a>
+            </li>
+            <li class="page active" role="page" data="4">
+                <a href="#">1</a>
+            </li>
+            <li class="page" role="page" data="5">
+                <a href="#">2</a>
+            </li>
+            <li class="page" role="page" data="6">
+                <a href="#">3</a>
+            </li>
+            <li class="next" role="next" data="4" rel="next">
+                <a href="#">
+                    <i class="fa fa-play"></i><br>
+                </a>
+            </li>
+            <li class="last" role="last" data="100" rel="last">
+                <a href="#">
+                    <i class="fa fa-fast-forward"></i><br>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</nav>

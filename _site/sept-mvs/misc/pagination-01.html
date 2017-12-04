@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    <title>Pagination styles</title>
+    <meta name="description" content="">
+
+    <link rel="canonical" href="http://localhost:4000/sept-mvs/sept-mvs/misc/pagination-01.html">
+    <link rel="alternate" type="application/rss+xml" title="Scottish Enterprise September MVS" href="http://localhost:4000/sept-mvs/feed.xml">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900' rel='stylesheet' type='text/css'>
+
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:500" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:900" />
+    <![endif]-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!--<link rel="stylesheet" href="https://resources.mygov.scot/assets/css/bootstrap.min.css">-->
+
+    <link rel="stylesheet" href="https://scottishgovernment.github.io/assets/css/main_forms.css">
+    <!--<link rel="stylesheet" href="https://scottishgovernment.github.io/assets/css/form.css">-->
+
+    <link rel="stylesheet" href="/sept-mvs/css/main.css">
+
+    <script src="/sept-mvs/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    <script src="/sept-mvs/js/vendor/main.js"></script>
+
+
+</head>
+
+
+<body>
+
+<section class="content-wrapper">
+
+    <section class="banner beta">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                This site is in <span class="beta">Beta</span> <a href="/sept-mvs/sept-mvs/beta-message.html">Find out what this means</a>. <a id="close-banner"></a>
+            </div>
+            <div class="col-sm-4">
+                <span class="pull-right">Need help? Call <a href="tel:0300 013 3385">0300 013 3385</a></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <header class="site-header">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="">
+                <img src="/sept-mvs/images/SE-logo-rgb.jpg" alt="Scottish Enterprise logo">
+            </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="signed-out.html">Sign out</a>
+                </li>
+            </ul>
+            <div class="welcome">Welcome, Siobhan McDermit</div>
+        </div><!--/.navbar-collapse -->
+    </div>
+</nav>
+
+    </header>
+
+    <section class="breadcrumbs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/sept-mvs/sept-mvs/site-map.html">Site map</a></li>
+                        <li class="breadcrumb-item active">Pagination styles</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section><!--Breadcrumbs-->
+
+    <section id="main" class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="post-title">Pagination styles</h1>
+            </div>
+        </div>
+        <div class="row">
+            <nav class="col-md-9 col-sm-12">
+    <div class="card-view">
+        <p>
+            Example 1: more than 5 pages, use dots to separate and reinforce there are many pages
+        </p>
+    </div>
+    <nav role="menu" class="pagination-wrapper" aria-label="Pagination">
+        <ul class="pagination" id="pagination1">
+            <li class="first" role="first" data="1" rel="first">
+                <a href="#">
+                    <i class="fa fa-fast-backward"></i><br>
+                </a>
+            </li>
+            <li class="prev" role="prev" data="2" rel="prev">
+                <a href="#">
+                    <i class="fa fa-play fa-flip-horizontal"></i><br>
+                </a>
+            </li>
+            <li class="page" role="page">
+                <span>...</span>
+            </li>
+            <li class="page" role="page" data="4">
+                <a href="#">4</a>
+            </li>
+            <li class="page" role="page" data="5">
+                <a href="#">5</a>
+            </li>
+            <li class="page active" role="page" data="6">
+                <a href="#">6</a>
+            </li>
+            <li class="page" role="page" data="7">
+                <a href="#">7</a>
+            </li>
+            <li class="page" role="page" data="8">
+                <a href="#">8</a>
+            </li>
+            <li class="page" role="page">
+                <span>...</span>
+            </li>
+
+            <li class="next" role="next" data="4" rel="next">
+                <a href="#">
+                    <i class="fa fa-play"></i><br>
+                </a>
+            </li>
+            <li class="last" role="last" data="100" rel="last">
+                <a href="#">
+                    <i class="fa fa-fast-forward"></i><br>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="card-view margin-2t">
+        <p>
+            Example 2: Less than 5 pages - add class to first/prev or next/last if relevant
+        </p>
+    </div>
+
+    <nav role="menu" class="pagination-wrapper" aria-label="Pagination">
+        <ul class="pagination" id="pagination2">
+            <li class="first disabled" role="first" data="1" rel="first">
+                <a href="#">
+                    <i class="fa fa-fast-backward"></i><br>
+                </a>
+            </li>
+            <li class="prev disabled" role="prev" data="2" rel="prev">
+                <a href="#">
+                    <i class="fa fa-play fa-flip-horizontal"></i><br>
+                </a>
+            </li>
+            <li class="page active" role="page" data="4">
+                <a href="#">1</a>
+            </li>
+            <li class="page" role="page" data="5">
+                <a href="#">2</a>
+            </li>
+            <li class="page" role="page" data="6">
+                <a href="#">3</a>
+            </li>
+            <li class="next" role="next" data="4" rel="next">
+                <a href="#">
+                    <i class="fa fa-play"></i><br>
+                </a>
+            </li>
+            <li class="last" role="last" data="100" rel="last">
+                <a href="#">
+                    <i class="fa fa-fast-forward"></i><br>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</nav>
+
+        </div>
+    </section><!--Main-->
+
+    <!--Push footer on small page content-->
+    <div class="push"></div>
+</section><!--Content-wrapper-->
+
+<footer class="footer">
+    <div class="container">
+
+        <div id="logo-block">
+            <img src="/sept-mvs/images/footer/scottish-enterprise.png" alt="Scottish Enterprise"/>
+            <img src="/sept-mvs/images/footer/europe-scotland.png" alt="Europe Scotland"/>
+            <img src="/sept-mvs/images/footer/highlands-islands-enterprise.png" alt="Highlands and Islands Enterprise"/>
+            <img src="/sept-mvs/images/footer/scottish-development-international.png" alt="Scottish Development International"/>
+        </div>
+
+        <nav class="navbar">
+            <ul class="">
+                <!--<li><a href="">About this site</a></li>-->
+                <!--<li><a href="">Contact</a></li>-->
+                <li><a href="/sept-mvs/sept-mvs/accessibility.html">Accessibility</a></li>
+                <li><a href="/sept-mvs/sept-mvs/cookies.html">Cookies</a></li>
+                <li><a href="/sept-mvs/sept-mvs/privacy-policy.html">Privacy</a></li>
+                <li><a href="/sept-mvs/sept-mvs/terms-and-conditions.html">Terms and conditions</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<script>
+    var x = window.location.href;
+    document.getElementById("myLink").href = "https://www.surveymonkey.co.uk/r/NF8SMMG?varPage="+encodeURIComponent(x);
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="/sept-mvs/js/vendor/main.js" type="text/javascript"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -808,3 +808,53 @@ select::-ms-expand {
     -o-transition: .25s all ease;
     transition: .25s all ease;
 }
+
+// -- PAGINATION -- //
+
+.pagination-wrapper {
+    text-align: center;
+    .pagination {
+        @include border-radius(0);
+        li {
+            > a {
+                @include border-radius(0);
+                color: $se-blue;
+                @include transition(background-color 0.27s);
+                font-size: 12px;
+                padding: 5px 10px;
+            }
+            &.active a {
+                color: $se-white;
+                background-color: $se-blue;
+            }
+            &:not(.active) a:hover {
+                background-color: $se-light-mid-grey;
+            }
+            > span {
+                border-width: 0 0 0 1px;
+                font-size: 12px;
+                padding: 5px 10px;
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+            &.first,
+            &.last,
+            &.prev,
+            &.next {
+                a {
+                    padding: 5px;
+                }
+                &.disabled a {
+                    color: $se-mid-grey;
+                    &:hover {
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
