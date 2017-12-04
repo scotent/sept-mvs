@@ -2,6 +2,50 @@
 // SE Custom styles for buttons and links
 // ==========================================================================
 
+
+.button {
+    //align-items: flex-start;
+    //background: #727272;
+    //border: 0;
+    //color: #fff;
+    //cursor: pointer;
+    //display: table;
+    //font-size: 17px;
+    //font-weight: bold;
+    //height: 70px;
+    //line-height: 21px;
+    //padding: 7px 40px;
+    //position: relative;
+    //text-align: center;
+    //text-decoration: none;
+    //text-transform: uppercase;
+    //touch-action: manipulation;
+    //vertical-align: middle;
+    ///* width: 100%; */
+    //-moz-transition: background 1s;
+    //-o-transition: background 1s;
+    //-webkit-transition: background 1s;
+    //transition: background 1s;
+}
+//@media all and (min-width: 1200px){
+//
+//    .button {
+//        width: 360px;
+//    }
+//}
+//@media all and (min-width: 992px){
+//
+//    .button {
+//        width: 293px;
+//    }
+//}
+//@media all and (min-width: 768px){
+//
+//    .button {
+//        width: 344px;
+//    }
+//}
+
 @mixin button($bg-col, $col, $hov-bg-col, $hov-col) {
     align-items: flex-start;
     background: $bg-col;
@@ -34,7 +78,9 @@
     &:focus {
         color: $col;
     }
+
     @include transition(background-color 0.5s, color 0.5s, -webkit-box-shadow 0.5s, -moz-box-shadow 0.5s, box-shadow 0.5s);
+
     &.disabled {
         background-color: $se-body-grey;
         &:hover {
@@ -62,8 +108,34 @@
     }
 }
 
+
+
 .button {
+    //line-height: 1.500em;
+    //height: auto;
+    //padding: 1em;
+    //width: auto!important;
+    //text-transform: none;
+    //font-weight: 400;
+    //margin-bottom : 15px;
+    //@include transition(background-color 0.5s, color 0.5s,-webkit-box-shadow 0.5s,-moz-box-shadow 0.5s);
     &.button-primary {
+        //background-color: $se-blue;
+        //color: $se-white;
+        &.disabled {
+            //background-color: $se-body-grey;
+        }
+        &:not(.disabled):hover {
+            //background-color: $se-white;
+            //color: $se-blue;
+            //-webkit-box-shadow:inset 0 0 0 3px $se-blue;
+            //-moz-box-shadow:inset 0 0 0 3px $se-blue;
+            //@include transition(background-color 0.5s, color 0.5s);
+        }
+        &:active,
+        &:focus {
+            //color: $se-white;
+        }
         &.inverse {
             background-color: $se-white;
             color: $se-blue;
@@ -84,6 +156,48 @@
             background-color: $se-amber;
         }
     }
+    &.button-secondary {
+        //background-color: $se-light-blue;
+        //color: $se-white;
+        &.disabled {
+            //background-color: $se-body-grey;
+        }
+        &:not(.disabled):hover {
+            //background-color: $se-white;
+            //color: $se-light-blue;
+            //-webkit-box-shadow:inset 0 0 0 3px $se-light-blue;
+            //-moz-box-shadow:inset 0 0 0 3px $se-light-blue;
+            //@include transition(background-color 0.5s, color 0.5s);
+        }
+        &:active,
+        &:focus  {
+            //color: $se-white;
+        }
+    }
+    &.disabled {
+        &:hover {
+            //cursor: not-allowed !important;
+        }
+    }
+    &.button-tertiary {
+        //background-color: transparent;
+        //color: $se-blue;
+        //padding: 0.5em 0;
+        //&:not(.disabled):hover {
+        //    color: $se-light-blue;
+        //}
+    }
+    &.inline {
+        //padding: 1em;
+        //position: relative;
+        //top: -2px;
+        //display: inline-block;
+    }
+
+    @media screen and (max-width: $screen-xs-min) {
+        width: 100% !important;
+        margin-right: 0 !important;
+    }
 }
 
 .button {
@@ -91,12 +205,11 @@
         background: none;
         color: $se-blue;
         padding-left: 0;
+        //margin: 20px 0 0;
         height: auto;
         border: 3px solid transparent;
         font-weight: 300;
         text-transform: none;
-        margin-bottom: 20px;
-        display: inline-block;
         &:before {
             content:'\f053';
             font-family: FontAwesome;
@@ -125,52 +238,42 @@
             background: $se-amber;
             border: 3px solid $se-amber;
         }
-        @media all and (min-width: 1200px){
-            width: auto!important;
-        }
-        @media all and (min-width: 992px){
-            width: auto!important;
-        }
-        @media all and (min-width: 768px){
-            width: auto!important;
-        }
-        @media screen and (max-width: $screen-xs-min) {
-            width: 100% !important;
-            margin-right: 0 !important;
-        }
     }
 }
 
-.button.section-complete-button,
-.button.section-save-button {
-    padding: 10px 1em;
+.button.section-complete-button {
+    background-color: $se-blue;
+    //@include bg-grad(#BCCB0A, darken(#BCCB0A, 5%));
+    padding: 3px 1em;
     font-family: din-regularregular, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: -1px;
     font-size: 18px;
     margin-left: 18px;
     color: $se-white;
     float: right;
-    font-weight: 500;
-    text-transform: none;
-    height: auto!important;
-    width: auto!important;
     @include border-radius(3px);
-}
-
-.button.section-complete-button {
-    background-color: $se-blue;
     &:before {
         content: '\f00c';
         font-family: FontAwesome;
         padding-right: 9px;
     }
     &:hover {
-        background-color: $se-black;
+        background-color: $se-green-sec;
     }
 }
 
 .button.section-save-button {
     background-color: $se-blue-sec;
+    //@include bg-grad(#BCCB0A, darken(#BCCB0A, 5%));
+    padding: 3px 1em;
+    font-family: din-regularregular, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: -1px;
+    font-size: 18px;
+    margin-left: 18px;
+    color: $se-black;
+    color: $se-white;
+    float: right;
+    @include border-radius(3px);
     &:before {
         content: '\f0c7';
         font-family: FontAwesome;

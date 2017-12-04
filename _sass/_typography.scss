@@ -306,32 +306,6 @@ caption {
     }
 }
 
-.upload-wrapper {
-    .info-note.caution {
-        border-bottom: none;
-        margin-bottom: 0;
-    }
-    .info-note.caution + fieldset {
-        border-bottom: 1px solid $se-grey;
-        padding: 0 0 10px 10px;
-        margin-top: 0;
-        input {
-            margin: 0;
-        }
-        label {
-            margin-top: 0;
-        }
-        input + label.fancy-checkbox::before {
-            left: -6px;
-            top: -4px;
-            @media all and (max-width: 568px) {
-                left: 2px;
-                top: 3px;
-            }
-        }
-    }
-}
-
 .card-view {
     .info-note {
         &.caution,

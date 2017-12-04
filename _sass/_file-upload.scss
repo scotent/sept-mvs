@@ -501,7 +501,8 @@ section {
                         line-height: 25px;
                         float: left;
                         width: 81px!important;
-                        padding: 9px 10px 8px;
+                        //padding: 9px 10px 8px;
+                        padding: 1em 10px;
                         min-height: 42px;
                         &:hover {
                             color: $se-white;
@@ -512,15 +513,16 @@ section {
                 .filename {
                     background-color: $se-white;
                     color: $se-black;
-                    //height: 60px;
+                    height: 59px;
                     border: 3px solid $se-black;
                     width: calc(100% - 81px);
                     margin: 0;
                     float: left;
-                    padding: 7px 5px 6px 10px;
+                    //padding: 7px 5px 6px 10px;
+                    padding: 1em 5px 1em 10px;
                     min-height: 42px;
                     font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-                    font-size: 16px;
+                    font-size: 18px;
                 }
             }
             .file-upload-help-text {
@@ -551,7 +553,8 @@ section {
                     line-height: 25px;
                     float: left;
                     width: 29px!important;
-                    padding: 9px 10px 8px;
+                    //padding: 9px 10px 8px;
+                    padding: 1em 10px;
                     min-height: 42px;
                     &:hover {
                         color: $se-white;
@@ -566,6 +569,7 @@ section {
                 border: 3px solid $se-black;
                 width: calc(100% - 30px);
                 margin: 0;
+                height: 59px;
                 float: left;
                 padding: 7px 5px 6px 10px;
                 min-height: 42px;
@@ -577,7 +581,8 @@ section {
         .upload-button-wrapper {
             padding: 10px 15px;
             .upload-button {
-                padding: 9px 10px 8px;
+                //padding: 9px 10px 8px;
+                padding: 1em 10px;
                 margin-bottom: 0;
                 width: 100% !important;
                 line-height: 25px;
@@ -614,7 +619,8 @@ section {
                             float: left;
                             line-height: 25px;
                             width: 81px!important;
-                            padding: 9px 10px 8px;
+                            //padding: 9px 10px 8px;
+                            padding: 1em 10px;
                             min-height: 42px;
                             &:hover {
                                 color: $se-white;
@@ -656,7 +662,8 @@ section {
             height: 166px;
             padding: 10px 15px;
             .upload-button {
-                padding: 9px 10px 8px;
+                //padding: 9px 10px 8px;
+                padding: 1em 10px;
                 margin-bottom: 0;
                 width: 100% !important;
                 margin-top: 113px;
@@ -699,7 +706,8 @@ section {
                             line-height: 25px;
                             float: left;
                             width: 81px!important;
-                            padding: 9px 10px 8px;
+                            //padding: 9px 10px 8px;
+                            padding: 1em 10px;
                             min-height: 42px;
                             &:hover {
                                 color: $se-white;
@@ -749,7 +757,8 @@ section {
                         line-height: 25px;
                         float: left;
                         width: 29px!important;
-                        padding: 9px 10px 8px;
+                        //padding: 9px 10px 8px;
+                        padding: 1em 10px;
                         min-height: 42px;
                         &:hover {
                             color: $se-white;
@@ -783,7 +792,8 @@ section {
             .upload-button-wrapper {
                 padding: 10px 15px;
                 .upload-button {
-                    padding: 9px 10px 8px;
+                    //padding: 9px 10px 8px;
+                    padding: 1em 10px;
                     margin: 25px 0 0;
                     width: 100% !important;
                     line-height: 25px;
@@ -857,7 +867,8 @@ section {
         }
     }
     .button {
-        padding: 9px 1em;
+        //padding: 9px 1em;
+        padding: 1em;
     }
     .file-upload-inner {
         padding: 0;
@@ -869,6 +880,72 @@ section {
     }
     hr {
         @include hr($se-grey, 1px);
+    }
+}
+
+
+.upload-wrapper {
+    .info-note.caution {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+    .info-note.caution + fieldset {
+        border-bottom: 1px solid $se-grey;
+        padding: 0 0 10px 10px;
+        margin-top: 0;
+        input {
+            margin: 0;
+        }
+        label {
+            margin-top: 0;
+        }
+        input + label.fancy-checkbox::before {
+            left: -6px;
+            top: -4px;
+            @media all and (max-width: 568px) {
+                left: 2px;
+                top: 3px;
+            }
+        }
+    }
+}
+
+.card-view.caution-state {
+    background-color: orange;
+    section.upload-wrapper.info-check {
+        border-bottom: 3px solid $se-black;
+        margin: 0;
+        .info-note.caution {
+            border-bottom: none;
+            margin-bottom: 10px;
+            border-top: 3px solid $se-black;
+            font-size: 20px!important;
+            &:before {
+                color: $se-black;
+            }
+        }
+        .info-note.caution + fieldset {
+            border-bottom: none;
+            padding: 0 0 20px 10px;
+            margin: 0;
+            input {
+                margin: 0;
+            }
+            label {
+                margin-top: 0;
+            }
+            .input-wrapper label {
+                font-size: 20px!important;
+            }
+            input + label.fancy-checkbox::before {
+                left: -6px;
+                top: -4px;
+                @media all and (max-width: 568px) {
+                    left: 2px;
+                    top: 3px;
+                }
+            }
+        }
     }
 }
 
