@@ -1,0 +1,157 @@
+---
+layout: layout-general
+title: Fourth quarter claim - Change your claim
+---
+
+<div class="col-lg-9 col-md-12">
+    <p class="leader">You can request a change to the claim due date, claim amount or both.<br/>
+        Please give a reason for the change.
+    </p>
+    <div id="form" class="form">
+        <div id="accordion" class="panel-group accordion claim-change">
+            <div class="panel panel-default">
+                <div class="panel-heading collapsed" data-toggle="collapse" href="#collapseOne">
+
+                    <h3>Date this claim is due</h3>
+                    <h3 class="header-light">20 Sep 2017</h3>
+                    <span class="header-panel-icon"></span>
+
+
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="claim-change-wrapper">
+
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12">
+                                    <h3>Change date to</h3>
+                                </div>
+                                <div class="col-md-8 col-sm-12 claim-change-item">
+                                    <fieldset>
+                                        <input type="date" placeholder="date-picker">
+                                    </fieldset>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12 claim-change-item">
+                                    <h3>Requested date</h3>
+                                </div>
+                                <div class="col-md-8 col-sm-12 claim-change-item">
+                                    <h3>28 Nov 2017</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p class="col-md-12 margin-1t">
+                                    <!--You can also change future claim due dates by the same amount of time.-->
+                                    Would you like to re-forecast future claim dates by the same amount?<br />
+                                    Note: Claims must not go beyond your contract completion date.
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12 claim-change-item">
+                                    <h3>Change future claim dates</h3>
+                                </div>
+
+                                <div class="col-md-8 col-sm-12 form-group relative" id="radio">
+                                    <fieldset aria-required="true" required="true" id="radio-link" role="radiogroup">
+                                        <legend class="sr-only">
+                                            Do you want to cascade this date change to future due dates?
+                                        </legend>
+                                        <div class="radio-wrapper">
+                                            <input
+                                                    required
+                                                    #dateCascadeRef="ngModel"
+                                                    type="radio"
+                                                    [(ngModel)]="amendedClaim.cascadeDateChange"
+                                                    name="date-cascade"
+                                                    id="yes"
+                                                    value="Yes"
+                                                    (ngModelChange)="onCascadeDate($event)"
+                                                    class="grey form-control fancy-radio">
+                                            <label for="yes" class="inline fancy-radio">Yes</label>
+
+                                            <input
+                                                    required
+                                                    #dateCascadeRef="ngModel"
+                                                    type="radio"
+                                                    [(ngModel)]="amendedClaim.cascadeDateChange"
+                                                    name="date-cascade"
+                                                    checked="checked"
+                                                    id="no"
+                                                    value="No"
+                                                    (ngModelChange)="onCascadeDate($event)"
+                                                    class="grey form-control fancy-radio">
+                                            <label for="no" class="inline fancy-radio">No</label>
+
+                                            <ul class="current-errors"></ul>
+                                        </div>
+                                    </fieldset>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading collapsed" data-toggle="collapse" href="#collapseTwo">
+
+                    <h3>Amount you expect to claim</h3>
+                    <h3 class="header-light">£2000</h3>
+                    <span class="header-panel-icon"></span>
+
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="claim-change-wrapper">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12 claim-change-item">
+                                    <h3>New amount</h3>
+                                </div>
+                                <div class="col-md-8 col-sm-12 claim-change-item">
+                                    <fieldset class="currency-input-box">
+                                        <input type="text">
+                                    </fieldset>
+                                </div>
+
+                                <!--<fieldset class="form-group">-->
+                                    <label class="col-md-4 col-sm-12 claim-change-item" for="claimAmendmentAmount">New amount</label>
+                                    <div class="input-group icon-left col-md-8 col-sm-12 claim-change-item">
+                                        <div class="input-group-addon">&#163;</div>
+                                        <currency-input #costToRecruitRef="ngModel"
+                                                        (change)="onChangeClaimAmount($event)"
+                                                        id="claimAmendmentAmount"
+                                                        validateRange
+                                                        [min]="0.00000000000001"
+                                                        [max]="999999999999999"
+                                                        name="claimAmendmentAmount"
+                                                        [inputId]="'claimAmendmentAmount'"
+                                                        [precision]="2"
+                                                        required
+                                                        [(ngModel)]="amendedClaim.proposedAmount">
+                                        </currency-input>
+                                    </div>
+                                <!--</fieldset>-->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group relative claim-change">
+            <label for="comments">Reason for the change</label>
+            <textarea rows="4" id="comments"></textarea>
+            <div class="char-count">1000 characters left</div>
+            <ul class="current-errors"></ul>
+        </div>
+        <div>
+            <a href="claim-change-confirmation.html" class="button button-primary">Request change</a>
+        </div>
+    </div>
+    <a href="claim-detail.html" class="button button-back">Back to Claim detail</a>
+</div>
+

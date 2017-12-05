@@ -676,11 +676,10 @@ a {
 
 .date-change-alt table {
   margin-bottom: 2em !important; }
-  .date-change-alt table tr td p.text-light {
-    font-weight: 300;
-    font-size: 16px; }
   .date-change-alt table fieldset#radio-link {
     margin: 0; }
+    .date-change-alt table fieldset#radio-link .radio-wrapper label {
+      margin-top: 42px; }
     .date-change-alt table fieldset#radio-link input {
       padding: 0;
       margin: 0; }
@@ -3103,6 +3102,11 @@ caption {
 
 .card-view .info-note.caution, .card-view .info-note.note {
   margin-top: 0; }
+
+.text-light {
+  font-weight: 300;
+  font-size: 14px;
+  padding-top: 10px; }
 
 .strong {
   font-weight: bold; }
