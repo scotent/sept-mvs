@@ -773,7 +773,7 @@ a {
   .accordion-evidence .panel-heading .cross-check-alert.success {
     color: #00CC00; }
     .accordion-evidence .panel-heading .cross-check-alert.success:before {
-      content: "\f00c";
+      content: "\f118";
       font-family: FontAwesome;
       left: 24px;
       position: relative;
@@ -3447,6 +3447,9 @@ ul.evidence-wrapper {
   .timeout .button {
     display: inline-block;
     margin: 1em; }
+
+.site-map .fa.fa-star-o {
+  color: goldenrod; }
 
 body.globalscot {
   padding-top: 100px !important;
