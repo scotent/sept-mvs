@@ -148,15 +148,20 @@
 
 				<div class="info-note note">You are not authorised to submit a claim on behalf of [Business name]. Select the name of a person who is authorised to submit this claim. You can add a note for them - this information won't be submitted as part of the claim.</div>
 
-
 				<div class="form-group">
-					<label for="select-authoriser">Select:</label>
-					<select class="form-control" id="select-authoriser">
-						<option>Joe Bloggs</option>
-						<option>Adam Smith</option>
-					</select>
+					<div class="row">
+						<div class="col-md-2">
+							<label for="select-authoriser">Select:</label>
+						</div>
+						<div class="col-md-4">
+							<select class="form-group dropdown" id="select-authoriser">
+								<option>Joe Bloggs</option>
+								<option>Adam Smith</option>
+							</select>
+							<!--<span class="dropdown-icon"><i class="fa fa-caret-down fa-1x fa-fw"></i></span>-->
+						</div>
+					</div>
 				</div>
-
 
 				<div class="form-group">
 					<label for="additional-information">Additional information (otptional)</label>
@@ -187,8 +192,6 @@
 			</section>
 
 		</section>
-
-		<!--<section class="col-lg-1 hidden-md-down"></section>-->
 
 		<!--Stepper-->
 		<section class="col-lg-3">

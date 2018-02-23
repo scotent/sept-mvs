@@ -1643,8 +1643,16 @@ select {
   min-width: 110px;
   height: 42px; }
 
+.dropdown-icon {
+  position: relative;
+  top: -32px;
+  right: -210px; }
+
 .form-group {
   padding: 0 20px 0 0; }
+  .form-group.dropdown {
+    padding: 8px !important;
+    margin: 0 !important; }
   @media screen and (max-width: 480px) {
     .form-group {
       padding: 0; } }
