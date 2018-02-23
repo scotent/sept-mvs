@@ -264,6 +264,7 @@
         .info-note {
             margin: 0;
             border-bottom: none;
+            //border-bottom: 1px solid;
             padding-bottom: 0 !important;
         }
     }
@@ -465,7 +466,7 @@
         }
     }
     .file-upload-list {
-        border-top: 1px solid $se-grey;
+        //border-top: 1px solid $se-grey;
         .file-upload-wrapper:not(.empty) {
             &:first-of-type {
                 border-top: none;
@@ -630,7 +631,7 @@
         }
     }
     .file-upload-list {
-        border-top: 1px solid $se-grey;
+        //border-top: 1px solid $se-grey;
         .file-upload-wrapper:not(.empty) {
             &:first-of-type {
                 border-top: none;

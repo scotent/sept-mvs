@@ -1,0 +1,163 @@
+---
+layout: layout-general
+title: Add expenditure
+files:
+  - Payslip example 1.pdf
+  - Payslip example 2.pdf
+stepper:
+  - Add expenditure
+  - Add payment
+  - Add supporting files
+  - Check your claim
+  - Submit your claim
+---
+
+<!--Multi-user journey-->
+<div class="col-md-12">
+
+    {% include funding-and-support-claim-details.html %}
+
+    <div class="row margin-2b margin-2t">
+
+        <section class="col-lg-9">
+
+            <section class="key-wrapper">
+                <p class="margin-0">Attach all your expenditure files in support of this claim. Each individual file shouldn’t be
+                    larger than 10MB. We’ll check each file for viruses and notify you of any problems.</p>
+
+                <div class="key-status">
+                    <span>Key:&nbsp;</span>
+                    <div class="key success"><i class="fa fa-check fa-1x fa-fw"></i>File added</div>
+                    <div class="key processing"><i class="fa fa-refresh fa-1x fa-fw"></i>Processing</div>
+                    <div class="key failed"><i class="fa fa-exclamation-circle fa-1x fa-fw"></i>Failed</div>
+                </div>
+            </section>
+
+			<section class="card-view">
+
+				<section class="upload-wrapper">
+
+					<div class="row">
+						<div class="col-sm-9">
+							<h2 class="margin-0t">Payslip</h2>
+						</div>
+						<div class="col-sm-3 text-right">
+							<a class="link" data-toggle="collapse" href="#example-payslip" role="button" aria-expanded="false" aria-controls="collapseExample">See examples<i class="fa fa-caret-down fa-1x fa-fw"></i>
+							</a>
+						</div>
+
+					</div>
+
+					<p>Add a payslip for each employee whose salary you are claiming for. If this is a quarterly claim, add three monthly payslips for each employee.</p>
+
+					<div class="collapse" id="example-payslip">
+						<div class="card card-body">
+							TODO: Payslip relevant information.
+						</div>
+					</div>
+
+					<div class="file-upload-list">
+
+						{% for file in page.files %}
+						<div class="file-upload-wrapper row success">
+							<div class="col-sm-8 col-xs-12 file-details-wrapper">
+								<i class="fa fa-check fa-1x fa-fw"></i>
+								<span class="file-name">{{ file }}</span>
+							</div>
+
+							<div class="col-sm-4 col-xs-12 file-remove-wrapper">
+								<ul class="clean-list-horizontal">
+									<li><a tabindex="0"><span class="sr-only">preview {{file}}</span>Preview</a></li>
+									<li><a tabindex="0"><span class="sr-only">download {{file}}</span>Download</a></li>
+									<li><a tabindex="0"><span class="sr-only">remove {{file}}</span>Remove</a></li>
+								</ul>
+							</div>
+						</div>
+						{% endfor %}
+
+
+						<form class="form-file margin-1t add-new-file">
+							<label tabindex="0" class="form-label" for="file-input-0">
+								Add a new file
+							</label>
+							<input class="form-control sr-only" type="file" value="quotesFile" id="file-input-0">
+						</form>
+					</div>
+
+				</section>
+
+                <button class="button button-primary">Save claim</button>
+
+				<!--steps-navigation-->
+				<section class="row margin-0">
+					<div class="col-sm-6 padding-0 step-navigation-previous">
+						<!--<a href="funding-and-support-add-expenditure.html">-->
+							<!--<div class="bold previous-step">Previous</div>-->
+							<!--<div class="previous-step-title">Add expenditure</div>-->
+							<!--<div class="previous-step-icon">-->
+								<!--<i class="fa fa-angle-left fa-2x fa-fw"></i>-->
+							<!--</div>-->
+						<!--</a>-->
+					</div>
+
+					<div class="col-sm-6 padding-0 step-navigation-next">
+						<a href="funding-and-support-add-payment.html">
+							<div class="bold next-step">Next</div>
+							<div class="next-step-title">Add payment</div>
+							<div class="next-step-icon">
+								<i class="fa fa-angle-right fa-2x fa-fw"></i>
+							</div>
+						</a>
+					</div>
+				</section>
+
+            </section>
+		</section>
+
+        <!--<section class="col-lg-1 hidden-md-down"></section>-->
+
+        <!--Stepper-->
+        <section class="col-lg-3">
+            <ul class="stepper">
+				<li class="step-active">
+					<span class="stepper-circle">1</span>
+					<span class="stepper-title">Add expenditure</span>
+					<div class="stepper-line"></div>
+				</li>
+				<li>
+					<span class="stepper-circle">2</span>
+					<span class="stepper-title">Add payment</span>
+					<div class="stepper-line"></div>
+				</li>
+				<li>
+					<span class="stepper-circle">3</span>
+					<span class="stepper-title">Add supporting files</span>
+					<div class="stepper-line"></div>
+				</li>
+				<li>
+					<span class="stepper-circle">4</span>
+					<span class="stepper-title">check your claim</span>
+					<div class="stepper-line"></div>
+				</li>
+				<li>
+					<span class="stepper-circle">5</span>
+					<span class="stepper-title">Submit your claim</span>
+				</li>
+            </ul>
+
+			<!--<ul class="clean-list margin-0">-->
+				<!--{% for step in page.stepper %}-->
+				<!--<li>-->
+					<!--<span class="stepper-circle">{{ forloop.index}}</span>-->
+					<!--<span class="stepper-title">{{ step }}</span>-->
+					<!--{% if forloop.last == false %}-->
+						<!--<div class="stepper-line"></div>-->
+					<!--{% endif %}-->
+				<!--</li>-->
+				<!--{% endfor %}-->
+			<!--</ul>-->
+
+        </section>
+
+	</div>
+</div>

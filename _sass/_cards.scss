@@ -9,13 +9,19 @@
   margin-bottom: 1em;
   background-color: $grey-bg;
   position: relative;
-  
+
   a {
     display: block;
     position: absolute;
     bottom: 1em;
   }
 }
+
+
+.card-body{
+  background-color: white!important;
+}
+
 
 .card-view {
   background-color: $se-light-grey;

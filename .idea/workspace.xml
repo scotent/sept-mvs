@@ -1,0 +1,954 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c3f10028-962c-469d-bcbf-4e8da2e88643" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_includes/funding-and-support-claim-details.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_sass/_stepper.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-add-expenditure.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-add-payment.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-add-supporting-files.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-check-your-claim.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-claim-confirmation-authoriser.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-claim-confirmation-user.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-main.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-make-a-claim.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-overview.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-submit-your-claim-authoriser.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-submit-your-claim-user.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sept-mvs.iml" afterPath="$PROJECT_DIR$/.idea/sept-mvs.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/head.html" afterPath="$PROJECT_DIR$/_includes/head.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sass/_buttons.scss" afterPath="$PROJECT_DIR$/_sass/_buttons.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sass/_cards.scss" afterPath="$PROJECT_DIR$/_sass/_cards.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sass/_components.scss" afterPath="$PROJECT_DIR$/_sass/_components.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sass/_file-upload.scss" afterPath="$PROJECT_DIR$/_sass/_file-upload.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sass/_layout.scss" afterPath="$PROJECT_DIR$/_sass/_layout.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sass/_misc.scss" afterPath="$PROJECT_DIR$/_sass/_misc.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sass/_tables.scss" afterPath="$PROJECT_DIR$/_sass/_tables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/css/main.css" afterPath="$PROJECT_DIR$/_site/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/emails/index.html" afterPath="$PROJECT_DIR$/_site/emails/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/feed.xml" afterPath="$PROJECT_DIR$/_site/feed.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/global-scot/about.html" afterPath="$PROJECT_DIR$/_site/global-scot/about.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/global-scot/accessibility.html" afterPath="$PROJECT_DIR$/_site/global-scot/accessibility.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/global-scot/case studies.html" afterPath="$PROJECT_DIR$/_site/global-scot/case studies.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/global-scot/case-study-ciqual.html" afterPath="$PROJECT_DIR$/_site/global-scot/case-study-ciqual.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/global-scot/case-study-encompass.html" afterPath="$PROJECT_DIR$/_site/global-scot/case-study-encompass.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/global-scot/case-study-harris-distillery.html" afterPath="$PROJECT_DIR$/_site/global-scot/case-study-harris-distillery.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/global-scot/case-study-pickering's.html" afterPath="$PROJECT_DIR$/_site/global-scot/case-study-pickering's.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/global-scot/case-study-taste-of-arran.html" afterPath="$PROJECT_DIR$/_site/global-scot/case-study-taste-of-arran.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/global-scot/case-study-the-harvesting-the-growth.html" afterPath="$PROJECT_DIR$/_site/global-scot/case-study-the-harvesting-the-growth.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/global-scot/contact-us-request-sent.html" afterPath="$PROJECT_DIR$/_site/global-scot/contact-us-request-sent.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/global-scot/contact.html" afterPath="$PROJECT_DIR$/_site/global-scot/contact.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/global-scot/cookie-policy.html" afterPath="$PROJECT_DIR$/_site/global-scot/cookie-policy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/global-scot/forgotten-password.html" afterPath="$PROJECT_DIR$/_site/global-scot/forgotten-password.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/global-scot/index.html" afterPath="$PROJECT_DIR$/_site/global-scot/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/global-scot/privacy-policy.html" afterPath="$PROJECT_DIR$/_site/global-scot/privacy-policy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/global-scot/profile.html" afterPath="$PROJECT_DIR$/_site/global-scot/profile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/global-scot/register.html" afterPath="$PROJECT_DIR$/_site/global-scot/register.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/global-scot/sign-in.html" afterPath="$PROJECT_DIR$/_site/global-scot/sign-in.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/grant-details/claim-detail/change-claim-form.html" afterPath="$PROJECT_DIR$/_site/grant-details/claim-detail/change-claim-form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/grant-details/claim-detail/claim-confirmation.html" afterPath="$PROJECT_DIR$/_site/grant-details/claim-detail/claim-confirmation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/grant-details/claim-detail/claim-detail.html" afterPath="$PROJECT_DIR$/_site/grant-details/claim-detail/claim-detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/grant-details/claim-detail/claim-evidence.html" afterPath="$PROJECT_DIR$/_site/grant-details/claim-detail/claim-evidence.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/grant-details/claim-detail/claim-summary.html" afterPath="$PROJECT_DIR$/_site/grant-details/claim-detail/claim-summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/grant-details/claim-detail/declaration.html" afterPath="$PROJECT_DIR$/_site/grant-details/claim-detail/declaration.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/grant-details/claim-detail/grant-detail.html" afterPath="$PROJECT_DIR$/_site/grant-details/claim-detail/grant-detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/grant-details/claim-detail/upload-evidence.html" afterPath="$PROJECT_DIR$/_site/grant-details/claim-detail/upload-evidence.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/grant-details/claim-detail/virus-check-scenarios/declaration-scan-fail-5of5.html" afterPath="$PROJECT_DIR$/_site/grant-details/claim-detail/virus-check-scenarios/declaration-scan-fail-5of5.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/grant-details/claim-detail/virus-check-scenarios/upload-evidence-post-declaration-3of5.html" afterPath="$PROJECT_DIR$/_site/grant-details/claim-detail/virus-check-scenarios/upload-evidence-post-declaration-3of5.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/grant-details/claim-detail/virus-check-scenarios/upload-evidence-scan-fail-3of5.html" afterPath="$PROJECT_DIR$/_site/grant-details/claim-detail/virus-check-scenarios/upload-evidence-scan-fail-3of5.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/grant-details/claim-detail/virus-check-scenarios/upload-evidence-scan-ok-3of5.html" afterPath="$PROJECT_DIR$/_site/grant-details/claim-detail/virus-check-scenarios/upload-evidence-scan-ok-3of5.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/grant-details/index.html" afterPath="$PROJECT_DIR$/_site/grant-details/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/index.html" afterPath="$PROJECT_DIR$/_site/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/accessibility.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/accessibility.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/account-portal.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/account-portal.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/action-plan.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/action-plan.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/business-details.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/business-details.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/business-performance.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/business-performance.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-and-support.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-and-support.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-change-alt.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-change-alt.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-change-confirmation.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-change-confirmation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-change-new.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-change-new.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-change-old.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-change-old.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-change.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-change.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-confirmation.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-confirmation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-declaration.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-declaration.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-detail.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-evidence-2.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-evidence-2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-evidence-3.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-evidence-3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-evidence-4.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-evidence-4.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-evidence-5.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-evidence-5.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-evidence-5a.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-evidence-5a.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-evidence-5b.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-evidence-5b.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-evidence-6.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-evidence-6.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-evidence-one-upload.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-evidence-one-upload.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-evidence-upload-elements.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-evidence-upload-elements.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-evidence.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-evidence.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-examples-2.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-examples-2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-examples.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-examples.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-summary-2.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-summary-2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-summary-complex.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-summary-complex.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-summary-dual-output.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-summary-dual-output.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-summary-single-output.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-summary-single-output.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-summary.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/funding-overview-border.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/funding-overview-border.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/funding-overview-imfh.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/funding-overview-imfh.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/funding-overview-paid.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/funding-overview-paid.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/funding-overview-request-change.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/funding-overview-request-change.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/funding-overview-srd.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/funding-overview-srd.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/imrs/IMRS-enquiry-confirmation.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/imrs/IMRS-enquiry-confirmation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/imrs/IMRS-enquiry-form.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/imrs/IMRS-enquiry-form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/key-contacts.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/key-contacts.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/other-services.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/other-services.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/profile.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/profile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/admin-dashboard.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/admin-dashboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/b2c-sign-in/clear/sign-in-05.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/b2c-sign-in/clear/sign-in-05.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/b2c-sign-in/clear/sign-in-06.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/b2c-sign-in/clear/sign-in-06.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/b2c-sign-in/clear/sign-in-07.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/b2c-sign-in/clear/sign-in-07.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/b2c-sign-in/clear/sign-in-08.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/b2c-sign-in/clear/sign-in-08.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/b2c-sign-in/clear/sign-in-09.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/b2c-sign-in/clear/sign-in-09.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/b2c-sign-in/sign-in/sign-in-05.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/b2c-sign-in/sign-in/sign-in-05.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/b2c-sign-in/sign-in/sign-in-06.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/b2c-sign-in/sign-in/sign-in-06.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/b2c-sign-in/sign-in/sign-in-07.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/b2c-sign-in/sign-in/sign-in-07.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/b2c-sign-in/sign-in/sign-in-08.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/b2c-sign-in/sign-in/sign-in-08.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/b2c-sign-in/sign-in/sign-in-09.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/b2c-sign-in/sign-in/sign-in-09.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/beta-message.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/beta-message.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/cookies.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/cookies.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/create-account-admin-activation.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/create-account-admin-activation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/create-account-admin-fail.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/create-account-admin-fail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/create-account-admin-multiple.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/create-account-admin-multiple.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/create-account-admin.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/create-account-admin.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/create-account-email-check.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/create-account-email-check.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/index.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/misc/cookie.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/misc/cookie.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/misc/error-301.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/misc/error-301.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/misc/failed-crm-signin.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/misc/failed-crm-signin.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/misc/feedback.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/misc/feedback.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/misc/layout-general.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/misc/layout-general.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/misc/loader-page.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/misc/loader-page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/misc/loaders.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/misc/loaders.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/misc/not-signed-in.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/misc/not-signed-in.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/misc/pagination-01.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/misc/pagination-01.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/misc/test-small-page.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/misc/test-small-page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/misc/timeout.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/misc/timeout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/my-account.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/my-account.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/privacy-policy.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/privacy-policy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/sign-in-admin.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/sign-in-admin.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/sign-in-user.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/sign-in-user.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/signed-out.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/signed-out.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/site-map.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/site-map.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/terms-and-conditions.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/terms-and-conditions.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/user-account-activation.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/user-account-activation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/user-activation-email.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/user-activation-email.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/user-register/register.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/user-register/register.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/user-register/user-account-confirm.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/user-register/user-account-confirm.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/user-register/user-registration-completed.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/user-register/user-registration-completed.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/what-is-my-account.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/what-is-my-account.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sso-removed-forms/errors.html" afterPath="$PROJECT_DIR$/_site/sso-removed-forms/errors.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sso-removed-forms/forgotten-password-errors.html" afterPath="$PROJECT_DIR$/_site/sso-removed-forms/forgotten-password-errors.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sso-removed-forms/forgotten-password.html" afterPath="$PROJECT_DIR$/_site/sso-removed-forms/forgotten-password.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sso-removed-forms/index.html" afterPath="$PROJECT_DIR$/_site/sso-removed-forms/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sso-removed-forms/password-email-sent.html" afterPath="$PROJECT_DIR$/_site/sso-removed-forms/password-email-sent.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sso-removed-forms/password-reset-sent.html" afterPath="$PROJECT_DIR$/_site/sso-removed-forms/password-reset-sent.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sso-removed-forms/register-email-sent.html" afterPath="$PROJECT_DIR$/_site/sso-removed-forms/register-email-sent.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sso-removed-forms/register.html" afterPath="$PROJECT_DIR$/_site/sso-removed-forms/register.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sso-removed-forms/reset-password.html" afterPath="$PROJECT_DIR$/_site/sso-removed-forms/reset-password.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sso-removed-forms/set-password.html" afterPath="$PROJECT_DIR$/_site/sso-removed-forms/set-password.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sso-removed-forms/sign-in-errors.html" afterPath="$PROJECT_DIR$/_site/sso-removed-forms/sign-in-errors.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sso-removed-forms/sign-in.html" afterPath="$PROJECT_DIR$/_site/sso-removed-forms/sign-in.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sso-removed-forms/signed-out.html" afterPath="$PROJECT_DIR$/_site/sso-removed-forms/signed-out.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sso/errors.html" afterPath="$PROJECT_DIR$/_site/sso/errors.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sso/forgotten-password-errors.html" afterPath="$PROJECT_DIR$/_site/sso/forgotten-password-errors.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sso/forgotten-password.html" afterPath="$PROJECT_DIR$/_site/sso/forgotten-password.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sso/index.html" afterPath="$PROJECT_DIR$/_site/sso/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sso/password-email-sent.html" afterPath="$PROJECT_DIR$/_site/sso/password-email-sent.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sso/password-reset-sent.html" afterPath="$PROJECT_DIR$/_site/sso/password-reset-sent.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sso/register-email-sent.html" afterPath="$PROJECT_DIR$/_site/sso/register-email-sent.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sso/register.html" afterPath="$PROJECT_DIR$/_site/sso/register.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sso/reset-password.html" afterPath="$PROJECT_DIR$/_site/sso/reset-password.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sso/set-password.html" afterPath="$PROJECT_DIR$/_site/sso/set-password.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sso/sign-in-errors.html" afterPath="$PROJECT_DIR$/_site/sso/sign-in-errors.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sso/sign-in.html" afterPath="$PROJECT_DIR$/_site/sso/sign-in.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sso/signed-out.html" afterPath="$PROJECT_DIR$/_site/sso/signed-out.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/test.html" afterPath="$PROJECT_DIR$/_site/test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.scss" afterPath="$PROJECT_DIR$/css/main.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sept-mvs/site-map.html" afterPath="$PROJECT_DIR$/sept-mvs/site-map.html" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/main.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="328">
+              <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_stepper.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_sass/_stepper.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="58" column="1" lean-forward="false" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="funding-and-support-main.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-main.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="funding-and-support-add-payment.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-add-payment.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="36" column="150" lean-forward="false" selection-start-line="36" selection-start-column="150" selection-end-line="36" selection-end-column="150" />
+              <folding>
+                <element signature="n#div#0;n#div#2;n#section#0;n#section#1;n#section#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#2;n#section#0;n#section#1;n#section#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="funding-and-support-overview.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-overview.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="37" column="60" lean-forward="false" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_tables.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_sass/_tables.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="329">
+              <caret line="139" column="42" lean-forward="false" selection-start-line="139" selection-start-column="42" selection-end-line="139" selection-end-column="42" />
+              <folding>
+                <element signature="e#1034#1917#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="funding-and-support-add-supporting-files.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-add-supporting-files.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="94" column="32" lean-forward="false" selection-start-line="94" selection-start-column="32" selection-end-line="94" selection-end-column="32" />
+              <folding>
+                <element signature="n#section#0;n#section#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="funding-and-support-add-expenditure.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-add-expenditure.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="50" column="24" lean-forward="false" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="funding-and-support-make-a-claim.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-make-a-claim.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>clean-list</find>
+      <find>stepp</find>
+      <find>steppp</find>
+      <find>confirm-wrapper</find>
+      <find>accordion</find>
+      <find>claim-evidence-2</find>
+      <find>payslips</find>
+      <find>accordion-ps</find>
+      <find>info-note</find>
+      <find>none</find>
+      <find>border-bottom: non</find>
+      <find>border-bottom</find>
+      <find>card-</find>
+      <find>card-body</find>
+      <find>card</find>
+      <find>company bank</find>
+      <find>bord</find>
+      <find>example</find>
+      <find>todo</find>
+      <find>claim detail</find>
+      <find>&gt;examples</find>
+      <find>&gt;example</find>
+      <find>&gt;Example</find>
+      <find>&gt;exampl</find>
+      <find>buttons</find>
+      <find>button</find>
+      <find>button-p</find>
+      <find>has-link</find>
+      <find>see exampl</find>
+      <find>stepper</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-step-journey/funding-and-support-main.html" />
+        <option value="$PROJECT_DIR$/_sass/_buttons.scss" />
+        <option value="$PROJECT_DIR$/_includes/head.html" />
+        <option value="$PROJECT_DIR$/_includes/funding-and-support-claim-details.html" />
+        <option value="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-main.html" />
+        <option value="$PROJECT_DIR$/_sass/_file-upload.scss" />
+        <option value="$PROJECT_DIR$/_sass/_misc.scss" />
+        <option value="$PROJECT_DIR$/css/main.scss" />
+        <option value="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-make-a-claim.html" />
+        <option value="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-confirmation.html" />
+        <option value="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-submit-your-claim-authoriser.html" />
+        <option value="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-claim-confirmation.html" />
+        <option value="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-submit-your-claim-user.html" />
+        <option value="$PROJECT_DIR$/_sass/_layout.scss" />
+        <option value="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-claim-confirmation-authoriser.html" />
+        <option value="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-claim-confirmation-user.html" />
+        <option value="$PROJECT_DIR$/sept-mvs/site-map.html" />
+        <option value="$PROJECT_DIR$/_sass/_components.scss" />
+        <option value="$PROJECT_DIR$/_sass/_cards.scss" />
+        <option value="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-check-your-claim.html" />
+        <option value="$PROJECT_DIR$/_sass/_tables.scss" />
+        <option value="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-overview.html" />
+        <option value="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-add-supporting-files.html" />
+        <option value="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-add-expenditure.html" />
+        <option value="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-add-payment.html" />
+        <option value="$PROJECT_DIR$/_sass/_stepper.scss" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="873" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource ProjectPane="true" />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="sept-mvs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sept-mvs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sept-mvs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sept-mvs" type="462c0819:PsiDirectoryNode" />
+              <item name="sept-mvs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sept-mvs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sept-mvs" type="462c0819:PsiDirectoryNode" />
+              <item name="sept-mvs" type="462c0819:PsiDirectoryNode" />
+              <item name="account-portal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sept-mvs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sept-mvs" type="462c0819:PsiDirectoryNode" />
+              <item name="sept-mvs" type="462c0819:PsiDirectoryNode" />
+              <item name="account-portal" type="462c0819:PsiDirectoryNode" />
+              <item name="funding-and-support" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sept-mvs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sept-mvs" type="462c0819:PsiDirectoryNode" />
+              <item name="sept-mvs" type="462c0819:PsiDirectoryNode" />
+              <item name="account-portal" type="462c0819:PsiDirectoryNode" />
+              <item name="funding-and-support" type="462c0819:PsiDirectoryNode" />
+              <item name="funding-and-support-5-steps-journey" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sept-mvs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sept-mvs" type="462c0819:PsiDirectoryNode" />
+              <item name="sept-mvs" type="462c0819:PsiDirectoryNode" />
+              <item name="account-portal" type="462c0819:PsiDirectoryNode" />
+              <item name="funding-and-support" type="462c0819:PsiDirectoryNode" />
+              <item name="funding-overview" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="sept-mvs" type="cbb8eebc:String" user="sept-mvs" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey" />
+      <recent name="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-step-journey" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c3f10028-962c-469d-bcbf-4e8da2e88643" name="Default" comment="" />
+      <created>1519033584334</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1519033584334</updated>
+      <workItem from="1519033586264" duration="32000" />
+      <workItem from="1519033626767" duration="1000" />
+      <workItem from="1519033804788" duration="495000" />
+      <workItem from="1519038819616" duration="222000" />
+      <workItem from="1519039044754" duration="609000" />
+      <workItem from="1519125378111" duration="4859000" />
+      <workItem from="1519205397051" duration="19432000" />
+      <workItem from="1519291501190" duration="17615000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="43265000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="873" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21000704" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904884" sideWeight="0.49753347" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32904884" sideWeight="0.516561" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904884" sideWeight="0.48625794" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32904884" sideWeight="0.48343903" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-add-supporting-files.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1395">
+          <caret line="103" column="71" lean-forward="false" selection-start-line="103" selection-start-column="71" selection-end-line="103" selection-end-column="71" />
+          <folding>
+            <element signature="n#section#0;n#section#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/_misc.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="65" column="17" lean-forward="false" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-check-your-claim.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1335">
+          <caret line="89" column="74" lean-forward="true" selection-start-line="89" selection-start-column="74" selection-end-line="89" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/site-map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-overview/funding-overview-request-change.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="78" column="18" lean-forward="false" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-overview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="37" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/layout-general.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-summary-complex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="54" column="31" lean-forward="true" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-change-old.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="22" column="58" lean-forward="true" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-overview/funding-overview-imfh.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-735">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-overview/funding-overview-request-change.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="78" column="18" lean-forward="false" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/_forms.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main-updated.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="36" column="76" lean-forward="false" selection-start-line="36" selection-start-column="76" selection-end-line="36" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/funding-and-support-claim-details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="6" lean-forward="false" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/layout-general.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/_file-upload.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="46" column="35" lean-forward="false" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-evidence-3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="3440" column="0" lean-forward="false" selection-start-line="3440" selection-start-column="0" selection-end-line="3457" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-overview/funding-overview-paid.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-evidence.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="266" column="0" lean-forward="false" selection-start-line="266" selection-start-column="0" selection-end-line="297" selection-end-column="0" />
+          <folding>
+            <element signature="n#section#4;n#form#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/_misc.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-declaration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="33" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-confirmation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-submit-your-claim-authoriser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="44" column="12" lean-forward="false" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1118">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-claim-confirmation-user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-claim-confirmation-authoriser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/_layout.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="126" column="21" lean-forward="false" selection-start-line="126" selection-start-column="21" selection-end-line="126" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-submit-your-claim-user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="37" column="73" lean-forward="false" selection-start-line="37" selection-start-column="73" selection-end-line="37" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-evidence-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="612" column="7" lean-forward="false" selection-start-line="612" selection-start-column="0" selection-end-line="637" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#12;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-evidence-4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="40" column="32" lean-forward="false" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-82">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/site-map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-46">
+          <caret line="59" column="146" lean-forward="false" selection-start-line="59" selection-start-column="134" selection-end-line="59" selection-end-column="146" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-overview/claim-details/claim-examples.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-427">
+          <caret line="240" column="44" lean-forward="false" selection-start-line="240" selection-start-column="44" selection-end-line="240" selection-end-column="44" />
+          <folding>
+            <element signature="n#section#3;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/_components.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="77" lean-forward="false" selection-start-line="2" selection-start-column="77" selection-end-line="2" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/_cards.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-check-your-claim.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#section#0;n#form#0;n#section#0;n#section#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/_typography.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="138" column="9" lean-forward="false" selection-start-line="138" selection-start-column="9" selection-end-line="138" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-make-a-claim.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/_buttons.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="71" column="21" lean-forward="true" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/_tables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="139" column="42" lean-forward="false" selection-start-line="139" selection-start-column="42" selection-end-line="139" selection-end-column="42" />
+          <folding>
+            <element signature="e#1034#1917#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-overview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="37" column="60" lean-forward="false" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-add-expenditure.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="50" column="24" lean-forward="false" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-add-supporting-files.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="94" column="32" lean-forward="false" selection-start-line="94" selection-start-column="32" selection-end-line="94" selection-end-column="32" />
+          <folding>
+            <element signature="n#section#0;n#section#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-add-payment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="36" column="150" lean-forward="false" selection-start-line="36" selection-start-column="150" selection-end-line="36" selection-end-column="150" />
+          <folding>
+            <element signature="n#div#0;n#div#2;n#section#0;n#section#1;n#section#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#section#0;n#section#1;n#section#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/_stepper.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="58" column="1" lean-forward="false" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -3,7 +3,7 @@
 //  ==========================================================================
 
 section.upload-wrapper {
-    border-bottom: 1px solid $se-grey;
+    //border-bottom: 1px solid $se-grey;
     .upload-header {
         position: relative;
         h3.short {
@@ -15,7 +15,6 @@ section.upload-wrapper {
             }
         }
     }
-
 }
 
 form.claim-evidence-form {
@@ -23,23 +22,137 @@ form.claim-evidence-form {
     width: 100%;
 }
 
+
+.clean-list-horizontal{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: transparent;
+
+    li {
+        float: left;
+        padding: 0;
+    }
+
+    a {
+        display: block;
+        color: $se-blue;
+        text-align: center;
+        padding: 0 5px;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+
+.add-new-file{
+    right: 0;
+    top: 10px;
+    width: 100%;
+    background: none;
+    label{
+        color: $se-blue;
+        background: none;
+        text-decoration: none;
+        padding: 1px 0 1px 12px;
+        font-size: 16px;
+        cursor: pointer;
+        &:hover {
+            color: $se-light-blue;
+            background: none;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}
+
+.steps-navigation {
+    margin: 0;
+}
+
+.step-navigation-previous{
+    text-align: left;
+    height:45px;
+    .previous-step { margin-left:50px; }
+    .previous-step-title{ margin-left:50px; }
+    .previous-step-icon {
+        display: inline-block;
+        position: relative;
+        left: 0;
+        top: -40px;
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        text-align: center;
+        vertical-align: middle;
+        background-color: #00427F;
+        color: white;
+
+        i {
+            padding: 0px;
+        }
+    }
+}
+
+.step-navigation-next{
+    text-align: right;
+    height:45px;
+    .next-step { margin-right:50px; }
+    .next-step-title{ margin-right:50px; }
+    .next-step-icon {
+        display: inline-block;
+        position: relative;
+        right: 0;
+        top: -40px;
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        text-align: center;
+        vertical-align: middle;
+        background-color: #00427F;
+        color: white;
+
+        i {
+            padding: 0px 0px 0 3px;
+        }
+    }
+}
+
 .file-upload-list {
-    border-top: 3px solid $se-grey;
+
+    .file-remove {
+        right: 0;
+        top: 10px;
+        text-align: center;
+        width: 100%;
+        display: inline-block;
+        background: none;
+        a {
+            color: $se-blue;
+            background: none;
+            text-decoration: none;
+            padding: 1px 0 1px 12px;
+            font-size: 16px;
+            &:hover {
+                color: $se-black;
+                background: none;
+                text-decoration: underline;
+            }
+        }
+    }
+
     .file-upload-wrapper {
+        border-top: 1px solid $se-grey;
+        border-bottom: 1px solid $se-grey;
         padding: 10px 0;
         margin: 0;
-        //border-bottom: 1px solid $se-grey;
         position: relative;
-        &.row {
-            border-top: 1px solid $se-grey;
-        }
-        &:first-of-type {
-            border-top: 1px solid $se-grey;
-        }
-        &:last-of-type {
-            //border-top: none;
-            //margin-bottom: 20px;
-        }
+
+
         .file-details-wrapper {
             padding-left: 0;
         }
@@ -54,31 +167,11 @@ form.claim-evidence-form {
         .file-remove-wrapper {
             padding-right: 0;
         }
-        .file-remove {
-            right: 0;
-            top: 10px;
-            text-align: right;
-            width: 100%;
-            display: inline-block;
-            background: none;
-            a {
-                color: $se-blue;
-                background: none;
-                text-decoration: none;
-                padding: 1px 0 1px 12px;
-                font-size: 16px;
-                &:hover {
-                    color: $se-black;
-                    background: none;
-                    text-decoration: underline;
-                }
-            }
-        }
+
         &.empty {
             color: $se-mid-grey;
             border-top: none;
             padding: 0;
-            //border-bottom: 3px solid $se-grey;
             label.form-label {
                 font-size: 16px;
                 line-height: 20px;
@@ -117,7 +210,6 @@ section {
         width: 100%;
         padding: 0 0 20px;
         margin: 0;
-        border-bottom: 3px solid $se-mid-grey;
         .key-status {
             .key {
                 display: inline-block;
@@ -289,21 +381,6 @@ section {
     }
 }
 
-//.file-upload-wrapper.empty {
-//    border: 3px solid $accessible-green;
-//    display: inline-block;
-//    width: 100%;
-//    .file-amount-wrapper {
-//        margin: 0;
-//        padding: 10px 20px;
-//        input.file-amount {
-//            border: 3px solid green;
-//        }
-//
-//    }
-//}
-
-
 .progress {
     height: 20px;
     margin-bottom: 0;
@@ -373,7 +450,7 @@ section {
 
 
 .file-upload-wrapper.empty.new:not(.finance) {
-    border: 3px solid $se-black;
+    //border: 3px solid $se-black;
     display: inline-block;
     width: 100%;
     background-color: $se-light-grey;
@@ -886,7 +963,7 @@ section {
 
 .upload-wrapper {
     .info-note.caution {
-        border-bottom: none;
+        //border-bottom: none;
         margin-bottom: 0;
     }
     .info-note.caution + fieldset {

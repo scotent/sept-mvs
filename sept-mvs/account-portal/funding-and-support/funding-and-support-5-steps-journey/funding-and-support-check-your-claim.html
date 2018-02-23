@@ -1,0 +1,210 @@
+---
+layout: layout-general
+title: Check your claim
+files:
+- Payslip example 1.pdf
+- Payslip example 2.pdf
+---
+
+<!--Multi-user journey-->
+<div class="col-md-12">
+
+	{% include funding-and-support-claim-details.html %}
+
+	<div class="row margin-2b margin-2t">
+
+		<section class="col-lg-9">
+
+			<section class="card-view">
+				<!--Expenditure-->
+				<h2 class="emphasis">Expenditure</h2>
+				<div class="row margin-2b">
+					<section class="upload-wrapper col-md-6">
+						<h3 class="margin-0t">Payslip</h3>
+						<div class="file-upload-list">
+
+							{% for file in page.files %}
+							<div class="file-upload-wrapper row success">
+								<div class="col-sm-9 col-xs-12 file-details-wrapper">
+									<i class="fa fa-check fa-1x fa-fw"></i>
+									<span class="file-name">{{ file }}</span>
+								</div>
+
+								<div class="col-sm-3 col-xs-12 file-remove-wrapper">
+									<ul class="clean-list-horizontal">
+										<li><a tabindex="0"><span class="sr-only">preview {{file}}</span>Preview</a></li>
+									</ul>
+								</div>
+							</div>
+							{% endfor %}
+
+							<div class="margin-2t">
+								<a href="funding-and-support-add-expenditure.html" class="link">Change</a>
+							</div>
+						</div>
+					</section>
+					<section class="upload-wrapper col-md-6"></section>
+				</div>
+
+				<!--Payment-->
+				<h2 class="emphasis">Payment</h2>
+				<div class="row margin-2b">
+					<section class="upload-wrapper col-md-6">
+						<h3 class="margin-0t">Bacs</h3>
+						<div class="file-upload-list">
+
+							<div class="file-upload-wrapper row success">
+								<div class="col-sm-9 col-xs-12 file-details-wrapper">
+									<i class="fa fa-check fa-1x fa-fw"></i>
+									<span class="file-name">Bacs example.pdf</span>
+								</div>
+
+								<div class="col-sm-3 col-xs-12 file-remove-wrapper">
+									<ul class="clean-list-horizontal">
+										<li><a tabindex="0"><span class="sr-only">preview Bacs example.pdf</span>Preview</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="margin-2t">
+								<a href="funding-and-support-add-expenditure.html" class="link">Change</a>
+							</div>
+						</div>
+					</section>
+					<section class="upload-wrapper col-md-6">
+						<h3 class="margin-0t">Bank statement</h3>
+						<div class="file-upload-list">
+
+							<div class="file-upload-wrapper row success">
+								<div class="col-sm-9 col-xs-12 file-details-wrapper">
+									<i class="fa fa-check fa-1x fa-fw"></i>
+									<span class="file-name">Bank statement.pdf</span>
+								</div>
+
+								<div class="col-sm-3 col-xs-12 file-remove-wrapper">
+									<ul class="clean-list-horizontal">
+										<li><a tabindex="0"><span class="sr-only">preview Bank statement example.pdf</span>Preview</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+
+				<!--Supporting files-->
+				<h2 class="emphasis">Supporting files</h2>
+				<div class="row margin-2b">
+					<section class="upload-wrapper col-md-6">
+						<h3 class="margin-0t">Reconciliation sheet</h3>
+						<div class="file-upload-list">
+
+							<div class="file-upload-wrapper row success">
+								<div class="col-sm-9 col-xs-12 file-details-wrapper">
+									<i class="fa fa-check fa-1x fa-fw"></i>
+									<span class="file-name">Reconciliation example.pdf</span>
+								</div>
+
+								<div class="col-sm-3 col-xs-12 file-remove-wrapper">
+									<ul class="clean-list-horizontal">
+										<li><a tabindex="0"><span class="sr-only">preview Reconciliation example.pdf</span>Preview</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="margin-2t">
+								<a href="funding-and-support-add-expenditure.html" class="link">Change</a>
+							</div>
+						</div>
+					</section>
+					<section class="upload-wrapper col-md-6">
+						<h3 class="margin-0t">Claim form</h3>
+						<div class="file-upload-list">
+
+							<div class="file-upload-wrapper row success">
+								<div class="col-sm-9 col-xs-12 file-details-wrapper">
+									<i class="fa fa-check fa-1x fa-fw"></i>
+									<span class="file-name">Claim form.pdf</span>
+								</div>
+
+								<div class="col-sm-3 col-xs-12 file-remove-wrapper">
+									<ul class="clean-list-horizontal">
+										<li><a tabindex="0"><span class="sr-only">preview Claim form.pdf</span>Preview</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+
+
+				<form>
+					<section class="upload-wrapper">
+						<div class="info-note caution" style="border-bottom:none;">
+							<p>Have you uploaded all the evidence needed to support this claim?</p>
+						</div>
+							<fieldset>
+							<legend class="sr-only">Confirm all evidence uploaded</legend>
+							<input name="upload-evidence-confirmation" id="upload-evidence-confirmation" class="fancy-checkbox" type="checkbox">
+							<label for="upload-evidence-confirmation" class="inline fancy-checkbox">I have included all the evidence required to support this claim</label>
+						</fieldset>
+
+					</section>
+				</form>
+
+				<a href="funding-and-support-submit-your-claim-user.html" class="button button-primary margin-2tb">Continue claim - user</a>
+				<a href="funding-and-support-submit-your-claim-authoriser.html" class="button button-primary margin-2tb">Continue claim - authoriser</a>
+
+				<!--steps-navigation-->
+				<section class="row margin-0">
+
+					<!--previous-->
+					<div class="col-sm-6 padding-0 step-navigation-previous">
+						<a href="funding-and-support-add-supporting-files.html">
+							<div class="bold previous-step">Previous</div>
+							<div class="previous-step-title">Add supporting files</div>
+							<div class="previous-step-icon">
+								<i class="fa fa-angle-left fa-2x fa-fw"></i>
+							</div>
+						</a>
+					</div>
+
+					<!--next-->
+					<div class="col-sm-6 padding-0 step-navigation-next"></div>
+				</section>
+
+			</section>
+
+		</section>
+
+		<!--Stepper-->
+		<section class="col-lg-3">
+			<ul class="stepper">
+				<li class="step-completed">
+					<span class="stepper-circle">1</span>
+					<span class="stepper-title">Add expenditure</span>
+					<div class="stepper-line"></div>
+				</li>
+				<li class="step-completed">
+					<span class="stepper-circle">2</span>
+					<span class="stepper-title">Add payment</span>
+					<div class="stepper-line"></div>
+				</li>
+				<li class="step-completed">
+					<span class="stepper-circle">3</span>
+					<span class="stepper-title">Add supporting files</span>
+					<div class="stepper-line"></div>
+				</li>
+				<li class="step-active">
+					<span class="stepper-circle">4</span>
+					<span class="stepper-title">check your claim</span>
+					<div class="stepper-line"></div>
+				</li>
+				<li>
+					<span class="stepper-circle">5</span>
+					<span class="stepper-title">Submit your claim</span>
+				</li>
+			</ul>
+		</section>
+
+	</div>
+</div>

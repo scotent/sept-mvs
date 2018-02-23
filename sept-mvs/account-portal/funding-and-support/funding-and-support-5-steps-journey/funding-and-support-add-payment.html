@@ -1,0 +1,223 @@
+---
+layout: layout-general
+title: Add payment
+---
+
+<!--Multi-user journey-->
+<div class="col-md-12">
+
+    {% include funding-and-support-claim-details.html %}
+
+    <div class="row margin-2b margin-2t">
+
+        <section class="col-lg-9">
+
+            <section class="key-wrapper">
+                <p class="margin-0">Attach all your payment files in support of this claim. Each individual file shouldn’t be
+                    larger than 10MB. We’ll check each file for viruses and notify you of any problems.</p>
+
+                <div class="key-status">
+                    <span>Key:&nbsp;</span>
+                    <div class="key success"><i class="fa fa-check fa-1x fa-fw"></i>File added</div>
+                    <div class="key processing"><i class="fa fa-refresh fa-1x fa-fw"></i>Processing</div>
+                    <div class="key failed"><i class="fa fa-exclamation-circle fa-1x fa-fw"></i>Failed</div>
+                </div>
+            </section>
+
+			<section class="card-view">
+
+				<!--bacs-->
+				<section class="upload-wrapper">
+
+					<div class="row">
+						<div class="col-sm-9">
+							<h2 class="margin-0t">BACS</h2>
+						</div>
+						<div class="col-sm-3 text-right">
+							<a class="link" data-toggle="collapse" href="#example-bacs" role="button" aria-expanded="false" aria-controls="collapseExample">See examples<i class="fa fa-caret-down fa-1x fa-fw"></i>
+							</a>
+						</div>
+					</div>
+
+					<p>Add a Bacs or payroll statement that shows the salary payments for each of the employees you are claiming for. If you pay your employees directly from your bank account, you don't need to include any files here.</p>
+
+					<div class="collapse" id="example-bacs">
+						<div class="card card-body">
+
+							<div class="row">
+								<div class="col-md-10">
+									<p>If the costs you are claiming appear as part of a single bulk Bacs payment on your bank statement (for example, as 'Payroll'), then you must submit a <strong>Bacs transaction list</strong>, as well as a bank statement as evidence of payment. Any transactions not relevant to your claim can be redacted (obscured or scored through).</p>
+
+									<p class="leader-m-n">The Bacs transaction list must:</p>
+									<ul>
+										<li>Be clearly identifiable as coming from your payment or payroll system</li>
+										<li>Clearly show <strong>individual payees, payment amounts</strong> and <strong>dates</strong></li>
+									</ul>
+
+									<div class="info-note caution">Please note: The total payment sum and payment date on the transaction list must match the amount and date that appears on your bank statement. Any transactions not relevant to your claim can be redacted (obscured or scored through).</div>
+								</div>
+
+								<div class="col-md-2">
+									<img src="/sept-mvs/images/claim-evidence-examples/bacs.jpg" class="img-example" alt="Bacs example">
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="file-upload-list">
+						<div class="file-upload-wrapper row success">
+							<div class="col-sm-8 col-xs-12 file-details-wrapper">
+								<!--<i class="fa fa-check fa-1x fa-fw"></i>-->
+								<span class="file-name">You have not uploaded any files</span>
+							</div>
+							<!--<div class="col-sm-4 col-xs-12 file-remove-wrapper">-->
+							<!--<ul class="clean-list-horizontal">-->
+								<!--<li><a tabindex="0"><span class="sr-only">preview (file.name)</span>Preview</a></li>-->
+								<!--<li><a tabindex="0"><span class="sr-only">download (file.name)</span>Download</a></li>-->
+								<!--<li><a tabindex="0"><span class="sr-only">remove (file.name)</span>Remove</a></li>-->
+							<!--</ul>							-->
+							<!--</div>-->
+						</div>
+					</div>
+
+					<form class="form-file margin-1t add-new-file">
+						<label tabindex="0" class="form-label" for="file-input-1">
+							Add a new file
+						</label>
+						<input class="form-control sr-only" type="file" value="" id="file-input-1">
+					</form>
+
+				</section>
+
+				<!--bank statement-->
+				<section class="upload-wrapper margin-2t" >
+
+					<div class="row">
+						<div class="col-sm-9">
+							<h2>Bank statement</h2>
+						</div>
+
+						<div class="col-sm-3 margin-2t text-right">
+							<a class="link " data-toggle="collapse" href="#example-bank-statement" role="button" aria-expanded="false" aria-controls="collapseExample">See examples<i class="fa fa-caret-down fa-1x fa-fw"></i>
+							</a>
+						</div>
+					</div>
+					<p>Add a bank statement that shows the total of the Bacs statement you have added, or shows the salary payments of each employee you are claiming for.</p>
+
+					<div class="collapse" id="example-bank-statement">
+						<div class="card card-body">
+
+							<div class="row">
+								<div class="col-md-10">
+									<p>Any transactions not relevant to your claim can be redacted (obscured or scored through).</p>
+
+									<p class="leader-m-n">For a <strong>bank statement</strong> to be fully compliant as evidence of payment, it must:</p>
+									<ul>
+										<li>Be a <strong>formal statement</strong> (either paper copy or online printout), not simply a transaction listing</li>
+										<li>Clearly show the <strong>bank name, address</strong> and <strong>logo</strong></li>
+										<li>Clearly show the <strong>account holder's name</strong> and details</li>
+										<li>Clearly show relevant transaction <strong>dates, amounts</strong> and <strong>payees</strong> that correspond to other evidence, such as invoices, salary payments or receipts.</li>
+									</ul>
+								</div>
+
+								<div class="col-md-2">
+									<img src="/sept-mvs/images/claim-evidence-examples/statement.jpg" class="img-example" alt="Bank statement example">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="file-upload-list">
+
+						<div class="file-upload-wrapper row success">
+							<div class="col-sm-8 col-xs-12 file-details-wrapper">
+								<!--<i class="fa fa-check fa-1x fa-fw"></i>-->
+								<span class="file-name">You have not uploaded any files</span>
+							</div>
+
+							<!--<div class="col-sm-4 col-xs-12 file-remove-wrapper">-->
+							<!--<ul class="clean-list-horizontal">-->
+								<!--<li><a tabindex="0"><span class="sr-only">preview (file.name)</span>Preview</a></li>-->
+								<!--<li><a tabindex="0"><span class="sr-only">download (file.name)</span>Download</a></li>-->
+								<!--<li><a tabindex="0"><span class="sr-only">remove (file.name)</span>Remove</a></li>-->
+							<!--</ul>-->
+							<!--</div>-->
+						</div>
+					</div>
+
+
+					<form class="form-file margin-1t add-new-file">
+						<label tabindex="0" class="form-label" for="file-input-2">
+							Add a new file
+						</label>
+						<input class="form-control sr-only" type="file" value="" id="file-input-2">
+					</form>
+
+				</section>
+
+				<button class="button button-primary margin-2tb">Save claim</button>
+
+				<!--steps-navigation-->
+				<section class="row margin-0">
+
+					<!--previous-->
+					<div class="col-sm-6 padding-0 step-navigation-previous">
+						<a href="funding-and-support-add-expenditure.html">
+							<div class="bold previous-step">Previous</div>
+							<div class="previous-step-title">Add expenditure</div>
+							<div class="previous-step-icon">
+								<i class="fa fa-angle-left fa-2x fa-fw"></i>
+							</div>
+						</a>
+					</div>
+
+					<!--next-->
+					<div class="col-sm-6 padding-0 step-navigation-next">
+						<a href="funding-and-support-add-supporting-files.html">
+							<div class="bold next-step">Next</div>
+							<div class="next-step-title">Add supporting files</div>
+							<div class="next-step-icon">
+								<i class="fa fa-angle-right fa-2x fa-fw"></i>
+							</div>
+						</a>
+					</div>
+				</section>
+
+            </section>
+		</section>
+
+        <!--<section class="col-lg-1 hidden-md-down"></section>-->
+
+        <!--Stepper-->
+		<section class="col-lg-3">
+			<ul class="stepper">
+				<li class="step-completed">
+					<span class="stepper-circle">1</span>
+					<span class="stepper-title">Add expenditure</span>
+					<div class="stepper-line"></div>
+				</li>
+				<li class="step-active">
+					<span class="stepper-circle">2</span>
+					<span class="stepper-title">Add payment</span>
+					<div class="stepper-line"></div>
+				</li>
+				<li>
+					<span class="stepper-circle">3</span>
+					<span class="stepper-title">Add supporting files</span>
+					<div class="stepper-line"></div>
+				</li>
+				<li>
+					<span class="stepper-circle">4</span>
+					<span class="stepper-title">check your claim</span>
+					<div class="stepper-line"></div>
+				</li>
+				<li>
+					<span class="stepper-circle">5</span>
+					<span class="stepper-title">Submit your claim</span>
+				</li>
+			</ul>
+		</section>
+
+	</div>
+</div>
