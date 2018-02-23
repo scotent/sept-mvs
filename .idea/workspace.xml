@@ -4,8 +4,10 @@
     <list default="true" id="c3f10028-962c-469d-bcbf-4e8da2e88643" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/feed.xml" afterPath="$PROJECT_DIR$/_site/feed.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-check-your-claim.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-check-your-claim.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-check-your-claim.html" afterPath="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-check-your-claim.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-add-expenditure.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-add-expenditure.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-main.html" afterPath="$PROJECT_DIR$/_site/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-add-expenditure.html" afterPath="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-add-expenditure.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-main.html" afterPath="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-main.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,66 +18,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/main.scss">
+      <file leaf-file-name="funding-and-support-main.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+            <state relative-caret-position="115">
+              <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_stepper.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_sass/_stepper.scss">
+      <file leaf-file-name="funding-and-support-overview.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-overview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="58" column="1" lean-forward="false" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+            <state relative-caret-position="1">
+              <caret line="85" column="27" lean-forward="false" selection-start-line="85" selection-start-column="27" selection-end-line="85" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="funding-and-support-submit-your-claim-user.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-submit-your-claim-user.html">
+      <file leaf-file-name="main-updated.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/main-updated.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+            <state relative-caret-position="-75">
+              <caret line="1306" column="44" lean-forward="false" selection-start-line="1306" selection-start-column="44" selection-end-line="1306" selection-end-column="44" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="funding-and-support-check-your-claim.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-check-your-claim.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="154" column="83" lean-forward="false" selection-start-line="154" selection-start-column="83" selection-end-line="154" selection-end-column="83" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#section#0;n#form#0;n#section#0;n#section#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_forms.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_sass/_forms.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="66" column="12" lean-forward="false" selection-start-line="66" selection-start-column="12" selection-end-line="70" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_tables.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_sass/_tables.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="139" column="42" lean-forward="false" selection-start-line="139" selection-start-column="42" selection-end-line="139" selection-end-column="42" />
-              <folding>
-                <element signature="e#1034#1917#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -91,9 +59,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>steppp</find>
-      <find>confirm-wrapper</find>
-      <find>accordion</find>
       <find>claim-evidence-2</find>
       <find>payslips</find>
       <find>accordion-ps</find>
@@ -119,8 +84,11 @@
       <find>has-link</find>
       <find>stepper</find>
       <find>form-group</find>
-      <find>see exampl</find>
       <find>form-group</find>
+      <find>.claim-schedule td</find>
+      <find>10px 10px 10px 50%</find>
+      <find>10px 10px 10px 50</find>
+      <find>see exampl</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -133,7 +101,6 @@
         <option value="$PROJECT_DIR$/_sass/_buttons.scss" />
         <option value="$PROJECT_DIR$/_includes/head.html" />
         <option value="$PROJECT_DIR$/_includes/funding-and-support-claim-details.html" />
-        <option value="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-main.html" />
         <option value="$PROJECT_DIR$/_sass/_file-upload.scss" />
         <option value="$PROJECT_DIR$/_sass/_misc.scss" />
         <option value="$PROJECT_DIR$/css/main.scss" />
@@ -147,15 +114,16 @@
         <option value="$PROJECT_DIR$/sept-mvs/site-map.html" />
         <option value="$PROJECT_DIR$/_sass/_components.scss" />
         <option value="$PROJECT_DIR$/_sass/_cards.scss" />
-        <option value="$PROJECT_DIR$/_sass/_tables.scss" />
         <option value="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-overview.html" />
         <option value="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-add-supporting-files.html" />
-        <option value="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-add-expenditure.html" />
         <option value="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-add-payment.html" />
         <option value="$PROJECT_DIR$/_sass/_stepper.scss" />
         <option value="$PROJECT_DIR$/_sass/_forms.scss" />
         <option value="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-submit-your-claim-user.html" />
         <option value="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-check-your-claim.html" />
+        <option value="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-add-expenditure.html" />
+        <option value="$PROJECT_DIR$/_sass/_tables.scss" />
+        <option value="$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-main.html" />
       </list>
     </option>
   </component>
@@ -195,6 +163,11 @@
             <path>
               <item name="sept-mvs" type="b2602c69:ProjectViewProjectNode" />
               <item name="sept-mvs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sept-mvs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sept-mvs" type="462c0819:PsiDirectoryNode" />
+              <item name="_sass" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sept-mvs" type="b2602c69:ProjectViewProjectNode" />
@@ -289,12 +262,12 @@
       <workItem from="1519039044754" duration="609000" />
       <workItem from="1519125378111" duration="4859000" />
       <workItem from="1519205397051" duration="19432000" />
-      <workItem from="1519291501190" duration="19012000" />
+      <workItem from="1519291501190" duration="21152000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44662000" />
+    <option name="totallyTimeSpent" value="46802000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -338,16 +311,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-add-supporting-files.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1395">
-          <caret line="103" column="71" lean-forward="false" selection-start-line="103" selection-start-column="71" selection-end-line="103" selection-end-column="71" />
-          <folding>
-            <element signature="n#section#0;n#section#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_sass/_misc.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="975">
@@ -441,14 +404,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="78" column="18" lean-forward="false" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main-updated.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -655,16 +610,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/_tables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="139" column="42" lean-forward="false" selection-start-line="139" selection-start-column="42" selection-end-line="139" selection-end-column="42" />
-          <folding>
-            <element signature="e#1034#1917#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/main.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="328">
@@ -681,14 +626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-add-expenditure.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="44" column="211" lean-forward="false" selection-start-line="44" selection-start-column="171" selection-end-line="44" selection-end-column="211" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-add-supporting-files.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
@@ -696,33 +633,6 @@
           <folding>
             <element signature="n#section#0;n#section#0;n#div#0;n#div#0;n#!!top" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-add-payment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="36" column="150" lean-forward="false" selection-start-line="36" selection-start-column="150" selection-end-line="36" selection-end-column="150" />
-          <folding>
-            <element signature="n#div#0;n#div#2;n#section#0;n#section#1;n#section#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#2;n#section#0;n#section#1;n#section#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-overview.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="37" column="60" lean-forward="false" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -744,11 +654,73 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-check-your-claim.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="154" column="83" lean-forward="false" selection-start-line="154" selection-start-column="83" selection-end-line="154" selection-end-column="83" />
+        <state relative-caret-position="326">
+          <caret line="164" column="60" lean-forward="false" selection-start-line="164" selection-start-column="60" selection-end-line="164" selection-end-column="60" />
           <folding>
             <element signature="n#style#0;n#div#0;n#section#0;n#form#0;n#section#0;n#section#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-add-payment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="36" column="150" lean-forward="false" selection-start-line="36" selection-start-column="150" selection-end-line="36" selection-end-column="150" />
+          <folding>
+            <element signature="n#div#0;n#div#2;n#section#0;n#section#1;n#section#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#section#0;n#section#1;n#section#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3568">
+          <caret line="2042" column="27" lean-forward="false" selection-start-line="2042" selection-start-column="27" selection-end-line="2042" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/_tables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="139" column="42" lean-forward="false" selection-start-line="139" selection-start-column="42" selection-end-line="139" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main-updated.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75">
+          <caret line="1306" column="44" lean-forward="false" selection-start-line="1306" selection-start-column="44" selection-end-line="1306" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-overview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="85" column="27" lean-forward="false" selection-start-line="85" selection-start-column="27" selection-end-line="85" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-add-expenditure.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="3" lean-forward="false" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <folding>
+            <element signature="n#section#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#section#1;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sept-mvs/account-portal/funding-and-support/funding-and-support-5-steps-journey/funding-and-support-main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
