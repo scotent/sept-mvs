@@ -36,9 +36,6 @@ form.claim-evidence-form {
 
     ul{
         @media all and (max-width: 768px) {
-            //&:first-child{
-            //    padding: 10px 10px 10px 0px;
-            //}
             padding: 10px 10px 10px 14px;
         }
     }
@@ -51,10 +48,9 @@ form.claim-evidence-form {
             &:first-child{
                 padding-left:0;
             }
-                padding: 10px 10px 10px 14px;
+                padding: 10px 5px 10px 10px;
             }
         }
-
 
     a {
         display: block;
@@ -133,7 +129,7 @@ form.claim-evidence-form {
 
         @media all and (max-width: 480px) {
         font-size: 13px;
-    }
+        }
     }
     .next-step-icon {
         display: inline-block;

@@ -2122,7 +2122,7 @@ form.claim-evidence-form {
     padding: 0; }
     @media all and (max-width: 768px) {
       .clean-list-horizontal li {
-        padding: 10px 10px 10px 14px; }
+        padding: 10px 5px 10px 10px; }
         .clean-list-horizontal li:first-child {
           padding-left: 0; } }
   .clean-list-horizontal a {
