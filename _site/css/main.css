@@ -386,6 +386,18 @@ a {
   .portal-panel .panel-content {
     padding-bottom: 2em; }
 
+#action-panel {
+  padding: 10px;
+  border: 2px solid #00427F; }
+  #action-panel .panel-header h2 {
+    color: #00427F;
+    font-weight: bold; }
+  #action-panel span.new-action {
+    background-color: #00427F;
+    color: white;
+    margin-right: 5px;
+    padding: 2px 10px 2px 10px; }
+
 .contact-panel {
   min-height: 100px;
   margin-bottom: 20px; }
