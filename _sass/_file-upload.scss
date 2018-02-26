@@ -214,12 +214,6 @@ section {
             .key {
                 display: inline-block;
                 margin-right: 20px;
-                @media all and (max-width: 660px) {
-                    float: left;
-                    &:nth-of-type(3){
-                        clear: left;
-                    }
-                }
                 @media all and (max-width: $screen-xxs-max) {
                     float: left;
                     clear: left;
