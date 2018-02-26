@@ -2111,9 +2111,20 @@ form.claim-evidence-form {
   padding: 0;
   overflow: hidden;
   background-color: transparent; }
+  @media all and (max-width: 768px) {
+    .clean-list-horizontal {
+      margin-left: 14px; } }
+  @media all and (max-width: 768px) {
+    .clean-list-horizontal ul {
+      padding: 10px 10px 10px 14px; } }
   .clean-list-horizontal li {
     float: left;
     padding: 0; }
+    @media all and (max-width: 768px) {
+      .clean-list-horizontal li {
+        padding: 10px 10px 10px 14px; }
+        .clean-list-horizontal li:first-child {
+          padding-left: 0; } }
   .clean-list-horizontal a {
     display: block;
     color: #00427F;
@@ -2151,6 +2162,9 @@ form.claim-evidence-form {
     margin-left: 50px; }
   .step-navigation-previous .previous-step-title {
     margin-left: 50px; }
+    @media all and (max-width: 480px) {
+      .step-navigation-previous .previous-step-title {
+        font-size: 13px; } }
   .step-navigation-previous .previous-step-icon {
     display: inline-block;
     position: relative;
@@ -2173,6 +2187,9 @@ form.claim-evidence-form {
     margin-right: 50px; }
   .step-navigation-next .next-step-title {
     margin-right: 50px; }
+    @media all and (max-width: 480px) {
+      .step-navigation-next .next-step-title {
+        font-size: 13px; } }
   .step-navigation-next .next-step-icon {
     display: inline-block;
     position: relative;
@@ -3627,7 +3644,7 @@ body.globalscot {
 
 .stepper {
   list-style: none;
-  margin: 0 0 0 30px; }
+  margin: 0 0 0 10px; }
   .stepper li {
     padding: 0; }
     .stepper li.step-active .stepper-circle {
@@ -3640,6 +3657,9 @@ body.globalscot {
     .stepper li.step-active .stepper-line {
       color: #00427F;
       border-left-color: #00427F; }
+      @media all and (max-width: 1199px) {
+        .stepper li.step-active .stepper-line {
+          height: 40px; } }
     .stepper li.step-completed .stepper-circle {
       color: white;
       background-color: #00427F;
@@ -3669,3 +3689,6 @@ body.globalscot {
   height: 50px;
   margin: 0 0 0 15px;
   border-left: 2px solid #707070; }
+  @media all and (max-width: 1199px) {
+    .stepper-line {
+      height: 10px; } }

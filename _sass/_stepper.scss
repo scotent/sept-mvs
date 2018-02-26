@@ -1,8 +1,9 @@
 $se-stepper-gray:#707070;
 
 .stepper {
+
   list-style: none;
-  margin: 0 0 0 30px;
+  margin: 0 0 0 10px;
 
   li{
     padding:0;
@@ -20,6 +21,9 @@ $se-stepper-gray:#707070;
       .stepper-line{
         color:$se-blue;
         border-left-color: $se-blue;
+        @media all and (max-width: 1199px) {
+          height: 40px;
+        }
       }
     }
 
@@ -35,9 +39,9 @@ $se-stepper-gray:#707070;
       .stepper-line{
         color:$se-blue;
         border-left-color: $se-blue;
+
       }
     }
-
   }
 }
 
@@ -62,4 +66,7 @@ $se-stepper-gray:#707070;
   height: 50px;
   margin: 0 0 0 15px;
   border-left: 2px solid $se-stepper-gray;
+    @media all and (max-width: 1199px) {
+      height: 10px;
+    }
 }
