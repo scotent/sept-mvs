@@ -133,6 +133,7 @@ table.table-striped.no-hover tbody tr {
             padding: 8px 0;
             width: 80%;
             margin: auto;
+            min-width:100px;
             max-width: 130px;
 
             &.white-bg{

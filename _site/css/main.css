@@ -153,7 +153,7 @@ form h2 {
 h2:focus {
   outline: none; }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   form h2 {
     font-size: 26px; }
 
@@ -367,8 +367,17 @@ a {
   margin: 25px 0 20px; }
   .confirm-wrapper h2 {
     font-size: 2.4em; }
+    @media all and (max-width: 479px) {
+      .confirm-wrapper h2 {
+        font-size: 2em; } }
   .confirm-wrapper p {
     font-size: 1.8em; }
+    @media all and (max-width: 767px) {
+      .confirm-wrapper p {
+        font-size: 1.3em; } }
+    @media all and (max-width: 479px) {
+      .confirm-wrapper p {
+        font-size: 1.1em; } }
   .confirm-wrapper.se-primary {
     background-color: #00427F; }
 
@@ -1147,13 +1156,13 @@ header nav.navbar {
   background: white;
   margin-bottom: 0;
   border-width: 0 0 1px 0;
+  z-index: 10000;
   -webkit-border-radius: 0;
   border-radius: 0;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */ }
   header nav.navbar.fixed {
     position: fixed;
-    z-index: 10000;
     top: 0;
     left: 0;
     right: 0;
@@ -1798,11 +1807,13 @@ input + label.fancy-checkbox::before {
   margin: 0 0 30px;
   width: 100%; }
   .card-view section {
-    margin: 0 0 40px; }
-  @media all and (max-width: 479px) {
+    margin: 0 0 40px 0; }
+    @media all and (max-width: 991px) {
+      .card-view section {
+        margin: 0 0 20px 20; } }
+  @media all and (max-width: 767px) {
     .card-view {
-      padding: 10px;
-      margin: 0 0 20px; } }
+      padding: 10px; } }
 
 .account-portal-wrapper .card-view {
   padding: 30px 10px; }
@@ -1890,6 +1901,7 @@ table.table-striped.no-hover tbody tr td.has-link {
     padding: 8px 0;
     width: 80%;
     margin: auto;
+    min-width: 100px;
     max-width: 130px; }
     table.table-striped.no-hover tbody tr td.has-link a.white-bg {
       background-color: white;
@@ -2151,59 +2163,6 @@ form.claim-evidence-form {
       background: none;
       text-decoration: underline;
       cursor: pointer; }
-
-.steps-navigation {
-  margin: 0; }
-
-.step-navigation-previous {
-  text-align: left;
-  height: 45px; }
-  .step-navigation-previous .previous-step {
-    margin-left: 50px; }
-  .step-navigation-previous .previous-step-title {
-    margin-left: 50px; }
-    @media all and (max-width: 480px) {
-      .step-navigation-previous .previous-step-title {
-        font-size: 13px; } }
-  .step-navigation-previous .previous-step-icon {
-    display: inline-block;
-    position: relative;
-    left: 0;
-    top: -40px;
-    height: 35px;
-    width: 35px;
-    border-radius: 50%;
-    text-align: center;
-    vertical-align: middle;
-    background-color: #00427F;
-    color: white; }
-    .step-navigation-previous .previous-step-icon i {
-      padding: 0px; }
-
-.step-navigation-next {
-  text-align: right;
-  height: 45px; }
-  .step-navigation-next .next-step {
-    margin-right: 50px; }
-  .step-navigation-next .next-step-title {
-    margin-right: 50px; }
-    @media all and (max-width: 480px) {
-      .step-navigation-next .next-step-title {
-        font-size: 13px; } }
-  .step-navigation-next .next-step-icon {
-    display: inline-block;
-    position: relative;
-    right: 0;
-    top: -40px;
-    height: 35px;
-    width: 35px;
-    border-radius: 50%;
-    text-align: center;
-    vertical-align: middle;
-    background-color: #00427F;
-    color: white; }
-    .step-navigation-next .next-step-icon i {
-      padding: 0px 0px 0 3px; }
 
 .file-upload-list .file-remove {
   right: 0;
@@ -2889,6 +2848,18 @@ section section.key-wrapper {
             left: 2px;
             top: 3px; } }
 
+.check-claim {
+  margin: 0 0 60px 0; }
+  @media all and (max-width: 991px) {
+    .check-claim {
+      margin: 0 0 30px 0; } }
+
+.margin-0t-sm-1t {
+  margin-top: 0; }
+  @media all and (max-width: 991px) {
+    .margin-0t-sm-1t {
+      margin-top: 1.5em; } }
+
 .margin-1tb {
   margin-top: 1em;
   margin-bottom: 1em; }
@@ -2986,15 +2957,19 @@ hr {
 .text-small {
   font-size: 0.8em; }
 
+@media all and (max-width: 991px) {
+  #help {
+    margin-top: 50px; } }
+
 h1 {
   font-size: 49px;
   line-height: 56px;
   margin: 10px 0 25px; }
   @media all and (max-width: 479px) {
     h1 {
-      font-size: 36px;
-      line-height: 42px;
-      margin: 20px 0 15px; } }
+      font-size: 2.2em;
+      line-height: 1em;
+      margin: 5px 0 10px; } }
 
 form h2 {
   margin-top: inherit;
@@ -3153,7 +3128,6 @@ a, .link {
   padding: 0; }
   @media all and (max-width: 479px) {
     .breadcrumbs ol.breadcrumb .breadcrumb-item {
-      float: left;
       clear: left; } }
 
 a[href^="tel:"] {
@@ -3239,6 +3213,9 @@ caption {
 
 .card-view .info-note.caution, .card-view .info-note.note {
   margin-top: 0; }
+  @media all and (max-width: 479px) {
+    .card-view .info-note.caution, .card-view .info-note.note {
+      padding: 10px 10px 0px 54px !important; } }
 
 .text-light {
   font-weight: 300;
@@ -3521,7 +3498,7 @@ footer {
       margin-left: 0; }
       footer #logo-block img {
         max-width: 25%; } }
-@media (max-width: 786px) {
+@media (max-width: 768px) {
   footer #logo-block img {
     max-width: 45%; } }
 ul.evidence-wrapper {
@@ -3644,7 +3621,10 @@ body.globalscot {
 
 .stepper {
   list-style: none;
-  margin: 0 0 0 10px; }
+  margin: 0 0 0 0px; }
+  @media all and (max-width: 991px) {
+    .stepper {
+      margin-top: 40px; } }
   .stepper li {
     padding: 0; }
     .stepper li.step-active .stepper-circle {
@@ -3692,3 +3672,90 @@ body.globalscot {
   @media all and (max-width: 1199px) {
     .stepper-line {
       height: 10px; } }
+
+.steps-navigation {
+  margin: 0; }
+
+.step-navigation-previous {
+  text-align: left;
+  height: 45px; }
+  .step-navigation-previous .previous-step {
+    margin-left: 50px; }
+    @media all and (max-width: 390px) {
+      .step-navigation-previous .previous-step {
+        position: relative;
+        top: 10px; } }
+  .step-navigation-previous .previous-step-title {
+    margin-left: 50px; }
+    @media all and (max-width: 480px) {
+      .step-navigation-previous .previous-step-title {
+        font-size: 13px; } }
+    @media all and (max-width: 390px) {
+      .step-navigation-previous .previous-step-title {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0; } }
+  .step-navigation-previous .previous-step-icon {
+    display: inline-block;
+    position: relative;
+    left: 0;
+    top: -40px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #00427F;
+    color: white; }
+    .step-navigation-previous .previous-step-icon i {
+      padding: 0px; }
+    @media all and (max-width: 390px) {
+      .step-navigation-previous .previous-step-icon {
+        top: -20px; } }
+
+.step-navigation-next {
+  text-align: right;
+  height: 45px; }
+  .step-navigation-next .next-step {
+    margin-right: 50px; }
+    @media all and (max-width: 390px) {
+      .step-navigation-next .next-step {
+        position: relative;
+        top: 10px; } }
+  .step-navigation-next .next-step-title {
+    margin-right: 50px; }
+    @media all and (max-width: 480px) {
+      .step-navigation-next .next-step-title {
+        font-size: 13px; } }
+    @media all and (max-width: 390px) {
+      .step-navigation-next .next-step-title {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0; } }
+  .step-navigation-next .next-step-icon {
+    display: inline-block;
+    position: relative;
+    right: 0;
+    top: -40px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #00427F;
+    color: white; }
+    .step-navigation-next .next-step-icon i {
+      padding: 0px 0px 0 3px; }
+    @media all and (max-width: 390px) {
+      .step-navigation-next .next-step-icon {
+        top: -20px; } }

@@ -3,6 +3,7 @@ console.log('main.js loaded');
 
 // -- Responsive Sticky header -- //
 
+
 // cache the elements
 var $navBar = $('nav.navbar');
 var $siteHeader = $('header.site-header');
@@ -11,7 +12,8 @@ var $siteHeader = $('header.site-header');
 var navPos = $navBar.offset().top;
 
 $(document).ready(function() {
-    var s1 = $($navBar).height();
+
+	var s1 = $($navBar).height();
     var s2 = $($siteHeader).height();
 
     if (s1 != s2) {

@@ -1,0 +1,116 @@
+@mixin sr-only() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+$steps-title-sm-size: 13px;
+
+
+
+.steps-navigation {
+  margin: 0;
+}
+
+.step-navigation-previous{
+  text-align: left;
+  height:45px;
+
+  .previous-step {
+	margin-left:50px;
+
+	@media all and (max-width: 390px) {
+	  position:relative;
+	  top:10px;
+	}
+  }
+
+  .previous-step-title{
+	margin-left:50px;
+
+	@media all and (max-width: 480px) {
+	  font-size: $steps-title-sm-size;
+	}
+
+	@media all and (max-width: 390px) {
+	  @include sr-only();
+	}
+
+  }
+
+  .previous-step-icon {
+	display: inline-block;
+	position: relative;
+	left: 0;
+	top: -40px;
+	height: 35px;
+	width: 35px;
+	border-radius: 50%;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #00427F;
+	color: white;
+
+	i {
+	  padding: 0px;
+	}
+
+	@media all and (max-width: 390px) {
+	  top:-20px;
+	}
+  }
+}
+
+.step-navigation-next{
+  text-align: right;
+  height:45px;
+
+  .next-step {
+	margin-right:50px;
+
+	@media all and (max-width: 390px) {
+	  position:relative;
+	  top:10px;
+	}
+
+  }
+
+  .next-step-title{
+	margin-right:50px;
+
+	@media all and (max-width: 480px) {
+	  font-size: $steps-title-sm-size;
+	}
+
+	@media all and (max-width: 390px) {
+		@include sr-only();
+	}
+
+  }
+  .next-step-icon {
+	display: inline-block;
+	position: relative;
+	right: 0;
+	top: -40px;
+	height: 35px;
+	width: 35px;
+	border-radius: 50%;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #00427F;
+	color: white;
+
+	i {
+	  padding: 0px 0px 0 3px;
+	}
+
+	@media all and (max-width: 390px) {
+	  top:-20px;
+	}
+  }
+}

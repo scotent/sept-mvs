@@ -30,17 +30,21 @@
   margin: 0 0 30px;
   width: 100%;
   section {
-    margin: 0 0 40px;
+    margin: 0 0 40px 0;
+
+    @media all and (max-width: $screen-sm-max) {
+      margin: 0 0 20px 20;
+    }
   }
-  @media all and (max-width: $screen-xxs-max) {
+  @media all and (max-width: $screen-xs-max) {
     padding: 10px;
-    margin: 0 0 20px;
   }
 }
 
-section.card-view.upload-container {
-  //background-color: darken($se-light-grey, 10%);
-}
+//
+//section.card-view.upload-container {
+//  //background-color: darken($se-light-grey, 10%);
+//}
 
 .account-portal-wrapper {
   .card-view {

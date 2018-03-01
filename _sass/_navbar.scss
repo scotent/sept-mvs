@@ -3,8 +3,6 @@
 // ==========================================================================
 
 
-
-
 header {
     margin-bottom: 0;
     &.site-header {
@@ -12,17 +10,15 @@ header {
     }
 }
 
-
 header nav.navbar {
     border-bottom: 1px solid $se-light-grey;
     background: white;
     margin-bottom: 0;
     border-width: 0 0 1px 0;
+    z-index: 10000;
     @include border-radius(0);
-    //height: 80px;
     &.fixed {
         position: fixed;
-        z-index: 10000;
         top: 0;
         left: 0;
         right: 0;

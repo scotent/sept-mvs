@@ -9,9 +9,9 @@ h1 {
     line-height: 56px;
     margin: 10px 0 25px;
     @media all and (max-width: $screen-xxs-max) {
-        font-size: 36px;
-        line-height: 42px;
-        margin: 20px 0 15px;
+        font-size: 2.2em;
+        line-height: 1em;
+        margin: 5px 0 10px;
     }
 }
 
@@ -199,7 +199,7 @@ a, .link {
     padding: 0;
     .breadcrumb-item {
         @media all and (max-width: $screen-xxs-max) {
-            float: left;
+            //float: left;
             clear: left;
         }
     }
@@ -311,6 +311,9 @@ caption {
         &.caution,
         &.note {
             margin-top: 0;
+            @media all and (max-width: $screen-xxs-max) {
+                padding: 10px 10px 0px 54px !important;
+            }
         }
     }
 }
