@@ -6,6 +6,7 @@
 $main-font: 'Roboto', sans-serif;
 
 // Colours
+
 $white:             #FFFFFF;
 $se-light-pink:     #FFEAEF;
 $grey-bg:           #F2F2F2;
@@ -28,6 +29,10 @@ $se-turquoise:      #00AAAD;
 $se-light-blue:     #2A7CB2;
 $se-blue:           #00427F;
 $se-purple:         #610e6c;
+
+
+$se-primary-color: $se-blue;
+$se-links-color: $se-blue;
 
 // SE Secondary colours
 $highlight-blue:    #00B4FF;
