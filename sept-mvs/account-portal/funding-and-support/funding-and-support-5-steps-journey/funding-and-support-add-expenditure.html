@@ -19,7 +19,50 @@ stepper:
 
     <div class="row margin-2b margin-2t">
 
-		<section class="col-md-9">
+		<!--Stepper-->
+		<section class="col-md-3 col-md-push-9 margin-2b">
+			<ol class="stepper">
+				<li class="step-active">
+					<span class="stepper-circle">1</span>
+					<span class="stepper-title">Add expenditure</span>
+					<div class="stepper-line"></div>
+				</li>
+				<li>
+					<span class="stepper-circle">2</span>
+					<span class="stepper-title">Add payment</span>
+					<div class="stepper-line"></div>
+				</li>
+				<li>
+					<span class="stepper-circle">3</span>
+					<span class="stepper-title">Add supporting files</span>
+					<div class="stepper-line"></div>
+				</li>
+				<li>
+					<span class="stepper-circle">4</span>
+					<span class="stepper-title">Check your claim</span>
+					<div class="stepper-line"></div>
+				</li>
+				<li>
+					<span class="stepper-circle">5</span>
+					<span class="stepper-title">Submit your claim</span>
+				</li>
+			</ol>
+
+			<!--<ul class="clean-list margin-0">-->
+			<!--{% for step in page.stepper %}-->
+			<!--<li>-->
+			<!--<span class="stepper-circle">{{ forloop.index}}</span>-->
+			<!--<span class="stepper-title">{{ step }}</span>-->
+			<!--{% if forloop.last == false %}-->
+			<!--<div class="stepper-line"></div>-->
+			<!--{% endif %}-->
+			<!--</li>-->
+			<!--{% endfor %}-->
+			<!--</ul>-->
+
+		</section>
+
+		<section class="col-md-9 col-md-pull-3 ">
 
 			<section class="key-wrapper">
 				<p class="margin-0">Attach all your expenditure files in support of this claim. Each individual file shouldn’t be
@@ -99,49 +142,6 @@ stepper:
 				</section>
 
 			</section>
-		</section>
-
-		<!--Stepper-->
-		<section class="col-md-3 margin-2b">
-			<ul class="stepper">
-				<li class="step-active">
-					<span class="stepper-circle">1</span>
-					<span class="stepper-title">Add expenditure</span>
-					<div class="stepper-line"></div>
-				</li>
-				<li>
-					<span class="stepper-circle">2</span>
-					<span class="stepper-title">Add payment</span>
-					<div class="stepper-line"></div>
-				</li>
-				<li>
-					<span class="stepper-circle">3</span>
-					<span class="stepper-title">Add supporting files</span>
-					<div class="stepper-line"></div>
-				</li>
-				<li>
-					<span class="stepper-circle">4</span>
-					<span class="stepper-title">Check your claim</span>
-					<div class="stepper-line"></div>
-				</li>
-				<li>
-					<span class="stepper-circle">5</span>
-					<span class="stepper-title">Submit your claim</span>
-				</li>
-			</ul>
-
-			<!--<ul class="clean-list margin-0">-->
-			<!--{% for step in page.stepper %}-->
-			<!--<li>-->
-			<!--<span class="stepper-circle">{{ forloop.index}}</span>-->
-			<!--<span class="stepper-title">{{ step }}</span>-->
-			<!--{% if forloop.last == false %}-->
-			<!--<div class="stepper-line"></div>-->
-			<!--{% endif %}-->
-			<!--</li>-->
-			<!--{% endfor %}-->
-			<!--</ul>-->
-
 		</section>
 
 	</div>

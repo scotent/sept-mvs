@@ -26,6 +26,17 @@ $(window).resize(function(){
     var s1 = $($navBar).height();
     var s2 = $($siteHeader).height();
 
+    // set stepper-line width depending on the screen size
+	var windowWidth = $(window).width();
+	var stepperWidth = $(".stepper").width();
+	var stepperLine = $(".stepper-line");
+    var stepperCircle = $(".stepper-circle").outerWidth(true);
+
+	if (windowWidth < 992){
+		stepperLine.css({'width': (stepperWidth-((stepperCircle+8)*5))/4 + 'px'});
+    }
+
+
     if (s1 != s2) {
         $($siteHeader).css('height', s1 + "px");
     }

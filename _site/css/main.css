@@ -4007,11 +4007,7 @@ body.globalscot {
       font-weight: bold;
       font-size: 1.1em; }
     .stepper li.step-active .stepper-line {
-      color: #00427F;
-      border-left-color: #00427F; }
-      @media all and (max-width: 1199px) {
-        .stepper li.step-active .stepper-line {
-          height: 40px; } }
+      color: #00427F; }
     .stepper li.step-completed .stepper-circle {
       color: white;
       background-color: #00427F;
@@ -4045,6 +4041,45 @@ body.globalscot {
     .stepper-line {
       height: 10px; } }
 
+@media all and (max-width: 991px) {
+  .stepper {
+    list-style: none;
+    margin: 0; }
+    .stepper .stepper-title {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0; }
+    .stepper .stepper-circle {
+      padding: 3px 2px 2px 2px; }
+    .stepper .stepper-line {
+      display: inline-block;
+      position: relative;
+      top: -3px;
+      height: 2px;
+      width: 29px;
+      margin: 0;
+      border-bottom: 2px solid #707070;
+      border-left: 0; }
+    .stepper li {
+      display: inline-block; }
+      .stepper li.step-active .stepper-title {
+        height: 2px; }
+      .stepper li.step-active .stepper-line {
+        height: 2px;
+        color: #00427F; }
+      .stepper li.step-completed .stepper-circle {
+        color: white;
+        background-color: #00427F;
+        border-color: #00427F; }
+      .stepper li.step-completed .stepper-line {
+        height: 2px;
+        color: #00427F;
+        border-bottom-color: #00427F; } }
 .steps-navigation {
   margin: 0; }
 
