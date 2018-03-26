@@ -4021,7 +4021,7 @@ body.globalscot {
 .stepper-circle {
   height: 30px;
   width: 30px;
-  padding: 2px 2px 2px 3px;
+  padding: 3px 3px 2px 3px;
   border: 2px solid gray;
   border-radius: 50%;
   text-align: center;
