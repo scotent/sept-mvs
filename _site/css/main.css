@@ -3334,23 +3334,23 @@ hr {
     margin-top: 50px; } }
 
 h1 {
-  font-size: 49px;
-  line-height: 56px;
+  font-size: 3.06em;
+  line-height: normal;
   margin: 10px 0 25px; }
   @media all and (max-width: 479px) {
     h1 {
       font-size: 2.2em;
-      line-height: 1em;
+      line-height: normal;
       margin: 5px 0 10px; } }
 
 form h2 {
   margin-top: inherit;
-  font-size: 30px;
-  line-height: 40px; }
+  font-size: 1.875em;
+  line-height: normal; }
 
 h2 {
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 1.875em;
+  line-height: normal;
   margin: 22px 0 13px; }
   @media all and (max-width: 479px) {
     h2 {
@@ -3359,17 +3359,17 @@ h2 {
       margin: 15px 0 10px; } }
 
 h3 {
-  font-size: 19px;
-  line-height: 28px;
+  font-size: 1.188em;
+  line-height: normal;
   margin: 10px 0 7px; }
   @media all and (max-width: 479px) {
     h3 {
-      font-size: 16px;
-      line-height: 25px; } }
+      font-size: 1.1em;
+      line-height: normal; } }
 
 h4 {
-  font-size: 16px;
-  line-height: 25px;
+  font-size: 1em;
+  line-height: normal;
   margin: 10px 0 7px; }
 
 h5 {
@@ -3378,8 +3378,8 @@ h5 {
   margin: 10px 0 7px; }
 
 h6 {
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 0.750em;
+  line-height: normal;
   margin: 10px 0 7px; }
 
 h1, h2, h4 {
@@ -3397,7 +3397,7 @@ h3, h4, h5, h6 {
   font-weight: 500; }
 
 .text-large {
-  font-size: 20px; }
+  font-size: 1.250em; }
 
 .leader {
   font-size: 25px;
