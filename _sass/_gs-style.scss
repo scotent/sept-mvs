@@ -1,80 +1,80 @@
-//@import 'variables.scss';
-//
-//// ==========================================================================
-//// Global Scot Custom styles
-//// ==========================================================================
-//
-//body.globalscot {
-//
-//    padding-top: 100px !important;
-//    padding-bottom: 20px !important;
-//
-//    .navbar-brand{
-//        img {
-//            max-width: 100%;
-//            height: auto;
-//            max-height: 46px;
-//        }
-//    }
-//
-//    footer{
-//        ul {
-//          margin-left: 0;
-//        }
-//        #logo-block {
-//          text-align: center;
-//          padding: 2em 0;
-//          p { margin: 1em 0;}
-//        }
-//    }
-//
-//}
-//
-//
-//#steps-block {
-//  margin: 2em 0;
-//  .step {
-//    span {font-weight: bold; font-size: 1.5em; vertical-align: baseline; padding-right: 0.25em; margin-left: -15px;}
-//  }
-//}
-//
-//.adjust-height-service{
-//    min-height: 220px;
-//}
-//
-//.adjust-height-case-study{
-//    min-height: 610px;
-//}
-//
-//#gs-main-banner-top{
-//    height: 50px;
-//    background-color:grey;
-//    padding:10px 0 0 30px;
-//
-//    p{
-//        color: white;
-//        font-size: 2em;
-//    }
-//}
-//
-//@mixin gs-background-gradient {
-//    background: rgba(19,92,160,1);
-//    background: -moz-radial-gradient(center, ellipse cover, rgba(19,92,160,1) 0%, rgba(0,41,77,1) 100%);
-//    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(19,92,160,1)), color-stop(100%, rgba(0,41,77,1)));
-//    background: -webkit-radial-gradient(center, ellipse cover, rgba(19,92,160,1) 0%, rgba(0,41,77,1) 100%);
-//    background: -o-radial-gradient(center, ellipse cover, rgba(19,92,160,1) 0%, rgba(0,41,77,1) 100%);
-//    background: -ms-radial-gradient(center, ellipse cover, rgba(19,92,160,1) 0%, rgba(0,41,77,1) 100%);
-//    background: radial-gradient(ellipse at center, rgba(19,92,160,1) 0%, rgba(0,41,77,1) 100%);
-//    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#135ca0', endColorstr='#00294d', GradientType=1 );
-//}
-//#gs-main-banner-bottom{
-//    height: 400px;
-//    padding: 40px 0 0 30px;
-//    @include gs-background-gradient;
-//
-//    p{
-//        color: white;
-//        font-size: 3.5em;
-//        font-weight: 700;
-//    }
-//}
+@import 'variables.scss';
+
+// ==========================================================================
+// Global Scot Custom styles
+// ==========================================================================
+
+body.globalscot {
+
+    padding-top: 100px !important;
+    padding-bottom: 20px !important;
+
+    .navbar-brand{
+        img {
+            max-width: 100%;
+            height: auto;
+            max-height: 46px;
+        }
+    }
+
+    footer{
+        ul {
+          margin-left: 0;
+        }
+        #logo-block {
+          text-align: center;
+          padding: 2em 0;
+          p { margin: 1em 0;}
+        }
+    }
+
+}
+
+
+#steps-block {
+  margin: 2em 0;
+  .step {
+    span {font-weight: bold; font-size: 1.5em; vertical-align: baseline; padding-right: 0.25em; margin-left: -15px;}
+  }
+}
+
+.adjust-height-service{
+    min-height: 220px;
+}
+
+.adjust-height-case-study{
+    min-height: 610px;
+}
+
+#gs-main-banner-top{
+    height: 50px;
+    background-color:grey;
+    padding:10px 0 0 30px;
+
+    p{
+        color: white;
+        font-size: 2em;
+    }
+}
+
+@mixin gs-background-gradient {
+    background: rgba(19,92,160,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(19,92,160,1) 0%, rgba(0,41,77,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(19,92,160,1)), color-stop(100%, rgba(0,41,77,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(19,92,160,1) 0%, rgba(0,41,77,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(19,92,160,1) 0%, rgba(0,41,77,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(19,92,160,1) 0%, rgba(0,41,77,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(19,92,160,1) 0%, rgba(0,41,77,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#135ca0', endColorstr='#00294d', GradientType=1 );
+}
+#gs-main-banner-bottom{
+    height: 400px;
+    padding: 40px 0 0 30px;
+    @include gs-background-gradient;
+
+    p{
+        color: white;
+        font-size: 3.5em;
+        font-weight: 700;
+    }
+}

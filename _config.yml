@@ -16,6 +16,8 @@ url: "https://scotent.github.io" # the base hostname & protocol for your site, e
 baseurl: "/sept-mvs"
 twitter_username: jekyllrb
 github_username:  jekyll
+sass:
+  sass_dir: _sass
 
 # Build settings
 markdown: kramdown
