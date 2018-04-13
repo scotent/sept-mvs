@@ -604,7 +604,7 @@ small {
 body {
   font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
-  line-height: 23px;
+  line-height: 1.438em;
   font-weight: normal;
   -­webkit­font­smoothing: antialiased; }
   @media all and (max-width: 479px) {
