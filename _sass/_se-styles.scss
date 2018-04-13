@@ -34,6 +34,10 @@ a {
         color: $se-light-blue;
         @include transition(color 0.5s, text-decoration 0.5s);
     }
+    &:active {
+        color: $se-primary-color;
+        @include transition(color 0.5s, text-decoration 0.5s);
+    }
 }
 
 footer {

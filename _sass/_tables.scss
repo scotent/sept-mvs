@@ -136,6 +136,17 @@ table.table-striped.no-hover tbody tr {
             margin: auto;
             min-width:100px;
             max-width: 130px;
+            border: 1px solid $se-primary-color;
+
+            &:hover {
+                background-color: white;
+                color:$se-primary-color;
+                border: 1px solid $se-primary-color;
+            }
+            &:active {
+                background-color: lighten($se-primary-color, 10%);
+                color:white;
+            }
 
             &.white-bg{
                 background-color:white;

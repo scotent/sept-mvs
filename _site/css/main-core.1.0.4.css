@@ -2296,7 +2296,15 @@ table.table-striped.no-hover tbody tr td.has-link {
     width: 80%;
     margin: auto;
     min-width: 100px;
-    max-width: 130px; }
+    max-width: 130px;
+    border: 1px solid #00427F; }
+    table.table-striped.no-hover tbody tr td.has-link a:hover {
+      background-color: white;
+      color: #00427F;
+      border: 1px solid #00427F; }
+    table.table-striped.no-hover tbody tr td.has-link a:active {
+      background-color: #005db2;
+      color: white; }
     table.table-striped.no-hover tbody tr td.has-link a.white-bg {
       background-color: white;
       border: 1px solid #00427F;
@@ -3649,6 +3657,13 @@ a {
   transition: color 0.5s, text-decoration 0.5s; }
   a:hover {
     color: #2A7CB2;
+    -webkit-transition: color 0.5s, text-decoration 0.5s;
+    -moz-transition: color 0.5s, text-decoration 0.5s;
+    -ms-transition: color 0.5s, text-decoration 0.5s;
+    -o-transition: color 0.5s, text-decoration 0.5s;
+    transition: color 0.5s, text-decoration 0.5s; }
+  a:active {
+    color: #00427F;
     -webkit-transition: color 0.5s, text-decoration 0.5s;
     -moz-transition: color 0.5s, text-decoration 0.5s;
     -ms-transition: color 0.5s, text-decoration 0.5s;
