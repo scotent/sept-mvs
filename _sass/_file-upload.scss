@@ -3,998 +3,998 @@
 //  ==========================================================================
 
 section.upload-wrapper {
-    //border-bottom: 1px solid $se-grey;
-    .upload-header {
-        position: relative;
-        h3.short {
-            padding-bottom: 5px;
-            ~ a {
-                top: 2px!important;
-                position: absolute;
-                right: 0;
-            }
-        }
-    }
+  //border-bottom: 1px solid $se-grey;
+  .upload-header {
+	position: relative;
+	h3.short {
+	  padding-bottom: 5px;
+	  ~ a {
+		top: 2px!important;
+		position: absolute;
+		right: 0;
+	  }
+	}
+  }
 }
 
 form.claim-evidence-form {
-    display: inline-block;
-    width: 100%;
+  display: inline-block;
+  width: 100%;
 }
 
 
 .clean-list-horizontal{
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: transparent;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
 
-        @media all and (max-width: 768px) {
-            margin-left:14px;
-        }
+  @media all and (max-width: 768px) {
+	margin-left:14px;
+  }
 
-    ul{
-        @media all and (max-width: 768px) {
-            padding: 10px 10px 10px 14px;
-        }
-    }
+  ul{
+	@media all and (max-width: 768px) {
+	  padding: 10px 10px 10px 14px;
+	}
+  }
 
-    li {
-        float: left;
-        padding: 0;
+  li {
+	float: left;
+	padding: 0;
 
-        @media all and (max-width: 768px) {
-            &:first-child{
-                padding-left:0;
-            }
-                padding: 10px 5px 10px 10px;
-            }
-        }
+	@media all and (max-width: 768px) {
+	  &:first-child{
+		padding-left:0;
+	  }
+	  padding: 10px 5px 10px 10px;
+	}
+  }
 
-    a {
-        display: block;
-        color: $se-blue;
-        text-align: center;
-        padding: 0 5px;
-        text-decoration: none;
-    }
+  a {
+	display: block;
+	color: $se-blue;
+	text-align: center;
+	padding: 0 5px;
+	text-decoration: none;
+  }
 
-    a:hover {
-        text-decoration: underline;
-    }
+  a:hover {
+	text-decoration: underline;
+  }
 }
 
 
 .add-new-file{
-    right: 0;
-    top: 10px;
-    width: 100%;
-    background: none;
-    label{
-        color: $se-blue;
-        background: none;
-        text-decoration: none;
-        padding: 1px 0 1px 12px;
-        font-size: 16px;
-        cursor: pointer;
-        &:hover {
-            color: $se-light-blue;
-            background: none;
-            text-decoration: underline;
-            cursor: pointer;
-        }
-    }
+  right: 0;
+  top: 10px;
+  width: 100%;
+  background: none;
+  label{
+	color: $se-blue;
+	background: none;
+	text-decoration: none;
+	padding: 1px 0 1px 12px;
+	font-size: 16px;
+	cursor: pointer;
+	&:hover {
+	  color: $se-light-blue;
+	  background: none;
+	  text-decoration: underline;
+	  cursor: pointer;
+	}
+  }
 }
 
 .file-upload-list {
 
-    .file-remove {
-        right: 0;
-        top: 10px;
-        text-align: center;
-        width: 100%;
-        display: inline-block;
-        background: none;
-        a {
-            color: $se-blue;
-            background: none;
-            text-decoration: none;
-            padding: 1px 0 1px 12px;
-            font-size: 16px;
-            &:hover {
-                color: $se-black;
-                background: none;
-                text-decoration: underline;
-            }
-        }
-    }
+  .file-remove {
+	right: 0;
+	top: 10px;
+	text-align: center;
+	width: 100%;
+	display: inline-block;
+	background: none;
+	a {
+	  color: $se-blue;
+	  background: none;
+	  text-decoration: none;
+	  padding: 1px 0 1px 12px;
+	  font-size: 16px;
+	  &:hover {
+		color: $se-black;
+		background: none;
+		text-decoration: underline;
+	  }
+	}
+  }
 
-    .file-upload-wrapper {
-        border-top: 1px solid $se-grey;
-        border-bottom: 1px solid $se-grey;
-        padding: 10px 0;
-        margin: 0;
-        position: relative;
+  .file-upload-wrapper {
+	border-top: 1px solid $se-grey;
+	border-bottom: 1px solid $se-grey;
+	padding: 10px 0;
+	margin: 0;
+	position: relative;
 
 
-        .file-details-wrapper {
-            padding-left: 0;
-        }
-        .file-name {
-            display: inline;
-            width: calc(100% - 70px);
-        }
-        .file-amount-wrapper {
-            padding: 0;
-            text-align: right;
-        }
-        .file-remove-wrapper {
-            padding-right: 0;
-        }
+	.file-details-wrapper {
+	  padding-left: 0;
+	}
+	.file-name {
+	  display: inline;
+	  width: calc(100% - 70px);
+	}
+	.file-amount-wrapper {
+	  padding: 0;
+	  text-align: right;
+	}
+	.file-remove-wrapper {
+	  padding-right: 0;
+	}
 
-        &.empty {
-            color: $se-mid-grey;
-            border-top: none;
-            padding: 0;
-            label.form-label {
-                font-size: 16px;
-                line-height: 20px;
-                font-weight: 300;
-            }
-        }
-        &.failed {
-            .failed-text {
-                color: $se-red;
-                display: block;
-                padding-left: 35px;
-            }
-        }
-    }
+	&.empty {
+	  color: $se-mid-grey;
+	  border-top: none;
+	  padding: 0;
+	  label.form-label {
+		font-size: 16px;
+		line-height: 20px;
+		font-weight: 300;
+	  }
+	}
+	&.failed {
+	  .failed-text {
+		color: $se-red;
+		display: block;
+		padding-left: 35px;
+	  }
+	}
+  }
 }
 
 .right-align {
-    float: right;
-    &.right-link-inline {
-        position: relative;
-        top: 35px;
-        &.examples {
-            top: 37px;
-            text-decoration: none;
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
+  float: right;
+  &.right-link-inline {
+	position: relative;
+	top: 35px;
+	&.examples {
+	  top: 37px;
+	  text-decoration: none;
+	  &:hover {
+		text-decoration: underline;
+	  }
+	}
+  }
 }
 
 section {
-    section.key-wrapper {
-        float: left;
-        clear: both;
-        width: 100%;
-        padding: 0 0 20px;
-        margin: 0;
-        .key-status {
-            .key {
-                display: inline-block;
-                margin-right: 20px;
-                @media all and (max-width: $screen-xxs-max) {
-                    float: left;
-                    clear: left;
-                }
-            }
-        }
-        &.panel {
-            border-bottom: 0;
-            background-color: $se-light-grey;
-            border: none;
-            @include box-shadow(0,0,0,transparent);
-        }
-    }
+  section.key-wrapper {
+	float: left;
+	clear: both;
+	width: 100%;
+	padding: 0 0 20px;
+	margin: 0;
+	.key-status {
+	  .key {
+		display: inline-block;
+		margin-right: 20px;
+		@media all and (max-width: $screen-xxs-max) {
+		  float: left;
+		  clear: left;
+		}
+	  }
+	}
+	&.panel {
+	  border-bottom: 0;
+	  background-color: $se-light-grey;
+	  border: none;
+	  @include box-shadow(0,0,0,transparent);
+	}
+  }
 }
 
 
 .file-status {
-    &:before {
-        font-family: FontAwesome;
-        padding: 0 10px 0 0;
-    }
+  &:before {
+	font-family: FontAwesome;
+	padding: 0 10px 0 0;
+  }
 }
 
 .success {
-    .fa {
-        margin-right: 10px;
-        color: $se-bright-green;
-    }
-    .file-status {
-        &:before {
-            color: $se-bright-green;
-            content: "\f00c";
-        }
-    }
+  .fa {
+	margin-right: 10px;
+	color: $se-bright-green;
+  }
+  .file-status {
+	&:before {
+	  color: $se-bright-green;
+	  content: "\f00c";
+	}
+  }
 }
 
 .processing {
-    .fa {
-        margin-right: 10px;
-        color: $se-amber;
-    }
-    .file-status {
-        &:before {
-            color: $se-amber;
-            content: "\f021";
-        }
-    }
+  .fa {
+	margin-right: 10px;
+	color: $se-amber;
+  }
+  .file-status {
+	&:before {
+	  color: $se-amber;
+	  content: "\f021";
+	}
+  }
 }
 
 .failed {
-    .fa {
-        margin-right: 10px;
-        color: $se-red;
-    }
-    .file-status {
-        &:before {
-            color: $se-red;
-            content: "\f06a";
-        }
-    }
+  .fa {
+	margin-right: 10px;
+	color: $se-red;
+  }
+  .file-status {
+	&:before {
+	  color: $se-red;
+	  content: "\f06a";
+	}
+  }
 }
 
 .fileUpload {
-    position: relative;
-    overflow: hidden;
-    /*margin:10px;*/
+  position: relative;
+  overflow: hidden;
+  /*margin:10px;*/
 }
 
 .fileUpload input.upload {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    cursor: pointer;
-    opacity: 0;
-    filter: alpha(opacity=0);
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
 }
 
 .upload-file-text {
-    position: relative;
-    margin: 0 0 5px 0px;
-    font-weight: 300;
+  position: relative;
+  margin: 0 0 5px 0px;
+  font-weight: 300;
 }
 
 .upload-file-caption {
-    position: relative;
-    margin: 0 0 5px 15px;
+  position: relative;
+  margin: 0 0 5px 15px;
 }
 
 #fileupload {
-    display: none;
+  display: none;
 }
 
 .file-upload-inner {
-    padding: 10px 0;
-    label {
-        display: inline;
-    }
-    form {
-        display: table-row;
-    }
-    span[role=button] {
-        display: table-cell;
-        margin: 0;
-        width: 130px;
-        height: 42px;
-        font-family: din-mediumregular;
-        font-size: 17px;
-        font-weight: 400;
-        line-height: 20px;
-        padding: 9px;
-        border: 2px solid $se-green-sec;
-        color: $se-white;
-        cursor: pointer;
-        background-color: $se-green-sec;
-        outline: none;
-        border-collapse: collapse;
-        @include transition(background-color 0.5s);
-        &:hover,
-        &:focus {
-            background-color: $se-white;
-            border-color: $se-green-sec;
-            color: $se-green-sec;
-            outline: 2px solid transparent;
-        }
-    }
-    .hide {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0,0,0,0);
-        border: 0;
-    }
-    input[type=text] {
-        display: table-cell;
-        margin: 0 0 0 -5px;
-        width: calc(100% - 130px);
-        height: 42px;
-        font-family: din-mediumregular;
-        font-size: 17px;
-        font-weight: 400;
-        line-height: 20px;
-        padding: 12px 15px;
-        border: 2px solid  $se-green-sec;
-        border-left: none;
-        color: $se-black;
-        background-color: $se-white;
-        outline: none;
-        border-collapse: collapse;
-        &:focus {
-            border-color: $se-green-sec;
-            outline: 2px solid transparent;
-        }
-    }
+  padding: 10px 0;
+  label {
+	display: inline;
+  }
+  form {
+	display: table-row;
+  }
+  span[role=button] {
+	display: table-cell;
+	margin: 0;
+	width: 130px;
+	height: 42px;
+	font-family: din-mediumregular;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 20px;
+	padding: 9px;
+	border: 2px solid $se-green-sec;
+	color: $se-white;
+	cursor: pointer;
+	background-color: $se-green-sec;
+	outline: none;
+	border-collapse: collapse;
+	@include transition(background-color 0.5s);
+	&:hover,
+	&:focus {
+	  background-color: $se-white;
+	  border-color: $se-green-sec;
+	  color: $se-green-sec;
+	  outline: 2px solid transparent;
+	}
+  }
+  .hide {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	border: 0;
+  }
+  input[type=text] {
+	display: table-cell;
+	margin: 0 0 0 -5px;
+	width: calc(100% - 130px);
+	height: 42px;
+	font-family: din-mediumregular;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 20px;
+	padding: 12px 15px;
+	border: 2px solid  $se-green-sec;
+	border-left: none;
+	color: $se-black;
+	background-color: $se-white;
+	outline: none;
+	border-collapse: collapse;
+	&:focus {
+	  border-color: $se-green-sec;
+	  outline: 2px solid transparent;
+	}
+  }
 }
 
 .progress {
-    height: 20px;
-    margin-bottom: 0;
-    overflow: hidden;
-    background-color: $se-white;
-    border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
-    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
-    .progress-bar {
-        float: left;
-        width: 0;
-        height: 100%;
-        font-size: 12px;
-        line-height: 20px;
-        color: $se-white;
-        text-align: center;
-        background-color: $se-blue;
-        -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
-        box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
-        -webkit-transition: width .6s ease;
-        -o-transition: width .6s ease;
-        transition: width .6s ease;
-    }
+  height: 20px;
+  margin-bottom: 0;
+  overflow: hidden;
+  background-color: $se-white;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+  .progress-bar {
+	float: left;
+	width: 0;
+	height: 100%;
+	font-size: 12px;
+	line-height: 20px;
+	color: $se-white;
+	text-align: center;
+	background-color: $se-blue;
+	-webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+	box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+	-webkit-transition: width .6s ease;
+	-o-transition: width .6s ease;
+	transition: width .6s ease;
+  }
 }
 
 .error {
-    .file-upload-inner {
-        input[type="text"].file-upload-input {
-            border-color: $error-red;
-        }
-    }
+  .file-upload-inner {
+	input[type="text"].file-upload-input {
+	  border-color: $error-red;
+	}
+  }
 }
 
 .g-test {
-    .file-upload-button {
-        margin-top: 40px;
-        padding: 30px;
-        border: 1px solid black;
-        height: 100px;
-        width: 100px;
-        background: transparent;
-        font-size: 66px;
-        padding-top: 0px;
-        border-radius: 5px;
-        border: 2px solid rgb(255, 228, 0);
-        color: rgb(255, 228, 0);
-    }
+  .file-upload-button {
+	margin-top: 40px;
+	padding: 30px;
+	border: 1px solid black;
+	height: 100px;
+	width: 100px;
+	background: transparent;
+	font-size: 66px;
+	padding-top: 0px;
+	border-radius: 5px;
+	border: 2px solid rgb(255, 228, 0);
+	color: rgb(255, 228, 0);
+  }
 
-    .file-upload-input {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 2;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        cursor: pointer;
-        border: 3px solid red;
-    }
+  .file-upload-input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	cursor: pointer;
+	border: 3px solid red;
+  }
 }
 
 .upload-container {
-    .upload-wrapper {
-        margin: 0;
-    }
+  .upload-wrapper {
+	margin: 0;
+  }
 }
 
 
 .file-upload-wrapper.empty.new:not(.finance) {
-    //border: 3px solid $se-black;
-    display: inline-block;
-    width: 100%;
-    background-color: $se-light-grey;
-    //@include bg-grad($se-white, darken($se-white, 10%));
-    color: $se-black;
-    .file-upload-inner {
-        label {
-            .button {
-                margin: 0 auto;
-            }
-        }
-    }
-    .file-amount-wrapper {
-        margin: 0;
-        padding: 10px 20px;
-        text-align: center;
-        input.file-amount {
-            border: 3px solid $se-black;
-            margin-top: 0;
-            padding: 0 0 0 10px;
-            color: $se-black;
-            width: 74%;
-            @media all and (max-width: $screen-lg) {
-                width: 65%;
-            }
-            @media all and (max-width: $screen-md-min) {
-                width: 91%;
-            }
-            @media all and (max-width: $screen-sm-min) {
-                width: 230px;
-            }
-            @media all and (max-width: $screen-xs-min) {
-                width: 215px;
-            }
-        }
-    }
+  //border: 3px solid $se-black;
+  display: inline-block;
+  width: 100%;
+  background-color: $se-light-grey;
+  //@include bg-grad($se-white, darken($se-white, 10%));
+  color: $se-black;
+  .file-upload-inner {
+	label {
+	  .button {
+		margin: 0 auto;
+	  }
+	}
+  }
+  .file-amount-wrapper {
+	margin: 0;
+	padding: 10px 20px;
+	text-align: center;
+	input.file-amount {
+	  border: 3px solid $se-black;
+	  margin-top: 0;
+	  padding: 0 0 0 10px;
+	  color: $se-black;
+	  width: 74%;
+	  @media all and (max-width: $screen-lg) {
+		width: 65%;
+	  }
+	  @media all and (max-width: $screen-md-min) {
+		width: 91%;
+	  }
+	  @media all and (max-width: $screen-sm-min) {
+		width: 230px;
+	  }
+	  @media all and (max-width: $screen-xs-min) {
+		width: 215px;
+	  }
+	}
+  }
 }
 
 .file-upload-wrapper.empty.new-1 {
-    @include bg-grad($se-green-sec, darken($se-green-sec, 5%));
-    color: $se-white;
-    .file-upload-inner {
-        label {
-            .button {
-                background-color: $se-black;
-                &:after {
-                    content: '\f093';
-                    font-family: FontAwesome;
-                    font-size: 20px;
-                    padding-left: 10px;
-                }
-                &:hover {
-                    color: $se-white;
-                    background-color: $black;
-                }
-            }
-        }
-    }
+  @include bg-grad($se-green-sec, darken($se-green-sec, 5%));
+  color: $se-white;
+  .file-upload-inner {
+	label {
+	  .button {
+		background-color: $se-black;
+		&:after {
+		  content: '\f093';
+		  font-family: FontAwesome;
+		  font-size: 20px;
+		  padding-left: 10px;
+		}
+		&:hover {
+		  color: $se-white;
+		  background-color: $black;
+		}
+	  }
+	}
+  }
 }
 
 .file-upload-wrapper.empty.new-2 {
-    @include bg-grad($se-white, darken($se-white, 10%));
-    color: $se-black;
-    .file-upload-inner {
-        label {
-            .button {
-                background-color: $se-blue;
-                &:before {
-                    content: '\f093';
-                    font-family: FontAwesome;
-                    font-size: 20px;
-                    padding-right: 10px;
-                }
-                &:hover {
-                    color: $se-white;
-                    background-color: $se-blue-sec;
-                }
-            }
-        }
-    }
+  @include bg-grad($se-white, darken($se-white, 10%));
+  color: $se-black;
+  .file-upload-inner {
+	label {
+	  .button {
+		background-color: $se-blue;
+		&:before {
+		  content: '\f093';
+		  font-family: FontAwesome;
+		  font-size: 20px;
+		  padding-right: 10px;
+		}
+		&:hover {
+		  color: $se-white;
+		  background-color: $se-blue-sec;
+		}
+	  }
+	}
+  }
 }
 
 
 .file-upload-wrapper.empty.new-3 {
-    @include bg-grad($se-light-grey, darken($se-light-grey, 5%));
-    color: $se-black;
-    .file-upload-inner {
-        label {
-            .button {
-                background-color: $se-blue;
-                &:after {
-                    content: '\f093';
-                    font-family: FontAwesome;
-                    font-size: 20px;
-                    padding-left: 10px;
-                }
-                &:hover {
-                    color: $se-white;
-                    background-color: $se-blue-sec;
-                }
-            }
-        }
-    }
+  @include bg-grad($se-light-grey, darken($se-light-grey, 5%));
+  color: $se-black;
+  .file-upload-inner {
+	label {
+	  .button {
+		background-color: $se-blue;
+		&:after {
+		  content: '\f093';
+		  font-family: FontAwesome;
+		  font-size: 20px;
+		  padding-left: 10px;
+		}
+		&:hover {
+		  color: $se-white;
+		  background-color: $se-blue-sec;
+		}
+	  }
+	}
+  }
 }
 
 .file-upload-list.finance {
-    border-top: none;
-    .file-upload-wrapper.empty.finance {
-        background-color: $se-white;
-        border: 3px solid $accessible-green;
-        display: inline-block;
-        width: 100%;
-        .file-upload-inner {
-            padding: 10px 15px 15px;
-            .description {
-                color: $se-black;
-                padding-bottom: 5px;
-            }
-            .file-browse-wrapper {
-                width: 100%;
-                label {
-                    .button {
-                        background-color: $se-black;
-                        margin: 0;
-                        line-height: 25px;
-                        float: left;
-                        width: 81px!important;
-                        //padding: 9px 10px 8px;
-                        padding: 1em 10px;
-                        min-height: 42px;
-                        &:hover {
-                            color: $se-white;
-                            background-color: $black;
-                        }
-                    }
-                }
-                .filename {
-                    background-color: $se-white;
-                    color: $se-black;
-                    height: 59px;
-                    border: 3px solid $se-black;
-                    width: calc(100% - 81px);
-                    margin: 0;
-                    float: left;
-                    //padding: 7px 5px 6px 10px;
-                    padding: 1em 5px 1em 10px;
-                    min-height: 42px;
-                    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-                    font-size: 18px;
-                }
-            }
-            .file-upload-help-text {
-                font-size: 12px;
-                line-height: 18px;
-                color: $se-dark-grey;
-                padding: 2px 2px 0 2px;
-                display: inline-block;
-                width: 100%;
-            }
-        }
-        .file-amount-wrapper {
-            margin-top: 0;
-            margin-bottom: 0;
-            border-left: 1px solid $se-light-mid-grey;
-            border-right: 1px solid $se-light-mid-grey;
-            padding: 10px 15px 15px;
-            text-align: left;
-            .description {
-                color: $se-black;
-                padding-bottom: 5px;
-            }
-            label {
-                margin: 0;
-                .button {
-                    background-color: $se-black;
-                    margin: 0;
-                    line-height: 25px;
-                    float: left;
-                    width: 29px!important;
-                    //padding: 9px 10px 8px;
-                    padding: 1em 10px;
-                    min-height: 42px;
-                    &:hover {
-                        color: $se-white;
-                        background-color: $black;
-                    }
-                }
+  border-top: none;
+  .file-upload-wrapper.empty.finance {
+	background-color: $se-white;
+	border: 3px solid $accessible-green;
+	display: inline-block;
+	width: 100%;
+	.file-upload-inner {
+	  padding: 10px 15px 15px;
+	  .description {
+		color: $se-black;
+		padding-bottom: 5px;
+	  }
+	  .file-browse-wrapper {
+		width: 100%;
+		label {
+		  .button {
+			background-color: $se-black;
+			margin: 0;
+			line-height: 25px;
+			float: left;
+			width: 81px!important;
+			//padding: 9px 10px 8px;
+			padding: 1em 10px;
+			min-height: 42px;
+			&:hover {
+			  color: $se-white;
+			  background-color: $black;
+			}
+		  }
+		}
+		.filename {
+		  background-color: $se-white;
+		  color: $se-black;
+		  height: 59px;
+		  border: 3px solid $se-black;
+		  width: calc(100% - 81px);
+		  margin: 0;
+		  float: left;
+		  //padding: 7px 5px 6px 10px;
+		  padding: 1em 5px 1em 10px;
+		  min-height: 42px;
+		  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		  font-size: 18px;
+		}
+	  }
+	  .file-upload-help-text {
+		font-size: 12px;
+		line-height: 18px;
+		color: $se-dark-grey;
+		padding: 2px 2px 0 2px;
+		display: inline-block;
+		width: 100%;
+	  }
+	}
+	.file-amount-wrapper {
+	  margin-top: 0;
+	  margin-bottom: 0;
+	  border-left: 1px solid $se-light-mid-grey;
+	  border-right: 1px solid $se-light-mid-grey;
+	  padding: 10px 15px 15px;
+	  text-align: left;
+	  .description {
+		color: $se-black;
+		padding-bottom: 5px;
+	  }
+	  label {
+		margin: 0;
+		.button {
+		  background-color: $se-black;
+		  margin: 0;
+		  line-height: 25px;
+		  float: left;
+		  width: 29px!important;
+		  //padding: 9px 10px 8px;
+		  padding: 1em 10px;
+		  min-height: 42px;
+		  &:hover {
+			color: $se-white;
+			background-color: $black;
+		  }
+		}
 
-            }
-            input.file-amount {
-                background-color: $se-white;
-                color: $se-black;
-                border: 3px solid $se-black;
-                width: calc(100% - 30px);
-                margin: 0;
-                height: 59px;
-                float: left;
-                padding: 7px 5px 6px 10px;
-                min-height: 42px;
-                font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-                font-size: 16px;
+	  }
+	  input.file-amount {
+		background-color: $se-white;
+		color: $se-black;
+		border: 3px solid $se-black;
+		width: calc(100% - 30px);
+		margin: 0;
+		height: 59px;
+		float: left;
+		padding: 7px 5px 6px 10px;
+		min-height: 42px;
+		font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 16px;
 
-            }
-        }
-        .upload-button-wrapper {
-            padding: 10px 15px;
-            .upload-button {
-                //padding: 9px 10px 8px;
-                padding: 1em 10px;
-                margin-bottom: 0;
-                width: 100% !important;
-                line-height: 25px;
-                min-height: 42px;
-                margin-top: 28px;
-            }
-        }
-    }
+	  }
+	}
+	.upload-button-wrapper {
+	  padding: 10px 15px;
+	  .upload-button {
+		//padding: 9px 10px 8px;
+		padding: 1em 10px;
+		margin-bottom: 0;
+		width: 100% !important;
+		line-height: 25px;
+		min-height: 42px;
+		margin-top: 28px;
+	  }
+	}
+  }
 }
 
 
 .file-upload-list.finance {
-    border-top: none;
-    .file-upload-wrapper.empty.other-description {
-        background-color: $se-white;
-        border: 3px solid $accessible-green;
-        display: inline-block;
-        width: 100%;
-        .file-upload-inner {
-            padding: 10px 15px 15px;
-            .file-upload-element {
-                display: inline-block;
-                width: 100%;
-                .description {
-                    color: $se-black;
-                    padding-bottom: 5px;
-                }
-                .file-browse-wrapper {
-                    width: 100%;
-                    label {
-                        .button {
-                            background-color: $se-black;
-                            margin: 0;
-                            float: left;
-                            line-height: 25px;
-                            width: 81px!important;
-                            //padding: 9px 10px 8px;
-                            padding: 1em 10px;
-                            min-height: 42px;
-                            &:hover {
-                                color: $se-white;
-                                background-color: $black;
-                            }
-                        }
-                    }
-                    .filename {
-                        background-color: $se-white;
-                        color: $se-black;
-                        border: 3px solid $se-black;
-                        width: calc(100% - 81px);
-                        margin: 0;
-                        float: left;
-                        padding: 7px 5px 6px 10px;
-                        min-height: 42px;
-                        font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-                        font-size: 16px;
-                    }
-                }
-            }
-            .file-description-element {
-                .file-description-wrapper {
-                    padding-right: 0;
-                    margin: 15px 0 0;
-                    .file-description {
-                        width: 100%;
-                        border: 3px solid $se-black;
-                        margin: 0;
-                        padding: 7px 5px 6px 10px;
-                        min-height: 42px;
-                        font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-                        font-size: 16px;
-                    }
-                }
-            }
-        }
-        .upload-button-wrapper {
-            height: 166px;
-            padding: 10px 15px;
-            .upload-button {
-                //padding: 9px 10px 8px;
-                padding: 1em 10px;
-                margin-bottom: 0;
-                width: 100% !important;
-                margin-top: 113px;
-                min-height: 42px;
-                line-height: 25px;
-            }
-        }
-    }
+  border-top: none;
+  .file-upload-wrapper.empty.other-description {
+	background-color: $se-white;
+	border: 3px solid $accessible-green;
+	display: inline-block;
+	width: 100%;
+	.file-upload-inner {
+	  padding: 10px 15px 15px;
+	  .file-upload-element {
+		display: inline-block;
+		width: 100%;
+		.description {
+		  color: $se-black;
+		  padding-bottom: 5px;
+		}
+		.file-browse-wrapper {
+		  width: 100%;
+		  label {
+			.button {
+			  background-color: $se-black;
+			  margin: 0;
+			  float: left;
+			  line-height: 25px;
+			  width: 81px!important;
+			  //padding: 9px 10px 8px;
+			  padding: 1em 10px;
+			  min-height: 42px;
+			  &:hover {
+				color: $se-white;
+				background-color: $black;
+			  }
+			}
+		  }
+		  .filename {
+			background-color: $se-white;
+			color: $se-black;
+			border: 3px solid $se-black;
+			width: calc(100% - 81px);
+			margin: 0;
+			float: left;
+			padding: 7px 5px 6px 10px;
+			min-height: 42px;
+			font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-size: 16px;
+		  }
+		}
+	  }
+	  .file-description-element {
+		.file-description-wrapper {
+		  padding-right: 0;
+		  margin: 15px 0 0;
+		  .file-description {
+			width: 100%;
+			border: 3px solid $se-black;
+			margin: 0;
+			padding: 7px 5px 6px 10px;
+			min-height: 42px;
+			font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-size: 16px;
+		  }
+		}
+	  }
+	}
+	.upload-button-wrapper {
+	  height: 166px;
+	  padding: 10px 15px;
+	  .upload-button {
+		//padding: 9px 10px 8px;
+		padding: 1em 10px;
+		margin-bottom: 0;
+		width: 100% !important;
+		margin-top: 113px;
+		min-height: 42px;
+		line-height: 25px;
+	  }
+	}
+  }
 }
 
 .file-upload-list.finance.help {
-    .file-upload-wrapper.empty.finance {
-        .file-amount-wrapper {
-            border: none;
-        }
-    }
+  .file-upload-wrapper.empty.finance {
+	.file-amount-wrapper {
+	  border: none;
+	}
+  }
 }
 
 .upload-container.complex {
-    .file-upload-list.finance {
-        border-top: none;
-        .file-upload-wrapper.empty.finance {
-            background-color: $se-white;
-            border: 3px solid $accessible-green;
-            display: inline-block;
-            width: 100%;
-            padding: 10px;
-            .file-upload-inner {
-                padding: 10px 15px 15px;
-                .description {
-                    color: $se-black;
-                    padding-bottom: 5px;
-                }
-                .file-browse-wrapper {
-                    width: 100%;
-                    label {
-                        .button {
-                            background-color: $se-black;
-                            margin: 0;
-                            line-height: 25px;
-                            float: left;
-                            width: 81px!important;
-                            //padding: 9px 10px 8px;
-                            padding: 1em 10px;
-                            min-height: 42px;
-                            &:hover {
-                                color: $se-white;
-                                background-color: $black;
-                            }
-                        }
-                    }
-                    .filename {
-                        background-color: $se-white;
-                        color: $se-black;
-                        //height: 60px;
-                        border: 3px solid $se-black;
-                        width: calc(100% - 81px);
-                        margin: 0;
-                        float: left;
-                        padding: 7px 5px 6px 10px;
-                        min-height: 42px;
-                        font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-                        font-size: 16px;
-                    }
-                }
-                .file-upload-help-text {
-                    font-size: 12px;
-                    line-height: 18px;
-                    color: $se-dark-grey;
-                    padding: 2px 2px 0 2px;
-                    display: inline-block;
-                    width: 100%;
-                }
-            }
-            .file-amount-wrapper {
-                margin-top: 0;
-                margin-bottom: 0;
-                border-left: 1px solid $se-light-mid-grey;
-                border-right: 1px solid $se-light-mid-grey;
-                padding: 10px 15px 15px;
-                text-align: left;
-                .description {
-                    color: $se-black;
-                    padding-bottom: 5px;
-                }
-                label {
-                    margin: 0;
-                    .button {
-                        background-color: $se-black;
-                        margin: 0;
-                        line-height: 25px;
-                        float: left;
-                        width: 29px!important;
-                        //padding: 9px 10px 8px;
-                        padding: 1em 10px;
-                        min-height: 42px;
-                        &:hover {
-                            color: $se-white;
-                            background-color: $black;
-                        }
-                    }
+  .file-upload-list.finance {
+	border-top: none;
+	.file-upload-wrapper.empty.finance {
+	  background-color: $se-white;
+	  border: 3px solid $accessible-green;
+	  display: inline-block;
+	  width: 100%;
+	  padding: 10px;
+	  .file-upload-inner {
+		padding: 10px 15px 15px;
+		.description {
+		  color: $se-black;
+		  padding-bottom: 5px;
+		}
+		.file-browse-wrapper {
+		  width: 100%;
+		  label {
+			.button {
+			  background-color: $se-black;
+			  margin: 0;
+			  line-height: 25px;
+			  float: left;
+			  width: 81px!important;
+			  //padding: 9px 10px 8px;
+			  padding: 1em 10px;
+			  min-height: 42px;
+			  &:hover {
+				color: $se-white;
+				background-color: $black;
+			  }
+			}
+		  }
+		  .filename {
+			background-color: $se-white;
+			color: $se-black;
+			//height: 60px;
+			border: 3px solid $se-black;
+			width: calc(100% - 81px);
+			margin: 0;
+			float: left;
+			padding: 7px 5px 6px 10px;
+			min-height: 42px;
+			font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-size: 16px;
+		  }
+		}
+		.file-upload-help-text {
+		  font-size: 12px;
+		  line-height: 18px;
+		  color: $se-dark-grey;
+		  padding: 2px 2px 0 2px;
+		  display: inline-block;
+		  width: 100%;
+		}
+	  }
+	  .file-amount-wrapper {
+		margin-top: 0;
+		margin-bottom: 0;
+		border-left: 1px solid $se-light-mid-grey;
+		border-right: 1px solid $se-light-mid-grey;
+		padding: 10px 15px 15px;
+		text-align: left;
+		.description {
+		  color: $se-black;
+		  padding-bottom: 5px;
+		}
+		label {
+		  margin: 0;
+		  .button {
+			background-color: $se-black;
+			margin: 0;
+			line-height: 25px;
+			float: left;
+			width: 29px!important;
+			//padding: 9px 10px 8px;
+			padding: 1em 10px;
+			min-height: 42px;
+			&:hover {
+			  color: $se-white;
+			  background-color: $black;
+			}
+		  }
 
-                }
-                input.file-amount {
-                    background-color: $se-white;
-                    color: $se-black;
-                    border: 3px solid $se-black;
-                    width: calc(100% - 30px);
-                    margin: 0;
-                    float: left;
-                    padding: 7px 5px 6px 10px;
-                    min-height: 42px;
-                    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-                    font-size: 16px;
+		}
+		input.file-amount {
+		  background-color: $se-white;
+		  color: $se-black;
+		  border: 3px solid $se-black;
+		  width: calc(100% - 30px);
+		  margin: 0;
+		  float: left;
+		  padding: 7px 5px 6px 10px;
+		  min-height: 42px;
+		  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		  font-size: 16px;
 
-                }
-            }
-            .upload-select-wrapper {
-                label {
-                    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-                    font-weight: normal;
-                    font-size: 16px;
-                    margin-bottom: 0;
-                }
-            }
-            .upload-button-wrapper {
-                padding: 10px 15px;
-                .upload-button {
-                    //padding: 9px 10px 8px;
-                    padding: 1em 10px;
-                    margin: 25px 0 0;
-                    width: 100% !important;
-                    line-height: 25px;
-                    min-height: 42px;
-                    margin-top: 25px;
-                }
-            }
-        }
-    }
+		}
+	  }
+	  .upload-select-wrapper {
+		label {
+		  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		  font-weight: normal;
+		  font-size: 16px;
+		  margin-bottom: 0;
+		}
+	  }
+	  .upload-button-wrapper {
+		padding: 10px 15px;
+		.upload-button {
+		  //padding: 9px 10px 8px;
+		  padding: 1em 10px;
+		  margin: 25px 0 0;
+		  width: 100% !important;
+		  line-height: 25px;
+		  min-height: 42px;
+		  margin-top: 25px;
+		}
+	  }
+	}
+  }
 }
 
 .file-table {
-    .fa-check {
-        color: $accessible-green;
-    }
-    .fa-refresh {
-        color: $se-amber;
-    }
-    tr:first-child td:first-child {
-        padding-left: 15px;
-    }
+  .fa-check {
+	color: $accessible-green;
+  }
+  .fa-refresh {
+	color: $se-amber;
+  }
+  tr:first-child td:first-child {
+	padding-left: 15px;
+  }
 }
 
 .additional-files-container {
-    .row {
-        border-bottom: 1px solid $se-grey;
-        background-color:  $se-white;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        &:last-of-type {
-            border-bottom: none;
-        }
-    }
-    .additional-wrapper {
-        //padding: 10px;
-        margin: 0 0 20px;
-        //border: 3px solid $se-black;
-        //background-color: $se-blue;
-        //color: $se-white;
-        .additional-element-wrapper {
-            padding: 10px;
-            border: 3px solid $se-grey;
-            background-color: darken($se-light-grey, 9%);
-            section.upload-container {
-                margin-bottom: 5px;
-            }
-            .upload-wrapper {
-                border-bottom: none;
-                .file-upload-inner {
-                    padding: 10px!important;
-                }
-                .upload-button {
-                    margin-top: 0!important;
-                }
-            }
-            .submit-wrapper {
-                //background-color: turquoise;
-                .submit {
-                    //background-color: tomato;
-                }
-            }
+  .row {
+	border-bottom: 1px solid $se-grey;
+	background-color:  $se-white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	&:last-of-type {
+	  border-bottom: none;
+	}
+  }
+  .additional-wrapper {
+	//padding: 10px;
+	margin: 0 0 20px;
+	//border: 3px solid $se-black;
+	//background-color: $se-blue;
+	//color: $se-white;
+	.additional-element-wrapper {
+	  padding: 10px;
+	  border: 3px solid $se-grey;
+	  background-color: darken($se-light-grey, 9%);
+	  section.upload-container {
+		margin-bottom: 5px;
+	  }
+	  .upload-wrapper {
+		border-bottom: none;
+		.file-upload-inner {
+		  padding: 10px!important;
+		}
+		.upload-button {
+		  margin-top: 0!important;
+		}
+	  }
+	  .submit-wrapper {
+		//background-color: turquoise;
+		.submit {
+		  //background-color: tomato;
+		}
+	  }
 
-        }
-        textarea {
-            border: 3px solid $se-dark-green;
-        }
-        .add-more {
-            margin: 10px 10px 10px 0;
-            //background-color: $se-white;
-            //color: $se-blue;
-        }
-    }
-    .button {
-        //padding: 9px 1em;
-        padding: 1em;
-    }
-    .file-upload-inner {
-        padding: 0;
-        .description {
-            color: $se-black;
-            padding-bottom: 0!important;
-            margin: 0!important;
-        }
-    }
-    hr {
-        @include hr($se-grey, 1px);
-    }
+	}
+	textarea {
+	  border: 3px solid $se-dark-green;
+	}
+	.add-more {
+	  margin: 10px 10px 10px 0;
+	  //background-color: $se-white;
+	  //color: $se-blue;
+	}
+  }
+  .button {
+	//padding: 9px 1em;
+	padding: 1em;
+  }
+  .file-upload-inner {
+	padding: 0;
+	.description {
+	  color: $se-black;
+	  padding-bottom: 0!important;
+	  margin: 0!important;
+	}
+  }
+  hr {
+	@include hr($se-grey, 1px);
+  }
 }
 
 
 .upload-wrapper {
-    .info-note.caution {
-        margin-bottom: 0;
-    }
-    .info-note.caution + fieldset {
-        border-bottom: 1px solid $se-grey;
-        padding: 0 0 10px 10px;
-        margin-top: 0;
-        input {
-            margin: 0;
-        }
-        label {
-            margin-top: 0;
-        }
-        input + label.fancy-checkbox::before {
-            left: -6px;
-            top: -4px;
-            @media all and (max-width: 568px) {
-                left: 2px;
-                top: 3px;
-            }
-        }
-    }
+  .info-note.caution {
+	margin-bottom: 0;
+  }
+  .info-note.caution + fieldset {
+	border-bottom: 1px solid $se-grey;
+	padding: 0 0 10px 10px;
+	margin-top: 0;
+	input {
+	  margin: 0;
+	}
+	label {
+	  margin-top: 0;
+	}
+	input + label.fancy-checkbox::before {
+	  left: -6px;
+	  top: -4px;
+	  @media all and (max-width: 568px) {
+		left: 2px;
+		top: 3px;
+	  }
+	}
+  }
 }
 
 .card-view.caution-state {
-    background-color: orange;
-    section.upload-wrapper.info-check {
-        border-bottom: 3px solid $se-black;
-        margin: 0;
-        .info-note.caution {
-            border-bottom: none;
-            margin-bottom: 10px;
-            border-top: 3px solid $se-black;
-            font-size: 20px!important;
-            &:before {
-                color: $se-black;
-            }
-        }
-        .info-note.caution + fieldset {
-            border-bottom: none;
-            padding: 0 0 20px 10px;
-            margin: 0;
-            input {
-                margin: 0;
-            }
-            label {
-                margin-top: 0;
-            }
-            .input-wrapper label {
-                font-size: 20px!important;
-            }
-            input + label.fancy-checkbox::before {
-                left: -6px;
-                top: -4px;
-                @media all and (max-width: 568px) {
-                    left: 2px;
-                    top: 3px;
-                }
-            }
-        }
-    }
+  background-color: orange;
+  section.upload-wrapper.info-check {
+	border-bottom: 3px solid $se-black;
+	margin: 0;
+	.info-note.caution {
+	  border-bottom: none;
+	  margin-bottom: 10px;
+	  border-top: 3px solid $se-black;
+	  font-size: 20px!important;
+	  &:before {
+		color: $se-black;
+	  }
+	}
+	.info-note.caution + fieldset {
+	  border-bottom: none;
+	  padding: 0 0 20px 10px;
+	  margin: 0;
+	  input {
+		margin: 0;
+	  }
+	  label {
+		margin-top: 0;
+	  }
+	  .input-wrapper label {
+		font-size: 20px!important;
+	  }
+	  input + label.fancy-checkbox::before {
+		left: -6px;
+		top: -4px;
+		@media all and (max-width: 568px) {
+		  left: 2px;
+		  top: 3px;
+		}
+	  }
+	}
+  }
 }
 
 .check-claim{
-    margin: 0 0 60px 0;
-    @media all and (max-width: 991px) {
-        margin: 0 0 30px 0;
-    }
+  margin: 0 0 60px 0;
+  @media all and (max-width: 991px) {
+	margin: 0 0 30px 0;
+  }
 }
 
 .margin-0t-sm-1t{
-    margin-top:0;
-    @media all and (max-width: 991px) {
-        margin-top:1.5em;
-    }
+  margin-top:0;
+  @media all and (max-width: 991px) {
+	margin-top:1.5em;
+  }
 }
 

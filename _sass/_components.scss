@@ -3,8 +3,6 @@
 // ==========================================================================
 
 .accordion {
-    //position: relative;
-    //border-bottom: 1px solid $se-light-mid-grey;
     border-bottom: 0 solid red;
 
     .panel-default {
@@ -29,12 +27,12 @@
                     padding-top: 5px;
                     padding-bottom: 12px;
                     color: $se-body-grey;
-                    margin: 0;
-                    font-size: 18px;
-                    margin-right: 30px;
+                    margin: 0 30px 0 0;
+                    font-size: 1.125em;
+                    line-height:normal;
                 }
-                .header-panel-icon {
 
+                .header-panel-icon {
                     position: absolute;
                     top: 50%;
                     right: 15px;
@@ -44,9 +42,6 @@
                     background-image: url('../img/icons/icons-plus-minus.png');
                     background-repeat: no-repeat;
                     background-position: 0 -16px;
-                    //&:before {
-                    //    content: 'Change';
-                    //}
                 }
             &:not(.collapsed) {
                 .header-panel-icon {
@@ -81,8 +76,8 @@
             font-weight: 500;
             font-family: 'din-mediumregular', "Helvetica Neue", Helvetica, Arial, sans-serif;
             letter-spacing: -1px;
-            font-size: 19px;
-            line-height: 28px;
+            font-size: 1.188em;
+            line-height: normal;
             margin: 10px 0 7px;
         }
         .panel-heading {
@@ -108,9 +103,9 @@
                 padding-top: 5px;
                 padding-bottom: 12px;
                 color: $se-body-grey;
-                margin: 0;
-                font-size: 18px;
-                margin-right: 30px;
+                margin: 0 30px 0 0;
+                font-size: 1.125em;
+                line-height:normal;
             }
             .header-panel-icon {
                 position: absolute;
@@ -159,7 +154,7 @@
             .input-group-addon {
                 background: none;
                 border: none;
-                font-size: 20px;
+                font-size: 1.250em;
                 font-weight: 300;
                 font-family: 'din-lightregular', "Helvetica Neue", Helvetica, Arial, sans-serif;
                 position: relative;
@@ -187,8 +182,8 @@
             font-weight: 500;
             font-family: 'din-mediumregular', "Helvetica Neue", Helvetica, Arial, sans-serif;
             letter-spacing: -1px;
-            font-size: 19px;
-            line-height: 28px;
+            font-size: 1.188em;
+            line-height: normal;
             margin: 10px 0 7px;
         }
         .panel-heading {
@@ -214,9 +209,9 @@
                 padding-top: 5px;
                 padding-bottom: 12px;
                 color: $se-body-grey;
-                margin: 0;
-                font-size: 18px;
-                margin-right: 30px;
+                margin: 0 30px 0 0;
+                font-size: 1.125em;
+                line-height:normal;
             }
             &.collapsed {
                 .header-panel-icon {
@@ -275,8 +270,8 @@
         font-weight: 500;
         font-family: 'din-mediumregular', "Helvetica Neue", Helvetica, Arial, sans-serif;
         letter-spacing: -1px;
-        font-size: 19px;
-        line-height: 28px;
+        font-size: 1.188em;
+        line-height: normal;
         margin: 10px 0 7px;
     }
 }
@@ -376,8 +371,8 @@
         .panel-title {
             margin-top: 0;
             margin-bottom: 0;
-            font-size: 18px;
-            //width: calc(100% - 40px);
+            font-size: 1.125em;
+            line-height:normal;
             display: inline-block;
         }
         .cross-check-alert {
@@ -389,7 +384,8 @@
                     font-family: FontAwesome;
                     left: 24px;
                     position: relative;
-                    font-size: 18px;
+                    font-size: 1.188em;
+                    line-height:normal;
                     top: 1px;
                     padding-right: 33px;
                 }
@@ -401,7 +397,8 @@
                     font-family: FontAwesome;
                     left: 24px;
                     position: relative;
-                    font-size: 18px;
+                    font-size: 1.188em;
+                    line-height:normal;
                     top: 1px;
                     padding-right: 33px;
                 }
@@ -413,7 +410,8 @@
                 text-align: right;
                 float: right;
                 color: $se-white;
-                font-size: 26px;
+                font-size: 1.625em;
+                line-height:normal;
                 &:before {
                     content: '\f0d7';
                     font-family: FontAwesome;
@@ -426,7 +424,8 @@
                 text-align: right;
                 float: right;
                 color: $se-white;
-                font-size: 26px;
+                font-size: 1.625em;
+                line-height:normal;
                 &:before {
                     content: '\f0d8';
                     font-family: FontAwesome;
@@ -443,7 +442,8 @@
                         content: '\f0d7';
                         font-family: FontAwesome;
                         color: $se-dark-orange;
-                        font-size: 20px;
+                        font-size: 1.250em;
+                        line-height:normal;
                         padding-right: 9px;
                     }
                 }
@@ -458,7 +458,8 @@
                         content: '\f0d8';
                         font-family: FontAwesome;
                         color: $se-dark-orange;
-                        font-size: 20px;
+                        font-size: 1.25em;
+                        line-height:normal;
                         padding-right: 9px;
                     }
                 }
@@ -493,9 +494,7 @@
 }
 
 
-
 // -- SUMMARY styling -- //
-
 .accordion-summary {
     > .panel-default {
         > .panel-heading {
@@ -545,7 +544,8 @@
             color: $se-white;
             margin-top: 0;
             margin-bottom: 0;
-            font-size: 18px;
+            font-size: 1.125em;
+            line-height:normal;
             width: 250px;
             display: inline-block;
         }
@@ -579,7 +579,8 @@
                 text-align: right;
                 float: right;
                 color: $se-white;
-                font-size: 26px;
+                font-size: 1.625em;
+                line-height:normal;
                 &:before {
                     content: '\f0d7';
                     font-family: FontAwesome;
@@ -592,7 +593,8 @@
                 text-align: right;
                 float: right;
                 color: $se-white;
-                font-size: 26px;
+                font-size: 1.625em;
+                line-height:normal;
                 &:before {
                     content: '\f0d8';
                     font-family: FontAwesome;
@@ -608,7 +610,8 @@
                         content: '\f0d7';
                         font-family: FontAwesome;
                         color: $se-dark-orange;
-                        font-size: 20px;
+                        font-size: 1.25em;
+                        line-height:normal;
                         padding-right: 9px;
                     }
                 }
@@ -623,7 +626,8 @@
                         content: '\f0d8';
                         font-family: FontAwesome;
                         color: $se-dark-orange;
-                        font-size: 20px;
+                        font-size: 1.25em;
+                        line-height:normal;
                         padding-right: 9px;
                     }
                 }
@@ -642,7 +646,8 @@
 
 // -- Used in Summary layout V1 -- //
 .evidence-header {
-    font-size: 18px;
+    font-size: 1.125em;
+    line-height:normal;
     font-weight: 700;
     margin: 0 0 10px;
 }
@@ -656,29 +661,26 @@
     }
 }
 
-
 .accordion-summary {
     .evidence-header {
         margin: 0 0 10px;
         .title {
-            //background-color: yellow;
-            font-size: 18px;
+            font-size: 1.125em;
+            line-height:normal;
             font-weight: 700;
             float: left;
         }
         .total-wrapper {
-            //background-color: pink;
-            font-size: 14px;
+            font-size: 0.875em;
+            line-height:normal;
             font-weight: 300;
             float: right;
             width: 100px;
             color: $se-grey;
             .total-label {
-                //background-color: cadetblue;
                 float: left;
             }
             .total-sum {
-                //background-color: darkseagreen;
                 float: right;
             }
         }
@@ -695,9 +697,7 @@
         .evidence-item {
             border-top: 1px solid $se-lighter-grey;
             padding: 0;
-            //padding: 5px 0;
             width: calc(100% - 80px);
-            //padding: 3px;
             float: left;
             border-top: none;
             color: $se-blue-sec;
@@ -710,7 +710,6 @@
         .evidence-value {
             width: 80px;
             text-align: right;
-            //padding: 3px;
             float: right;
         }
     }
@@ -750,7 +749,6 @@
     }
 }
 
-
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -768,7 +766,6 @@ select {
     display: block;
     width: 100%;
     height: 42px;
-    //line-height: 3;
     background: #2c3e50;
     overflow: hidden;
     border: 3px solid $se-black;
@@ -797,7 +794,7 @@ select::-ms-expand {
     padding: 7px 14px 0;
     background: $se-black;
     pointer-events: none;
-    font-size: 26px;
+    font-size: 1.625em;
 }
 /* Transition */
 .select:hover::after {
@@ -810,7 +807,6 @@ select::-ms-expand {
 }
 
 // -- PAGINATION -- //
-
 .pagination-wrapper {
     text-align: center;
     .pagination {
@@ -820,7 +816,8 @@ select::-ms-expand {
                 @include border-radius(0);
                 color: $se-blue;
                 @include transition(background-color 0.27s);
-                font-size: 12px;
+                font-size: 0.750em;
+                line-height:normal;
                 padding: 5px 10px;
             }
             &.active a {
@@ -832,7 +829,8 @@ select::-ms-expand {
             }
             > span {
                 border-width: 0 0 0 1px;
-                font-size: 12px;
+                font-size: 0.750em;
+                line-height:normal;
                 padding: 5px 10px;
                 &:hover {
                     background-color: transparent;
@@ -855,6 +853,3 @@ select::-ms-expand {
         }
     }
 }
-
-
-

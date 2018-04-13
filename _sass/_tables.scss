@@ -96,7 +96,8 @@ table.plain {
 }
 
 td.title {
-    font-size: 19px;
+    font-size: 1.188em;
+    line-height: normal;
 }
 
 tr:first-child td:first-child {
@@ -197,8 +198,8 @@ table.table-striped.no-hover tbody tr {
         }
     }
     progress {
-        font-size: 1px;
-        line-height: 9px;
+        font-size: 0.063em;
+        line-height: 0.563em;
         width: 100%;
         padding: 0;
         height: 7px;

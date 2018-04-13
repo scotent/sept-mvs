@@ -50,7 +50,8 @@ ol#progress--indicator {
                 &::after {
                     font-family: FontAwesome;
                     content: "\f00c";
-                    font-size: 11px;
+                    font-size: 0.688em;
+                    line-height:normal;
                     color: white;
                     position: absolute;
                     top: -5px;

@@ -1,7 +1,6 @@
 // ==========================================================================
 // SE Custom styles for typography
 // ========================================================================== */
-
 // -- Headings -- //
 h1 {
     font-size: 3.06em;
@@ -26,8 +25,8 @@ h2 {
     line-height: normal;
     margin: 22px 0 13px;
     @media all and (max-width: $screen-xxs-max) {
-        font-size: 24px;
-        line-height: 30px;
+        font-size: 1.5em;
+        line-height: 1.875em;
         margin: 15px 0 10px;
     }
 }
@@ -51,8 +50,8 @@ h4 {
 }
 
 h5 {
-    font-size: 14px;
-    line-height: 23px;
+    font-size: 0.875em;
+    line-height: normal;
     margin: 10px 0 7px;
     @media all and (max-width: $screen-xxs-max) {
     }
@@ -89,14 +88,14 @@ h3, h4, h5, h6 {
 }
 
 .leader {
-    font-size: 25px;
-    line-height: 34px;
+    font-size: 1.563em;
+    line-height: normal;
     font-weight: 300;
     margin: 0 0 25px 0;
     word-wrap: break-word;
     @media all and (max-width: $screen-xxs-max) {
-        font-size: 19px;
-        line-height: 28px;
+        font-size: 1.188em;
+        line-height: normal;
         margin-bottom: 15px;
     }
     &.highlight {
@@ -157,7 +156,8 @@ a, .link {
 
 // -- Breadcrumbs -- //
 .breadcrumbs {
-    font-size: 14px;
+    font-size: 0.875em;
+    line-height: normal;
     margin: 20px 0 13px;
     color: $se-grey;
     padding-left: 0;
@@ -172,11 +172,11 @@ a, .link {
         &:after {
             font-family: FontAwesome;
             content: "\f105";
-            font-size: 16px;
+            font-size: 1em;
+            line-height: normal;
             color: $se-grey;
             font-weight: 300;
             padding: 0 3px 0 8px;
-            line-height: 14px;
             box-sizing: inherit;
             position: relative;
             top: 1px;
@@ -213,8 +213,8 @@ a[href^="tel:"] {
 }
 
 .form-group p.bold-heading {
-    font-size: 19px;
-    line-height: 28px;
+    font-size: 1.188em;
+    line-height: normal;
     font-weight: 700;
     margin-top: 7px;
     margin-bottom: 0;
@@ -234,7 +234,7 @@ caption {
 
 .info-note {
     clear: both;
-    line-height: 21px;
+    line-height: normal;
     margin: 35px 0;
     position: relative;
     top: 4px;
@@ -243,7 +243,8 @@ caption {
         border-width: 1px 0;
         border-color: $se-grey;
         border-style: solid;
-        font-size: 17px;
+        font-size: 1em;
+
         &:before {
             background: none;
             content: "\f05a";
@@ -253,7 +254,8 @@ caption {
             width: 36px;
             font-family: FontAwesome;
             padding: 0 5px 0 0;
-            font-size: 30px;
+            font-size: 1.875em;
+            line-height: normal;
             color: $se-blue;
             @media all and (max-width: $screen-md-min) {
                 top: 25px;
@@ -261,7 +263,8 @@ caption {
         }
     }
     &.caution {
-        font-size: 16px !important;
+        font-size: 1em !important;
+        line-height: normal;
         border-width: 1px 0;
         border-color: $se-grey;
         border-style: solid;
@@ -279,7 +282,8 @@ caption {
             width: 36px;
             font-family: FontAwesome;
             padding: 0 5px 0 0;
-            font-size: 30px;
+            font-size: 1.875em;
+            line-height: normal;
             color: $se-amber;
             @media all and (max-width: $screen-md-min) {
                 top: 30px;
@@ -319,11 +323,11 @@ caption {
 
 .text-light {
     font-weight: 300;
-    font-size: 14px;
+    font-size: 0.875em;
+    line-height:normal;
     padding-top: 10px;
 }
 
 .strong {
     font-weight: bold;
 }
-

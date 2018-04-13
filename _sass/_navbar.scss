@@ -2,12 +2,8 @@
 // SE Custom styles for navbar
 // ==========================================================================
 
-
 header {
     margin-bottom: 0;
-    &.site-header {
-        //height: 80px;
-    }
 }
 
 header nav.navbar {
@@ -28,8 +24,8 @@ header nav.navbar {
     .navbar-brand {
         float: left;
         padding: 12px 15px;
-        font-size: 18px;
-        line-height: 20px;
+        font-size: 1.125em;
+        line-height: 1.250em;
         height: auto;
     }
 
@@ -120,4 +116,3 @@ header nav.navbar {
         }
     }
 }
-

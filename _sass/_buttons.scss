@@ -9,11 +9,11 @@
     color: $col;
     cursor: pointer;
     display: table;
-    font-size: 17px;
+    font-size: 1.063em;
+    line-height: 1.500em;
     font-weight: 300!important;
     height: auto!important;
     width: auto!important;
-    line-height: 1.500em;
     padding: 1em;
     position: relative;
     text-align: center;
@@ -141,13 +141,14 @@
     }
 }
 
-
+//TODO: check if used in dev
 .button.section-complete-button,
 .button.section-save-button {
     padding: 10px 1em;
     font-family: din-regularregular, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: -1px;
-    font-size: 18px;
+    font-size: 1.125em;
+    line-height: normal;
     margin-left: 18px;
     color: $se-white;
     float: right;
@@ -225,7 +226,7 @@ input[type="submit"] {
 
 .page-loading .loader {
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 1.25em;
     width: 1em;
     height: 1em;
     border-radius: 50%;
@@ -243,7 +244,7 @@ input[type="submit"] {
 
 .button .loader {
     margin: 0;
-    font-size: 4px;
+    font-size: 0.25em;
     width: 1em;
     height: 1em;
     border-radius: 50%;

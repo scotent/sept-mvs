@@ -9,7 +9,8 @@ input[type=number],
 input[type=password],
 input[type=email] {
     margin-top: 7px;
-    font-size: 16px;
+    font-size: 1em;
+    line-height:1em;
     height: 42px;
     border: 1px solid $se-grey;
     border-radius: 0;
@@ -19,7 +20,7 @@ input[type="radio"],
 input[type="checkbox"] {
     display: inline-block;
     width: 1px;
-    font-size: 40px;
+    font-size: 2.5em;
     margin: 0 0 0 10px;
 }
 
@@ -36,7 +37,7 @@ label {
     margin-bottom: 7px;
     font-family: din-mediumregular, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
     @media all and (max-width: $screen-xxs-max) {
-        font-size: 16px;
+        font-size: 1em;
     }
 }
 
@@ -106,8 +107,8 @@ select {
     padding: 6px 12px;
     width: 100%;
     height: inherit;
-    font-size: 14px;
-    line-height: 1.42857143;
+    font-size: 0.875em;
+    line-height: normal;
     color: $se-body-grey;
     background-color: $se-white;
     background-image: none;
@@ -160,8 +161,8 @@ textarea {
     display: inline-block;
     font-weight: normal;
     margin-right: 30px;
-    line-height: 22px;
-    font-size: 17px;
+    font-size: 1.063em;
+    line-height: 1.375em;
 }
 
 .input-small {
@@ -189,7 +190,7 @@ textarea {
 }
 
 .char-count {
-    font-size: 14px !important;
+    font-size: 0.875em !important;
     color: $se-mid-grey;
 }
 

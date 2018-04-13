@@ -300,7 +300,8 @@ ul.evidence-wrapper {
     min-width: 160px;
     padding: 5px 0;
     margin: 2px 0 0;
-    font-size: 14px;
+    font-size: 0.875em;
+    line-height:normal;
     text-align: left;
     list-style: none;
     background-color: $se-blue;
@@ -325,7 +326,8 @@ ul.evidence-wrapper {
         line-height: 1.42857143;
         color: #333;
         white-space: nowrap;
-        font-size: 16px;
+        font-size: 1em;
+        line-height:normal;
     }
     @media all and (max-width: $screen-sm-min) {
         left: inherit;
