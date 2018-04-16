@@ -125,9 +125,9 @@ a {
     }
 
     p{
-        font-size:1.8em;
+        font-size:1.4em;
         @media all and (max-width: $screen-xs-max){
-            font-size:1.3em;
+            font-size:1.2em;
         }
         @media all and (max-width: $screen-xxs-max){
             font-size:1.1em;

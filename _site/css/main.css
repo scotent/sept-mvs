@@ -745,10 +745,10 @@ a {
       .confirm-wrapper h2 {
         font-size: 2em; } }
   .confirm-wrapper p {
-    font-size: 1.8em; }
+    font-size: 1.4em; }
     @media all and (max-width: 767px) {
       .confirm-wrapper p {
-        font-size: 1.3em; } }
+        font-size: 1.2em; } }
     @media all and (max-width: 479px) {
       .confirm-wrapper p {
         font-size: 1.1em; } }
@@ -1629,7 +1629,9 @@ header nav.navbar {
     border: none;
     -webkit-box-shadow: inset 0 0 0 3px #FDB813;
     -moz-box-shadow: inset 0 0 0 3px #FDB813; }
-  .button.button-primary.inverse:active, .button.button-primary.inverse:focus {
+  .button.button-primary.inverse:active {
+    color: #00427F !important; }
+  .button.button-primary.inverse:focus {
     color: #FDB813; }
 .button.button-primary.temp {
   background-color: #FFA819; }
@@ -2565,6 +2567,8 @@ form.claim-evidence-form {
       background: none;
       text-decoration: underline;
       cursor: pointer; }
+    .add-new-file label:active {
+      color: #00427F; }
 
 .file-upload-list .file-remove {
   right: 0;
@@ -3559,26 +3563,24 @@ caption {
   position: relative;
   top: 4px;
   padding: 20px 10px 20px 54px !important; }
+  .info-note i {
+    background: none;
+    left: 13px;
+    position: absolute;
+    top: 37%;
+    width: 36px;
+    padding: 0 5px 0 0;
+    font-size: 1.875em;
+    line-height: normal;
+    color: #00427F; }
+    @media all and (max-width: 992px) {
+      .info-note i {
+        top: 25px; } }
   .info-note.note {
     border-width: 1px 0;
     border-color: #727272;
     border-style: solid;
     font-size: 1em; }
-    .info-note.note:before {
-      background: none;
-      content: "\f05a";
-      left: 13px;
-      position: absolute;
-      top: 37%;
-      width: 36px;
-      font-family: FontAwesome;
-      padding: 0 5px 0 0;
-      font-size: 1.875em;
-      line-height: normal;
-      color: #00427F; }
-      @media all and (max-width: 992px) {
-        .info-note.note:before {
-          top: 25px; } }
   .info-note.caution {
     font-size: 1em !important;
     line-height: normal;

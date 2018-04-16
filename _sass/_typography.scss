@@ -239,28 +239,28 @@ caption {
     position: relative;
     top: 4px;
     padding: 20px 10px 20px 54px !important;
+
+    i{
+        background: none;
+        left: 13px;
+        position: absolute;
+        top: 37%;
+        width: 36px;
+        padding: 0 5px 0 0;
+        font-size: 1.875em;
+        line-height: normal;
+        color: $se-blue;
+        @media all and (max-width: $screen-md-min) {
+            top: 25px;
+        }
+    }
+
     &.note {
         border-width: 1px 0;
         border-color: $se-grey;
         border-style: solid;
         font-size: 1em;
 
-        &:before {
-            background: none;
-            content: "\f05a";
-            left: 13px;
-            position: absolute;
-            top: 37%;
-            width: 36px;
-            font-family: FontAwesome;
-            padding: 0 5px 0 0;
-            font-size: 1.875em;
-            line-height: normal;
-            color: $se-blue;
-            @media all and (max-width: $screen-md-min) {
-                top: 25px;
-            }
-        }
     }
     &.caution {
         font-size: 1em !important;
