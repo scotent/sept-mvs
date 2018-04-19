@@ -2541,13 +2541,19 @@ form.claim-evidence-form {
         padding: 10px 5px 10px 10px; }
         .clean-list-horizontal li:first-child {
           padding-left: 0; } }
-  .clean-list-horizontal a {
+  .clean-list-horizontal a, .clean-list-horizontal button {
     display: block;
     color: #00427F;
     text-align: center;
     padding: 0 5px;
+    margin: 3px;
     text-decoration: none; }
-  .clean-list-horizontal a:hover {
+  .clean-list-horizontal button {
+    background: none;
+    border: 0;
+    font: inherit; }
+  .clean-list-horizontal a:hover, .clean-list-horizontal button:hover,
+  .clean-list-horizontal a:focus, .clean-list-horizontal button:focus {
     text-decoration: underline; }
 
 .add-new-file {
