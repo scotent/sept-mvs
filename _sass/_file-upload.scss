@@ -52,16 +52,24 @@ form.claim-evidence-form {
 	}
   }
 
-  a {
+  a, button {
 	display: block;
 	color: $se-blue;
 	text-align: center;
 	padding: 0 5px;
+	margin: 3px;
 	text-decoration: none;
-  }
+	}
+	
+	button {
+		background: none;
+		border: 0;
+		font: inherit;
+	}
 
-  a:hover {
-	text-decoration: underline;
+  a:hover, button:hover,
+  a:focus, button:focus {
+		text-decoration: underline;
   }
 }
 
