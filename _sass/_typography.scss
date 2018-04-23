@@ -149,6 +149,11 @@ a, .link {
     }
 }
 
+.link { // Match label/file-input styles ('See examples' & 'Add or Remove' links)
+    font-weight: 300;
+    font-family: 'din-mediumregular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 // -- If the color changes - let's make it smooth -- //
 * {
     @include transition(color 0.36s);
@@ -270,6 +275,7 @@ caption {
         border-style: solid;
         background-color: inherit;
         font-weight: 700;
+        min-height: 60px; // Caution icon height @ 30px + 15px padding top/bottom
         @media all and (max-width: $screen-xxs-max) {
             padding-bottom: 13px;
         }
@@ -278,16 +284,19 @@ caption {
             content: "\f071";
             left: 10px;
             position: absolute;
-            top: 37%;
+            top: 15px;
             width: 36px;
             font-family: FontAwesome;
             padding: 0 5px 0 0;
             font-size: 1.875em;
             line-height: normal;
             color: $se-amber;
-            @media all and (max-width: $screen-md-min) {
+            /*@media all and (max-width: $screen-md-min) {
                 top: 30px;
-            }
+            }*/
+        }
+        > p:last-of-type {
+            margin-bottom: 0;
         }
     }
     fieldset {

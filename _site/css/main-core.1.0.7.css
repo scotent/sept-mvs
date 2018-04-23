@@ -3217,7 +3217,7 @@ section section.key-wrapper {
 .upload-wrapper .info-note.caution + fieldset {
   border-bottom: 1px solid #727272;
   padding: 0 0 10px 10px;
-  margin-top: 0; }
+  margin-top: 15px; }
   .upload-wrapper .info-note.caution + fieldset input {
     margin: 0; }
   .upload-wrapper .info-note.caution + fieldset label {
@@ -3495,6 +3495,10 @@ a, .link {
     text-decoration: underline;
     cursor: pointer; }
 
+.link {
+  font-weight: 300;
+  font-family: 'din-mediumregular', "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
 * {
   -webkit-transition: color 0.36s;
   -moz-transition: color 0.36s;
@@ -3594,7 +3598,8 @@ caption {
     border-color: #727272;
     border-style: solid;
     background-color: inherit;
-    font-weight: 700; }
+    font-weight: 700;
+    min-height: 60px; }
     @media all and (max-width: 479px) {
       .info-note.caution {
         padding-bottom: 13px; } }
@@ -3603,16 +3608,18 @@ caption {
       content: "\f071";
       left: 10px;
       position: absolute;
-      top: 37%;
+      top: 15px;
       width: 36px;
       font-family: FontAwesome;
       padding: 0 5px 0 0;
       font-size: 1.875em;
       line-height: normal;
-      color: #FFA819; }
-      @media all and (max-width: 992px) {
-        .info-note.caution:before {
-          top: 30px; } }
+      color: #FFA819;
+      /*@media all and (max-width: $screen-md-min) {
+          top: 30px;
+      }*/ }
+    .info-note.caution > p:last-of-type {
+      margin-bottom: 0; }
   .info-note fieldset {
     margin-bottom: 0; }
   .info-note input[type="radio"],
