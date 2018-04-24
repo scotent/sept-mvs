@@ -1856,7 +1856,7 @@ input[type="submit"] {
     -webkit-box-shadow: inset 0 0 0 3px #00427F;
     -moz-box-shadow: inset 0 0 0 3px #00427F;
     box-shadow: inset 0 0 0 3px #00427F; }
-  .button-primary:active, .button-primary:focus {
+  .button-primary:active, .button-primary:focus:not(:hover) {
     color: #ffffff; }
   .button-primary.disabled {
     background-color: #666666; }
@@ -1913,7 +1913,7 @@ input[type="submit"] {
     -webkit-box-shadow: inset 0 0 0 3px #2A7CB2;
     -moz-box-shadow: inset 0 0 0 3px #2A7CB2;
     box-shadow: inset 0 0 0 3px #2A7CB2; }
-  .button-secondary:active, .button-secondary:focus {
+  .button-secondary:active, .button-secondary:focus:not(:hover) {
     color: #ffffff; }
   .button-secondary.disabled {
     background-color: #666666; }
@@ -1975,7 +1975,7 @@ input[type="submit"] {
     -webkit-box-shadow: inset 0 0 0 3px #2A7CB2;
     -moz-box-shadow: inset 0 0 0 3px #2A7CB2;
     box-shadow: inset 0 0 0 3px #2A7CB2; }
-  .button-tertiary:active, .button-tertiary:focus {
+  .button-tertiary:active, .button-tertiary:focus:not(:hover) {
     color: #00427F; }
   .button-tertiary.disabled {
     background-color: #666666; }
