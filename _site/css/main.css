@@ -2665,6 +2665,9 @@ section section.key-wrapper {
   color: #00CC00;
   content: "\f00c"; }
 
+.file-details-wrapper .fa.fa-refresh {
+  color: #FFA819; }
+
 .processing .fa {
   margin-right: 10px;
   color: #FFA819; }
