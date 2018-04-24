@@ -652,6 +652,10 @@ body {
   top: 1px;
   position: relative; }
 
+.row-flex {
+  display: flex;
+  flex-wrap: wrap; }
+
 /* Alpha / Beta banner */
 .beta {
   margin: 0; }
@@ -756,16 +760,17 @@ a {
     background-color: #00427F; }
 
 .portal-panel {
-  min-height: 200px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column; }
+  .portal-panel .panel-inner {
+    background-color: #ecf0f1;
+    padding: 12px;
+    flex: 1; }
   .portal-panel .panel-header h2 {
     font-weight: 300;
     border-bottom: 1px solid #727272;
     margin-top: 15px; }
-  .portal-panel .panel-inner {
-    background-color: #ecf0f1;
-    min-height: 200px;
-    padding: 12px; }
   .portal-panel .panel-content {
     padding-bottom: 2em; }
 
