@@ -3232,6 +3232,11 @@ section section.key-wrapper {
       .upload-wrapper .info-note.caution + fieldset input + label.fancy-checkbox::before {
         left: 2px;
         top: 3px; } }
+  .upload-wrapper .info-note.caution + fieldset input[disabled] + label.fancy-checkbox:before {
+    background-color: #f1f1f1;
+    border-color: #dddddd; }
+  .upload-wrapper .info-note.caution + fieldset input[disabled] + label.fancy-checkbox:hover {
+    cursor: not-allowed; }
 
 .card-view.caution-state {
   background-color: orange; }

@@ -940,26 +940,37 @@ section {
 
 .upload-wrapper {
   .info-note.caution {
-	margin-bottom: 0;
+		margin-bottom: 0;
   }
   .info-note.caution + fieldset {
-	border-bottom: 1px solid $se-grey;
-	padding: 0 0 10px 10px;
-	margin-top: 15px;
-	input {
-	  margin: 0;
-	}
-	label {
-	  margin-top: 0;
-	}
-	input + label.fancy-checkbox::before {
-	  left: -6px;
-	  top: -4px;
-	  @media all and (max-width: 568px) {
-		left: 2px;
-		top: 3px;
-	  }
-	}
+		border-bottom: 1px solid $se-grey;
+		padding: 0 0 10px 10px;
+		margin-top: 15px;
+		input {
+			margin: 0;
+		}
+		label {
+			margin-top: 0;
+		}
+		input + label.fancy-checkbox::before {
+			left: -6px;
+			top: -4px;
+			@media all and (max-width: 568px) {
+				left: 2px;
+				top: 3px;
+			}
+		}
+		// Visual feedback for disabled checkbox
+		input[disabled] + label.fancy-checkbox {
+			//color: $se-mid-grey;
+			&:before {
+				background-color: $se-grey-hover;
+				border-color: $se-light-mid-grey;
+			}
+			&:hover {
+				cursor: not-allowed;
+			}
+		}
   }
 }
 
