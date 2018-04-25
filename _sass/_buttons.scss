@@ -38,6 +38,9 @@
     &.disabled,
     &[disabled] {
         background-color: $se-body-grey;
+        opacity: 0.6;
+        color: #fff;
+        box-shadow: none;
         &:hover {
             cursor: not-allowed !important;
         }
