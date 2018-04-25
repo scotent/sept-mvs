@@ -1858,9 +1858,9 @@ input[type="submit"] {
     box-shadow: inset 0 0 0 3px #00427F; }
   .button-primary:active, .button-primary:focus:not(:hover) {
     color: #ffffff; }
-  .button-primary.disabled {
+  .button-primary.disabled, .button-primary[disabled] {
     background-color: #666666; }
-    .button-primary.disabled:hover {
+    .button-primary.disabled:hover, .button-primary[disabled]:hover {
       cursor: not-allowed !important; }
   .button-primary.inline {
     padding: 1em;
@@ -1915,9 +1915,9 @@ input[type="submit"] {
     box-shadow: inset 0 0 0 3px #2A7CB2; }
   .button-secondary:active, .button-secondary:focus:not(:hover) {
     color: #ffffff; }
-  .button-secondary.disabled {
+  .button-secondary.disabled, .button-secondary[disabled] {
     background-color: #666666; }
-    .button-secondary.disabled:hover {
+    .button-secondary.disabled:hover, .button-secondary[disabled]:hover {
       cursor: not-allowed !important; }
   .button-secondary.inline {
     padding: 1em;
@@ -1977,9 +1977,9 @@ input[type="submit"] {
     box-shadow: inset 0 0 0 3px #2A7CB2; }
   .button-tertiary:active, .button-tertiary:focus:not(:hover) {
     color: #00427F; }
-  .button-tertiary.disabled {
+  .button-tertiary.disabled, .button-tertiary[disabled] {
     background-color: #666666; }
-    .button-tertiary.disabled:hover {
+    .button-tertiary.disabled:hover, .button-tertiary[disabled]:hover {
       cursor: not-allowed !important; }
   .button-tertiary.inline {
     padding: 1em;
@@ -2621,6 +2621,8 @@ form.claim-evidence-form {
     color: #D60000;
     display: block;
     padding-left: 35px; }
+.file-upload-list + .file-upload-list .file-upload-wrapper {
+  border-top: 0; }
 
 .right-align {
   float: right; }
@@ -3220,7 +3222,8 @@ section section.key-wrapper {
 .upload-wrapper .info-note.caution + fieldset {
   border-bottom: 1px solid #727272;
   padding: 0 0 10px 10px;
-  margin-top: 15px; }
+  margin-top: 15px;
+  margin-bottom: 15px; }
   .upload-wrapper .info-note.caution + fieldset input {
     margin: 0; }
   .upload-wrapper .info-note.caution + fieldset label {
@@ -3237,6 +3240,9 @@ section section.key-wrapper {
     border-color: #dddddd; }
   .upload-wrapper .info-note.caution + fieldset input[disabled] + label.fancy-checkbox:hover {
     cursor: not-allowed; }
+  .upload-wrapper .info-note.caution + fieldset + .error-message {
+    margin-bottom: 15px;
+    padding-top: 0; }
 
 .card-view.caution-state {
   background-color: orange; }
@@ -3535,7 +3541,7 @@ a, .link {
       line-height: normal;
       color: #727272;
       font-weight: 300;
-      padding: 0 3px 0 8px;
+      padding: 0 5px;
       box-sizing: inherit;
       position: relative;
       top: 1px; }

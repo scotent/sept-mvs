@@ -102,67 +102,72 @@ form.claim-evidence-form {
 .file-upload-list {
 
   .file-remove {
-	right: 0;
-	top: 10px;
-	text-align: center;
-	width: 100%;
-	display: inline-block;
-	background: none;
-	a {
-	  color: $se-blue;
-	  background: none;
-	  text-decoration: none;
-	  padding: 1px 0 1px 12px;
-	  font-size: 16px;
-	  &:hover {
-		color: $se-black;
+		right: 0;
+		top: 10px;
+		text-align: center;
+		width: 100%;
+		display: inline-block;
 		background: none;
-		text-decoration: underline;
-	  }
-	}
+		a {
+			color: $se-blue;
+			background: none;
+			text-decoration: none;
+			padding: 1px 0 1px 12px;
+			font-size: 16px;
+			&:hover {
+				color: $se-black;
+				background: none;
+				text-decoration: underline;
+			}
+		}
   }
 
   .file-upload-wrapper {
-	border-top: 1px solid $se-grey;
-	border-bottom: 1px solid $se-grey;
-	padding: 10px 0;
-	margin: 0;
-	position: relative;
+		border-top: 1px solid $se-grey;
+		border-bottom: 1px solid $se-grey;
+		padding: 10px 0;
+		margin: 0;
+		position: relative;
 
+		.file-details-wrapper {
+			padding-left: 0;
+		}
+		.file-name {
+			display: inline;
+			width: calc(100% - 70px);
+		}
+		.file-amount-wrapper {
+			padding: 0;
+			text-align: right;
+		}
+		.file-remove-wrapper {
+			padding-right: 0;
+		}
 
-	.file-details-wrapper {
-	  padding-left: 0;
-	}
-	.file-name {
-	  display: inline;
-	  width: calc(100% - 70px);
-	}
-	.file-amount-wrapper {
-	  padding: 0;
-	  text-align: right;
-	}
-	.file-remove-wrapper {
-	  padding-right: 0;
-	}
-
-	&.empty {
-	  color: $se-mid-grey;
-	  border-top: none;
-	  padding: 0;
-	  label.form-label {
-		font-size: 16px;
-		line-height: 20px;
-		font-weight: 300;
-	  }
-	}
-	&.failed {
-	  .failed-text {
-		color: $se-red;
-		display: block;
-		padding-left: 35px;
-	  }
-	}
+		&.empty {
+			color: $se-mid-grey;
+			border-top: none;
+			padding: 0;
+			label.form-label {
+			font-size: 16px;
+			line-height: 20px;
+			font-weight: 300;
+			}
+		}
+		&.failed {
+			.failed-text {
+			color: $se-red;
+			display: block;
+			padding-left: 35px;
+			}
+		}
   }
+
+	+ .file-upload-list {
+		.file-upload-wrapper {
+			border-top: 0;
+		}
+	}
 }
 
 .right-align {
@@ -946,6 +951,7 @@ section {
 		border-bottom: 1px solid $se-grey;
 		padding: 0 0 10px 10px;
 		margin-top: 15px;
+		margin-bottom: 15px;
 		input {
 			margin: 0;
 		}
@@ -970,6 +976,10 @@ section {
 			&:hover {
 				cursor: not-allowed;
 			}
+		}
+		+ .error-message {
+			margin-bottom: 15px;
+			padding-top: 0;
 		}
   }
 }
