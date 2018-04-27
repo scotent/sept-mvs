@@ -3,7 +3,7 @@
 // ==========================================================================
 // SE Custom styles for layout - extend Bootstrap
 // ==========================================================================
-.row-flex { // Equal Height columns
+.row.row-flex { // Equal Height columns
     display: flex;
     flex-wrap: wrap;
 }
@@ -148,15 +148,24 @@ a {
 }
 
 .portal-panel {
-    //min-height: 200px;
+    min-height: 200px;
     margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
     .panel-inner {
         background-color: $se-light-grey;
-        //min-height: 200px;
+        min-height: 200px;
         padding: 12px;
-        flex: 1;
+    }
+
+    @supports (display: flex) {
+        .row-flex & {
+            min-height: none;
+            display: flex;
+            flex-direction: column;
+            .panel-inner {
+                min-height: none;
+                flex: 1;
+            }
+        }
     }
 
     .panel-header {

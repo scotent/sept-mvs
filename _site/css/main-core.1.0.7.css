@@ -652,7 +652,7 @@ body {
   top: 1px;
   position: relative; }
 
-.row-flex {
+.row.row-flex {
   display: flex;
   flex-wrap: wrap; }
 
@@ -760,13 +760,20 @@ a {
     background-color: #00427F; }
 
 .portal-panel {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column; }
+  min-height: 200px;
+  margin-bottom: 20px; }
   .portal-panel .panel-inner {
     background-color: #ecf0f1;
-    padding: 12px;
-    flex: 1; }
+    min-height: 200px;
+    padding: 12px; }
+  @supports (display: flex) {
+    .row-flex .portal-panel {
+      min-height: none;
+      display: flex;
+      flex-direction: column; }
+      .row-flex .portal-panel .panel-inner {
+        min-height: none;
+        flex: 1; } }
   .portal-panel .panel-header h2 {
     font-weight: 300;
     border-bottom: 1px solid #727272;
