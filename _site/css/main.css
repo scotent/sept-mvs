@@ -4075,94 +4075,135 @@ body.globalscot {
 
 .stepper {
   list-style: none;
-  margin: 0 0 0 0px; }
-  @media all and (max-width: 991px) {
-    .stepper {
-      margin-top: 40px; } }
+  padding: 0;
+  margin: 0; }
+  .stepper .stepper-circle,
+  .stepper .stepper-line {
+    display: none; }
   .stepper li {
-    padding: 0; }
-    .stepper li.step-active .stepper-circle {
-      color: #00427F;
-      border-color: #00427F; }
+    position: relative;
+    padding: 0;
+    z-index: 1;
+    display: inline-block;
+    width: 10%; }
+    @media screen and (min-width: 992px) {
+      .stepper li {
+        width: 100%;
+        height: 10vh;
+        min-height: 3em;
+        max-height: 6em; } }
+    .stepper li:nth-child(1):before {
+      content: "1"; }
+    .stepper li:nth-child(2):before {
+      content: "2"; }
+    .stepper li:nth-child(3):before {
+      content: "3"; }
+    .stepper li:nth-child(4):before {
+      content: "4"; }
+    .stepper li:nth-child(5):before {
+      content: "5"; }
+    .stepper li:nth-child(6):before {
+      content: "6"; }
+    .stepper li:nth-child(7):before {
+      content: "7"; }
+    .stepper li:nth-child(8):before {
+      content: "8"; }
+    .stepper li:nth-child(9):before {
+      content: "9"; }
+    .stepper li:nth-child(10):before {
+      content: "10"; }
+    .stepper li:before {
+      background: #fff;
+      height: 2em;
+      width: 2em;
+      line-height: 1.9em;
+      border: 2px solid;
+      border-radius: 50%;
+      text-align: center;
+      color: #707070;
+      display: inline-block; }
+    @media screen and (min-width: 992px) {
+      .stepper li:before {
+        margin-right: 0.5em; } }
+    .stepper li .stepper-title {
+      display: inline-block; }
+      @media screen and (max-width: 991px) {
+        .stepper li .stepper-title {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          border: 0; } }
+    .stepper li:after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      height: 2px;
+      top: 1em;
+      left: 1em;
+      margin-left: -1.5px;
+      background: #707070; }
+      @media screen and (min-width: 992px) {
+        .stepper li:after {
+          top: 1em;
+          width: 2px;
+          height: 100%;
+          margin-left: -1px; } }
+    .stepper li:last-child {
+      width: auto; }
+      .stepper li:last-child:after {
+        content: none; }
+    .stepper li.step-active:before {
+      color: #fff;
+      border-color: #00427F;
+      background: #00427F; }
     .stepper li.step-active .stepper-title {
       color: black;
       font-weight: bold;
-      font-size: 1.1em;
+      font-size: 1.125em;
       line-height: normal; }
-    .stepper li.step-active .stepper-line {
-      color: #00427F; }
-    .stepper li.step-completed .stepper-circle {
-      color: white;
-      background-color: #00427F;
-      border-color: #00427F; }
-    .stepper li.step-completed .stepper-title {
-      color: black; }
-    .stepper li.step-completed .stepper-line {
+    .stepper li.step-completed:before {
       color: #00427F;
-      border-left-color: #00427F; }
+      border-color: #00427F; }
+    .stepper li.step-completed:after {
+      background: #00427F; }
+  @supports (display: flex) {
+    .stepper {
+      display: flex;
+      justify-content: space-between; }
+      .stepper li {
+        width: 100%; }
+      @media screen and (min-width: 992px) {
+        .stepper {
+          display: block; } } }
 
-.stepper-circle {
-  height: 30px;
-  width: 30px;
-  padding: 3px 3px 2px 3px;
-  border: 2px solid gray;
-  border-radius: 50%;
-  text-align: center;
-  vert-align: middle;
-  display: inline-block;
-  color: #707070; }
-
-.stepper-title {
-  color: black;
-  padding: 0 0 0 15px; }
-
-.stepper-line {
-  height: 50px;
-  margin: 0 0 0 15px;
-  border-left: 2px solid #707070; }
-  @media all and (max-width: 1199px) {
-    .stepper-line {
-      height: 10px; } }
-
-@media all and (max-width: 991px) {
+/* Current label on mid-size screens? */
+@media screen and (min-width: 480px) and (max-width: 991px) {
   .stepper {
-    list-style: none;
-    margin: 0; }
-    .stepper .stepper-title {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      border: 0; }
-    .stepper .stepper-circle {
-      padding: 3px 2px 2px 2px; }
-    .stepper .stepper-line {
-      display: inline-block;
-      position: relative;
-      top: -3px;
-      height: 2px;
-      width: 29px;
+    overflow: hidden;
+    padding-bottom: 3em; }
+    .stepper li.step-active .stepper-title {
+      overflow: visible;
+      width: auto;
+      height: auto;
       margin: 0;
-      border-bottom: 2px solid #707070;
-      border-left: 0; }
-    .stepper li {
-      display: inline-block; }
-      .stepper li.step-active .stepper-title {
-        height: 2px; }
-      .stepper li.step-active .stepper-line {
-        height: 2px;
-        color: #00427F; }
-      .stepper li.step-completed .stepper-circle {
-        color: white;
-        background-color: #00427F;
-        border-color: #00427F; }
-      .stepper li.step-completed .stepper-line {
-        height: 2px;
-        color: #00427F;
-        border-bottom-color: #00427F; } }
+      width: calc(50vw - 30px);
+      top: 2.75em;
+      left: 0;
+      clip: auto;
+      font-size: 1em; }
+    .stepper li.step-active:nth-child(1n+2) .stepper-title {
+      margin-left: calc(-25vw + 30px);
+      text-align: center; }
+    .stepper li.step-active:last-child .stepper-title {
+      text-align: right;
+      left: auto;
+      right: 0;
+      margin: 0; } }
 .steps-navigation {
   margin: 0; }
 

@@ -10,133 +10,151 @@
 }
 
 $se-stepper-gray:#707070;
+$up-to-steps: 10; // IMPORTANT: Assumes no more than 10 steps in stepper
 
 .stepper {
-  list-style: none;
-  margin: 0 0 0 0px;
-
-  @media all and (max-width: 991px) {
-    margin-top: 40px;
-  }
-
-  li{
-    padding:0;
-
-    &.step-active{
-      .stepper-circle{
-        color:$se-blue;
-        border-color:$se-blue;
-      }
-      .stepper-title{
-        color: black;
-        font-weight:bold;
-        font-size:1.1em;
-        line-height:normal;
-      }
-      .stepper-line{
-        color:$se-blue;
-      }
-    }
-
-    &.step-completed{
-      .stepper-circle{
-        color:white;
-        background-color: $se-blue;
-        border-color:$se-blue;
-      }
-      .stepper-title{
-        color: black;
-      }
-      .stepper-line{
-        color:$se-blue;
-        border-left-color: $se-blue;
-      }
-    }
-  }
-}
-
-
-//stepper default styling
-.stepper-circle{
-  height: 30px;
-  width: 30px;
-  padding: 3px 3px 2px 3px;
-  border: 2px solid gray;
-  border-radius: 50%;
-  text-align: center;
-  vert-align: middle;
-  display: inline-block;
-  color:$se-stepper-gray;
-}
-
-.stepper-title{
-  color: black;
-  padding: 0 0 0 15px;
-}
-
-.stepper-line {
-  height: 50px;
-  margin: 0 0 0 15px;
-  border-left: 2px solid $se-stepper-gray;
-  @media all and (max-width: 1199px) {
-    height: 10px;
-  }
-}
-
-//styling for the horizontal stepper
-@media all and (max-width: 991px) {
-
-  .stepper {
-    list-style: none;
-    margin: 0;
-
-  .stepper-title{
-    @include sr-only();
-  }
-
-  .stepper-circle{
-    padding: 3px 2px 2px 2px;
-  }
-
+  // temporary until remove HTML elements
+  .stepper-circle,
   .stepper-line {
-    display: inline-block;
-    position: relative;
-    top: -3px;
-    height: 2px;
-    width: 29px;
-    margin: 0;
-    border-bottom: 2px solid #707070;
-    border-left: 0;
+    display: none;
   }
 
-  li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    position: relative;
+    padding: 0;
+    z-index: 1;
     display: inline-block;
-
-    &.step-active{
-
-      .stepper-title{
-        height: 2px;
-      }
-      .stepper-line{
-        height: 2px;
-        color:$se-blue;
-      }
+    width: 100% / $up-to-steps;
+    @media screen and (min-width: 992px) {
+      width: 100%;
+      height: 10vh;
+      min-height: 3em;
+      max-height: 6em;
     }
-
-    &.step-completed{
-      .stepper-circle{
-        color:white;
-        background-color: $se-blue;
-        border-color:$se-blue;
-      }
-
-      .stepper-line{
-        height: 2px;
-        color:$se-blue;
-        border-bottom-color: $se-blue;
+    // numbered circle
+    @for $i from 1 through $up-to-steps {
+      &:nth-child(#{$i}) {
+        &:before {
+          content: "#{$i}";
         }
       }
+    }
+    &:before {
+      background: #fff;
+      height: 2em;
+      width: 2em;
+      line-height: 1.9em;
+      border: 2px solid;
+      border-radius: 50%;
+      text-align: center;
+      color:$se-stepper-gray;
+      display: inline-block;
+    }
+    @media screen and (min-width: 992px) {
+      &:before {
+        margin-right: 0.5em;
+      }
+    }
+    .stepper-title {
+      display: inline-block;
+      @media screen and (max-width: 991px) {
+        @include sr-only();
+      }
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      height: 2px;
+      top: 1em;
+      left: 1em;
+      margin-left: -1.5px;
+      background: $se-stepper-gray;
+      @media screen and (min-width: 992px) {
+        top: 1em;
+        width: 2px;
+        height: 100%;
+        margin-left: -1px;
+      }
+    }
+    &:last-child {
+      width: auto;
+      &:after {
+        content: none;
+      }
+    }
+    // active states
+    &.step-active {
+      &:before {
+        color: #fff;
+        border-color: $se-blue;
+        background: $se-blue;
+      }
+      .stepper-title {
+        color: black;
+        font-weight:bold;
+        font-size:1.125em;
+        line-height:normal;
+      }
+    }
+    &.step-completed {
+      &:before {
+        color:$se-blue;
+        border-color:$se-blue;
+      }
+      &:after {
+        background: $se-blue;
+      }
+    }
+  }
+  @supports (display: flex) {
+    display: flex;
+    justify-content: space-between;
+    li {
+      width: 100%;
+    }
+    @media screen and (min-width: 992px) {
+      display: block;
+    }
+  }
+}
 
+/* Current label on mid-size screens? */
+@media screen and (min-width: 480px) and (max-width: 991px) {
+  .stepper {
+    overflow: hidden;
+    padding-bottom: 3em;
+    li.step-active {
+      .stepper-title {
+          overflow: visible;
+          width: auto;
+          height: auto;
+          margin: 0;
+          width: calc(50vw - 30px);
+          top: 2.75em;
+          left: 0;
+          clip: auto;
+          font-size: 1em;
+      }
+      &:nth-child(1n+2) {
+        .stepper-title {
+          margin-left: calc(-25vw + 30px);
+          text-align: center;
+        }
+      }
+      &:last-child {
+        .stepper-title {
+          text-align: right;
+          left: auto;
+          right: 0;
+          margin: 0;
+        }
+      }
     }
   }
 }
