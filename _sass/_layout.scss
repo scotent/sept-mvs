@@ -158,11 +158,10 @@ a {
 
     @supports (display: flex) {
         .row-flex & {
-            min-height: none;
+            min-height: initial;
             display: flex;
-            flex-direction: column;
             .panel-inner {
-                min-height: none;
+                min-height: initial;
                 flex: 1;
             }
         }

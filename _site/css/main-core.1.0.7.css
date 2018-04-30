@@ -768,11 +768,10 @@ a {
     padding: 12px; }
   @supports (display: flex) {
     .row-flex .portal-panel {
-      min-height: none;
-      display: flex;
-      flex-direction: column; }
+      min-height: initial;
+      display: flex; }
       .row-flex .portal-panel .panel-inner {
-        min-height: none;
+        min-height: initial;
         flex: 1; } }
   .portal-panel .panel-header h2 {
     font-weight: 300;
