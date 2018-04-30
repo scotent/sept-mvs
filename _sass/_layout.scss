@@ -1,6 +1,14 @@
 @import 'variables.scss';
 
 // ==========================================================================
+// SE Custom styles for layout - extend Bootstrap
+// ==========================================================================
+.row.row-flex { // Equal Height columns
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// ==========================================================================
 // SE Custom styles for layout
 // ==========================================================================
 
@@ -142,17 +150,29 @@ a {
 .portal-panel {
     min-height: 200px;
     margin-bottom: 20px;
+    .panel-inner {
+        background-color: $se-light-grey;
+        min-height: 200px;
+        padding: 12px;
+    }
+
+    @supports (display: flex) {
+        .row-flex & {
+            min-height: initial;
+            display: flex;
+            .panel-inner {
+                min-height: initial;
+                flex: 1;
+            }
+        }
+    }
+
     .panel-header {
         h2 {
             font-weight: 300;
             border-bottom: 1px solid $se-grey;
             margin-top: 15px;
         }
-    }
-    .panel-inner {
-        background-color: $se-light-grey;
-        min-height: 200px;
-        padding: 12px;
     }
     .panel-content {
         padding-bottom: 2em;
