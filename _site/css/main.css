@@ -2689,6 +2689,8 @@ section section.key-wrapper {
 
 .file-details-wrapper .fa.fa-refresh {
   color: #FFA819; }
+.file-details-wrapper .fa.fa-exclamation-circle {
+  color: #D60000; }
 
 .processing .fa {
   margin-right: 10px;
