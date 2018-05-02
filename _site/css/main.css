@@ -1605,6 +1605,11 @@ header nav.navbar {
         header nav.navbar #navbar .navbar-nav li > a.disabled:hover {
           background-color: transparent;
           cursor: default; }
+      header nav.navbar #navbar .navbar-nav li > p {
+        padding: 15px;
+        line-height: 46px;
+        margin: 0;
+        display: inline-block; }
   header nav.navbar .navbar-toggle {
     border-color: #bbbbbb;
     margin-right: 0; }
@@ -2518,7 +2523,7 @@ table.table-striped.no-hover tbody tr.status-paid progress {
   .claim-schedule.mvs td {
     padding: 10px 10px 10px 50% !important; }
   .claim-schedule.mvs td:nth-of-type(1):before {
-    content: "Claims"; }
+    content: "Claim"; }
   .claim-schedule.mvs td:nth-of-type(2):before {
     content: "Status"; }
   .claim-schedule.mvs td:nth-of-type(3):before {

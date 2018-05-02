@@ -65,6 +65,12 @@ header nav.navbar {
                         cursor: default;
                     }
                 }
+                & > p {
+                    padding: 15px;
+                    line-height: 46px;
+                    margin: 0;
+                    display: inline-block;
+                }
             }
         }
     }
