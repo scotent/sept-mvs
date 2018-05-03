@@ -1030,7 +1030,15 @@ section {
   margin: 0 0 60px 0;
   @media all and (max-width: 991px) {
 	margin: 0 0 30px 0;
-  }
+	}
+	.upload-wrapper.col-md-6 {
+		&:nth-child(2n+3) {
+			clear: left;
+		}
+		&:nth-child(1n+3) h3 {
+			margin-top: 30px;
+		}
+	}
 }
 
 .margin-0t-sm-1t{
