@@ -1036,7 +1036,7 @@ section {
 			clear: left;
 		}
 		&:nth-child(1n+3) h3 {
-			margin-top: 30px;
+			margin-top: 30px !important;
 		}
 	}
 }
