@@ -55,6 +55,15 @@ table.table-striped:not(.active) tbody tr {
     }
 }
 
+table.table-striped,
+table.plain {
+    margin-top: 0;
+    caption {
+        padding: 0;
+        margin-left: 0 !important;
+    }
+}
+
 table.plain {
     margin: 0;
     color: $se-dark-grey;

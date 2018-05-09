@@ -2263,6 +2263,14 @@ table.table-striped tbody tr:hover td {
 table.table-striped:not(.active) tbody tr:hover td {
   background: #ffffff !important; }
 
+table.table-striped,
+table.plain {
+  margin-top: 0; }
+  table.table-striped caption,
+  table.plain caption {
+    padding: 0;
+    margin-left: 0 !important; }
+
 table.plain {
   margin: 0;
   color: #333333; }
@@ -3613,6 +3621,7 @@ a[href^="tel:"] {
   color: #999999; }
 
 caption {
+  color: inherit;
   margin-left: 8px !important; }
 
 .info-note {
