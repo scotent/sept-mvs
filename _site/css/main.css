@@ -4278,3 +4278,10 @@ body.globalscot {
     @media all and (max-width: 390px) {
       .step-navigation-next .next-step-icon {
         top: -20px; } }
+
+#error-component,
+#timeout-component {
+  position: fixed;
+  z-index: 9999;
+  margin: 0% auto;
+  width: 100%; }

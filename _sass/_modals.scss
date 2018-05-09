@@ -1,0 +1,10 @@
+// ==========================================================================
+// SE Custom styles for the error/timeout popups
+// ==========================================================================
+#error-component,
+#timeout-component {
+    position: fixed;
+    z-index: 9999;
+    margin: 0% auto;
+    width: 100%;
+}
