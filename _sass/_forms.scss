@@ -33,6 +33,10 @@ div.relative input.fancy-radio {
     position: absolute;
 }
 
+input.fancy-checkbox, input.fancy-radio {
+    -moz-appearance: none;
+}
+
 label {
     margin-bottom: 7px;
     font-family: din-mediumregular, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
