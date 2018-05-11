@@ -187,7 +187,7 @@ a, .link {
             top: 1px;
         }
         &:before {
-            content: "";
+            content: none;
             padding: 0;
         }
         &:last-of-type:after {

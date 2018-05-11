@@ -3594,7 +3594,7 @@ a, .link {
       top: 1px; }
     .breadcrumbs .breadcrumbs__item:before,
     .breadcrumbs .breadcrumb-item:before {
-      content: "";
+      content: none;
       padding: 0; }
     .breadcrumbs .breadcrumbs__item:last-of-type:after,
     .breadcrumbs .breadcrumb-item:last-of-type:after {
