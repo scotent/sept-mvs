@@ -158,6 +158,9 @@ a {
 
     @supports (display: flex) {
         .row-flex & {
+            &:before {
+                display: none; // Override clearfix
+            }
             min-height: initial;
             display: flex;
             .panel-inner {
