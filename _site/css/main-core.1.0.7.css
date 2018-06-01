@@ -2258,6 +2258,11 @@ input + label.fancy-checkbox::before {
 .claim-details table {
   margin: 0 0 20px 0; }
 
+table.table-striped tbody tr:first-child td, table.table-striped tbody tr th, table.table-striped tbody tr td {
+  border-bottom-color: #ddd;
+  background: transparent; }
+table.table-striped tbody tr td {
+  font-weight: normal; }
 table.table-striped tbody tr td a {
   display: block;
   color: #00427F; }
