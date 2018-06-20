@@ -432,6 +432,15 @@ section {
 	margin: 0;
   }
 }
+.upload-wrapper {
+	.collapse {
+		.card {
+			a {
+				position: static;
+			}
+		}
+	}
+}
 
 
 .file-upload-wrapper.empty.new:not(.finance) {
