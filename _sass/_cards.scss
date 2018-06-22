@@ -49,13 +49,14 @@
     vertical-align: baseline;
     margin-bottom: 10px;
   }
-  @media all and (max-width: $screen-xs-min) {
+  @media all and (min-width: $screen-xs-min) {
     select,
     input,
     button {
       margin: 0;
     }
-    select {
+    select,
+    input {
       width: calc(100% - 8em);
     }
     button {

@@ -2249,12 +2249,13 @@ input + label.fancy-checkbox::before {
   display: inline-block;
   vertical-align: baseline;
   margin-bottom: 10px; }
-@media all and (max-width: 480px) {
+@media all and (min-width: 480px) {
   .card-view-inline-form select,
   .card-view-inline-form input,
   .card-view-inline-form button {
     margin: 0; }
-  .card-view-inline-form select {
+  .card-view-inline-form select,
+  .card-view-inline-form input {
     width: calc(100% - 8em); }
   .card-view-inline-form button {
     max-width: 7em;
