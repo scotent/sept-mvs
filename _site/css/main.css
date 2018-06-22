@@ -4309,11 +4309,7 @@ body.globalscot {
   margin: 0% auto;
   width: 100%; }
 
-/*
-* 
-*  Export Plan styles (scoped)
-* 
-*/
+/* Export Plan styles (scoped) */
 .container-export-plan .tooltip-popup,
 .container-export-plan .fa-question-circle {
   position: relative; }
@@ -4325,11 +4321,6 @@ body.globalscot {
   top: -0.6em;
   background: #00427F; }
 
-/*
-* 
-*  Export Plan styles (shared, new classes)
-*  Can be merged into golbal styles??
-* 
-*/
+/* Export Plan styles (shared, new classes) */
 .fa-question-circle {
   color: #00427F; }
