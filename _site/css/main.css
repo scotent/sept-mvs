@@ -2241,6 +2241,8 @@ input + label.fancy-checkbox::before {
     .card-view {
       padding: 10px; } }
 
+.card-view-inline-form h3 {
+  font-size: 1.4375em; }
 .card-view-inline-form select,
 .card-view-inline-form input,
 .card-view-inline-form button {
