@@ -1,0 +1,51 @@
+
+/*
+* 
+*  Export Plan styles (scoped)
+* 
+*/
+.container-export-plan {
+    
+    // Tooltips (style generic browser popup)
+    .tooltip-popup,
+    .fa-question-circle {
+        position: relative;
+    }
+    .tooltip-popup[title]:hover:after,
+    .fa-question-circle[title]:hover:after {
+        content: attr(title);
+        position: absolute;
+        left: 2.2em;
+        top: -0.6em;
+        background: $se-blue;
+        // width: 100em;
+        // max-width: 200px;
+        // color: #fff;
+        // font-family: $main-font;
+        // font-size: 0.8em;
+        // padding: 8px 10px;
+    }
+    .tooltip-popup[title]:hover:before,
+    .fa-question-circle[title]:hover:before {
+        // content: "";
+        // position: absolute;
+        // left: 1.6em;
+        // top: 0;
+        // background: $se-blue;
+        // width: 100em;
+        // width: 0.6em;
+        // height: 0.6em;
+    }
+}
+
+/*
+* 
+*  Export Plan styles (shared, new classes)
+*  Can be merged into golbal styles??
+* 
+*/
+
+// Icons
+.fa-question-circle {
+    color: $se-blue;
+}
