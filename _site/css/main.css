@@ -2241,6 +2241,27 @@ input + label.fancy-checkbox::before {
     .card-view {
       padding: 10px; } }
 
+.card-view-inline-form select,
+.card-view-inline-form input,
+.card-view-inline-form button {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-bottom: 10px; }
+@media all and (max-width: 480px) {
+  .card-view-inline-form select,
+  .card-view-inline-form input,
+  .card-view-inline-form button {
+    margin: 0; }
+  .card-view-inline-form select {
+    width: calc(100% - 8em); }
+  .card-view-inline-form button {
+    max-width: 7em;
+    min-width: 5em;
+    font-weight: bold !important;
+    display: inline-block;
+    vertical-align: baseline;
+    margin: 0; } }
+
 .account-portal-wrapper .card-view {
   padding: 30px 10px; }
 
@@ -4077,23 +4098,6 @@ ul.evidence-wrapper {
   color: goldenrod; }
 
 /* Export Plan styles (scoped) */
-.container-export-plan .tooltip-popup,
-.container-export-plan .fa-question-circle {
-  position: relative; }
-.container-export-plan .tooltip-popup[title]:hover:after,
-.container-export-plan .fa-question-circle[title]:hover:after {
-  content: attr(title);
-  position: absolute;
-  left: 2.2em;
-  top: -0.6em;
-  background: #00427F;
-  width: 200em;
-  max-width: 200px;
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  font-size: 0.8em;
-  padding: 8px 10px; }
-
 /* Export Plan styles (shared, new classes) */
 .fa-question-circle {
   color: #00427F; }

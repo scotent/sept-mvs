@@ -367,25 +367,6 @@ ul.evidence-wrapper {
 
 .container-export-plan {
     
-    // Tooltips (style generic browser popup)
-    .tooltip-popup,
-    .fa-question-circle {
-        position: relative;
-    }
-    .tooltip-popup[title]:hover:after,
-    .fa-question-circle[title]:hover:after {
-        content: attr(title);
-        position: absolute;
-        left: 2.2em;
-        top: -0.6em;
-        background: $se-blue;
-        width: 200em;
-        max-width: 200px;
-        color: #fff;
-        font-family: $main-font;
-        font-size: 0.8em;
-        padding: 8px 10px;
-    }
 }
 
 /* Export Plan styles (shared, new classes) */

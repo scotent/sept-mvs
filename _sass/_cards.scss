@@ -38,6 +38,34 @@
   }
 }
 
+.card-view-inline-form {
+  select,
+  input,
+  button {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-bottom: 10px;
+  }
+  @media all and (max-width: $screen-xs-min) {
+    select,
+    input,
+    button {
+      margin: 0;
+    }
+    select {
+      width: calc(100% - 8em);
+    }
+    button {
+      max-width: 7em;
+      min-width: 5em;
+      font-weight: bold !important;
+      display: inline-block;
+      vertical-align: baseline;
+      margin: 0;
+    }
+  }
+}
+
 .account-portal-wrapper {
   .card-view {
     padding: 30px 10px;
