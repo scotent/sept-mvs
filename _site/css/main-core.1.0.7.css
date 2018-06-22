@@ -4071,6 +4071,28 @@ ul.evidence-wrapper {
 .fa.fa-star-o {
   color: goldenrod; }
 
+/* Export Plan styles (scoped) */
+.container-export-plan .tooltip-popup,
+.container-export-plan .fa-question-circle {
+  position: relative; }
+.container-export-plan .tooltip-popup[title]:hover:after,
+.container-export-plan .fa-question-circle[title]:hover:after {
+  content: attr(title);
+  position: absolute;
+  left: 2.2em;
+  top: -0.6em;
+  background: #00427F;
+  width: 200em;
+  max-width: 200px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8em;
+  padding: 8px 10px; }
+
+/* Export Plan styles (shared, new classes) */
+.fa-question-circle {
+  color: #00427F; }
+
 body.globalscot {
   padding-top: 100px !important;
   padding-bottom: 20px !important; }
