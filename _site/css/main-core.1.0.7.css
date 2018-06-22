@@ -3663,6 +3663,11 @@ caption {
     border-color: #727272;
     border-style: solid;
     font-size: 1em; }
+  .info-note.note-with-close {
+    padding-right: 54px !important; }
+    .info-note.note-with-close i.fa-close {
+      right: 13px;
+      left: auto; }
   .info-note.caution {
     font-size: 1em !important;
     line-height: normal;

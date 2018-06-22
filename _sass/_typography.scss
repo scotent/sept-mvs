@@ -268,6 +268,14 @@ caption {
         font-size: 1em;
 
     }
+
+    &.note-with-close {
+        padding-right: 54px !important;
+        i.fa-close {
+            right: 13px;
+            left: auto;
+        }
+    }
     &.caution {
         font-size: 1em !important;
         line-height: normal;
