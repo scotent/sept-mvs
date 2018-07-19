@@ -4194,7 +4194,7 @@ body.globalscot {
   border: 2px solid gray;
   border-radius: 50%;
   text-align: center;
-  vert-align: middle;
+  vertical-align: middle;
   display: inline-block;
   color: #707070; }
 
@@ -4335,3 +4335,31 @@ body.globalscot {
     @media all and (max-width: 390px) {
       .step-navigation-next .next-step-icon {
         top: -20px; } }
+
+.cta-feedback-toggle,
+.cta-share-export-plan {
+  color: #00427F;
+  cursor: pointer; }
+  .cta-feedback-toggle:hover,
+  .cta-share-export-plan:hover {
+    text-decoration: underline; }
+
+.container-export-plan .stepper-circle .has-link {
+  max-width: calc(100% - 50px);
+  text-align: left;
+  font-weight: 500; }
+
+@media all and (max-width: 991px) {
+  .container-export-plan .stepper {
+    width: 100%;
+    display: flex; }
+  .container-export-plan .stepper li {
+    position: relative; }
+  .container-export-plan .stepper .stepper-circle {
+    background: #fff; }
+  .container-export-plan .stepper .stepper-line {
+    position: absolute;
+    top: 50%;
+    margin-top: -2px; }
+  .container-export-plan .stepper li:last-child .stepper-line {
+    display: none; } }
