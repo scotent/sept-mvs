@@ -1,0 +1,42 @@
+// Export Plan specific styles
+
+// Calls to Action
+.cta-feedback-toggle,
+.cta-share-export-plan {
+    color: $se-blue;
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// Stepper changes - scoping to export plan just in case
+.container-export-plan {
+    .stepper-circle .has-link {
+        max-width: calc(100% - 50px);
+        text-align: left;
+        font-weight: 500;
+    }
+}
+@media all and (max-width: 991px) {
+    .container-export-plan {
+        .stepper {
+            width: 100%;
+            display: flex;
+        }
+        .stepper li {
+            position: relative;
+        }
+        .stepper .stepper-circle {
+            background: #fff;
+        }
+        .stepper .stepper-line {
+            position: absolute;
+            top: 50%;
+            margin-top: -2px;
+        }
+        .stepper li:last-child .stepper-line {
+            display: none;
+        }
+    }
+}

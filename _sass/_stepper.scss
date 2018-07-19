@@ -64,7 +64,7 @@ $se-stepper-gray:#707070;
   border: 2px solid gray;
   border-radius: 50%;
   text-align: center;
-  vert-align: middle;
+  vertical-align: middle;
   display: inline-block;
   color:$se-stepper-gray;
 }
@@ -82,6 +82,7 @@ $se-stepper-gray:#707070;
     height: 10px;
   }
 }
+
 
 //styling for the horizontal stepper
 @media all and (max-width: 991px) {
