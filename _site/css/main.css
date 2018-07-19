@@ -4343,13 +4343,30 @@ body.globalscot {
   margin: 0% auto;
   width: 100%; }
 
-.cta-feedback-toggle,
-.cta-share-export-plan {
+.container-export-plan .cta-feedback-toggle,
+.container-export-plan .cta-share-export-plan {
   color: #00427F;
   cursor: pointer; }
-  .cta-feedback-toggle:hover,
-  .cta-share-export-plan:hover {
+  .container-export-plan .cta-feedback-toggle:hover,
+  .container-export-plan .cta-share-export-plan:hover {
     text-decoration: underline; }
+
+.container-export-plan .tooltip.top .tooltip-arrow {
+  border-top-color: #00427F; }
+.container-export-plan .tooltip.top-left .tooltip-arrow {
+  border-top-color: #00427F; }
+.container-export-plan .tooltip.top-right .tooltip-arrow {
+  border-top-color: #00427F; }
+.container-export-plan .tooltip.right .tooltip-arrow {
+  border-right-color: #00427F; }
+.container-export-plan .tooltip.left .tooltip-arrow {
+  border-left-color: #00427F; }
+.container-export-plan .tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #00427F; }
+.container-export-plan .tooltip.bottom-left .tooltip-arrow {
+  border-bottom-color: #00427F; }
+.container-export-plan .tooltip.bottom-right .tooltip-arrow {
+  border-bottom-color: #00427F; }
 
 .container-export-plan .stepper-circle .has-link {
   max-width: calc(100% - 50px);
