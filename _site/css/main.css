@@ -4380,12 +4380,14 @@ body.globalscot {
     width: 100%;
     display: flex; }
   .container-export-plan .stepper li {
-    position: relative; }
+    position: relative;
+    flex: 1; }
   .container-export-plan .stepper .stepper-circle {
     background: #fff; }
   .container-export-plan .stepper .stepper-line {
     position: absolute;
     top: 50%;
-    margin-top: -2px; }
+    margin-top: -2px;
+    width: 100%; }
   .container-export-plan .stepper li:last-child .stepper-line {
     display: none; } }
