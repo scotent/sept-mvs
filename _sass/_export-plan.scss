@@ -15,6 +15,9 @@
 
 // Tooltips
 .container-export-plan {
+    .tooltip-inner {
+        background-color:$se-blue;
+    }
     .tooltip.top .tooltip-arrow{
         border-top-color:$se-blue;
     }
