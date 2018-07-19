@@ -4370,7 +4370,7 @@ body.globalscot {
 .container-export-plan .tooltip.bottom-right .tooltip-arrow {
   border-bottom-color: #00427F; }
 
-.container-export-plan .stepper-circle .has-link {
+.container-export-plan .stepper-title .has-link {
   max-width: calc(100% - 50px);
   text-align: left;
   font-weight: 500; }
