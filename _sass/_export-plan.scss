@@ -1,0 +1,73 @@
+// Export Plan specific styles
+// scoping to '.container-export-plan' just in case
+
+// Calls to Action
+.container-export-plan {
+    .cta-feedback-toggle,
+    .cta-share-export-plan {
+        color: $se-blue;
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+// Tooltips
+.container-export-plan {
+    .tooltip.top .tooltip-arrow{
+        border-top-color:$se-blue;
+    }
+    .tooltip.top-left .tooltip-arrow{
+        border-top-color:$se-blue;
+    }
+    .tooltip.top-right .tooltip-arrow{
+        border-top-color:$se-blue;
+    }
+    .tooltip.right .tooltip-arrow{
+        border-right-color:$se-blue;
+    }
+    .tooltip.left .tooltip-arrow{
+        border-left-color:$se-blue;
+    }
+    .tooltip.bottom .tooltip-arrow{
+        border-bottom-color:$se-blue;
+    }
+    .tooltip.bottom-left .tooltip-arrow{
+        border-bottom-color:$se-blue;
+    }
+    .tooltip.bottom-right .tooltip-arrow{
+        border-bottom-color:$se-blue;
+    }
+}
+
+// Stepper changes - scoping to export plan just in case
+.container-export-plan {
+    .stepper-circle .has-link {
+        max-width: calc(100% - 50px);
+        text-align: left;
+        font-weight: 500;
+    }
+}
+@media all and (max-width: 991px) {
+    .container-export-plan {
+        .stepper {
+            width: 100%;
+            display: flex;
+        }
+        .stepper li {
+            position: relative;
+        }
+        .stepper .stepper-circle {
+            background: #fff;
+        }
+        .stepper .stepper-line {
+            position: absolute;
+            top: 50%;
+            margin-top: -2px;
+        }
+        .stepper li:last-child .stepper-line {
+            display: none;
+        }
+    }
+}
