@@ -60,6 +60,7 @@
         }
         .stepper li {
             position: relative;
+            flex: 1;
         }
         .stepper .stepper-circle {
             background: #fff;
@@ -68,6 +69,7 @@
             position: absolute;
             top: 50%;
             margin-top: -2px;
+            width: 100%;
         }
         .stepper li:last-child .stepper-line {
             display: none;
