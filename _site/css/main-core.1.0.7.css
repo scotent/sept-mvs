@@ -4344,6 +4344,8 @@ body.globalscot {
   .container-export-plan .cta-share-export-plan:hover {
     text-decoration: underline; }
 
+.container-export-plan .tooltip-inner {
+  background-color: #00427F; }
 .container-export-plan .tooltip.top .tooltip-arrow {
   border-top-color: #00427F; }
 .container-export-plan .tooltip.top-left .tooltip-arrow {
